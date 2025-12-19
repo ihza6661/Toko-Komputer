@@ -410,7 +410,7 @@ BAGAIMANA CARA MEMULAI?
    
 3️⃣ 48 JAM
    Website LIVE!
-   Domain: rtechpontianak.com
+   Domain: https://r-tech-pontianak-landing.vercel.app
    ⏱️ Saya yang handle semua
    
    ↓
@@ -455,14 +455,12 @@ Siap Mulai Hari Ini? 🚀
 SIAP DISKUSI LEBIH LANJUT?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-[Your Name]
+Ihza Mahendra
 Fullstack Web Developer
 
-📱 WhatsApp: [Your Number]
-📧 Email: [Your Email]
+📱 WhatsApp: 089692070270
+📧 Email: ihzahmahendra6661@gmail.com
 🔗 GitHub: github.com/ihza6661
-💼 LinkedIn: [Your LinkedIn]
-
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 [QR Code to Your WhatsApp]
@@ -472,7 +470,7 @@ Scan untuk chat langsung!
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 [Small Text - Footer]
-Website Demo: https://rtech-pontianak.vercel.app
+Website Demo: https://r-tech-pontianak-landing.vercel.app
 Presentation Date: [Date]
 ```
 

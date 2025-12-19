@@ -243,8 +243,8 @@ Show > Tell. Let website speak for itself.
 **Your Materials:**
 - Website: [Your Vercel URL]
 - GitHub: https://github.com/ihza6661
-- Phone: [Your Number]
-- Email: [Your Email]
+- Phone: 089692070270
+- Email: ihzahmahendra6661@gmail.com
 
 **Client Materials Needed:**
 - Logo R-Tech (high-res PNG/JPG)
@@ -257,8 +257,8 @@ Show > Tell. Let website speak for itself.
 
 **"I built a professional website for R-Tech Computer (for free as portfolio project), offering 1-2 month free trial to prove it can bring 8-10 extra sales/month with ROI of 1,500% - literally zero risk for the owner to try."**
 
-**Now go make it happen!** 🚀
+**Let's go make it happen!** 🚀
 
 ---
 
-**Good luck! You're more prepared than 95% of people pitching their first client!**
+**Good luck! I'am more prepared than 95% of people pitching their first client!**
