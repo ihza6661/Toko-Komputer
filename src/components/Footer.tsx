@@ -46,7 +46,8 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
-                title="WhatsApp"
+                title="Chat di WhatsApp"
+                aria-label="Chat di WhatsApp"
               >
                 <MessageCircle className="h-5 w-5" />
               </a>
@@ -55,7 +56,8 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
-                title="Instagram"
+                title="Kunjungi Instagram"
+                aria-label="Kunjungi Instagram"
               >
                 <svg
                   className="h-5 w-5"
