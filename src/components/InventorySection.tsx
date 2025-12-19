@@ -22,6 +22,8 @@ const products = [
     },
     warranty: "Garansi 3 Bulan",
     badge: "Backlit Keyboard",
+    available: true,
+    soldDate: null,
   },
   {
     name: "Lenovo Ideapad Slim 3i",
@@ -36,6 +38,8 @@ const products = [
     },
     warranty: "Garansi Resmi Mar 2027",
     badge: "Backlit",
+    available: true,
+    soldDate: null,
   },
   {
     name: "Acer Aspire Lite 14",
@@ -50,6 +54,8 @@ const products = [
     },
     warranty: "Garansi Resmi Apr 2026",
     badge: "Best Value",
+    available: false,
+    soldDate: "2024-12-15",
   },
   {
     name: "Asus Vivobook E410M",
@@ -64,6 +70,8 @@ const products = [
     },
     warranty: "Garansi 3 Bulan",
     badge: "Numpad",
+    available: true,
+    soldDate: null,
   },
 ];
 
@@ -89,19 +97,33 @@ const InventorySection = () => {
           {products.map((product, index) => (
             <div
               key={index}
-              className="group glass-card rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300"
+              className={`group glass-card rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 ${
+                !product.available ? 'opacity-75' : ''
+              }`}
             >
               {/* Image */}
               <div className="relative aspect-square bg-secondary/50 overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${
+                    !product.available ? 'grayscale' : ''
+                  }`}
                 />
+                {/* Sold Out Overlay */}
+                {!product.available && (
+                  <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] flex items-center justify-center">
+                    <span className="bg-red-500 text-white text-lg font-bold px-6 py-3 rounded-lg rotate-[-12deg] shadow-lg">
+                      TERJUAL
+                    </span>
+                  </div>
+                )}
                 {/* Badge */}
-                <span className="absolute top-3 left-3 bg-primary/90 text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
-                  {product.badge}
-                </span>
+                {product.available && (
+                  <span className="absolute top-3 left-3 bg-primary/90 text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
+                    {product.badge}
+                  </span>
+                )}
                 {/* Warranty badge */}
                 <span className="absolute top-3 right-3 bg-background/80 backdrop-blur-sm text-foreground text-xs font-medium px-2 py-1 rounded-full border border-border">
                   {product.warranty}
@@ -134,19 +156,29 @@ const InventorySection = () => {
                   </div>
                 </div>
 
-                {/* Price */}
+                {/* Price & CTA */}
                 <div className="flex items-center justify-between">
-                  <span className="font-display text-xl font-bold text-primary">
+                  <span className={`font-display text-xl font-bold ${
+                    product.available ? 'text-primary' : 'text-muted-foreground'
+                  }`}>
                     {product.price}
                   </span>
-                  <Button variant="whatsapp" size="sm" asChild>
+                  <Button 
+                    variant={product.available ? "whatsapp" : "outline"} 
+                    size="sm" 
+                    asChild
+                  >
                     <a
-                      href={generateWhatsAppLink("product", product.name)}
+                      href={
+                        product.available 
+                          ? generateWhatsAppLink("product", product.name)
+                          : generateWhatsAppLink("sold_out", product.name)
+                      }
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <MessageCircle className="h-4 w-4" />
-                      Tanya
+                      {product.available ? "Tanya" : "Cari Serupa"}
                     </a>
                   </Button>
                 </div>
