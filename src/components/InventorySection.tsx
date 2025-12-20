@@ -90,6 +90,11 @@ const InventorySection = () => {
                     <img
                       src={product.image_url}
                       alt={product.name}
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        target.onerror = null; // Prevent infinite loop
+                        target.src = `https://via.placeholder.com/500x500/e5e7eb/6b7280?text=${encodeURIComponent(product.name.substring(0, 20))}`;
+                      }}
                       className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${
                         product.stock === 0 ? 'grayscale' : ''
                       }`}
