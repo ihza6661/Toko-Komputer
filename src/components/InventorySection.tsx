@@ -20,16 +20,33 @@ const InventorySection = () => {
 
   useEffect(() => {
     const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:8000/api"
-    fetch(`${apiUrl}/products?per_page=4`)
-      .then((res) => res.json())
+    
+    // Add cache-busting timestamp and fetch with no-cache
+    fetch(`${apiUrl}/products?per_page=4&_=${Date.now()}`, {
+      method: 'GET',
+      cache: 'no-store',
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache'
+      }
+    })
+      .then((res) => {
+        console.log('✅ Products API Response Status:', res.status)
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`)
+        }
+        return res.json()
+      })
       .then((data) => {
+        console.log('✅ Products API Data:', data)
         // Handle paginated response
         const productList = data.data || data
+        console.log('✅ Product List:', productList)
         setProducts(Array.isArray(productList) ? productList : [])
         setLoading(false)
       })
       .catch((error) => {
-        console.error("Failed to fetch products:", error)
+        console.error("❌ Failed to fetch products:", error)
         setLoading(false)
       })
   }, [])
