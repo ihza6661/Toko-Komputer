@@ -2,190 +2,171 @@ import { Cpu, HardDrive, MemoryStick, Monitor, MessageCircle } from "lucide-reac
 import { Button } from "@/components/ui/button";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
 import { COMPANY_INFO } from "@/lib/constants";
+import { useEffect, useState } from "react";
 
-import laptopHp from "@/assets/laptop-hp.jpg";
-import laptopAsus from "@/assets/laptop-asus.webp";
-import laptopAcer from "@/assets/laptop-acer.webp";
-import laptopLenovo from "@/assets/laptop-lenovo.jpg";
-
-const products = [
-  {
-    name: "HP Laptop 14 EM0014",
-    image: laptopHp,
-    price: "Rp 5.500.000",
-    specs: {
-      processor: "Ryzen 3 7320U",
-      gpu: "Radeon Graphics",
-      storage: "SSD 512 GB",
-      ram: "8 GB",
-      display: "FHD 14 Inch",
-    },
-    warranty: "Garansi 3 Bulan",
-    badge: "Backlit Keyboard",
-    available: true,
-    soldDate: null,
-  },
-  {
-    name: "Lenovo Ideapad Slim 3i",
-    image: laptopLenovo,
-    price: "Rp 5.000.000",
-    specs: {
-      processor: "Intel Core i3-1215U",
-      gpu: "Intel UHD",
-      storage: "SSD 256 GB",
-      ram: "8 GB",
-      display: "FHD 14 Inch",
-    },
-    warranty: "Garansi Resmi Mar 2027",
-    badge: "Backlit",
-    available: true,
-    soldDate: null,
-  },
-  {
-    name: "Acer Aspire Lite 14",
-    image: laptopAcer,
-    price: "Rp 4.000.000",
-    specs: {
-      processor: "Intel N150",
-      gpu: "Intel (R) Graphics",
-      storage: "SSD 256 GB",
-      ram: "8 GB",
-      display: "FHD 14 Inch",
-    },
-    warranty: "Garansi Resmi Apr 2026",
-    badge: "Best Value",
-    available: false,
-    soldDate: "2024-12-15",
-  },
-  {
-    name: "Asus Vivobook E410M",
-    image: laptopAsus,
-    price: "Rp 3.300.000",
-    specs: {
-      processor: "Intel Celeron N4020",
-      gpu: "Intel UHD",
-      storage: "SSD 512 GB",
-      ram: "4 GB",
-      display: "HD 14 Inch",
-    },
-    warranty: "Garansi 3 Bulan",
-    badge: "Numpad",
-    available: true,
-    soldDate: null,
-  },
-];
+interface Product {
+  id: number
+  name: string
+  price: number | string
+  description: string
+  specifications: Record<string, string>
+  image_url: string
+  stock: number
+}
 
 const InventorySection = () => {
+  const [products, setProducts] = useState<Product[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:8000/api"
+    fetch(`${apiUrl}/products?per_page=4`)
+      .then((res) => res.json())
+      .then((data) => {
+        // Handle paginated response
+        const productList = data.data || data
+        setProducts(Array.isArray(productList) ? productList : [])
+        setLoading(false)
+      })
+      .catch((error) => {
+        console.error("Failed to fetch products:", error)
+        setLoading(false)
+      })
+  }, [])
   return (
     <section id="products" className="py-20 bg-background relative">
        <div className="container mx-auto px-4">
-         {/* Section header */}
-         <div className="text-center mb-10 md:mb-12">
-           <span className="text-xs sm:text-sm font-medium text-primary uppercase tracking-wider">
-             Ready Unit
-           </span>
-           <h2 className="mt-2 font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-             Stok Tersedia Hari Ini
-           </h2>
-           <p className="mt-3 sm:mt-4 text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
-             Unit siap pakai dengan garansi. Hubungi kami untuk cek ketersediaan terbaru!
-           </p>
-         </div>
+          {/* Section header */}
+          <div className="text-center mb-10 md:mb-12">
+            <span className="text-xs sm:text-sm font-medium text-primary uppercase tracking-wider">
+              Ready Unit
+            </span>
+            <h2 className="mt-2 font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+              Stok Tersedia Hari Ini
+            </h2>
+            <p className="mt-3 sm:mt-4 text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
+              Unit siap pakai dengan garansi. Hubungi kami untuk cek ketersediaan terbaru!
+            </p>
+          </div>
 
-         {/* Product grid */}
-         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 md:mb-16">
-          {products.map((product, index) => (
-             <div
-               key={index}
-               className={`group glass-card rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 ${
-                 !product.available ? 'opacity-75' : ''
-               }`}
-             >
-               {/* Image */}
-               <div className="relative aspect-square bg-secondary/50 overflow-hidden">
-                 <img
-                   src={product.image}
-                   alt={product.name}
-                   className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${
-                     !product.available ? 'grayscale' : ''
-                   }`}
-                 />
-                 {/* Sold Out Overlay */}
-                 {!product.available && (
-                   <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] flex items-center justify-center">
-                     <span className="bg-red-500 text-white text-base sm:text-lg font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-lg rotate-[-12deg] shadow-lg">
-                       TERJUAL
-                     </span>
-                   </div>
-                 )}
-                 {/* Badge */}
-                 {product.available && (
-                   <span className="absolute top-2 sm:top-3 left-2 sm:left-3 bg-primary/90 text-primary-foreground text-[11px] sm:text-xs font-semibold px-2 sm:px-3 py-1 rounded-full">
-                     {product.badge}
-                   </span>
-                 )}
-                 {/* Warranty badge */}
-                 <span className="absolute top-2 sm:top-3 right-2 sm:right-3 bg-background/80 backdrop-blur-sm text-foreground text-[10px] sm:text-xs font-medium px-2 py-0.5 sm:py-1 rounded-full border border-border">
-                   {product.warranty}
-                 </span>
-               </div>
-
-               {/* Content */}
-               <div className="p-4 sm:p-5">
-                 <h3 className="font-display text-base sm:text-lg font-bold text-foreground mb-2">
-                   {product.name}
-                 </h3>
-
-                 {/* Specs */}
-                 <div className="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4">
-                   <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
-                     <Cpu className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary/70" />
-                     <span>{product.specs.processor}</span>
-                   </div>
-                   <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
-                     <HardDrive className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary/70" />
-                     <span>{product.specs.storage}</span>
-                   </div>
-                   <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
-                     <MemoryStick className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary/70" />
-                     <span>RAM {product.specs.ram}</span>
-                   </div>
-                   <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
-                     <Monitor className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary/70" />
-                     <span>{product.specs.display}</span>
-                   </div>
-                 </div>
-
-                 {/* Price & CTA */}
-                 <div className="flex items-center justify-between gap-2">
-                   <span className={`font-display text-base sm:text-lg font-bold ${
-                     product.available ? 'text-primary' : 'text-muted-foreground'
-                   }`}>
-                     {product.price}
-                   </span>
-                   <Button 
-                     variant={product.available ? "whatsapp" : "outline"} 
-                     size="sm" 
-                     asChild
-                   >
-                     <a
-                       href={
-                         product.available 
-                           ? generateWhatsAppLink("product", product.name)
-                           : generateWhatsAppLink("sold_out", product.name)
-                       }
-                       target="_blank"
-                       rel="noopener noreferrer"
-                     >
-                       <MessageCircle className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                       {product.available ? "Tanya" : "Cari Serupa"}
-                     </a>
-                   </Button>
-                 </div>
-               </div>
+          {/* Product grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 md:mb-16">
+           {loading ? (
+             <div className="col-span-full text-center py-12">
+               <p className="text-muted-foreground">Loading products...</p>
              </div>
-          ))}
-        </div>
+           ) : products.length === 0 ? (
+             <div className="col-span-full text-center py-12">
+               <p className="text-muted-foreground">No products available at the moment.</p>
+             </div>
+           ) : (
+             products.map((product) => (
+              <div
+                key={product.id}
+                className={`group glass-card rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 ${
+                  product.stock === 0 ? 'opacity-75' : ''
+                }`}
+              >
+                {/* Image */}
+                <div className="relative aspect-square bg-secondary/50 overflow-hidden">
+                  {product.image_url ? (
+                    <img
+                      src={product.image_url}
+                      alt={product.name}
+                      className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${
+                        product.stock === 0 ? 'grayscale' : ''
+                      }`}
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-secondary text-muted-foreground">
+                      No Image
+                    </div>
+                  )}
+                  {/* Sold Out Overlay */}
+                  {product.stock === 0 && (
+                    <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] flex items-center justify-center">
+                      <span className="bg-red-500 text-white text-base sm:text-lg font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-lg rotate-[-12deg] shadow-lg">
+                        TERJUAL
+                      </span>
+                    </div>
+                  )}
+                  {/* Badge */}
+                  {product.stock > 0 && (
+                    <span className="absolute top-2 sm:top-3 left-2 sm:left-3 bg-primary/90 text-primary-foreground text-[11px] sm:text-xs font-semibold px-2 sm:px-3 py-1 rounded-full">
+                      {product.stock} Stok
+                    </span>
+                  )}
+                </div>
+
+                {/* Content */}
+                <div className="p-4 sm:p-5">
+                  <h3 className="font-display text-base sm:text-lg font-bold text-foreground mb-2">
+                    {product.name}
+                  </h3>
+
+                  {/* Specs */}
+                  <div className="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4">
+                    {product.specifications && (
+                      <>
+                        {product.specifications.processor && (
+                          <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                            <Cpu className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary/70" />
+                            <span>{product.specifications.processor}</span>
+                          </div>
+                        )}
+                        {product.specifications.storage && (
+                          <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                            <HardDrive className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary/70" />
+                            <span>{product.specifications.storage}</span>
+                          </div>
+                        )}
+                        {product.specifications.ram && (
+                          <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                            <MemoryStick className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary/70" />
+                            <span>RAM {product.specifications.ram}</span>
+                          </div>
+                        )}
+                        {product.specifications.display && (
+                          <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                            <Monitor className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-primary/70" />
+                            <span>{product.specifications.display}</span>
+                          </div>
+                        )}
+                      </>
+                    )}
+                  </div>
+
+                  {/* Price & CTA */}
+                  <div className="flex items-center justify-between gap-2">
+                    <span className={`font-display text-base sm:text-lg font-bold ${
+                      product.stock > 0 ? 'text-primary' : 'text-muted-foreground'
+                    }`}>
+                      Rp {typeof product.price === 'number' ? product.price.toLocaleString('id-ID') : product.price}
+                    </span>
+                    <Button 
+                      variant={product.stock > 0 ? "whatsapp" : "outline"} 
+                      size="sm" 
+                      asChild
+                    >
+                      <a
+                        href={
+                          product.stock > 0 
+                            ? generateWhatsAppLink("product", product.name)
+                            : generateWhatsAppLink("sold_out", product.name)
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <MessageCircle className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                        {product.stock > 0 ? "Tanya" : "Cari Serupa"}
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            ))
+           )}
+         </div>
 
          {/* Instagram CTA - Enhanced */}
          <div className="mt-12 sm:mt-16">

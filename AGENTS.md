@@ -1,10 +1,11 @@
-# Agent Guidelines for r-tech-pontianak-landing
+# Agent Guidelines for r-tech-landing
 
 ## Build Commands
-- **Dev**: `npm run dev` (starts on port 8080)
-- **Build**: `npm run build` (production) or `npm run build:dev` (development mode)
-- **Lint**: `npm run lint`
+- **Dev**: `npm run dev` (Vite dev server)
+- **Build**: `npm run build` (production) or `npm run build:dev` (dev mode)
+- **Lint**: `npm run lint` (ESLint with auto-fix)
 - **Preview**: `npm run preview`
+- **Type Check**: `tsc --noEmit` (TypeScript validation)
 - No test framework configured
 
 ## Tech Stack
@@ -12,26 +13,26 @@ Vite + React 18 + TypeScript + shadcn-ui + Tailwind CSS + React Router
 
 ## Code Style
 
-### Imports
-- Use `@/` alias for src imports: `import { Button } from "@/components/ui/button"`
-- Group imports: external deps → components → utils → assets
+### Imports & Formatting
+- Use `@/` alias for src: `import { Button } from "@/components/ui/button"`
+- Group: external deps → components → utils → assets
+- ESLint enforces: no unused vars, React hooks rules, prefer const exports
 
 ### TypeScript
-- Relaxed config: `noImplicitAny: false`, `strictNullChecks: false`, `noUnusedVars: off`
-- Prefer typed components but implicit any is acceptable
+- **Relaxed**: `noImplicitAny: false`, `strictNullChecks: false` — implicit any acceptable
+- Prefer typed components but not required
+- `eslint-plugin-react-hooks` enforces hook dependencies
 
-### Components
-- Functional components with arrow functions: `const Component = () => { ... }`
-- Export default at bottom of file
-- Use shadcn-ui components from `@/components/ui/`
-- Tailwind for all styling, no CSS modules
+### Components & Styling
+- Functional components with arrow functions: `const Component = () => {...}`
+- Export default at EOF
+- Use shadcn-ui from `@/components/ui/` + Tailwind CSS only (no CSS modules)
+- Use `cn()` from `@/lib/utils` for className merging via tailwind-merge
 
 ### Naming
-- Files: PascalCase for components (`HeroSection.tsx`), camelCase for utils (`whatsapp.ts`)
-- Variables/functions: camelCase
-- Types/Interfaces: PascalCase
-- CSS: kebab-case for custom classes
+- Files: `PascalCase` components (`HeroSection.tsx`), `camelCase` utils (`whatsapp.ts`)
+- Variables/functions: `camelCase`, Types: `PascalCase`, CSS: `kebab-case`
 
-### Utilities
-- Use `cn()` from `@/lib/utils` for conditional className merging
-- Tailwind merge for combining Tailwind classes
+### Error Handling
+- Use Sonner toast notifications for user feedback
+- No try-catch required due to relaxed TypeScript
