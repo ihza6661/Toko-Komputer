@@ -158,7 +158,7 @@ const InventorySection = () => {
                     <span className={`font-display text-base sm:text-lg font-bold ${
                       product.stock > 0 ? 'text-primary' : 'text-muted-foreground'
                     }`}>
-                      Rp {typeof product.price === 'number' ? product.price.toLocaleString('id-ID') : product.price}
+                      Rp {typeof product.price === 'number' ? product.price.toLocaleString('id-ID', { maximumFractionDigits: 0 }) : parseFloat(product.price).toLocaleString('id-ID', { maximumFractionDigits: 0 })}
                     </span>
                     <Button 
                       variant={product.stock > 0 ? "whatsapp" : "outline"} 
