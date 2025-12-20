@@ -12,10 +12,10 @@
 **Between:**
 
 **SERVICE PROVIDER (Developer):**
-- Name: [Your Full Name]
-- Address: [Your Address]
-- Phone: [Your Phone Number]
-- Email: [Your Email]
+- Name: [Ihza Mahendra]
+- Address: [Jl.Karet Komp.Surya Kencana 1 Blok.F19]
+- Phone: [089692070270]
+- Email: [ihzahmahendra6661@gmail.com]
 - ID/KTP: [Your ID Number]
 
 **CLIENT:**

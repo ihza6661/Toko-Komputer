@@ -127,7 +127,7 @@ FITUR UTAMA:
 
 [Large QR Code Center]
 👆 SCAN UNTUK LIHAT LANGSUNG!
-https://rtech-pontianak.vercel.app
+https://r-tech-pontianak-landing.vercel.app
 ```
 
 ---
@@ -176,16 +176,16 @@ PROYEKSI HASIL (Estimasi Konservatif)
 
 ### Content (Funnel Visualization):
 ```
-        500 PENGUNJUNG/BULAN
+        500 PENGUNJUNG SETIAP BULAN
           (Instagram + Google)
                  ↓
-        15-20% Conversion Rate
+        15–20% BERUBAH JADI CALON PEMBELI
                  ↓
         75-100 CHAT WHATSAPP
                  ↓
-        10% Closing Rate
+        10% JADI TRANSAKSI
                  ↓
-        7-10 PENJUALAN EXTRA
+        7–10 PENJUALAN TAMBAHAN
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -375,8 +375,6 @@ STEP 3️⃣ : Keputusan
 
 [Large Text - Bold]
 ZERO RISK. PURE VALUE.
-
-Tidak ada yang Anda rugi!
 ```
 
 ---

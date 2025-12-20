@@ -28,7 +28,7 @@
 - Professional README
 - Ready for Vercel deployment
 
-**URL:** https://github.com/ihza6661/r-tech-pontianak-landing
+**URL:** https://r-tech-pontianak-landing.vercel.app
 
 ---
 
@@ -168,12 +168,6 @@ Step-by-step instructions for going live:
 - Customization guide
 - Performance metrics
 
-#### **UX_AUDIT_IMPROVEMENTS.md**
-- Comprehensive UX audit results
-- Before/after comparisons
-- Score improvements (60% → 100% trust signals)
-- Technical details of changes
-
 #### **AGENTS.md**
 - Build commands reference
 - Code style guidelines
@@ -255,10 +249,10 @@ Step-by-step instructions for going live:
 - [ ] Prepare outfit (smart casual - professional but relatable)
 - [ ] Full mock pitch to friend/family (simulate real meeting)
 - [ ] Prepare leave-behind materials:
-  - [ ] Printed pitch deck PDF (1 copy)
-  - [ ] Business card or contact info
-  - [ ] Service agreement (blank, for discussion)
-  - [ ] USB drive with PDF copies (backup)
+- [ ] Printed pitch deck PDF (1 copy)
+- [ ] Business card or contact info
+- [ ] Service agreement (blank, for discussion)
+- [ ] USB drive with PDF copies (backup)
 - [ ] Research R-Tech Instagram once more (fresh context)
 - [ ] Scout R-Tech toko location (if visiting in person - know how to get there)
 
@@ -280,7 +274,7 @@ Step-by-step instructions for going live:
 
 ### Digital Files (On Laptop & Phone):
 - [ ] Pitch deck PDF
-- [ ] Website URL bookmarked (rtech-pontianak.vercel.app)
+- [ ] Website URL bookmarked (https://r-tech-pontianak-landing.vercel.app/)
 - [ ] GitHub profile URL bookmarked
 - [ ] Dua Insan Story screenshots
 - [ ] Service agreement PDF
@@ -336,10 +330,10 @@ Saya notice R-Tech sangat aktif di Instagram dengan produk berkualitas. Sebagai 
 Website ini bisa bantu:
 ✅ Customer cek stok 24/7 tanpa perlu chat
 ✅ Tampil lebih profesional vs kompetitor  
-✅ Muncul di Google Search "laptop Pontianak"
+✅ Muncul di Google Search "laptop Pontianak/Laptop Bekas Pontinak"
 ✅ WhatsApp auto-route ke Sales/Service yang tepat
 
-Demo langsung: https://rtech-pontianak.vercel.app
+Demo langsung: https://r-tech-pontianak-landing.vercel.app
 
 Kalau Bapak/Ibu tertarik, boleh saya jelasin lebih detail? Kapan waktu yang pas untuk meet (15-20 menit)?
 
@@ -347,8 +341,8 @@ Tidak ada biaya untuk prototype ini. Saya bikinin untuk portfolio 😊
 
 Terima kasih!
 
-[Your Name]
-[Your Phone]
+[Ihza Mahendra]
+[089692070270]
 ```
 
 **Follow-Up:**
