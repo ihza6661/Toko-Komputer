@@ -213,6 +213,15 @@ const TermsOfService = () => {
 
             <div>
               <h3 className="font-semibold text-foreground mb-3">2.5 Pengembalian dan Penukaran</h3>
+              <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mb-4">
+                <p className="text-sm text-foreground">
+                  📋 <strong>Kebijakan Lengkap:</strong> Untuk informasi detail tentang pengembalian, 
+                  penukaran, syarat & prosedur, baca{" "}
+                  <Link to="/refund-policy" className="text-primary hover:underline font-semibold">
+                    Kebijakan Pengembalian & Penukaran
+                  </Link>.
+                </p>
+              </div>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                 <li>
                   <strong>Masa garansi:</strong> Jika terjadi kerusakan yang termasuk dalam garansi, 
@@ -742,7 +751,7 @@ const TermsOfService = () => {
 
         {/* Acknowledgment */}
         <section className="mb-12">
-          <div className="bg-accent/50 border border-primary/20 rounded-lg p-6">
+          <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
             <p className="text-foreground font-semibold mb-3">📋 Pernyataan Persetujuan</p>
             <p className="text-muted-foreground leading-relaxed">
               Dengan menggunakan situs web ini atau melakukan transaksi dengan kami (baik pembelian, 

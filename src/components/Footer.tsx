@@ -123,7 +123,7 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground text-center sm:text-left">
               © {new Date().getFullYear()} {COMPANY_INFO.name}. All rights reserved.
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 flex-wrap justify-center sm:justify-end">
               <Link 
                 to="/privacy-policy" 
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -135,6 +135,18 @@ const Footer = () => {
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 Syarat & Ketentuan
+              </Link>
+              <Link 
+                to="/refund-policy" 
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                Pengembalian & Penukaran
+              </Link>
+              <Link 
+                to="/faq-legal" 
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                FAQ Legal
               </Link>
             </div>
           </div>
