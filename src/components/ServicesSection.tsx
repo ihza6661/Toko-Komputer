@@ -8,6 +8,7 @@ const services = [
     title: "Jual Beli & Tukar Tambah",
     description: "Ingin upgrade? Bawa laptop lama Anda dan pulang dengan unit yang lebih gahar. Proses cepat dengan harga terbaik dan transparan.",
     features: ["Harga Kompetitif", "Proses Cepat", "Bebas Nego"],
+    hasSalesCTA: true,
   },
   {
     icon: Wrench,
@@ -26,7 +27,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-     <section className="py-20 bg-secondary/30 relative">
+     <section id="services" className="py-20 bg-secondary/30 relative">
        {/* Background accent */}
        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 md:w-[600px] h-64 md:h-[600px] bg-primary/5 rounded-full blur-[150px]" />
 
@@ -64,29 +65,43 @@ const ServicesSection = () => {
                  {service.description}
                </p>
 
-               {/* Features */}
-               <ul className="space-y-2 mb-6">
-                 {service.features.map((feature, fIndex) => (
-                   <li key={fIndex} className="flex items-center gap-2 text-xs sm:text-sm text-foreground/80">
-                     <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                     {feature}
-                   </li>
-                 ))}
-               </ul>
+                {/* Features */}
+                <ul className="space-y-2 mb-6">
+                  {service.features.map((feature, fIndex) => (
+                    <li key={fIndex} className="flex items-center gap-2 text-xs sm:text-sm text-foreground/80">
+                      <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
 
-               {/* Service CTA */}
-               {service.hasServiceCTA && (
-                 <Button variant="outline" size="sm" asChild className="w-full">
-                   <a 
-                     href={generateWhatsAppLink("service")} 
-                     target="_blank" 
-                     rel="noopener noreferrer"
-                   >
-                     <MessageCircle className="h-4 w-4" />
-                     Konsultasi Servis
-                   </a>
-                 </Button>
-               )}
+                {/* Sales CTA */}
+                {service.hasSalesCTA && (
+                  <Button variant="outline" size="sm" asChild className="w-full">
+                    <a 
+                      href={generateWhatsAppLink("sales")} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      Tanya Harga Sekarang
+                    </a>
+                  </Button>
+                )}
+
+                {/* Service CTA */}
+                {service.hasServiceCTA && (
+                  <Button variant="outline" size="sm" asChild className="w-full">
+                    <a 
+                      href={generateWhatsAppLink("service")} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      Konsultasi Servis
+                    </a>
+                  </Button>
+                )}
              </div>
            ))}
          </div>

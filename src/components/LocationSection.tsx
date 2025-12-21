@@ -31,7 +31,7 @@ const LocationSection = () => {
   const formattedPhoneService = formatWhatsAppNumber(WHATSAPP_NUMBERS.service);
 
    return (
-     <section id="contact" className="py-14 md:py-20 bg-secondary/30 relative">
+     <section id="location" className="py-14 md:py-20 bg-secondary/30 relative">
        <div className="container mx-auto px-4">
          {/* Section header */}
          <div className="text-center mb-10 md:mb-12">

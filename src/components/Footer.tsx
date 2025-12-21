@@ -1,13 +1,13 @@
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Phone, MapPin, Clock } from "lucide-react";
 import rtechLogo from "@/assets/rtech-logo.jpg";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
-import { COMPANY_INFO } from "@/lib/constants";
+import { COMPANY_INFO, WHATSAPP_NUMBERS } from "@/lib/constants";
 
 const Footer = () => {
   return (
     <footer className="py-12 bg-background border-t border-border">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -20,10 +20,51 @@ const Footer = () => {
                 R-Tech <span className="text-primary">Computer</span>
               </span>
             </div>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="text-sm text-muted-foreground leading-relaxed mb-4">
               Pusat laptop & Macbook bekas berkualitas di Pontianak. 
-              Dipercaya sejak 2014 dengan layanan jual beli, tukar tambah, dan servis profesional.
+              Dipercaya sejak {COMPANY_INFO.foundedYear} dengan layanan jual beli, tukar tambah, dan servis profesional.
             </p>
+          </div>
+
+          {/* Contact Information (NAP) */}
+          <div>
+            <h4 className="font-display font-semibold text-foreground mb-4">Kontak</h4>
+            <ul className="space-y-3 text-sm">
+              <li>
+                <a 
+                  href={`tel:+${WHATSAPP_NUMBERS.owner}`}
+                  className="flex items-start gap-2 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <div className="font-medium">Telepon/WhatsApp</div>
+                    <div>0821-5700-0466</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href={COMPANY_INFO.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-2 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <div className="font-medium">Alamat</div>
+                    <div>{COMPANY_INFO.fullAddress}</div>
+                  </div>
+                </a>
+              </li>
+              <li className="flex items-start gap-2 text-muted-foreground">
+                <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                <div>
+                  <div className="font-medium">Jam Operasional</div>
+                  <div>{COMPANY_INFO.operatingHours.weekdays}</div>
+                  <div>{COMPANY_INFO.operatingHours.weekend}</div>
+                </div>
+              </li>
+            </ul>
           </div>
 
           {/* Quick links */}
@@ -31,16 +72,16 @@ const Footer = () => {
             <h4 className="font-display font-semibold text-foreground mb-4">Layanan</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#products" className="hover:text-primary transition-colors">Laptop Ready Stock</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Jual Beli & Tukar Tambah</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Servis Laptop & Macbook</a></li>
-              <li><a href="#contact" className="hover:text-primary transition-colors">Pengiriman Luar Kota</a></li>
+              <li><a href="#services" className="hover:text-primary transition-colors">Jual Beli & Tukar Tambah</a></li>
+              <li><a href="#services" className="hover:text-primary transition-colors">Servis Laptop & Macbook</a></li>
+              <li><a href="#location" className="hover:text-primary transition-colors">Lokasi & Pengiriman</a></li>
             </ul>
           </div>
 
           {/* Social */}
           <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Hubungi Kami</h4>
-            <div className="flex gap-3">
+            <h4 className="font-display font-semibold text-foreground mb-4">Media Sosial</h4>
+            <div className="flex gap-3 mb-4">
               <a
                 href={generateWhatsAppLink("general")}
                 target="_blank"
@@ -69,16 +110,16 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
+            <p className="text-sm text-muted-foreground">
+              Follow kami untuk update stok laptop & promo terbaru!
+            </p>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 R-Tech Computer. All rights reserved.
-          </p>
-          <p className="text-sm text-muted-foreground">
-            {COMPANY_INFO.fullAddress}
+            © {new Date().getFullYear()} {COMPANY_INFO.name}. All rights reserved.
           </p>
         </div>
       </div>

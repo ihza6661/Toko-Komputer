@@ -10,6 +10,7 @@ import ContactSelector from "@/components/ContactSelector";
 import LocationSection from "@/components/LocationSection";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import BackToTop from "@/components/BackToTop";
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
       <LocationSection />
       <Footer />
       <WhatsAppFloat />
+      <BackToTop />
     </main>
   );
 };
