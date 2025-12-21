@@ -8,12 +8,121 @@
     <meta name="keywords" content="laptop bekas pontianak, macbook bekas pontianak, jual laptop second, tukar tambah laptop, servis laptop pontianak, r-tech computer" />
     <meta name="author" content="R-Tech Computer" />
     
+    <!-- Open Graph / Facebook -->
     <meta property="og:title" content="R-Tech Computer | Laptop & Macbook Bekas Berkualitas" />
     <meta property="og:description" content="Pusat laptop & Macbook bekas terpercaya di Pontianak sejak 2014. Jual beli, tukar tambah, dan servis profesional." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rtechcomputer.com" />
+    <meta property="og:image" content="https://rtechcomputer.com/rtech-logo.jpg" />
     
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="R-Tech Computer | Laptop & Macbook Bekas Berkualitas" />
+    <meta name="twitter:description" content="Pusat laptop & Macbook bekas terpercaya di Pontianak sejak 2014." />
+    <meta name="twitter:image" content="https://rtechcomputer.com/rtech-logo.jpg" />
+    
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://rtechcomputer.com" />
+    
+    <!-- Google Analytics 4 -->
+    <script id="ga4-script">
+      // GA4 will be loaded dynamically by the app if VITE_GA4_MEASUREMENT_ID is set
+      // This is handled in src/lib/gtag.ts and initialized in src/pages/Index.tsx
+    </script>
+    
+    <!-- Facebook Pixel -->
+    <script id="fb-pixel-script">
+      // Facebook Pixel will be loaded dynamically by the app if VITE_FB_PIXEL_ID is set
+      // This is handled in src/lib/fbpixel.ts and initialized in src/pages/Index.tsx
+    </script>
+    
+    <!-- Structured Data (JSON-LD) for Local SEO -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "ComputerStore",
+        "name": "R-Tech Computer",
+        "description": "R-Tech Computer adalah pusat jual beli laptop dan Macbook bekas berkualitas di Pontianak. Melayani tukar tambah, servis profesional, dan pengiriman seluruh Indonesia sejak 2014.",
+        "url": "https://rtechcomputer.com",
+        "logo": "https://rtechcomputer.com/rtech-logo.jpg",
+        "image": [
+          "https://rtechcomputer.com/rtech-logo.jpg"
+        ],
+        "telephone": "+6282157000466",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jln. Reformasi Untan",
+          "addressLocality": "Pontianak",
+          "addressRegion": "Kalimantan Barat",
+          "addressCountry": "ID"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -0.0666142,
+          "longitude": 109.3453223
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "10:00",
+            "closes": "18:00"
+          }
+        ],
+        "priceRange": "$$",
+        "paymentAccepted": ["Cash", "Transfer Bank", "COD"],
+        "currenciesAccepted": "IDR",
+        "areaServed": [
+          "Pontianak",
+          "Kalimantan Barat",
+          "Indonesia"
+        ],
+        "sameAs": [
+          "https://instagram.com/rtechlaptop_pontianak",
+          "https://www.google.co.id/maps/place/R-Tech+Computer+Pontianak/@-0.0665053,109.345321,21z/data=!4m6!3m5!1s0x2e1d5988d764777d:0xd129d6a9aecf9af8!8m2!3d-0.0666142!4d109.3453223!16s%2Fg%2F11f4qd7rc7"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Computer Repair Service",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "R-Tech Computer"
+        },
+        "areaServed": "Pontianak, Kalimantan Barat",
+        "description": "Layanan servis dan perbaikan laptop, Macbook, upgrade hardware (SSD, RAM), ganti LCD/layar, ganti baterai, dan maintenance profesional.",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "IDR",
+          "priceRange": "Rp 150.000 - Rp 2.000.000"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Used Computer Sales",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "R-Tech Computer"
+        },
+        "areaServed": "Indonesia",
+        "description": "Jual beli laptop dan Macbook bekas berkualitas dengan garansi. Melayani tukar tambah dan pengiriman seluruh Indonesia.",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "IDR",
+          "priceRange": "Rp 2.000.000 - Rp 20.000.000"
+        }
+      }
+    ]
+    </script>
   </head>
   <body>
     <div id="root"></div>

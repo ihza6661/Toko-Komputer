@@ -84,26 +84,39 @@ Output will be in `dist/` directory.
 ```
 src/
 ├── components/
-│   ├── ui/                    # shadcn-ui components
-│   ├── CategorySection.tsx    # Product categories (Macbook, Laptop, Gaming, etc)
-│   ├── ContactSelector.tsx    # Smart contact routing (Sales/Service)
-│   ├── FAQSection.tsx         # 8 common questions
-│   ├── Footer.tsx             # Company info & social links
-│   ├── HeroSection.tsx        # Main landing section with badges
-│   ├── InventorySection.tsx   # Product catalog with sold-out feature
-│   ├── LocationSection.tsx    # Map & contact details
-│   ├── PaymentMethodsSection.tsx  # Payment & financing options
-│   ├── ServicesSection.tsx    # Buy, Trade-in, Repair services
-│   ├── TestimonialsSection.tsx    # Customer reviews & Google rating
-│   └── WhatsAppFloat.tsx      # Floating WhatsApp button (3-way menu)
+│   ├── ui/                        # shadcn-ui components
+│   ├── AnalyticsDashboard.tsx     # Built-in analytics dashboard
+│   ├── AnalyticsFloatButton.tsx   # Floating analytics button
+│   ├── BackToTop.tsx              # Scroll-to-top button
+│   ├── CategorySection.tsx        # Product categories
+│   ├── ContactSelector.tsx        # Smart contact routing
+│   ├── FAQSection.tsx             # Common questions
+│   ├── Footer.tsx                 # Company info & social links
+│   ├── HeroSection.tsx            # Main hero with NAP info
+│   ├── InventorySection.tsx       # Product catalog
+│   ├── LocationSection.tsx        # Map & contact details
+│   ├── PaymentMethodsSection.tsx  # Payment options
+│   ├── ServicePricingSection.tsx  # Service pricing transparency
+│   ├── ServicesSection.tsx        # Buy, Trade-in, Repair
+│   ├── TestimonialsSection.tsx    # Customer reviews
+│   └── WhatsAppFloat.tsx          # Floating WhatsApp button
 ├── lib/
-│   ├── constants.ts           # Company info, WhatsApp numbers
-│   ├── utils.ts               # Helper functions (cn, etc)
-│   └── whatsapp.ts            # WhatsApp link generation & routing
+│   ├── analytics.ts               # Main analytics orchestrator
+│   ├── constants.ts               # Company info, WhatsApp numbers
+│   ├── fbpixel.ts                 # Facebook Pixel integration
+│   ├── gtag.ts                    # Google Analytics 4 integration
+│   ├── schema.ts                  # Schema.org markup generator
+│   ├── seo-config.ts              # SEO configuration loader
+│   ├── utils.ts                   # Helper functions
+│   └── whatsapp.ts                # WhatsApp link generation
+├── hooks/
+│   └── useAnalytics.ts            # Scroll tracking hook
 ├── pages/
-│   ├── Index.tsx              # Main landing page
-│   └── NotFound.tsx           # 404 page
-└── assets/                    # Images (laptops, logo)
+│   ├── Index.tsx                  # Main landing page
+│   ├── PrivacyPolicy.tsx          # Privacy policy page (GDPR compliant)
+│   ├── TermsOfService.tsx         # Terms of Service page (legal terms)
+│   └── NotFound.tsx               # 404 page
+└── assets/                        # Images (laptops, logo)
 ```
 
 ## 🎨 Key Design Decisions
@@ -178,12 +191,85 @@ export const WHATSAPP_NUMBERS = {
 };
 ```
 
+## 📊 SEO & Analytics
+
+### Integrated Tracking Systems
+
+✅ **Google Analytics 4 (GA4)**
+- Real-time conversion tracking
+- User behavior analysis
+- Traffic source attribution
+
+✅ **Facebook Pixel**
+- Ad campaign optimization
+- Retargeting capabilities
+- Lookalike audience creation
+
+✅ **Schema.org Structured Data**
+- LocalBusiness (ComputerStore) markup
+- Service schemas for repair & sales
+- Rich snippets in Google search
+
+✅ **Built-in Analytics Dashboard**
+- Local event tracking
+- WhatsApp conversion tracking
+- CSV export for analysis
+
+✅ **Privacy Compliance**
+- Comprehensive Privacy Policy page (`/privacy-policy`)
+- Terms of Service page (`/terms-of-service`)
+- GDPR-friendly (mentions GA4 and Facebook Pixel usage)
+- Indonesian language for local audience
+- Accessible from footer on all pages
+- Covers sales, trade-in, and repair services
+
+### Setup Guide
+
+**Quick Setup:**
+```bash
+# 1. Get your tracking IDs
+# - GA4: https://analytics.google.com/ (Format: G-XXXXXXXXXX)
+# - Facebook Pixel: https://business.facebook.com/events_manager2 (Numeric ID)
+
+# 2. Add to .env.production
+VITE_GA4_MEASUREMENT_ID=G-XXXXXXXXXX
+VITE_FB_PIXEL_ID=1234567890123456
+
+# 3. Rebuild and deploy
+npm run build
+```
+
+**Complete Documentation:**
+- 📘 [ANALYTICS_SETUP.md](./ANALYTICS_SETUP.md) - Step-by-step setup guide
+- 🔧 [SEO_INTEGRATION_GUIDE.md](./SEO_INTEGRATION_GUIDE.md) - Technical documentation
+
+### What Gets Tracked
+
+**Primary Conversions:**
+- 💬 WhatsApp button clicks (main KPI)
+- 👀 Product views
+- 📝 Form submissions
+
+**User Behavior:**
+- 📊 Scroll depth (25%, 50%, 75%, 100%)
+- 🔗 Navigation clicks
+- 🖱️ Button interactions
+- 📱 Device types & locations
+
+### Analytics Dashboard Access (Dev Mode)
+
+Three ways to access:
+1. **Floating Button** - Click blue-purple button (bottom-left)
+2. **URL Parameter** - Add `?analytics=true` to URL
+3. **Console** - Run `window.rtechAnalytics.openDashboard()`
+
 ## 📈 Performance Metrics
 
 - **Lighthouse Score**: 90+ (Performance, Accessibility, Best Practices, SEO)
-- **Bundle Size**: 374 KB (gzipped: 115 KB)
+- **Bundle Size**: 409 KB (gzipped: 123 KB)
 - **Load Time**: < 2 seconds (on 3G)
 - **Mobile Optimization**: 95/100
+- **SEO Ready**: Schema markup + Open Graph tags
 
 ## 🚀 Deployment
 

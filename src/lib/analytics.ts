@@ -2,13 +2,30 @@
  * Analytics Tracking Utility for R-Tech Computer
  * 
  * This utility provides client-side event tracking for conversion optimization.
- * Data is logged to console in development and can be integrated with analytics platforms.
+ * Integrates with Google Analytics 4 and Facebook Pixel for comprehensive tracking.
  * 
  * Usage:
  * import { trackEvent, trackWhatsAppClick, trackNavigation } from '@/lib/analytics'
  * 
  * trackEvent('button_click', { section: 'hero', button: 'cta-primary' })
  */
+
+import { 
+  trackGA4WhatsAppClick, 
+  trackGA4ProductView, 
+  trackGA4ScrollDepth,
+  trackGA4Navigation,
+  trackGA4FormInteraction,
+  sendGA4Event 
+} from './gtag';
+import {
+  trackFBPixelWhatsAppClick,
+  trackFBPixelProductView,
+  trackFBPixelScrollDepth,
+  trackFBPixelNavigation,
+  trackFBPixelFormInteraction,
+  sendFBPixelCustomEvent
+} from './fbpixel';
 
 declare global {
   interface Window {
@@ -17,10 +34,10 @@ declare global {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     fbq?: (...args: any[]) => void;
     rtechAnalytics?: {
-      openDashboard?: () => void; // Assuming this exists somewhere as indicated by the comment
+      openDashboard?: () => void;
       getEvents: () => EventData[];
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      getSummary: () => any; // Keep any for now, could be made more specific
+      getSummary: () => any;
       clear: () => void;
       download: () => void;
     };
@@ -66,7 +83,7 @@ type ScrollData = {
 
 /**
  * Main event tracking function
- * Logs to console in dev, sends to analytics in production
+ * Logs to console in dev, sends to analytics platforms in production
  */
 export function trackEvent(
   category: EventCategory,
@@ -93,9 +110,9 @@ export function trackEvent(
     console.log('📊 Analytics Event:', eventData);
   }
 
-  // Send to Google Analytics (if available)
+  // Send to Google Analytics 4 (handled by gtag.ts)
   if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', action, {
+    sendGA4Event(action, {
       event_category: category,
       event_label: label,
       value: value,
@@ -103,9 +120,9 @@ export function trackEvent(
     });
   }
 
-  // Send to Facebook Pixel (if available)
+  // Send to Facebook Pixel (handled by fbpixel.ts)
   if (typeof window !== 'undefined' && window.fbq) {
-    window.fbq('trackCustom', `${category}_${action}`, metadata);
+    sendFBPixelCustomEvent(`${category}_${action}`, metadata);
   }
 
   // Store in localStorage for manual analysis
@@ -116,6 +133,13 @@ export function trackEvent(
  * Track WhatsApp button clicks (PRIMARY CONVERSION EVENT)
  */
 export function trackWhatsAppClick(data: WhatsAppClickData): void {
+  // Send to GA4 with proper conversion event mapping
+  trackGA4WhatsAppClick(data);
+  
+  // Send to Facebook Pixel with Lead event
+  trackFBPixelWhatsAppClick(data);
+
+  // Track locally for analytics dashboard
   trackEvent(
     'whatsapp_click',
     'click_whatsapp_button',
@@ -142,6 +166,13 @@ export function trackWhatsAppClick(data: WhatsAppClickData): void {
  * Track navigation link clicks
  */
 export function trackNavigation(data: NavigationData): void {
+  // Send to GA4
+  trackGA4Navigation(data);
+  
+  // Send to Facebook Pixel
+  trackFBPixelNavigation(data);
+  
+  // Track locally
   trackEvent(
     'navigation',
     'navigate',
@@ -159,6 +190,13 @@ export function trackNavigation(data: NavigationData): void {
  * Track scroll depth (fire at 25%, 50%, 75%, 100%)
  */
 export function trackScrollDepth(data: ScrollData): void {
+  // Send to GA4
+  trackGA4ScrollDepth(data.depth, data.section);
+  
+  // Send to Facebook Pixel (only significant milestones)
+  trackFBPixelScrollDepth(data.depth, data.section);
+  
+  // Track locally
   trackEvent(
     'scroll',
     'scroll_depth',
@@ -178,6 +216,13 @@ export function trackFormInteraction(
   action: 'start' | 'submit' | 'error',
   fieldName?: string
 ): void {
+  // Send to GA4
+  trackGA4FormInteraction(formName, action, fieldName);
+  
+  // Send to Facebook Pixel
+  trackFBPixelFormInteraction(formName, action, fieldName);
+  
+  // Track locally
   trackEvent(
     'form_interaction',
     action,
@@ -194,11 +239,26 @@ export function trackFormInteraction(
  * Track product views
  */
 export function trackProductView(productName: string, price: string | number): void {
+  const numericPrice = typeof price === 'string' ? parseFloat(price.replace(/[^0-9.-]+/g, '')) : price;
+  
+  // Send to GA4
+  trackGA4ProductView({
+    productName,
+    price: numericPrice,
+  });
+  
+  // Send to Facebook Pixel
+  trackFBPixelProductView({
+    productName,
+    price: numericPrice,
+  });
+  
+  // Track locally
   trackEvent(
     'product_view',
     'view_product',
     productName,
-    typeof price === 'string' ? parseFloat(price.replace(/[^0-9.-]+/g, '')) : price,
+    numericPrice,
     {
       productName,
       price,

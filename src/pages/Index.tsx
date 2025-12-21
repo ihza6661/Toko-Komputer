@@ -16,6 +16,8 @@ import AnalyticsDashboard from "@/components/AnalyticsDashboard";
 import AnalyticsFloatButton from "@/components/AnalyticsFloatButton";
 import { useScrollTracking } from "@/hooks/useAnalytics";
 import { useState, useEffect } from "react";
+import { initGA4 } from "@/lib/gtag";
+import { initFBPixel } from "@/lib/fbpixel";
 
 const Index = () => {
   // Track scroll depth for conversion optimization
@@ -23,6 +25,36 @@ const Index = () => {
   
   // Analytics dashboard state
   const [showAnalytics, setShowAnalytics] = useState(false);
+
+  // Initialize SEO tracking (GA4 & Facebook Pixel)
+  useEffect(() => {
+    // Initialize Google Analytics 4 (async)
+    initGA4().then(success => {
+      if (success && import.meta.env.DEV) {
+        console.log('✅ GA4 script loaded and initialized');
+      }
+    }).catch(error => {
+      if (import.meta.env.DEV) {
+        console.error('❌ GA4 initialization error:', error);
+      }
+    });
+    
+    // Initialize Facebook Pixel (async)
+    initFBPixel().then(success => {
+      if (success && import.meta.env.DEV) {
+        console.log('✅ FB Pixel script loaded and initialized');
+      }
+    }).catch(error => {
+      if (import.meta.env.DEV) {
+        console.error('❌ FB Pixel initialization error:', error);
+      }
+    });
+    
+    // Log initialization status
+    if (import.meta.env.DEV) {
+      console.log('🚀 SEO tracking initialization started');
+    }
+  }, []);
 
   // Check URL parameter on mount (?analytics=true)
   useEffect(() => {

@@ -1,4 +1,5 @@
 import { MessageCircle, Phone, MapPin, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 import rtechLogo from "@/assets/rtech-logo.jpg";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
 import { COMPANY_INFO, WHATSAPP_NUMBERS } from "@/lib/constants";
@@ -117,10 +118,26 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="pt-8 border-t border-border text-center">
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} {COMPANY_INFO.name}. All rights reserved.
-          </p>
+        <div className="pt-8 border-t border-border">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-muted-foreground text-center sm:text-left">
+              © {new Date().getFullYear()} {COMPANY_INFO.name}. All rights reserved.
+            </p>
+            <div className="flex items-center gap-4">
+              <Link 
+                to="/privacy-policy" 
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                Kebijakan Privasi
+              </Link>
+              <Link 
+                to="/terms-of-service" 
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                Syarat & Ketentuan
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
