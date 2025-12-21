@@ -46,14 +46,14 @@ const categories = [
 
 const CategorySection = () => {
   return (
-    <section className="py-20 bg-background relative">
+    <section id="categories" className="py-20 bg-background relative" aria-labelledby="categories-heading">
       <div className="container mx-auto px-4">
         {/* Section header */}
         <div className="text-center mb-12">
           <span className="text-sm font-medium text-primary uppercase tracking-wider">
             Kategori Produk
           </span>
-          <h2 className="mt-2 font-display text-3xl md:text-4xl font-bold text-foreground">
+          <h2 id="categories-heading" className="mt-2 font-display text-3xl md:text-4xl font-bold text-foreground">
             Pilih Sesuai Budget Anda
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">

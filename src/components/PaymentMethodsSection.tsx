@@ -56,7 +56,7 @@ const financingOptions = [
 
 const PaymentMethodsSection = () => {
   return (
-    <section className="py-14 md:py-20 bg-background relative">
+    <section id="payment-methods" className="py-14 md:py-20 bg-background relative" aria-labelledby="payment-heading">
       <div className="container mx-auto px-4">
         {/* Section header */}
         <div className="text-center mb-10 md:mb-12">
@@ -67,7 +67,7 @@ const PaymentMethodsSection = () => {
             </span>
           </div>
 
-          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+          <h2 id="payment-heading" className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
             Bayar dengan Cara Anda
           </h2>
 

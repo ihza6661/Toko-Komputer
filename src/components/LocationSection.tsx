@@ -31,14 +31,14 @@ const LocationSection = () => {
   const formattedPhoneService = formatWhatsAppNumber(WHATSAPP_NUMBERS.service);
 
    return (
-     <section id="location" className="py-14 md:py-20 bg-secondary/30 relative">
+     <section id="location" className="py-14 md:py-20 bg-secondary/30 relative" aria-labelledby="location-heading">
        <div className="container mx-auto px-4">
          {/* Section header */}
          <div className="text-center mb-10 md:mb-12">
            <span className="text-xs sm:text-sm font-medium text-primary uppercase tracking-wider">
              Kenapa R-Tech?
            </span>
-           <h2 className="mt-2 font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+           <h2 id="location-heading" className="mt-2 font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
              Toko Laptop Terpercaya di Pontianak
            </h2>
          </div>

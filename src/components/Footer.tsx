@@ -15,6 +15,9 @@ const Footer = () => {
               <img
                 src={rtechLogo}
                 alt="R-Tech Computer Logo"
+                width="40"
+                height="40"
+                loading="lazy"
                 className="h-10 w-10 rounded-lg object-cover"
               />
               <span className="font-display text-lg font-bold text-foreground">

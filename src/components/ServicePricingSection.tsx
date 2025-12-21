@@ -70,7 +70,7 @@ const includedFeatures = [
 
 const ServicePricingSection = () => {
   return (
-    <section className="py-20 bg-background relative z-0">
+    <section id="pricing" className="py-20 bg-background relative z-0" aria-labelledby="pricing-heading">
       {/* Background effects */}
       <div className="absolute top-0 left-0 w-64 md:w-[500px] h-64 md:h-[500px] bg-primary/5 rounded-full blur-[150px]" />
 
@@ -80,7 +80,7 @@ const ServicePricingSection = () => {
           <span className="text-sm font-medium text-primary uppercase tracking-wider">
             Harga Transparan
           </span>
-          <h2 className="mt-2 font-display text-3xl md:text-4xl font-bold text-foreground">
+          <h2 id="pricing-heading" className="mt-2 font-display text-3xl md:text-4xl font-bold text-foreground">
             Daftar Harga Servis Laptop & Macbook
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">

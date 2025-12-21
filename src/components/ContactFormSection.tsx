@@ -89,7 +89,7 @@ const ContactFormSection = () => {
   }
 
   return (
-    <section id="contact" className="py-20 bg-background relative">
+    <section id="contact" className="py-20 bg-background relative" aria-labelledby="contact-heading">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -97,7 +97,7 @@ const ContactFormSection = () => {
             <span className="text-sm font-medium text-primary uppercase tracking-wider">
               Hubungi Kami
             </span>
-            <h2 className="mt-2 font-display text-3xl md:text-4xl font-bold text-foreground">
+            <h2 id="contact-heading" className="mt-2 font-display text-3xl md:text-4xl font-bold text-foreground">
               Kirim Pesan Langsung
             </h2>
             <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
@@ -153,95 +153,118 @@ const ContactFormSection = () => {
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6" aria-labelledby="contact-heading">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="contact-name" className="block text-sm font-medium text-foreground mb-2">
                     Nama Lengkap *
                   </label>
                   <input
+                    id="contact-name"
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
+                    required
+                    aria-required="true"
+                    aria-invalid={!!errors.name}
+                    aria-describedby={errors.name ? "name-error" : undefined}
                     placeholder="Contoh: John Doe"
-                    className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                   />
                   {errors.name && (
-                    <p className="mt-1 text-sm text-red-500">{errors.name}</p>
+                    <p id="name-error" role="alert" className="mt-1 text-sm text-red-500">{errors.name}</p>
                   )}
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="contact-email" className="block text-sm font-medium text-foreground mb-2">
                     Email *
                   </label>
                   <input
+                    id="contact-email"
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
+                    required
+                    aria-required="true"
+                    aria-invalid={!!errors.email}
+                    aria-describedby={errors.email ? "email-error" : undefined}
                     placeholder="example@email.com"
-                    className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                   />
                   {errors.email && (
-                    <p className="mt-1 text-sm text-red-500">{errors.email}</p>
+                    <p id="email-error" role="alert" className="mt-1 text-sm text-red-500">{errors.email}</p>
                   )}
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="contact-phone" className="block text-sm font-medium text-foreground mb-2">
                     Nomor Telepon
                   </label>
                   <input
+                    id="contact-phone"
                     type="tel"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
+                    aria-invalid={!!errors.phone}
+                    aria-describedby={errors.phone ? "phone-error" : undefined}
                     placeholder="+62 812 3456 7890"
-                    className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                   />
                   {errors.phone && (
-                    <p className="mt-1 text-sm text-red-500">{errors.phone}</p>
+                    <p id="phone-error" role="alert" className="mt-1 text-sm text-red-500">{errors.phone}</p>
                   )}
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="contact-category" className="block text-sm font-medium text-foreground mb-2">
                     Kategori Pertanyaan *
                   </label>
                   <select
+                    id="contact-category"
                     name="category"
                     value={formData.category}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
+                    required
+                    aria-required="true"
+                    aria-invalid={!!errors.category}
+                    aria-describedby={errors.category ? "category-error" : undefined}
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                   >
                     <option value="general">Pertanyaan Umum</option>
                     <option value="sales_inquiry">Pertanyaan Penjualan</option>
                     <option value="tech_support">Dukungan Teknis</option>
                   </select>
                   {errors.category && (
-                    <p className="mt-1 text-sm text-red-500">{errors.category}</p>
+                    <p id="category-error" role="alert" className="mt-1 text-sm text-red-500">{errors.category}</p>
                   )}
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
+                <label htmlFor="contact-message" className="block text-sm font-medium text-foreground mb-2">
                   Pesan *
                 </label>
                 <textarea
+                  id="contact-message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
+                  required
+                  aria-required="true"
+                  aria-invalid={!!errors.message}
+                  aria-describedby={errors.message ? "message-error" : undefined}
                   placeholder="Tuliskan pesan Anda di sini..."
                   rows={6}
-                  className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
                 />
                 {errors.message && (
-                  <p className="mt-1 text-sm text-red-500">{errors.message}</p>
+                  <p id="message-error" role="alert" className="mt-1 text-sm text-red-500">{errors.message}</p>
                 )}
               </div>
 

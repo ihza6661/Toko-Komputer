@@ -4,6 +4,7 @@ import { generateWhatsAppLink } from "@/lib/whatsapp";
 import { COMPANY_INFO } from "@/lib/constants";
 import { useEffect, useState } from "react";
 import { formatPriceWithCurrency } from "@/lib/utils";
+import { generateProductSchema, injectSchemaMarkup } from "@/lib/schema";
 
 interface Product {
   id: number
@@ -51,15 +52,35 @@ const InventorySection = () => {
         setLoading(false)
       })
   }, [])
+
+  // Inject Product Schema for first 4 products (above the fold)
+  useEffect(() => {
+    if (products.length > 0) {
+      // Inject schema for first 4 products to help with SEO
+      products.slice(0, 4).forEach((product) => {
+        if (product.stock > 0) {
+          const schema = generateProductSchema({
+            name: product.name,
+            description: product.description || `${product.name} - Laptop bekas berkualitas dari R-Tech Computer`,
+            image: product.image_url || 'https://rtechcomputer.com/placeholder.svg',
+            price: typeof product.price === 'number' ? product.price : parseFloat(String(product.price).replace(/[^0-9.-]+/g, '')) || 0,
+            condition: 'UsedCondition',
+            sku: `RTECH-${product.id}`
+          });
+          injectSchemaMarkup(schema);
+        }
+      });
+    }
+  }, [products]);
   return (
-    <section id="products" className="py-20 bg-background relative">
+    <section id="products" className="py-20 bg-background relative" aria-labelledby="products-heading">
        <div className="container mx-auto px-4">
           {/* Section header */}
           <div className="text-center mb-10 md:mb-12">
             <span className="text-xs sm:text-sm font-medium text-primary uppercase tracking-wider">
               Ready Unit
             </span>
-            <h2 className="mt-2 font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+            <h2 id="products-heading" className="mt-2 font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
               Stok Tersedia Hari Ini
             </h2>
             <p className="mt-3 sm:mt-4 text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
@@ -91,6 +112,9 @@ const InventorySection = () => {
                     <img
                       src={product.image_url}
                       alt={product.name}
+                      width="500"
+                      height="500"
+                      loading="lazy"
                       onError={(e) => {
                         const target = e.currentTarget;
                         target.onerror = null; // Prevent infinite loop

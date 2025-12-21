@@ -51,7 +51,7 @@ const TestimonialsSection = () => {
   const totalReviews = 500;
 
   return (
-     <section id="testimonials" className="py-14 md:py-20 bg-secondary/30 relative overflow-hidden z-0">
+     <section id="testimonials" className="py-14 md:py-20 bg-secondary/30 relative overflow-hidden z-0" aria-labelledby="testimonials-heading">
        {/* Background effects */}
        <div className="absolute top-0 right-0 w-48 md:w-[600px] h-48 md:h-[600px] bg-primary/5 rounded-full blur-[150px]" />
        <div className="absolute bottom-0 left-0 w-40 md:w-[500px] h-40 md:h-[500px] bg-primary/3 rounded-full blur-[120px]" />
@@ -65,7 +65,7 @@ const TestimonialsSection = () => {
               Testimoni Pelanggan
             </span>
           </div>
-          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+          <h2 id="testimonials-heading" className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
             Apa Kata Mereka?
           </h2>
           <p className="mt-4 text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">

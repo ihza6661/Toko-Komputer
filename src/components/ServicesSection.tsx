@@ -28,7 +28,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-     <section id="services" className="py-20 bg-secondary/30 relative z-0">
+     <section id="services" className="py-20 bg-secondary/30 relative z-0" aria-labelledby="services-heading">
        {/* Background accent */}
        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 md:w-[600px] h-64 md:h-[600px] bg-primary/5 rounded-full blur-[150px]" />
 
@@ -38,7 +38,7 @@ const ServicesSection = () => {
            <span className="text-xs sm:text-sm font-medium text-primary uppercase tracking-wider">
              Layanan Kami
            </span>
-           <h2 className="mt-2 font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+           <h2 id="services-heading" className="mt-2 font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
              Solusi Lengkap untuk Laptop Anda
            </h2>
            <p className="mt-3 sm:mt-4 text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">

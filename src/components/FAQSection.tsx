@@ -43,7 +43,7 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-     <section className="py-14 md:py-20 bg-background relative z-0">
+     <section id="faq" className="py-14 md:py-20 bg-background relative z-0" aria-labelledby="faq-heading">
        {/* Background accent */}
        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 md:w-[800px] h-64 md:h-[800px] bg-primary/5 rounded-full blur-[150px]" />
 
@@ -56,7 +56,7 @@ const FAQSection = () => {
               Frequently Asked Questions
             </span>
           </div>
-          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+          <h2 id="faq-heading" className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
             Pertanyaan yang Sering Diajukan
           </h2>
           <p className="mt-4 text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
