@@ -52,30 +52,27 @@ const HeroSection = () => {
           className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
             isScrolled 
               ? "bg-background/95 backdrop-blur-md border-b border-border shadow-lg" 
-              : "bg-transparent"
+              : "bg-background/95 backdrop-blur-md border-b border-border/50 md:bg-transparent md:border-transparent"
           }`}
         >
           <div className="container mx-auto px-4">
-            <div className="flex items-center justify-between py-4">
+            <div className="flex items-center justify-between py-2 md:py-4">
               {/* Logo */}
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-3">
                 <img 
                   src={rtechLogo} 
                   alt="R-Tech Computer Logo" 
-                  className="h-10 w-10 md:h-12 md:w-12 rounded-lg object-cover"
+                  className="h-9 w-9 md:h-12 md:w-12 rounded-lg object-cover"
                 />
-                <div className="flex flex-col">
-                  <span className="font-display text-lg md:text-xl font-bold text-foreground">
-                    R-Tech <br /><span className="text-primary">Computer</span>
+                <div>
+                  <span className="font-display text-base md:text-xl font-bold text-foreground">
+                    R-Tech <span className="text-primary">Computer</span>
                   </span>
-                  {/* <span className="hidden md:block text-xs text-muted-foreground">
-                    {COMPANY_INFO.tagline}
-                  </span> */}
                 </div>
               </div>
 
               {/* Right side content */}
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-6">
                 {/* Desktop NAP Info */}
                 <div className="hidden lg:flex items-center gap-6 text-sm">
                   <a 
@@ -133,17 +130,7 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Mobile NAP Info - Below Logo */}
-            <div className="lg:hidden flex flex-wrap items-center gap-3 pb-3 text-xs text-muted-foreground border-b border-border/50">
-              <div className="flex items-center gap-1">
-                <MapPin className="h-3 w-3" />
-                <span>{COMPANY_INFO.address}</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <Clock className="h-3 w-3" />
-                <span>Sen-Sab: 09:00-21:00</span>
-              </div>
-            </div>
+
 
             {/* Mobile Menu Dropdown */}
             {isMobileMenuOpen && (
