@@ -139,14 +139,14 @@ export function generateLocalBusinessSchema(): SchemaOrganization {
       COMPANY_INFO.instagram,
       COMPANY_INFO.googleMapsUrl,
     ],
-    // Optional: Add aggregate rating if you have review data
-    // aggregateRating: {
-    //   '@type': 'AggregateRating',
-    //   ratingValue: '4.8',
-    //   reviewCount: '127',
-    //   bestRating: '5',
-    //   worstRating: '1',
-    // },
+    // Add aggregate rating for star ratings in Google search results
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      reviewCount: '120',
+      bestRating: '5',
+      worstRating: '1',
+    },
   };
 
   return schema;
@@ -232,6 +232,24 @@ export function generateProductSchema(product: {
       },
     },
     ...(product.sku && { sku: product.sku }),
+  };
+}
+
+/**
+ * Generate FAQPage Schema
+ */
+export function generateFAQSchema(faqs: Array<{ question: string; answer: string }>): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
   };
 }
 

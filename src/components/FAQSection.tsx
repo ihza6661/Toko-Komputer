@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { HelpCircle, CheckCircle } from "lucide-react";
 import {
   Accordion,
@@ -5,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { generateFAQSchema, injectSchemaMarkup } from "@/lib/schema";
 
 const faqs = [
   {
@@ -42,6 +44,17 @@ const faqs = [
 ];
 
 const FAQSection = () => {
+  // Inject FAQ schema markup for SEO
+  useEffect(() => {
+    const faqSchema = generateFAQSchema(
+      faqs.map(faq => ({
+        question: faq.question,
+        answer: faq.answer,
+      }))
+    );
+    injectSchemaMarkup(faqSchema);
+  }, []);
+
   return (
      <section id="faq" className="py-14 md:py-20 bg-background relative z-0" aria-labelledby="faq-heading">
        {/* Background accent */}
