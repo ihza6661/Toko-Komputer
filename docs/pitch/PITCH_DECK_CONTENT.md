@@ -80,10 +80,10 @@ KOMPETITOR BELUM READY 🎯
 TOKO LAPTOP DI PONTIANAK:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📍 Toko A        Instagram ✅  Website ❌
-📍 Toko B        Facebook  ✅  Website ❌  
-📍 Toko C        WhatsApp  ✅  Website ❌
-📍 Toko D        Instagram ✅  Website ❌
+📍 Aero Computer           Instagram ✅  Website ❌
+📍 Menara Komputer         Facebook  ✅  Website ❌  
+📍 Laptop Second Pontianak WhatsApp  ✅  Website ❌
+📍 Database Komputer       Instagram ✅  Website ❌
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -334,12 +334,12 @@ GUARANTEE:
 
 ---
 
-## SLIDE 10: PENAWARAN KHUSUS
+## SLIDE 10: PENAWARAN EKSKLUSIF
 **Design**: CTA-focused, eye-catching
 
 ### Title:
 ```
-MULAI TANPA RISIKO! 🎯
+PROGRAM PILOT EKSKLUSIF 🎯
 ```
 
 ### Content:
@@ -347,13 +347,13 @@ MULAI TANPA RISIKO! 🎯
 [Large Badge - Center]
 ┌────────────────────────────────────────┐
 │                                        │
-│  🎁 PROGRAM PILOT EKSKLUSIF 1-2 BULAN 🎁  │
+│  🎁 ✨ EXCLUSIVE PILOT PROGRAM ✨ 🎁  │
 │                                        │
 └────────────────────────────────────────┘
 
 **MENGAPA "PROGRAM PILOT EKSKLUSIF"?**
 
-Ini bukan sekadar trial → Ini kesempatan menjadi PIONEER:
+Ini bukan sekadar Program Pilot Eksklusif → Ini kesempatan menjadi PIONEER:
 • Anda bukan "tester" → Anda partner pilot project
 • Eksklusif untuk early adopters → Posisi Anda sebagai market leader
 • Win-win partnership → Bukan one-sided favor
@@ -362,23 +362,17 @@ Ini bukan sekadar trial → Ini kesempatan menjadi PIONEER:
 
 BAGAIMANA CARA KERJANYA?
 
-STEP 1️⃣ : Program Pilot Eksklusif 1-2 Bulan
+STEP 1️⃣ : Pilot Period (1-2 Bulan) 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-• Website deploy & live
-• Share ke customer Anda
-• Track hasilnya (visits, chat, sales)
-• Tidak ada biaya sama sekali
+ • R-Tech menjadi "Case Study" utama kami • Akses full fitur tanpa biaya maintenance • Prioritas support VIP (Direct Line)
 
-STEP 2️⃣ : Evaluasi Bersama
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-• Lihat data real
-• Customer feedback positif?
-• Ada value atau tidak?
+STEP 2️⃣ : Evaluasi Kinerja
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Kita bedah data bersama: "Berapa unit terjual dari website?" • Validasi impact bisnis secara real
 
-STEP 3️⃣ : Keputusan
+STEP 3️⃣ : Partnership Decision
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-✅ Puas? → Lanjut dengan paket maintenance
-❌ Tidak puas? → Stop, no hard feelings
+✅ Terbukti Untung? → Lanjut ke Partnership ❌ Tidak Cocok? → Stop, data dikembalikan
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -401,7 +395,7 @@ BAGAIMANA CARA MEMULAI?
 [Timeline Graphic - Horizontal Flow]
 
 1️⃣ HARI INI
-   Anda approve trial
+   Anda approve Program Pilot Eksklusif
    ⏱️ 5 menit
    
    ↓
@@ -423,13 +417,13 @@ BAGAIMANA CARA MEMULAI?
    ↓
    
 4️⃣ MINGGU 1-4
-   Trial period
+   Program Pilot Eksklusif period
    Monitoring & optimization
    ⏱️ Weekly check-in
    
    ↓
    
-5️⃣ AKHIR TRIAL
+5️⃣ AKHIR Program Pilot Eksklusif
    Review results
    Make decision
    ⏱️ 1 jam meeting
