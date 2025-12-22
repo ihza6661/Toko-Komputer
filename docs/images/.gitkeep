@@ -1,0 +1,11 @@
+# Screenshots Directory
+
+This directory is for storing README screenshots and visual documentation.
+
+## Guidelines
+
+- Use descriptive filenames (e.g., `hero-section-desktop.png`, `analytics-dashboard.png`)
+- Optimize images before committing (use TinyPNG or Squoosh)
+- Recommended formats: PNG for UI, WebP for photos
+- Maximum file size: 500KB per image
+- Include both desktop and mobile views where applicable

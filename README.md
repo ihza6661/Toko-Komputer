@@ -2,7 +2,7 @@
 
 # 🖥️ Toko Komputer - Modern Landing Page
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://r-tech-pontianak-landing.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://toko-komputer-landing-site.vercel.app/)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
@@ -10,7 +10,7 @@
 
 **A modern, conversion-optimized landing page for Toko Komputer** - a trusted laptop and Macbook store in Pontianak Barat, West Kalimantan, Indonesia.
 
-[Live Demo](https://r-tech-pontianak-landing.vercel.app/) · [Report Bug](#-contact) · [Request Feature](#-contact)
+[Live Demo](https://toko-komputer-landing-site.vercel.app/) · [Report Bug](https://github.com/ihza6661/Toko-Komputer/issues) · [Request Feature](https://github.com/ihza6661/Toko-Komputer/issues)
 
 </div>
 
@@ -20,6 +20,7 @@
 
 - [Overview](#-overview)
 - [Key Features](#-key-features)
+- [Screenshots](#-screenshots)
 - [Tech Stack](#-tech-stack)
 - [Getting Started](#-getting-started)
   - [Prerequisites](#prerequisites)
@@ -75,13 +76,61 @@ Toko Komputer Landing Page is a production-ready, mobile-first web application d
 - ⭐ **Social Proof** - 6 customer testimonials with Google rating display
 - 💳 **Payment Methods** - Bank Transfer, QRIS, Credit Card, Financing options
 - 🔧 **Services Showcase** - Buy, Trade-in, and Repair services with pricing transparency
-- 📸 **Instagram Integration** - CTA for daily stock updates
 - 📱 **Mobile-First Design** - Optimized for 80% mobile users
 - ⚡ **Fast Loading** - < 2 seconds load time, optimized bundle size
 - 🔍 **SEO Optimized** - Schema.org structured data, Open Graph tags
 - 📊 **Built-in Analytics** - GA4, Facebook Pixel, local dashboard
 - 🔒 **Privacy Compliant** - GDPR-friendly with Privacy Policy and Terms pages
 - ♿ **Accessible** - WCAG-compliant with proper ARIA labels
+
+---
+
+## 📸 Screenshots
+
+### Homepage Sections
+
+#### Hero Section
+<!-- TODO: Add screenshot of hero section with trust badges and CTAs -->
+> **Coming Soon:** Hero section showcasing trust badges ("Sejak 2014", "Spesialis Macbook"), primary CTA buttons, and modern gradient design with animated elements.
+
+#### Product Catalog
+<!-- TODO: Add screenshot of product inventory section -->
+> **Coming Soon:** Product inventory with sold-out feature, responsive card layout, and smooth hover effects. Shows real product images with pricing and specifications.
+
+#### Smart WhatsApp Integration
+<!-- TODO: Add screenshot or GIF of WhatsApp routing selector -->
+> **Coming Soon:** Context-aware WhatsApp routing with 3-way contact selection (Sales, Service, Owner). Demonstrates how inquiries are automatically routed based on customer intent.
+
+#### Services & Pricing
+<!-- TODO: Add screenshot of services section -->
+> **Coming Soon:** Services showcase section displaying Buy, Trade-in, and Repair options with transparent pricing and detailed descriptions.
+
+#### Analytics Dashboard (Development Mode)
+<!-- TODO: Add screenshot of built-in analytics dashboard -->
+> **Coming Soon:** Built-in analytics dashboard showing WhatsApp conversion tracking, scroll depth metrics, and event logs. Available only in development mode for privacy.
+
+### Adding Screenshots
+
+> 💡 **Note for Contributors:** To add screenshots to this README:
+> 
+> 1. Create the `docs/images/` directory if it doesn't exist:
+>    ```bash
+>    mkdir -p docs/images
+>    ```
+> 
+> 2. Add your screenshot images to `docs/images/`
+> 
+> 3. Update the markdown with the image reference:
+>    ```markdown
+>    ![Hero Section](./docs/images/hero-section.png)
+>    ```
+> 
+> 4. Recommended screenshot specifications:
+>    - **Format:** PNG or WebP for best quality
+>    - **Width:** 1200-1600px (for desktop views)
+>    - **Mobile views:** 375-414px width
+>    - **File size:** Optimize to < 500KB per image
+>    - **Tool suggestions:** Use [TinyPNG](https://tinypng.com/) or [Squoosh](https://squoosh.app/) for compression
 
 ---
 
@@ -139,8 +188,8 @@ npm --version   # Should be 9.x.x or higher
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/ihza6661/r-tech-pontianak-landing.git
-   cd r-tech-pontianak-landing
+   git clone https://github.com/ihza6661/Toko-Komputer.git
+   cd Computer-Landing-Site
    ```
 
 2. **Install dependencies**
@@ -222,7 +271,7 @@ The optimized files will be in the `dist/` directory.
 ## 📁 Project Structure
 
 ```
-r-tech-pontianak-landing/
+Computer-Landing-Site/
 │
 ├── public/                      # Static assets
 │   ├── favicon.ico             # Site favicon
@@ -280,7 +329,7 @@ r-tech-pontianak-landing/
 │   │
 │   ├── assets/                 # Images and media
 │   │   ├── laptop-*.webp       # Product images (optimized)
-│   │   └── toko-logo.jpg      # Company logo
+│   │   └── toko-logo.png       # Company logo
 │   │
 │   ├── App.tsx                 # Root component with routing
 │   ├── main.tsx                # Application entry point
@@ -431,6 +480,10 @@ export const WHATSAPP_NUMBERS = {
 ```
 
 > ⚠️ **Important**: Always use international format without `+` (e.g., `6281234567890`)
+> 
+> 📝 **Note**: The phone numbers shown in this README are dummy examples for demonstration purposes. 
+> The actual numbers are configured in `src/lib/constants.ts`. Always update constants.ts with your 
+> real contact numbers before deploying to production.
 
 ### Customizing Theme Colors
 
@@ -856,8 +909,8 @@ npm prune
 If you encounter issues not listed here:
 
 1. 📖 Check the [documentation files](./docs/)
-2. 🐛 Search [existing issues](https://github.com/ihza6661/r-tech-pontianak-landing/issues)
-3. 💬 Open a [new issue](https://github.com/ihza6661/r-tech-pontianak-landing/issues/new) with:
+2. 🐛 Search [existing issues](https://github.com/ihza6661/Toko-Komputer/issues)
+3. 💬 Open a [new issue](https://github.com/ihza6661/Toko-Komputer/issues/new) with:
    - Clear description of the problem
    - Steps to reproduce
    - Error messages or screenshots
@@ -878,8 +931,8 @@ We welcome contributions to improve the Toko Computer landing page! Whether it's
 
 2. **Clone your fork**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/r-tech-pontianak-landing.git
-   cd r-tech-pontianak-landing
+   git clone https://github.com/YOUR_USERNAME/Toko-Komputer.git
+   cd Computer-Landing-Site
    ```
 
 3. **Create a feature branch**
@@ -1056,8 +1109,8 @@ This project uses open-source dependencies. See individual package licenses:
 [![Portfolio](https://img.shields.io/badge/Portfolio-ihza.me-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://portfolio.ihza.me)
 
 ### Other Projects
-- 🛒 [Dua Insan Story](https://github.com/ihza6661) - Fullstack E-Commerce Platform
-- More projects available on [GitHub](https://github.com/ihza6661)
+
+More projects available on [GitHub](https://github.com/ihza6661)
 
 </div>
 
@@ -1071,8 +1124,8 @@ This project uses open-source dependencies. See individual package licenses:
 
 | Purpose | Contact Method |
 |---------|----------------|
-| 🐛 Bug Reports | [Open an Issue](https://github.com/ihza6661/r-tech-pontianak-landing/issues) |
-| ✨ Feature Requests | [Open an Issue](https://github.com/ihza6661/r-tech-pontianak-landing/issues) |
+| 🐛 Bug Reports | [Open an Issue](https://github.com/ihza6661/Toko-Komputer/issues) |
+| ✨ Feature Requests | [Open an Issue](https://github.com/ihza6661/Toko-Komputer/issues) |
 | 💼 Business Inquiries | [ihzahmahendra6661@gmail.com](mailto:ihzahmahendra6661@gmail.com) |
 | 💬 Quick Questions | [WhatsApp](https://wa.me/6281234567890) |
 | 🌐 Web Development Services | [ihzahmahendra6661@gmail.com](mailto:ihzahmahendra6661@gmail.com) |
@@ -1090,8 +1143,7 @@ This project uses open-source dependencies. See individual package licenses:
 
 **Contact Toko Komputer:**
 - 📱 WhatsApp: [081234567890](https://wa.me/6281234567890)
-- 🌐 Website: [r-tech-pontianak-landing.vercel.app](https://r-tech-pontianak-landing.vercel.app/)
-- 📸 Instagram: [@toko.pontianak](https://instagram.com/toko.pontianak)
+- 🌐 Website: [toko-komputer-landing-site.vercel.app](https://toko-komputer-landing-site.vercel.app/)
 
 ---
 
