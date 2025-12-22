@@ -1,5 +1,5 @@
 # SERVICE AGREEMENT - WEBSITE DEVELOPMENT & MAINTENANCE
-## R-Tech Computer Website Project
+## Toko Komputer Website Project
 
 **DRAFT TEMPLATE - Customize before use**
 
@@ -14,14 +14,14 @@
 **SERVICE PROVIDER (Developer):**
 - Name: [Ihza Mahendra]
 - Address: [Jl.Karet Komp.Surya Kencana 1 Blok.F19]
-- Phone: [089692070270]
+- Phone: [081234567890]
 - Email: [ihzahmahendra6661@gmail.com]
 - ID/KTP: [Your ID Number]
 
 **CLIENT:**
-- Business Name: R-Tech Computer
+- Business Name: Toko Komputer
 - Owner Name: [Owner Full Name]
-- Address: Jln. Reformasi Untan, Pontianak, Kalimantan Barat
+- Address: Jl. Gajah Mada No. 88, Pontianak Barat, Kalimantan Barat 78113
 - Phone: [Owner Phone Number]
 - Email: [Owner Email if available]
 - NPWP: [If available]
@@ -481,8 +481,8 @@ All notices must be sent to:
 
 **To CLIENT:**
 - [Owner Name]
-- R-Tech Computer
-- Jln. Reformasi Untan, Pontianak
+- Toko Komputer
+- Jl. Gajah Mada No. 88, Pontianak Barat
 - WhatsApp: [Owner Phone]
 - Email: [Owner Email]
 
@@ -522,7 +522,7 @@ Signature: ___________________________
 
 Name: [Owner Full Name]
 
-Title: Owner, R-Tech Computer
+Title: Owner, Toko Komputer
 
 Date: ___________________________
 
@@ -640,4 +640,4 @@ Date: ___________________________
 
 **Version:** 1.0  
 **Last Updated:** December 2024  
-**Created for:** R-Tech Computer Website Project
+**Created for:** Toko Komputer Website Project

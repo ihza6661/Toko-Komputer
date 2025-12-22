@@ -40,7 +40,7 @@ describe('Analytics Cleanup', () => {
 
   describe('cleanupExpiredEvents', () => {
     it('should remove events older than retention period (24 hours)', () => {
-      const storageKey = 'rtech_analytics_events';
+      const storageKey = 'toko_analytics_events';
       const now = Date.now();
       const retentionMs = APP_CONFIG.analytics.retentionHours * 60 * 60 * 1000;
 
@@ -83,7 +83,7 @@ describe('Analytics Cleanup', () => {
     });
 
     it('should keep all events if none are expired', () => {
-      const storageKey = 'rtech_analytics_events';
+      const storageKey = 'toko_analytics_events';
       const now = Date.now();
 
       const events = [
@@ -116,11 +116,11 @@ describe('Analytics Cleanup', () => {
       const removedCount = cleanupExpiredEvents();
 
       expect(removedCount).toBe(0);
-      expect(localStorage.getItem('rtech_analytics_events')).toBeNull();
+      expect(localStorage.getItem('toko_analytics_events')).toBeNull();
     });
 
     it('should handle malformed data gracefully', () => {
-      const storageKey = 'rtech_analytics_events';
+      const storageKey = 'toko_analytics_events';
       localStorage.setItem(storageKey, 'invalid json data');
 
       // Should not throw error
@@ -128,7 +128,7 @@ describe('Analytics Cleanup', () => {
     });
 
     it('should remove events without timestamps (treated as expired)', () => {
-      const storageKey = 'rtech_analytics_events';
+      const storageKey = 'toko_analytics_events';
       const now = Date.now();
 
       const events = [
@@ -160,7 +160,7 @@ describe('Analytics Cleanup', () => {
     });
 
     it('should remove storage key entirely if all events are expired', () => {
-      const storageKey = 'rtech_analytics_events';
+      const storageKey = 'toko_analytics_events';
       const now = Date.now();
       const retentionMs = APP_CONFIG.analytics.retentionHours * 60 * 60 * 1000;
 
@@ -190,7 +190,7 @@ describe('Analytics Cleanup', () => {
     });
 
     it('should return correct count of removed events', () => {
-      const storageKey = 'rtech_analytics_events';
+      const storageKey = 'toko_analytics_events';
       const now = Date.now();
       const retentionMs = APP_CONFIG.analytics.retentionHours * 60 * 60 * 1000;
 
@@ -214,7 +214,7 @@ describe('Analytics Cleanup', () => {
 
   describe('clearStoredEvents', () => {
     it('should clear all analytics data', () => {
-      const storageKey = 'rtech_analytics_events';
+      const storageKey = 'toko_analytics_events';
       localStorage.setItem(storageKey, JSON.stringify([{ category: 'test', action: 'test' }]));
 
       clearStoredEvents();

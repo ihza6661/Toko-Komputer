@@ -24,7 +24,7 @@ Web Developer | Pontianak
 ```
 
 **Design Tips:**
-- Use R-Tech brand color (#22c55e green) as accent
+- Use Toko brand color (#22c55e green) as accent
 - Professional font: Poppins/Inter/Montserrat
 - Include subtle laptop/tech icons
 
@@ -277,7 +277,7 @@ Tailwind CSS • Stripe Payment
 🔗 github.com/ihza6661
 📁 Lihat project lainnya di GitHub
 
-"Website R-Tech menggunakan teknologi
+"Website Toko menggunakan teknologi
 yang sama = PROVEN & RELIABLE"
 ```
 
@@ -314,7 +314,7 @@ SUDAH TERMASUK:
 ✅ Domain .com (1 tahun)
 ✅ Hosting premium (99.9% uptime)
 ✅ Update produk unlimited
-✅ Training tim R-Tech
+✅ Training tim Toko
 ✅ Google Analytics setup
 ✅ WhatsApp support
 ✅ Monthly performance report
@@ -364,7 +364,7 @@ BAGAIMANA CARA KERJANYA?
 
 STEP 1️⃣ : Pilot Period (1-2 Bulan) 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- • R-Tech menjadi "Case Study" utama kami • Akses full fitur tanpa biaya maintenance • Prioritas support VIP (Direct Line)
+ • Toko menjadi "Case Study" utama kami • Akses full fitur tanpa biaya maintenance • Prioritas support VIP (Direct Line)
 
 STEP 2️⃣ : Evaluasi Kinerja
  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -402,7 +402,7 @@ BAGAIMANA CARA MEMULAI?
    
 2️⃣ BESOK
    Saya butuh:
-   • Logo R-Tech (high-res)
+   • Logo Toko (high-res)
    • 6-8 produk ready (foto + specs)
    • Konfirmasi nomor WhatsApp
    ⏱️ 30 menit dari Anda
@@ -441,7 +441,7 @@ Siap Mulai Hari Ini? 🚀
 
 ### Content:
 ```
-[Background: Subtle R-Tech website screenshot]
+[Background: Subtle Toko website screenshot]
 
 [Center Box - White/Translucent]
 ┌────────────────────────────────────────┐
@@ -449,7 +449,7 @@ Siap Mulai Hari Ini? 🚀
 │        TERIMA KASIH! 🙏               │
 │                                        │
 │   "Mari Bersama Membangun             │
-│    Kehadiran Digital R-Tech"          │
+│    Kehadiran Digital Toko"          │
 │                                        │
 └────────────────────────────────────────┘
 
@@ -459,7 +459,7 @@ SIAP DISKUSI LEBIH LANJUT?
 Ihza Mahendra
 Fullstack Web Developer
 
-📱 WhatsApp: 089692070270
+📱 WhatsApp: 081234567890
 📧 Email: ihzahmahendra6661@gmail.com
 🔗 GitHub: github.com/ihza6661
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -480,7 +480,7 @@ Presentation Date: [Date]
 ## DESIGN GUIDELINES
 
 ### Color Palette:
-- **Primary**: #22c55e (R-Tech green)
+- **Primary**: #22c55e (Toko green)
 - **Accent**: #10b981 (Darker green)
 - **Text**: #1f2937 (Dark gray)
 - **Background**: #ffffff (White) or #f9fafb (Light gray)

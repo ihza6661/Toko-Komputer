@@ -3,7 +3,7 @@
 
 **Created:** December 19, 2024  
 **Target Pitch Date:** Next Week  
-**Client:** R-Tech Computer, Pontianak
+**Client:** Toko Computer, Pontianak
 
 ---
 
@@ -16,7 +16,7 @@
 - Fast loading (< 2 seconds)
 - Smart WhatsApp routing (Sales, Service, Owner)
 - Sold-out feature for inventory management
-- Professional UI with R-Tech branding (#22c55e green)
+- Professional UI with Toko branding (#22c55e green)
 
 **Status:** Ready to deploy!
 
@@ -37,7 +37,7 @@
 #### A. **PITCH_DECK_CONTENT.md** (12 Slides)
 Detailed content for every slide:
 - Slide 1: Cover (professional introduction)
-- Slide 2: Problem (current challenges R-Tech faces)
+- Slide 2: Problem (current challenges Toko faces)
 - Slide 3: Opportunity (competitor gap analysis)
 - Slide 4: Solution (your website demo)
 - Slide 5: Features walkthrough (4-panel showcase)
@@ -253,8 +253,8 @@ Step-by-step instructions for going live:
 - [ ] Business card or contact info
 - [ ] Service agreement (blank, for discussion)
 - [ ] USB drive with PDF copies (backup)
-- [ ] Research R-Tech Instagram once more (fresh context)
-- [ ] Scout R-Tech toko location (if visiting in person - know how to get there)
+- [ ] Research Toko Instagram once more (fresh context)
+- [ ] Scout Toko toko location (if visiting in person - know how to get there)
 
 **Time Required:** 2-3 hours
 
@@ -306,11 +306,11 @@ You: "Selamat siang! Boleh ketemu owner-nya sebentar?"
 
 Staff: "Mau apa ya?"
 
-You: "Saya developer website. Saya bikinin prototype website untuk R-Tech (passion project). Mau tunjukkin 10-15 menit aja. Ini gratis, ga ada obligation."
+You: "Saya developer website. Saya bikinin prototype website untuk Toko (passion project). Mau tunjukkin 10-15 menit aja. Ini gratis, ga ada obligation."
 
 [When meet owner]
 
-You: "Pak/Bu, perkenalkan saya [nama]. Saya notice R-Tech sangat aktif di Instagram. Sebagai portfolio project, saya bikinin website modern untuk R-Tech. Boleh lihat sebentar?"
+You: "Pak/Bu, perkenalkan saya [nama]. Saya notice Toko sangat aktif di Instagram. Sebagai portfolio project, saya bikinin website modern untuk Toko. Boleh lihat sebentar?"
 
 [Show on their phone immediately - visual > words]
 ```
@@ -321,11 +321,11 @@ You: "Pak/Bu, perkenalkan saya [nama]. Saya notice R-Tech sangat aktif di Instag
 
 **Template:**
 ```
-Halo Pak/Bu Owner R-Tech Computer,
+Halo Pak/Bu Owner Toko Computer,
 
 Perkenalkan, saya [Nama], web developer dari Pontianak.
 
-Saya notice R-Tech sangat aktif di Instagram dengan produk berkualitas. Sebagai passion project, saya bikinin prototype website modern untuk R-Tech (gratis, no strings attached).
+Saya notice Toko sangat aktif di Instagram dengan produk berkualitas. Sebagai passion project, saya bikinin prototype website modern untuk Toko (gratis, no strings attached).
 
 Website ini bisa bantu:
 ✅ Customer cek stok 24/7 tanpa perlu chat
@@ -342,7 +342,7 @@ Tidak ada biaya untuk prototype ini. Saya bikinin untuk portfolio 😊
 Terima kasih!
 
 [Ihza Mahendra]
-[089692070270]
+[081234567890]
 ```
 
 **Follow-Up:**
@@ -355,13 +355,13 @@ Terima kasih!
 ## 💡 KEY TALKING POINTS (Memorize These)
 
 ### The Hook (First 30 seconds):
-"Pak/Bu, saya bikinin website professional untuk R-Tech sebagai portfolio project saya. Website-nya sudah jadi, tinggal Bapak/Ibu lihat. 10 menit aja. Gratis, no obligation."
+"Pak/Bu, saya bikinin website professional untuk Toko sebagai portfolio project saya. Website-nya sudah jadi, tinggal Bapak/Ibu lihat. 10 menit aja. Gratis, no obligation."
 
 ### The Problem (Why They Need It):
 "Setiap hari Bapak/Ibu pasti jawab pertanyaan yang sama: 'Masih ada?', 'Harga berapa?', 'Garansi?'. Website ini bisa handle itu 24/7. Customer cek sendiri, baru chat kalau serius mau beli."
 
 ### The Opportunity (First-Mover Advantage):
-"Saya cek kompetitor di Pontianak - TIDAK ADA yang punya website proper. Ini peluang R-Tech jadi pioneer. Customer Google search, yang muncul cuma R-Tech. Huge competitive advantage."
+"Saya cek kompetitor di Pontianak - TIDAK ADA yang punya website proper. Ini peluang Toko jadi pioneer. Customer Google search, yang muncul cuma Toko. Huge competitive advantage."
 
 ### The Numbers (ROI):
 "Kalau website bring 8 unit extra per bulan (konservatif), itu Rp 4 juta extra margin. Investment-nya? Cuma Rp 2.9 juta tahun pertama. Balik modal 3 minggu. Sisanya pure profit Rp 40-60 juta per tahun."
@@ -370,7 +370,7 @@ Terima kasih!
 "Trial gratis 1-2 bulan. Website deploy sekarang, Bapak/Ibu test, lihat hasilnya. Kalau bagus, lanjut. Kalau tidak, stop aja. Zero risk untuk Bapak/Ibu."
 
 ### The Close (Micro-Commitment):
-"Mau coba? Saya cuma butuh logo R-Tech, 6-8 produk (foto + specs), dan confirm nomor WhatsApp. 48 jam website live. Deal?"
+"Mau coba? Saya cuma butuh logo Toko, 6-8 produk (foto + specs), dan confirm nomor WhatsApp. 48 jam website live. Deal?"
 
 ---
 
@@ -381,7 +381,7 @@ Terima kasih!
 - **Confidence comes from preparation** (you've practiced, you're ready)
 - **Rejection is not personal** (business decision, not about you)
 - **Free trial removes ALL risk** (easiest yes they'll ever give)
-- **You have backup options** (R-Tech rejects → pivot to 5 other tokos)
+- **You have backup options** (Toko rejects → pivot to 5 other tokos)
 
 ### Body Language Tips:
 - Smile naturally (relatable, not salesy)
@@ -483,7 +483,7 @@ Terima kasih!
 ### If Owner Says NO:
 
 **Same Day:**
-- Gracious exit: "Terima kasih Pak/Bu sudah luangin waktu. Sukses terus untuk R-Tech!"
+- Gracious exit: "Terima kasih Pak/Bu sudah luangin waktu. Sukses terus untuk Toko!"
 - Ask for feedback (optional): "Boleh saya tanya, apa concern utama Bapak/Ibu?"
 - Listen, thank them, leave on good terms
 
@@ -496,7 +496,7 @@ Terima kasih!
 
 ---
 
-## 🎯 BACKUP TARGETS (If R-Tech Rejects)
+## 🎯 BACKUP TARGETS (If Toko Rejects)
 
 ### Pivot Strategy - Other Pontianak Businesses:
 
@@ -518,7 +518,7 @@ Terima kasih!
 5. Property agents (listing showcase)
 
 **Strategy:**
-- Don't put all eggs in R-Tech basket
+- Don't put all eggs in Toko basket
 - Have 3-5 backup targets identified
 - Pitch to 1-2 per week until you land first client
 - Each pitch improves your skills
@@ -594,18 +594,18 @@ Year 1 Projection:
 
 ---
 
-## 🚀 LONG-TERM VISION (Beyond R-Tech)
+## 🚀 LONG-TERM VISION (Beyond Toko)
 
-### If R-Tech Succeeds:
+### If Toko Succeeds:
 
 **Month 3-6:**
-- Ask for testimonial ("Website R-Tech bantu naikin penjualan X%")
+- Ask for testimonial ("Website Toko bantu naikin penjualan X%")
 - Ask for referral ("Kenal toko lain yang butuh website?")
 - Use as case study for pitching others
 
 **Month 6-12:**
 - Offer Phase 2 features (Instagram integration, blog, etc.)
-- Cross-sell to other R-Tech-related businesses
+- Cross-sell to other Toko-related businesses
 - Build reputation as "web guy for Pontianak SMEs"
 
 **Year 2+:**
@@ -613,7 +613,7 @@ Year 1 Projection:
 - Hire junior developer (delegate maintenance, focus on sales)
 - Transition to agency model ("Pontianak Web Agency for SMEs")
 
-### If R-Tech Rejects:
+### If Toko Rejects:
 
 **Don't give up! Pivot:**
 - Improve pitch based on feedback
@@ -706,7 +706,7 @@ If you want to improve skills after this project:
 ### Mental:
 - [ ] Confident in value proposition
 - [ ] Prepared for rejection (not taking personally)
-- [ ] Backup targets identified (if R-Tech rejects)
+- [ ] Backup targets identified (if Toko rejects)
 - [ ] Excited and energized (this is opportunity!)
 
 ---
@@ -723,10 +723,10 @@ If you want to improve skills after this project:
 
 **You have:**
 - Strong technical skills (Dua Insan Story proves this)
-- Professional deliverable (R-Tech website is impressive)
+- Professional deliverable (Toko website is impressive)
 - Comprehensive preparation (more than 90% of freelancers)
 - Compelling offer (free trial = no-brainer for owner)
-- Backup plan (if R-Tech rejects, 5 other targets)
+- Backup plan (if Toko rejects, 5 other targets)
 
 **All that's left:** Execute!
 
@@ -747,18 +747,18 @@ If you want to improve skills after this project:
 - Win-win (owner benefits, you get portfolio + income)
 
 **Worst case scenario:**
-- R-Tech rejects → You learned, improved, and have materials for next pitch
+- Toko rejects → You learned, improved, and have materials for next pitch
 - You still have impressive portfolio piece (website looks professional)
 - Experience gained is valuable for future opportunities
 
 **Best case scenario:**
-- R-Tech accepts trial → 2 months later they're paying customer
+- Toko accepts trial → 2 months later they're paying customer
 - You have testimonial + case study → Land 2-3 more clients
 - Recurring income + portfolio + referrals → Foundation for agency
 - Within 6-12 months: Rp 1-3 juta/month passive income
 
 **Most likely scenario:**
-- R-Tech interested but cautious → Free trial proves value → They convert
+- Toko interested but cautious → Free trial proves value → They convert
 - You deliver excellent service → They refer others
 - You build reputation as reliable local developer
 - Steady growth over 12 months

@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🖥️ R-Tech Computer - Modern Landing Page
+# 🖥️ Toko Komputer - Modern Landing Page
 
 [![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://r-tech-pontianak-landing.vercel.app/)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
@@ -8,7 +8,7 @@
 [![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-**A modern, conversion-optimized landing page for R-Tech Computer** - a trusted laptop and Macbook store in Pontianak, West Kalimantan, Indonesia.
+**A modern, conversion-optimized landing page for Toko Komputer** - a trusted laptop and Macbook store in Pontianak Barat, West Kalimantan, Indonesia.
 
 [Live Demo](https://r-tech-pontianak-landing.vercel.app/) · [Report Bug](#-contact) · [Request Feature](#-contact)
 
@@ -42,7 +42,7 @@
 
 ## 📖 Overview
 
-R-Tech Computer Landing Page is a production-ready, mobile-first web application designed to showcase products, services, and drive conversions for R-Tech Computer, a trusted laptop and Macbook retailer established in 2014.
+Toko Komputer Landing Page is a production-ready, mobile-first web application designed to showcase products, services, and drive conversions for Toko Komputer, a trusted laptop and Macbook retailer established in 2014.
 
 ### Business Impact
 
@@ -168,7 +168,7 @@ VITE_API_URL=http://localhost:8000/api
 
 # App Configuration
 VITE_APP_BASE_URL=http://localhost:8080
-VITE_APP_NAME=R-Tech Computer
+VITE_APP_NAME=Toko Komputer
 
 # Analytics (Optional - leave empty to disable)
 VITE_GA4_MEASUREMENT_ID=         # Your Google Analytics 4 ID (G-XXXXXXXXXX)
@@ -280,7 +280,7 @@ r-tech-pontianak-landing/
 │   │
 │   ├── assets/                 # Images and media
 │   │   ├── laptop-*.webp       # Product images (optimized)
-│   │   └── rtech-logo.jpg      # Company logo
+│   │   └── toko-logo.jpg      # Company logo
 │   │
 │   ├── App.tsx                 # Root component with routing
 │   ├── main.tsx                # Application entry point
@@ -347,7 +347,7 @@ The built-in analytics dashboard is available only in development mode:
 
 **Method 3: Browser Console**
 ```javascript
-window.rtechAnalytics.openDashboard()
+window.tokoAnalytics.openDashboard()
 ```
 
 ### Testing WhatsApp Routing
@@ -405,14 +405,14 @@ Edit business details in `src/lib/constants.ts`:
 
 ```typescript
 export const COMPANY_INFO = {
-  name: "R-Tech Computer",
+  name: "Toko Komputer",
   foundedYear: 2014,
-  phone: "082157000466",
-  email: "rtech@example.com",
-  address: "Jl. Example Street No. 123, Pontianak",
-  city: "Pontianak",
+  phone: "081234567890",
+  email: "toko@example.com",
+  address: "Jl. Gajah Mada No. 88, Pontianak Barat",
+  city: "Pontianak Barat",
   province: "West Kalimantan",
-  postalCode: "78111",
+  postalCode: "78113",
   country: "Indonesia",
   // ... update other fields as needed
 };
@@ -424,9 +424,9 @@ Update contact numbers in `src/lib/constants.ts`:
 
 ```typescript
 export const WHATSAPP_NUMBERS = {
-  owner: "6282157000466",      // Owner's WhatsApp (include country code)
-  sales: "62895323258495",     // Sales team WhatsApp
-  service: "6285167554866",    // Service team WhatsApp
+  owner: "6281234567890",      // Owner's WhatsApp (include country code)
+  sales: "6281234567891",      // Sales team WhatsApp
+  service: "6281234567892",    // Service team WhatsApp
 };
 ```
 
@@ -867,7 +867,7 @@ If you encounter issues not listed here:
 
 ## 🤝 Contributing
 
-We welcome contributions to improve the R-Tech Computer landing page! Whether it's bug fixes, new features, documentation improvements, or performance optimizations, your help is appreciated.
+We welcome contributions to improve the Toko Computer landing page! Whether it's bug fixes, new features, documentation improvements, or performance optimizations, your help is appreciated.
 
 ### How to Contribute
 
@@ -1025,9 +1025,9 @@ Feel free to open an issue for:
 
 ## 📄 License
 
-This is a **commercial project** developed for R-Tech Computer, Pontianak.
+This is a **commercial project** developed for Toko Komputer, Pontianak Barat.
 
-**Copyright © 2024 R-Tech Computer. All rights reserved.**
+**Copyright © 2024 Toko Komputer. All rights reserved.**
 
 **Important Notice:**
 - This codebase is proprietary and confidential
@@ -1074,24 +1074,24 @@ This project uses open-source dependencies. See individual package licenses:
 | 🐛 Bug Reports | [Open an Issue](https://github.com/ihza6661/r-tech-pontianak-landing/issues) |
 | ✨ Feature Requests | [Open an Issue](https://github.com/ihza6661/r-tech-pontianak-landing/issues) |
 | 💼 Business Inquiries | [ihzahmahendra6661@gmail.com](mailto:ihzahmahendra6661@gmail.com) |
-| 💬 Quick Questions | [WhatsApp](https://wa.me/6289692070270) |
+| 💬 Quick Questions | [WhatsApp](https://wa.me/6281234567890) |
 | 🌐 Web Development Services | [ihzahmahendra6661@gmail.com](mailto:ihzahmahendra6661@gmail.com) |
 
 </div>
 
-### About R-Tech Computer
+### About Toko Komputer
 
-**R-Tech Computer** is a trusted laptop and Macbook retailer based in Pontianak, West Kalimantan, Indonesia.
+**Toko Komputer** is a trusted laptop and Macbook retailer based in Pontianak Barat, West Kalimantan, Indonesia.
 
-- 📍 **Location**: Pontianak, West Kalimantan, Indonesia
+- 📍 **Location**: Pontianak Barat, West Kalimantan, Indonesia
 - 📅 **Established**: 2014
 - 💻 **Specialty**: Laptops, Macbooks, and Computer Services
 - 🔧 **Services**: Sales, Trade-ins, Repairs, and Maintenance
 
-**Contact R-Tech Computer:**
-- 📱 WhatsApp: [082157000466](https://wa.me/6282157000466)
+**Contact Toko Komputer:**
+- 📱 WhatsApp: [081234567890](https://wa.me/6281234567890)
 - 🌐 Website: [r-tech-pontianak-landing.vercel.app](https://r-tech-pontianak-landing.vercel.app/)
-- 📸 Instagram: [@rtech.pontianak](https://instagram.com/rtech.pontianak)
+- 📸 Instagram: [@toko.pontianak](https://instagram.com/toko.pontianak)
 
 ---
 
@@ -1099,8 +1099,8 @@ This project uses open-source dependencies. See individual package licenses:
 
 ### ⭐ Star this repository if you find it helpful!
 
-**Built with ❤️ for R-Tech Computer, Pontianak**
+**Built with ❤️ for Toko Komputer, Pontianak Barat**
 
-[🔝 Back to Top](#-r-tech-computer---modern-landing-page)
+[🔝 Back to Top](#-toko-komputer---modern-landing-page)
 
 </div>

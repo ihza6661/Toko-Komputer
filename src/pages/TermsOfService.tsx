@@ -12,7 +12,7 @@ const TermsOfService = () => {
           <Link to="/" className="flex items-center gap-2">
             <ArrowLeft className="h-5 w-5" />
             <span className="font-display font-semibold text-lg">
-              R-Tech <span className="text-primary">Computer</span>
+              Toko <span className="text-primary">Komputer</span>
             </span>
           </Link>
           <Link to="/">
@@ -700,30 +700,30 @@ const TermsOfService = () => {
                 <strong className="text-foreground">WhatsApp/Telepon:</strong>
                 <br />
                 <a 
-                  href={`https://wa.me/6282157000466`} 
+                  href={`https://wa.me/6281234567890`} 
                   className="text-primary hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  0821-5700-0466 (Owner)
+                  0812-3456-7890 (Owner)
                 </a>
                 <br />
                 <a 
-                  href={`https://wa.me/62895323258495`} 
+                  href={`https://wa.me/6281234567891`} 
                   className="text-primary hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  0895-3232-58495 (Sales)
+                  0812-3456-7891 (Sales)
                 </a>
                 <br />
                 <a 
-                  href={`https://wa.me/6285167554866`} 
+                  href={`https://wa.me/6281234567892`} 
                   className="text-primary hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  0851-6755-4866 (Service)
+                  0812-3456-7892 (Service)
                 </a>
               </div>
               <div>
@@ -742,7 +742,7 @@ const TermsOfService = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  @rtech.computer
+                  @toko.computer
                 </a>
               </div>
             </div>

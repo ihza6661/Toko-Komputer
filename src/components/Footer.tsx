@@ -1,6 +1,6 @@
 import { MessageCircle, Phone, MapPin, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
-import rtechLogo from "@/assets/rtech-logo.jpg";
+import tokoLogo from "@/assets/toko-logo.png";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
 import { COMPANY_INFO, WHATSAPP_NUMBERS } from "@/lib/constants";
 
@@ -13,41 +13,44 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img
-                src={rtechLogo}
-                alt="R-Tech Computer Logo"
+                src={tokoLogo}
+                alt="Toko Komputer Logo"
                 width="40"
                 height="40"
                 loading="lazy"
                 className="h-10 w-10 rounded-lg object-cover"
               />
               <span className="font-display text-lg font-bold text-foreground">
-                R-Tech <span className="text-primary">Computer</span>
+                Toko <span className="text-primary">Komputer</span>
               </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-              Pusat laptop & Macbook bekas berkualitas di Pontianak. 
-              Dipercaya sejak {COMPANY_INFO.foundedYear} dengan layanan jual beli, tukar tambah, dan servis profesional.
+              Pusat laptop & Macbook bekas berkualitas di Pontianak. Dipercaya
+              sejak {COMPANY_INFO.foundedYear} dengan layanan jual beli, tukar
+              tambah, dan servis profesional.
             </p>
           </div>
 
           {/* Contact Information (NAP) */}
           <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Kontak</h4>
+            <h4 className="font-display font-semibold text-foreground mb-4">
+              Kontak
+            </h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a 
+                <a
                   href={`tel:+${WHATSAPP_NUMBERS.owner}`}
                   className="flex items-start gap-2 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
                   <div>
                     <div className="font-medium">Telepon/WhatsApp</div>
-                    <div>0821-5700-0466</div>
+                    <div>0812-3456-7890</div>
                   </div>
                 </a>
               </li>
               <li>
-                <a 
+                <a
                   href={COMPANY_INFO.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -73,18 +76,50 @@ const Footer = () => {
 
           {/* Quick links */}
           <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Layanan</h4>
+            <h4 className="font-display font-semibold text-foreground mb-4">
+              Layanan
+            </h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#products" className="hover:text-primary transition-colors">Laptop Ready Stock</a></li>
-              <li><a href="#services" className="hover:text-primary transition-colors">Jual Beli & Tukar Tambah</a></li>
-              <li><a href="#services" className="hover:text-primary transition-colors">Servis Laptop & Macbook</a></li>
-              <li><a href="#location" className="hover:text-primary transition-colors">Lokasi & Pengiriman</a></li>
+              <li>
+                <a
+                  href="#products"
+                  className="hover:text-primary transition-colors"
+                >
+                  Laptop Ready Stock
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="hover:text-primary transition-colors"
+                >
+                  Jual Beli & Tukar Tambah
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="hover:text-primary transition-colors"
+                >
+                  Servis Laptop & Macbook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#location"
+                  className="hover:text-primary transition-colors"
+                >
+                  Lokasi & Pengiriman
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Social */}
           <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Media Sosial</h4>
+            <h4 className="font-display font-semibold text-foreground mb-4">
+              Media Sosial
+            </h4>
             <div className="flex gap-3 mb-4">
               <a
                 href={generateWhatsAppLink("general")}
@@ -124,29 +159,30 @@ const Footer = () => {
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground text-center sm:text-left">
-              © {new Date().getFullYear()} {COMPANY_INFO.name}. All rights reserved.
+              © {new Date().getFullYear()} {COMPANY_INFO.name}. All rights
+              reserved.
             </p>
             <div className="flex items-center gap-4 flex-wrap justify-center sm:justify-end">
-              <Link 
-                to="/privacy-policy" 
+              <Link
+                to="/privacy-policy"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 Kebijakan Privasi
               </Link>
-              <Link 
-                to="/terms-of-service" 
+              <Link
+                to="/terms-of-service"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 Syarat & Ketentuan
               </Link>
-              <Link 
-                to="/refund-policy" 
+              <Link
+                to="/refund-policy"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 Pengembalian & Penukaran
               </Link>
-              <Link 
-                to="/faq-legal" 
+              <Link
+                to="/faq-legal"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 FAQ Legal

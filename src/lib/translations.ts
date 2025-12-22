@@ -1,5 +1,5 @@
 /**
- * Translation utilities for R-Tech Computer
+ * Translation utilities for Toko Komputer
  * 
  * Provides translation functions for product conditions and other UI text
  * from English to Indonesian.

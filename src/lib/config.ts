@@ -14,7 +14,7 @@ export const APP_CONFIG = {
    * Application name
    * Used in SEO metadata and schema.org markup
    */
-  name: import.meta.env.VITE_APP_NAME || 'R-Tech Computer',
+  name: import.meta.env.VITE_APP_NAME || 'Toko Komputer',
 
   /**
    * Frontend base URL (without trailing slash)
@@ -24,11 +24,11 @@ export const APP_CONFIG = {
    * - Asset URLs (images, logos)
    * 
    * Examples:
-   * - Production: https://rtechcomputer.com
+   * - Production: https://tokocomputer.com
    * - Staging: https://r-tech-pontianak-landing.vercel.app
    * - Development: http://localhost:5173
    */
-  baseUrl: (import.meta.env.VITE_APP_BASE_URL || 'https://rtechcomputer.com').replace(/\/$/, ''),
+  baseUrl: (import.meta.env.VITE_APP_BASE_URL || 'https://tokocomputer.com').replace(/\/$/, ''),
 
   /**
    * Backend API URL (without trailing slash)

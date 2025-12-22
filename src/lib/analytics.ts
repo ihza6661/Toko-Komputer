@@ -1,5 +1,5 @@
 /**
- * Analytics Tracking Utility for R-Tech Computer
+ * Analytics Tracking Utility for Toko Komputer
  * 
  * This utility provides client-side event tracking for conversion optimization.
  * Integrates with Google Analytics 4 and Facebook Pixel for comprehensive tracking.
@@ -48,7 +48,7 @@ declare global {
     gtag?: (...args: any[]) => void;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     fbq?: (...args: any[]) => void;
-    rtechAnalytics?: {
+    tokoAnalytics?: {
       openDashboard?: () => void;
       getEvents: () => EventData[];
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -287,7 +287,7 @@ export function trackProductView(productName: string, price: string | number): v
  */
 function storeEventLocally(eventData: EventData): void {
   try {
-    const storageKey = 'rtech_analytics_events';
+    const storageKey = 'toko_analytics_events';
     const existingData = localStorage.getItem(storageKey);
     let events = existingData ? JSON.parse(existingData) : [];
     
@@ -316,7 +316,7 @@ function storeEventLocally(eventData: EventData): void {
  */
 export function getStoredEvents(): EventData[] {
   try {
-    const storageKey = 'rtech_analytics_events';
+    const storageKey = 'toko_analytics_events';
     const data = localStorage.getItem(storageKey);
     return data ? JSON.parse(data) : [];
   } catch {
@@ -389,7 +389,7 @@ export function getAnalyticsSummary(): {
  */
 export function clearStoredEvents(): void {
   try {
-    localStorage.removeItem('rtech_analytics_events');
+    localStorage.removeItem('toko_analytics_events');
     console.log('✅ Analytics data cleared');
   } catch (error) {
     console.warn('Could not clear analytics data:', error);
@@ -409,7 +409,7 @@ export function clearStoredEvents(): void {
  */
 export function cleanupExpiredEvents(): number {
   try {
-    const storageKey = 'rtech_analytics_events';
+    const storageKey = 'toko_analytics_events';
     const existingData = localStorage.getItem(storageKey);
     
     if (!existingData) {
@@ -502,7 +502,7 @@ export function downloadAnalyticsCSV(): void {
   const url = window.URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
-  link.download = `rtech-analytics-${new Date().toISOString().split('T')[0]}.csv`;
+  link.download = `toko-analytics-${new Date().toISOString().split('T')[0]}.csv`;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -511,8 +511,8 @@ export function downloadAnalyticsCSV(): void {
 
 // Expose analytics functions to window for console access
 if (typeof window !== 'undefined' && import.meta.env.DEV) {
-  window.rtechAnalytics = {
-    ...window.rtechAnalytics, // Preserve any existing functions (like openDashboard)
+  window.tokoAnalytics = {
+    ...window.tokoAnalytics, // Preserve any existing functions (like openDashboard)
     getEvents: getStoredEvents,
     getSummary: getAnalyticsSummary,
     clear: clearStoredEvents,
@@ -520,11 +520,11 @@ if (typeof window !== 'undefined' && import.meta.env.DEV) {
   };
   
   console.log('📊 Analytics Debug Tools Available:');
-  console.log('  window.rtechAnalytics.openDashboard() - Open analytics dashboard');
-  console.log('  window.rtechAnalytics.getEvents() - View all events');
-  console.log('  window.rtechAnalytics.getSummary() - View summary report');
-  console.log('  window.rtechAnalytics.clear() - Clear stored data');
-  console.log('  window.rtechAnalytics.download() - Download as CSV');
+  console.log('  window.tokoAnalytics.openDashboard() - Open analytics dashboard');
+  console.log('  window.tokoAnalytics.getEvents() - View all events');
+  console.log('  window.tokoAnalytics.getSummary() - View summary report');
+  console.log('  window.tokoAnalytics.clear() - Clear stored data');
+  console.log('  window.tokoAnalytics.download() - Download as CSV');
   console.log('');
   console.log('💡 Other ways to access dashboard:');
   console.log('  • Click floating button (bottom-left)');

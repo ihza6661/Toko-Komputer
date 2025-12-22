@@ -64,7 +64,7 @@ const AnalyticsFloatButton = ({ onClick }: AnalyticsFloatButtonProps) => {
             <p>• Export data as CSV</p>
           </div>
           <p className="text-xs text-primary mt-2 font-medium">
-            Or use: <code className="bg-secondary px-1 py-0.5 rounded">window.rtechAnalytics.openDashboard()</code>
+            Or use: <code className="bg-secondary px-1 py-0.5 rounded">window.tokoAnalytics.openDashboard()</code>
           </p>
         </div>
 

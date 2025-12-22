@@ -1,6 +1,6 @@
 # Analytics Setup Guide
 
-Complete step-by-step guide to set up Google Analytics 4 and Facebook Pixel tracking for R-Tech Computer landing page.
+Complete step-by-step guide to set up Google Analytics 4 and Facebook Pixel tracking for Toko Computer landing page.
 
 ---
 
@@ -18,7 +18,7 @@ Complete step-by-step guide to set up Google Analytics 4 and Facebook Pixel trac
 
 ## Overview
 
-The R-Tech Computer landing page is pre-configured with comprehensive analytics tracking including:
+The Toko Computer landing page is pre-configured with comprehensive analytics tracking including:
 
 - **Google Analytics 4 (GA4)** - For detailed website analytics and conversion tracking
 - **Facebook Pixel** - For Facebook/Instagram ad optimization and retargeting
@@ -57,7 +57,7 @@ The R-Tech Computer landing page is pre-configured with comprehensive analytics 
    - Click "Admin" (gear icon at bottom left)
    - Under "Property" column, click "Create Property"
    - Enter property details:
-     - **Property name:** R-Tech Computer
+     - **Property name:** Toko Computer
      - **Time zone:** (GMT+07:00) Bangkok, Hanoi, Jakarta
      - **Currency:** Indonesian Rupiah (IDR)
    - Click "Next"
@@ -77,8 +77,8 @@ The R-Tech Computer landing page is pre-configured with comprehensive analytics 
 1. **Create a Web Data Stream**
    - After creating property, you'll see "Set up data stream"
    - Click "Web"
-   - Enter your website URL: `https://rtechcomputer.com`
-   - **Stream name:** R-Tech Landing Page
+   - Enter your website URL: `https://tokocomputer.com`
+   - **Stream name:** Toko Landing Page
    - Click "Create stream"
 
 2. **Copy Your Measurement ID**
@@ -137,8 +137,8 @@ The R-Tech Computer landing page is pre-configured with comprehensive analytics 
    - Choose "Facebook Pixel" → Click "Connect"
 
 3. **Name Your Pixel**
-   - **Pixel name:** R-Tech Computer
-   - **Website URL:** https://rtechcomputer.com
+   - **Pixel name:** Toko Computer
+   - **Website URL:** https://tokocomputer.com
    - Click "Create Pixel"
 
 4. **Copy Your Pixel ID**
@@ -172,7 +172,7 @@ The R-Tech Computer landing page is pre-configured with comprehensive analytics 
    - Firefox: Search "Facebook Pixel Helper" in Add-ons
 
 2. **Visit Your Website**
-   - Open https://rtechcomputer.com
+   - Open https://tokocomputer.com
    - Click the Pixel Helper extension icon
    - You should see: "Pixel found on page" with your Pixel ID
 
@@ -313,9 +313,9 @@ The built-in analytics dashboard tracks events locally:
 # Example: http://localhost:8080?analytics=true
 
 # Method 3: Browser Console
-window.rtechAnalytics.openDashboard()
-window.rtechAnalytics.getSummary()
-window.rtechAnalytics.download() # Download CSV
+window.tokoAnalytics.openDashboard()
+window.tokoAnalytics.getSummary()
+window.tokoAnalytics.download() # Download CSV
 ```
 
 ---
@@ -557,19 +557,19 @@ For implementation support:
 
 ```javascript
 // Open analytics dashboard
-window.rtechAnalytics.openDashboard()
+window.tokoAnalytics.openDashboard()
 
 // Get all events
-window.rtechAnalytics.getEvents()
+window.tokoAnalytics.getEvents()
 
 // Get summary
-window.rtechAnalytics.getSummary()
+window.tokoAnalytics.getSummary()
 
 // Download CSV
-window.rtechAnalytics.download()
+window.tokoAnalytics.download()
 
 // Clear data
-window.rtechAnalytics.clear()
+window.tokoAnalytics.clear()
 ```
 
 ---

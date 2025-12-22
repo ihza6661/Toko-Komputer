@@ -1,6 +1,6 @@
 import { Phone, MapPin, Clock, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
-import rtechLogo from "@/assets/rtech-logo.jpg";
+import tokoLogo from "@/assets/toko-logo.png";
 import { COMPANY_INFO, WHATSAPP_NUMBERS } from "@/lib/constants";
 import { trackNavigation } from "@/lib/analytics";
 
@@ -38,31 +38,29 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <img
-              src={rtechLogo}
-              alt="R-Tech Computer Logo"
-              width="48"
-              height="48"
-              className="h-9 w-9 md:h-12 md:w-12 rounded-lg object-cover"
+              src={tokoLogo}
+              alt="Toko Komputer Logo"
+              width="40"
+              height="40"
+              loading="lazy"
+              className="h-10 w-10 rounded-lg object-cover"
             />
-            <div>
-              <span className="font-display text-base md:text-xl font-bold text-foreground">
-                R-Tech <br />
-                <span className="text-primary">Computer</span>
-              </span>
-            </div>
+            <span className="font-display text-lg font-bold text-foreground">
+              Toko <span className="text-primary">Komputer</span>
+            </span>
           </div>
 
           {/* Right side content */}
           <div className="flex items-center">
             {/* Desktop NAP Info */}
-            <div className="hidden lg:flex items-center gap-6 text-sm">
+            <div className="hidden lg:flex items-center gap-4 text-xs">
               <a
                 href={`tel:+${WHATSAPP_NUMBERS.owner}`}
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Telepon R-Tech Computer"
+                aria-label="Telepon Toko Komputer"
               >
                 <Phone className="h-4 w-4" />
-                <span className="font-medium">0821-5700-0466</span>
+                <span className="font-medium">0812-3456-7890</span>
               </a>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4" />
@@ -100,7 +98,7 @@ const Header = () => {
               <a
                 href={`tel:+${WHATSAPP_NUMBERS.owner}`}
                 className="p-2 text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Telepon R-Tech Computer"
+                aria-label="Telepon Toko Komputer"
               >
                 <Phone className="h-5 w-5" />
               </a>

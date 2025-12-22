@@ -36,7 +36,7 @@ const LocationSection = () => {
          {/* Section header */}
          <div className="text-center mb-10 md:mb-12">
            <span className="text-xs sm:text-sm font-medium text-primary uppercase tracking-wider">
-             Kenapa R-Tech?
+             Kenapa Toko?
            </span>
            <h2 id="location-heading" className="mt-2 font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
              Toko Laptop Terpercaya di Pontianak
@@ -75,7 +75,7 @@ const LocationSection = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="R-Tech Computer Location"
+              title="Toko Komputer Location"
             />
           </div>
 

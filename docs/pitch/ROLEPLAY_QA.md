@@ -1,5 +1,5 @@
 # ROLE-PLAY Q&A - ANTICIPATING OWNER QUESTIONS
-## Practice Scenarios untuk Pitch R-Tech Computer Website
+## Practice Scenarios untuk Pitch Toko Computer Website
 
 ---
 
@@ -23,7 +23,7 @@
 "Karena website itu lebih bagus dan modern."
 
 **GOOD Response ✅:**
-"Betul sekali Pak/Bu, Instagram memang powerful dan saya lihat R-Tech sangat aktif disana. 
+"Betul sekali Pak/Bu, Instagram memang powerful dan saya lihat Toko sangat aktif disana. 
 
 Tapi website ini bukan untuk GANTI Instagram, tapi untuk SUPPORT Instagram.
 
@@ -114,7 +114,7 @@ Kalau dalam pilot period udah kelihatan bring 5-7 leads yang convert, Bapak/Ibu 
 "Tapi website bisa bawa customer baru loh."
 
 **GOOD Response ✅:**
-"Wah, itu bagus banget Pak/Bu! Artinya R-Tech udah punya foundation customer yang kuat. Itu hasil dari 11 tahun build trust ya.
+"Wah, itu bagus banget Pak/Bu! Artinya Toko udah punya foundation customer yang kuat. Itu hasil dari 11 tahun build trust ya.
 
 Nah website ini bukan untuk replace customer loyal Bapak/Ibu. Mereka tetap jalan seperti biasa.
 
@@ -122,11 +122,11 @@ Tapi website ini untuk:
 
 1. **Retain customer loyal** - mereka ga perlu chat terus untuk cek stok, bisa lihat website dulu, baru chat kalau serius. Hemat waktu mereka, hemat waktu Bapak/Ibu juga.
 
-2. **Scale beyond word-of-mouth** - Customer loyal pasti recommend R-Tech ke teman/keluarga. Tapi mereka recommend apa? Share link Instagram yang berantakan, atau share website professional yang lengkap? Website bikin referral lebih mudah.
+2. **Scale beyond word-of-mouth** - Customer loyal pasti recommend Toko ke teman/keluarga. Tapi mereka recommend apa? Share link Instagram yang berantakan, atau share website professional yang lengkap? Website bikin referral lebih mudah.
 
-3. **Capture new market** - Mahasiswa baru di Untan, pendatang ke Pontianak, orang dari luar kota yang mau beli laptop. Mereka ga kenal R-Tech yet. Mereka Google 'laptop Pontianak', yang muncul website R-Tech, boom - customer baru.
+3. **Capture new market** - Mahasiswa baru di Untan, pendatang ke Pontianak, orang dari luar kota yang mau beli laptop. Mereka ga kenal Toko yet. Mereka Google 'laptop Pontianak', yang muncul website Toko, boom - customer baru.
 
-Think of it gini: customer loyal tetap loyal (bahkan lebih happy karena ada website). Plus kita dapet customer baru yang belum kenal R-Tech.
+Think of it gini: customer loyal tetap loyal (bahkan lebih happy karena ada website). Plus kita dapet customer baru yang belum kenal Toko.
 
 Bukannya double win?"
 
@@ -220,8 +220,8 @@ Ini bukan website amatir yang sering down. This is enterprise-grade infrastructu
 **GOOD Response ✅:**
 "Good question! Biar saya jelasin dengan analogi simple:
 
-**Domain** itu kayak alamat rumah. Misalnya: rtechpontianak.com
-Customer mau ke 'rumah' R-Tech online, mereka ketik alamat ini. Gampang diingat, professional.
+**Domain** itu kayak alamat rumah. Misalnya: tokopontianak.com
+Customer mau ke 'rumah' Toko online, mereka ketik alamat ini. Gampang diingat, professional.
 
 **Hosting** itu kayak tanah tempat rumah dibangun. Tempat file website 'nemplok'.
 
@@ -232,7 +232,7 @@ Tapi Bapak/Ibu ga perlu pusing sama ini semua. Saya yang handle:
 - Saya yang renew tiap tahun (automated, ga perlu inget-inget)
 - Saya yang konfigurasi semua technical stuff
 
-Bapak/Ibu cuma tau: 'Website saya itu di rtechpontianak.com'
+Bapak/Ibu cuma tau: 'Website saya itu di tokopontianak.com'
 
 Done. Simple.
 
@@ -400,21 +400,21 @@ Rp 200k itu less than 1 nasi kotak per hari kalau dihitung (Rp 7k/hari). Super a
 "Biar Anda unggul dari kompetitor."
 
 **GOOD Response ✅:**
-"EXACTLY my point, Pak/Bu! Kompetitor ga punya website = PELUANG EMAS untuk R-Tech.
+"EXACTLY my point, Pak/Bu! Kompetitor ga punya website = PELUANG EMAS untuk Toko.
 
 Think about this:
 
-**Scenario 1: R-Tech Duluan (First-Mover Advantage)**
+**Scenario 1: Toko Duluan (First-Mover Advantage)**
 - Customer Google 'laptop bekas pontianak' → R-TECH muncul (kompetitor tidak)
-- R-Tech keliatan JAUH lebih professional (punya website vs Instagram aja)
-- Customer prefer R-Tech karena lebih trustworthy
-- R-Tech jadi market leader secara digital
+- Toko keliatan JAUH lebih professional (punya website vs Instagram aja)
+- Customer prefer Toko karena lebih trustworthy
+- Toko jadi market leader secara digital
 
-**Scenario 2: R-Tech Tunggu Kompetitor Duluan**
+**Scenario 2: Toko Tunggu Kompetitor Duluan**
 - Kompetitor duluan punya website (cuma butuh 1 orang yang action)
-- R-Tech jadi 'follower', bukan 'pioneer'
+- Toko jadi 'follower', bukan 'pioneer'
 - Kompetitor udah capture SEO ranking (hard to overtake)
-- R-Tech kehilangan momentum
+- Toko kehilangan momentum
 
 History shows: first-mover advantage itu HUGE.
 
@@ -422,7 +422,7 @@ Contoh: Tokopedia vs Bukalapak. Tokopedia duluan launch, sekarang mereka market 
 
 Dan honestly Pak/Bu, ini window of opportunity ga akan lama. Cepat atau lambat, kompetitor akan sadar pentingnya website. Maybe 6 bulan, maybe 1 tahun.
 
-Question-nya: Mau R-Tech jadi pioneer atau follower?
+Question-nya: Mau Toko jadi pioneer atau follower?
 
 Plus, dengan program pilot eksklusif, literally tidak ada yang Bapak/Ibu rugi kalau try duluan."
 
@@ -453,7 +453,7 @@ Website Toko X mungkin:
 
 That's why saya emphasize: website yang EFEKTIF bukan cuma 'ada website', tapi website yang **strategically designed untuk konversi**.
 
-Website R-Tech yang saya bikin:
+Website Toko yang saya bikin:
 
 ✅ **Mobile-first** (80% customer pakai HP)
 ✅ **Fast loading** (< 2 detik, customer ga kabur)
@@ -498,7 +498,7 @@ Saya bikin 'Dua Insan Story' - fullstack e-commerce platform:
 - Admin panel untuk manage products
 - Order tracking system
 
-Tech complexity-nya actually LEBIH TINGGI dari landing page R-Tech. Kalau saya bisa handle e-commerce, landing page jauh lebih simple.
+Tech complexity-nya actually LEBIH TINGGI dari landing page Toko. Kalau saya bisa handle e-commerce, landing page jauh lebih simple.
 
 **2. Technical Foundation Strong:**
 - React + TypeScript (industry standard)
@@ -506,10 +506,10 @@ Tech complexity-nya actually LEBIH TINGGI dari landing page R-Tech. Kalau saya b
 - GitHub portfolio: github.com/ihza6661 (Bapak/Ibu bisa check)
 
 **3. Research Approach:**
-Untuk R-Tech project, saya research:
+Untuk Toko project, saya research:
 - Best practices laptop store websites globally
 - Conversion optimization techniques
-- R-Tech competitor analysis
+- Toko competitor analysis
 - Customer journey mapping
 
 Jadi meskipun laptop store pertama, saya approach-nya data-driven dan informed.
@@ -586,7 +586,7 @@ Plus, dengan monthly payment model (bukan annual), risiko Bapak/Ibu minimal. Mon
 **GOOD Response ✅:**
 "Pak/Bu, that's actually a great practice - always good to check references!
 
-Full disclosure: R-Tech ini first commercial client saya di niche laptop store. Sebelumnya saya bikin e-commerce untuk fashion (Dua Insan Story), tapi beda industry.
+Full disclosure: Toko ini first commercial client saya di niche laptop store. Sebelumnya saya bikin e-commerce untuk fashion (Dua Insan Story), tapi beda industry.
 
 TAPI, here's what I can offer:
 
@@ -594,7 +594,7 @@ TAPI, here's what I can offer:
 github.com/ihza6661 - Bapak/Ibu bisa lihat code quality saya. Technical people bisa review.
 
 **2. Live Demo:**
-Website R-Tech prototype: rtech-pontianak.vercel.app
+Website Toko prototype: toko-pontianak.vercel.app
 This is ACTUAL working website. Not mockup. Bapak/Ibu bisa explore, test, show to friends/customers untuk feedback.
 
 **3. Test Period = Reference:**
@@ -611,7 +611,7 @@ That's more reliable than any testimonial.
 Kalau masih concern, gimana kalau gini:
 Trial 2 bulan. Kalau setelah 2 bulan hasil bagus, baru commit long-term.
 
-Essentially, R-Tech JADI reference saya. Kalau saya perform well, Bapak/Ibu happy, saya dapet testimonial. Win-win.
+Essentially, Toko JADI reference saya. Kalau saya perform well, Bapak/Ibu happy, saya dapet testimonial. Win-win.
 
 Fair?"
 
@@ -690,7 +690,7 @@ Biar diskusinya lebih produktif, boleh saya kasih beberapa materials?
 Saya ada presentasi lengkap (slide-slide tadi) dalam PDF. Bapak/Ibu bisa share ke partner untuk review bareng. Include numbers, benefits, pricing - semua clear.
 
 **2. Website Link:**
-rtech-pontianak.vercel.app - Partner bisa explore langsung. Better than jelasin pake kata-kata.
+toko-pontianak.vercel.app - Partner bisa explore langsung. Better than jelasin pake kata-kata.
 
 **3. Comparison Sheet:**
 Website vs Instagram Ads - cost-benefit analysis. Biar diskusi lebih data-driven.
@@ -786,7 +786,7 @@ Mana yang work untuk cash flow Bapak/Ibu?"
 
 **Response:**
 
-"Fantastic Pak/Bu! Excited to work with R-Tech!
+"Fantastic Pak/Bu! Excited to work with Toko!
 
 Prosesnya super simple:
 
@@ -797,14 +797,14 @@ Saya butuh confirm dari Bapak/Ibu:
 
 **THIS WEEK (30 menit dari Bapak/Ibu):**
 Saya butuh materials:
-1. Logo R-Tech (high-resolution - file PNG/JPG)
+1. Logo Toko (high-resolution - file PNG/JPG)
 2. 6-8 produk ready stock (foto + specs: processor, RAM, storage, harga)
 3. Confirm 3 nomor WhatsApp (Sales, Service, Owner)
 
 Bisa via WhatsApp/email ke saya, no rush. Kapan paling convenient? Besok? 2-3 hari?
 
 **NEXT 48 HOURS (saya yang kerja):**
-- Saya setup domain (rtechpontianak.com or .id - mana prefer?)
+- Saya setup domain (tokopontianak.com or .id - mana prefer?)
 - Saya integrate materials Bapak/Ibu
 - Saya deploy live
 - Saya kasih link final
@@ -850,13 +850,13 @@ Ini contact saya:
 
 Saya save nomor Bapak/Ibu juga ya, jadi kalau ada update atau promo special, boleh saya share?
 
-Oh, satu hal: website prototype R-Tech ini saya keep online untuk sekarang. Jadi kalau Bapak/Ibu atau partner mau lihat-lihat lagi kapan-kapan, link-nya tetap aktif: rtech-pontianak.vercel.app
+Oh, satu hal: website prototype Toko ini saya keep online untuk sekarang. Jadi kalau Bapak/Ibu atau partner mau lihat-lihat lagi kapan-kapan, link-nya tetap aktif: toko-pontianak.vercel.app
 
 Feel free explore or share ke orang lain untuk feedback.
 
 Dan kalau Bapak/Ibu eventually tertarik (atau kenal toko/bisnis lain yang butuh website), don't hesitate to reach out. Saya always happy to help!
 
-Sukses terus untuk R-Tech, Pak/Bu! 🙏"
+Sukses terus untuk Toko, Pak/Bu! 🙏"
 
 **[Optional: Soft Follow-Up Strategy]**
 

@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
           <Link to="/" className="flex items-center gap-2">
             <ArrowLeft className="h-5 w-5" />
             <span className="font-display font-semibold text-lg">
-              R-Tech <span className="text-primary">Computer</span>
+              Toko <span className="text-primary">Komputer</span>
             </span>
           </Link>
           <Link to="/">
@@ -386,12 +386,12 @@ const PrivacyPolicy = () => {
                 <strong className="text-foreground">Telepon/WhatsApp:</strong>
                 <br />
                 <a 
-                  href={`https://wa.me/6282157000466`} 
+                  href={`https://wa.me/6281234567890`} 
                   className="text-primary hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  0821-5700-0466
+                  0812-3456-7890
                 </a>
               </div>
               <div>
@@ -403,7 +403,7 @@ const PrivacyPolicy = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  @rtech.computer
+                  @toko.computer
                 </a>
               </div>
             </div>

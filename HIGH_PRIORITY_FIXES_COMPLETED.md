@@ -1,7 +1,7 @@
 # HIGH PRIORITY FIXES - COMPLETED ✅
 
 **Date**: December 21, 2025  
-**Project**: R-Tech Computer Landing Page  
+**Project**: Toko Computer Landing Page  
 **Status**: All 8 HIGH PRIORITY items completed
 
 ---
@@ -191,7 +191,7 @@ useEffect(() => {
         const schema = generateProductSchema({
           name: product.name,
           description: product.description || `${product.name} - Laptop bekas...`,
-          image: product.image_url || 'https://rtechcomputer.com/placeholder.svg',
+          image: product.image_url || 'https://tokocomputer.com/placeholder.svg',
           price: typeof product.price === 'number' ? product.price : parseFloat(...),
           condition: 'UsedCondition',
           sku: `RTECH-${product.id}`
@@ -215,9 +215,9 @@ useEffect(() => {
 
 **Status**: ✅ **Already correct!**  
 All Open Graph and Twitter Card URLs were already using absolute paths:
-- `og:url` - https://rtechcomputer.com
-- `og:image` - https://rtechcomputer.com/rtech-logo.jpg
-- `twitter:image` - https://rtechcomputer.com/rtech-logo.jpg
+- `og:url` - https://tokocomputer.com
+- `og:image` - https://tokocomputer.com/toko-logo.jpg
+- `twitter:image` - https://tokocomputer.com/toko-logo.jpg
 
 **No changes needed** - Social sharing will work perfectly on Facebook, Twitter, LinkedIn, WhatsApp, etc.
 

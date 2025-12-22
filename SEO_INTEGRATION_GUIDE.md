@@ -1,6 +1,6 @@
 # SEO Integration Guide
 
-Complete technical reference for the SEO and analytics implementation in R-Tech Computer landing page.
+Complete technical reference for the SEO and analytics implementation in Toko Computer landing page.
 
 ---
 
@@ -316,7 +316,7 @@ clearStoredEvents(): void
 ```
 
 **Local Storage:**
-- Key: `rtech_analytics_events`
+- Key: `toko_analytics_events`
 - Stores last 100 events
 - Used by analytics dashboard
 - No external dependencies
@@ -421,7 +421,7 @@ useEffect(() => {
        "buttonText": "Chat Sekarang",
        "conversion": true,
        "timestamp": "2025-12-21T10:30:00.000Z",
-       "url": "https://rtechcomputer.com/",
+       "url": "https://tokocomputer.com/",
        "referrer": "https://google.com/"
      }
    }
@@ -500,14 +500,14 @@ npm run build
 ### Google Rich Results Test
 
 1. Visit: https://search.google.com/test/rich-results
-2. Enter URL: `https://rtechcomputer.com`
+2. Enter URL: `https://tokocomputer.com`
 3. Validate: Should detect `LocalBusiness` with no errors
 
 **Expected Results:**
 - ✅ Type: ComputerStore (LocalBusiness)
-- ✅ Name: R-Tech Computer
+- ✅ Name: Toko Computer
 - ✅ Address: Complete postal address
-- ✅ Telephone: +6282157000466
+- ✅ Telephone: +6281234567890
 - ✅ Opening hours: 2 specifications
 - ✅ Geo coordinates: Present
 
@@ -704,8 +704,8 @@ export function generateOrganizationSchema(): object {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: COMPANY_INFO.name,
-    url: 'https://rtechcomputer.com',
-    logo: 'https://rtechcomputer.com/rtech-logo.jpg',
+    url: 'https://tokocomputer.com',
+    logo: 'https://tokocomputer.com/toko-logo.jpg',
     foundingDate: `${COMPANY_INFO.foundedYear}-01-01`,
     contactPoint: {
       '@type': 'ContactPoint',
@@ -754,4 +754,4 @@ export function generateOrganizationSchema(): object {
 
 **Last Updated:** December 2025  
 **Version:** 1.0  
-**Maintainer:** R-Tech Computer Development Team
+**Maintainer:** Toko Computer Development Team

@@ -34,7 +34,7 @@ const AnalyticsDashboard = ({ onClose }: AnalyticsDashboardProps) => {
         <div className="flex items-center justify-between mb-8">
           <div>
             <h1 className="text-3xl font-display font-bold text-foreground">Analytics Dashboard</h1>
-            <p className="text-sm text-muted-foreground mt-1">Real-time conversion tracking for R-Tech Computer</p>
+            <p className="text-sm text-muted-foreground mt-1">Real-time conversion tracking for Toko Komputer</p>
           </div>
           <Button variant="outline" size="sm" onClick={onClose}>
             <X className="h-4 w-4" />

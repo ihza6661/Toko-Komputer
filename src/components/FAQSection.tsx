@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: "Bagaimana cara cek stok unit terbaru?",
-    answer: "Stok unit update setiap hari di Instagram Stories kami @rtechlaptop_pontianak. Anda juga bisa langsung hubungi via WhatsApp untuk info stok real-time. Kami update highlight Instagram dengan kategori lengkap untuk memudahkan Anda browsing.",
+    answer: "Stok unit update setiap hari di Instagram Stories kami @tokolaptop_pontianak. Anda juga bisa langsung hubungi via WhatsApp untuk info stok real-time. Kami update highlight Instagram dengan kategori lengkap untuk memudahkan Anda browsing.",
   },
 ];
 

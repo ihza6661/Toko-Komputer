@@ -18,7 +18,7 @@ const FAQLegal = () => {
           <Link to="/" className="flex items-center gap-2">
             <ArrowLeft className="h-5 w-5" />
             <span className="font-display font-semibold text-lg">
-              R-Tech <span className="text-primary">Computer</span>
+              Toko <span className="text-primary">Komputer</span>
             </span>
           </Link>
           <Link to="/">
@@ -125,12 +125,12 @@ const FAQLegal = () => {
                   <li>
                     <strong>Hubungi kami via WhatsApp</strong> di{" "}
                     <a 
-                      href="https://wa.me/6282157000466" 
+                      href="https://wa.me/6281234567890" 
                       className="text-primary hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      0821-5700-0466
+                      0812-3456-7890
                     </a>{" "}
                     dalam periode pengembalian
                   </li>
@@ -359,12 +359,12 @@ const FAQLegal = () => {
                 <p className="text-sm">
                   <strong>Cara membatalkan pesanan:</strong> Hubungi customer service via WhatsApp di{" "}
                   <a 
-                    href="https://wa.me/6282157000466" 
+                    href="https://wa.me/6281234567890" 
                     className="text-primary hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    0821-5700-0466
+                    0812-3456-7890
                   </a>{" "}
                   dengan menyebutkan nomor invoice dan alasan pembatalan.
                 </p>
@@ -385,12 +385,12 @@ const FAQLegal = () => {
                   <li>
                     <strong>Hubungi Customer Service:</strong> Kirim keluhan via WhatsApp ke{" "}
                     <a 
-                      href="https://wa.me/6282157000466" 
+                      href="https://wa.me/6281234567890" 
                       className="text-primary hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      0821-5700-0466
+                      0812-3456-7890
                     </a>{" "}
                     dengan detail lengkap (nomor invoice, tanggal, masalah yang dialami)
                   </li>
@@ -545,12 +545,12 @@ const FAQLegal = () => {
                       <strong className="text-foreground">WhatsApp (Owner/Manager):</strong>
                       <br />
                       <a 
-                        href="https://wa.me/6282157000466" 
+                        href="https://wa.me/6281234567890" 
                         className="text-primary hover:underline text-base font-semibold"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        0821-5700-0466
+                        0812-3456-7890
                       </a>
                     </div>
                     <div>
@@ -567,7 +567,7 @@ const FAQLegal = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        @rtechlaptop_pontianak
+                        @tokolaptop_pontianak
                       </a>
                     </div>
                   </div>
@@ -607,7 +607,7 @@ const FAQLegal = () => {
               customer service kami. Tim kami siap membantu Anda!
             </p>
             <a
-              href="https://wa.me/6282157000466"
+              href="https://wa.me/6281234567890"
               target="_blank"
               rel="noopener noreferrer"
             >

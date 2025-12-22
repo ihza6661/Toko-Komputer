@@ -68,8 +68,8 @@ const Index = () => {
   // Expose toggle function to window for console access
   useEffect(() => {
     if (typeof window !== 'undefined' && import.meta.env.DEV) {
-      window.rtechAnalytics = {
-        ...window.rtechAnalytics,
+      window.tokoAnalytics = {
+        ...window.tokoAnalytics,
         openDashboard: () => setShowAnalytics(true),
         closeDashboard: () => setShowAnalytics(false),
         toggleDashboard: () => setShowAnalytics(prev => !prev),

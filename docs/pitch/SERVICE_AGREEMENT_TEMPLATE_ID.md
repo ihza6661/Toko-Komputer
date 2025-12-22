@@ -1,5 +1,5 @@
 # PERJANJIAN LAYANAN - PENGEMBANGAN & PEMELIHARAAN WEBSITE
-## Proyek Website R-Tech Computer
+## Proyek Website Toko Komputer
 
 **TEMPLATE DRAFT - Sesuaikan sebelum menggunakan**
 
@@ -14,14 +14,14 @@
 **PENYEDIA LAYANAN (Developer):**
 - Nama: [Ihza Mahendra]
 - Alamat: [Jl.Karet Komp.Surya Kencana 1 Blok.F19]
-- Telepon: [089692070270]
+- Telepon: [081234567890]
 - Email: [ihzahmahendra6661@gmail.com]
 - ID/KTP: [Nomor ID Anda]
 
 **KLIEN:**
-- Nama Bisnis: R-Tech Computer
+- Nama Bisnis: Toko Komputer
 - Nama Pemilik: [Nama Lengkap Pemilik]
-- Alamat: Jln. Reformasi Untan, Pontianak, Kalimantan Barat
+- Alamat: Jl. Gajah Mada No. 88, Pontianak Barat, Kalimantan Barat 78113
 - Telepon: [Nomor Telepon Pemilik]
 - Email: [Email Pemilik jika tersedia]
 - NPWP: [Jika tersedia]
@@ -457,8 +457,8 @@ Semua pemberitahuan harus dikirim ke:
 
 **Ke KLIEN:**
 - [Nama Pemilik]
-- R-Tech Computer
-- Jln. Reformasi Untan, Pontianak
+- Toko Komputer
+- Jl. Gajah Mada No. 88, Pontianak Barat
 - WhatsApp: [Telepon Pemilik]
 - Email: [Email Pemilik]
 
@@ -498,7 +498,7 @@ Tanda Tangan: ___________________________
 
 Nama: [Nama Lengkap Pemilik]
 
-Jabatan: Pemilik, R-Tech Computer
+Jabatan: Pemilik, Toko Komputer
 
 Tanggal: ___________________________
 
@@ -616,4 +616,4 @@ Tanggal: ___________________________
 
 **Versi:** 1.0  
 **Terakhir Diperbarui:** Desember 2024  
-**Dibuat untuk:** Proyek Website R-Tech Computer
+**Dibuat untuk:** Proyek Website Toko Komputer

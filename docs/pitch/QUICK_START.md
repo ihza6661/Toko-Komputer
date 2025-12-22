@@ -60,7 +60,7 @@ Use for pitch deck:
 **Must-Have Slides** (copy from PITCH_DECK_CONTENT.md):
 
 **Slide 1: Cover**
-- Title: "Website Modern untuk R-Tech Computer"
+- Title: "Website Modern untuk Toko Computer"
 - Your name and contact
 
 **Slide 2: Problem**
@@ -114,13 +114,13 @@ Use for pitch deck:
 ### Step 1: Memorize 5 Key Points (15 minutes)
 
 **1. The Hook:**
-"Pak/Bu, saya bikinin website professional untuk R-Tech. Sudah jadi, mau lihat? 10 menit aja. Gratis."
+"Pak/Bu, saya bikinin website professional untuk Toko. Sudah jadi, mau lihat? 10 menit aja. Gratis."
 
 **2. The Problem:**
 "Setiap hari jawab pertanyaan sama: 'Masih ada?', 'Harga berapa?'. Website handle ini 24/7."
 
 **3. The Opportunity:**
-"Kompetitor di Pontianak TIDAK ADA yang punya website. R-Tech bisa jadi pioneer."
+"Kompetitor di Pontianak TIDAK ADA yang punya website. Toko bisa jadi pioneer."
 
 **4. The Numbers:**
 "8 unit extra/bulan = Rp 4 juta extra. Investment Rp 2.9 juta. Balik modal 3 minggu."
@@ -161,13 +161,13 @@ A: "ZERO technical dari Bapak/Ibu. Update produk? WhatsApp saya foto + specs, sa
 **When:** Weekday afternoon (2-4 PM)
 
 **Script:**
-"Selamat siang! Boleh ketemu owner sebentar? Saya developer website, bikinin prototype untuk R-Tech (passion project). Mau tunjukkin 10 menit aja. Gratis, no obligation."
+"Selamat siang! Boleh ketemu owner sebentar? Saya developer website, bikinin prototype untuk Toko (passion project). Mau tunjukkin 10 menit aja. Gratis, no obligation."
 
 ### Option B: WhatsApp Message
 ```
-Halo Pak/Bu Owner R-Tech,
+Halo Pak/Bu Owner Toko,
 
-Saya [nama], web developer Pontianak. Saya bikinin website modern untuk R-Tech (passion project, gratis).
+Saya [nama], web developer Pontianak. Saya bikinin website modern untuk Toko (passion project, gratis).
 
 Demo: [Your Vercel URL]
 
@@ -192,7 +192,7 @@ Thanks!
 - Detailed Q&A prep (wing it with confidence)
 
 **Minimal Pitch:**
-"Pak/Bu, saya bikinin website untuk R-Tech. Ini [show on phone]. Features: product catalog, WhatsApp routing, FAQ, mobile-friendly. Trial gratis 1 bulan. Mau coba?"
+"Pak/Bu, saya bikinin website untuk Toko. Ini [show on phone]. Features: product catalog, WhatsApp routing, FAQ, mobile-friendly. Trial gratis 1 bulan. Mau coba?"
 
 Show > Tell. Let website speak for itself.
 
@@ -243,11 +243,11 @@ Show > Tell. Let website speak for itself.
 **Your Materials:**
 - Website: [Your Vercel URL]
 - GitHub: https://github.com/ihza6661
-- Phone: 089692070270
+- Phone: 081234567890
 - Email: ihzahmahendra6661@gmail.com
 
 **Client Materials Needed:**
-- Logo R-Tech (high-res PNG/JPG)
+- Logo Toko (high-res PNG/JPG)
 - 6-8 products (photo + specs + price)
 - WhatsApp numbers (Sales, Service, Owner)
 
@@ -255,7 +255,7 @@ Show > Tell. Let website speak for itself.
 
 ## ONE SENTENCE SUMMARY
 
-**"I built a professional website for R-Tech Computer (for free as portfolio project), offering 1-2 month free trial to prove it can bring 8-10 extra sales/month with ROI of 1,500% - literally zero risk for the owner to try."**
+**"I built a professional website for Toko Computer (for free as portfolio project), offering 1-2 month free trial to prove it can bring 8-10 extra sales/month with ROI of 1,500% - literally zero risk for the owner to try."**
 
 **Let's go make it happen!** 🚀
 

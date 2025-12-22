@@ -1,27 +1,27 @@
 /**
  * Schema.org Structured Data Generator
- * 
+ *
  * This module generates JSON-LD structured data for better SEO and
  * local search visibility. Implements LocalBusiness schema with
  * additional types for services.
- * 
+ *
  * Schema Types:
  * - LocalBusiness (ComputerStore) - Primary business information
  * - Service - Repair and maintenance services
  * - Product - (Optional) For product listings
- * 
+ *
  * Usage:
  * import { generateLocalBusinessSchema, generateServiceSchema } from '@/lib/schema'
  */
 
-import { COMPANY_INFO, WHATSAPP_NUMBERS } from './constants';
-import { APP_CONFIG } from './config';
-import rtechLogo from '@/assets/rtech-logo.jpg';
-import placeholderImg from '@/assets/placeholder.svg';
+import { COMPANY_INFO, WHATSAPP_NUMBERS } from "./constants";
+import { APP_CONFIG } from "./config";
+import tokoLogo from "@/assets/toko-logo.png";
+import placeholderImg from "@/assets/placeholder.svg";
 
 export interface SchemaOrganization {
-  '@context': string;
-  '@type': string;
+  "@context": string;
+  "@type": string;
   name: string;
   description?: string;
   url?: string;
@@ -41,7 +41,7 @@ export interface SchemaOrganization {
 }
 
 export interface SchemaPostalAddress {
-  '@type': string;
+  "@type": string;
   streetAddress: string;
   addressLocality: string;
   addressRegion: string;
@@ -50,20 +50,20 @@ export interface SchemaPostalAddress {
 }
 
 export interface SchemaGeoCoordinates {
-  '@type': string;
+  "@type": string;
   latitude: number;
   longitude: number;
 }
 
 export interface SchemaOpeningHours {
-  '@type': string;
+  "@type": string;
   dayOfWeek: string | string[];
   opens: string;
   closes: string;
 }
 
 export interface SchemaAggregateRating {
-  '@type': string;
+  "@type": string;
   ratingValue: string;
   reviewCount: string;
   bestRating: string;
@@ -71,17 +71,17 @@ export interface SchemaAggregateRating {
 }
 
 export interface SchemaService {
-  '@context': string;
-  '@type': string;
+  "@context": string;
+  "@type": string;
   serviceType: string;
   provider: {
-    '@type': string;
+    "@type": string;
     name: string;
   };
   areaServed: string;
   description: string;
   offers?: {
-    '@type': string;
+    "@type": string;
     priceCurrency: string;
     price?: string;
     priceRange?: string;
@@ -93,62 +93,59 @@ export interface SchemaService {
  */
 export function generateLocalBusinessSchema(): SchemaOrganization {
   const schema: SchemaOrganization = {
-    '@context': 'https://schema.org',
-    '@type': 'ComputerStore',
+    "@context": "https://schema.org",
+    "@type": "ComputerStore",
     name: COMPANY_INFO.name,
     description: `${COMPANY_INFO.name} adalah pusat jual beli laptop dan Macbook bekas berkualitas di Pontianak. Melayani tukar tambah, servis profesional, dan pengiriman seluruh Indonesia sejak ${COMPANY_INFO.foundedYear}.`,
     url: APP_CONFIG.baseUrl,
-    logo: rtechLogo,
-    image: [
-      rtechLogo,
-      placeholderImg,
-    ],
+    logo: tokoLogo,
+    image: [tokoLogo, placeholderImg],
     telephone: `+${WHATSAPP_NUMBERS.owner}`,
     address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Jln. Reformasi Untan',
-      addressLocality: 'Pontianak',
-      addressRegion: 'Kalimantan Barat',
-      addressCountry: 'ID',
+      "@type": "PostalAddress",
+      streetAddress: "Jl. Gajah Mada No. 88",
+      addressLocality: "Pontianak",
+      addressRegion: "Kalimantan Barat",
+      addressCountry: "ID",
     },
     geo: {
-      '@type': 'GeoCoordinates',
+      "@type": "GeoCoordinates",
       latitude: COMPANY_INFO.coordinates.lat,
       longitude: COMPANY_INFO.coordinates.lng,
     },
     openingHoursSpecification: [
       {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        opens: '09:00',
-        closes: '21:00',
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        opens: "09:00",
+        closes: "21:00",
       },
       {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Sunday',
-        opens: '10:00',
-        closes: '18:00',
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Sunday",
+        opens: "10:00",
+        closes: "18:00",
       },
     ],
-    priceRange: '$$',
-    paymentAccepted: ['Cash', 'Transfer Bank', 'COD'],
-    currenciesAccepted: 'IDR',
-    areaServed: [
-      'Pontianak',
-      'Kalimantan Barat',
-      'Indonesia',
-    ],
-    sameAs: [
-      COMPANY_INFO.instagram,
-      COMPANY_INFO.googleMapsUrl,
-    ],
+    priceRange: "$$",
+    paymentAccepted: ["Cash", "Transfer Bank", "COD"],
+    currenciesAccepted: "IDR",
+    areaServed: ["Pontianak", "Kalimantan Barat", "Indonesia"],
+    sameAs: [COMPANY_INFO.instagram, COMPANY_INFO.googleMapsUrl],
     // Add aggregate rating for star ratings in Google search results
     aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '120',
-      bestRating: '5',
-      worstRating: '1',
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      reviewCount: "120",
+      bestRating: "5",
+      worstRating: "1",
     },
   };
 
@@ -160,19 +157,20 @@ export function generateLocalBusinessSchema(): SchemaOrganization {
  */
 export function generateRepairServiceSchema(): SchemaService {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    serviceType: 'Computer Repair Service',
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Computer Repair Service",
     provider: {
-      '@type': 'LocalBusiness',
+      "@type": "LocalBusiness",
       name: COMPANY_INFO.name,
     },
-    areaServed: 'Pontianak, Kalimantan Barat',
-    description: 'Layanan servis dan perbaikan laptop, Macbook, upgrade hardware (SSD, RAM), ganti LCD/layar, ganti baterai, dan maintenance profesional.',
+    areaServed: "Pontianak, Kalimantan Barat",
+    description:
+      "Layanan servis dan perbaikan laptop, Macbook, upgrade hardware (SSD, RAM), ganti LCD/layar, ganti baterai, dan maintenance profesional.",
     offers: {
-      '@type': 'Offer',
-      priceCurrency: 'IDR',
-      priceRange: 'Rp 150.000 - Rp 2.000.000',
+      "@type": "Offer",
+      priceCurrency: "IDR",
+      priceRange: "Rp 150.000 - Rp 2.000.000",
     },
   };
 }
@@ -182,19 +180,20 @@ export function generateRepairServiceSchema(): SchemaService {
  */
 export function generateSalesServiceSchema(): SchemaService {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    serviceType: 'Used Computer Sales',
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Used Computer Sales",
     provider: {
-      '@type': 'LocalBusiness',
+      "@type": "LocalBusiness",
       name: COMPANY_INFO.name,
     },
-    areaServed: 'Indonesia',
-    description: 'Jual beli laptop dan Macbook bekas berkualitas dengan garansi. Melayani tukar tambah dan pengiriman seluruh Indonesia.',
+    areaServed: "Indonesia",
+    description:
+      "Jual beli laptop dan Macbook bekas berkualitas dengan garansi. Melayani tukar tambah dan pengiriman seluruh Indonesia.",
     offers: {
-      '@type': 'Offer',
-      priceCurrency: 'IDR',
-      priceRange: 'Rp 2.000.000 - Rp 20.000.000',
+      "@type": "Offer",
+      priceCurrency: "IDR",
+      priceRange: "Rp 2.000.000 - Rp 20.000.000",
     },
   };
 }
@@ -207,30 +206,32 @@ export function generateProductSchema(product: {
   description: string;
   image: string;
   price: number;
-  condition: 'NewCondition' | 'UsedCondition' | 'RefurbishedCondition';
+  condition: "NewCondition" | "UsedCondition" | "RefurbishedCondition";
   brand?: string;
   sku?: string;
 }): object {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
+    "@context": "https://schema.org",
+    "@type": "Product",
     name: product.name,
     description: product.description,
     image: product.image,
     brand: {
-      '@type': 'Brand',
-      name: product.brand || 'Various',
+      "@type": "Brand",
+      name: product.brand || "Various",
     },
     offers: {
-      '@type': 'Offer',
+      "@type": "Offer",
       url: APP_CONFIG.baseUrl,
-      priceCurrency: 'IDR',
+      priceCurrency: "IDR",
       price: product.price,
-      priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0], // 30 days
+      priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000)
+        .toISOString()
+        .split("T")[0], // 30 days
       itemCondition: `https://schema.org/${product.condition}`,
-      availability: 'https://schema.org/InStock',
+      availability: "https://schema.org/InStock",
       seller: {
-        '@type': 'Organization',
+        "@type": "Organization",
         name: COMPANY_INFO.name,
       },
     },
@@ -241,15 +242,17 @@ export function generateProductSchema(product: {
 /**
  * Generate FAQPage Schema
  */
-export function generateFAQSchema(faqs: Array<{ question: string; answer: string }>): object {
+export function generateFAQSchema(
+  faqs: Array<{ question: string; answer: string }>,
+): object {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map(faq => ({
-      '@type': 'Question',
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
       name: faq.question,
       acceptedAnswer: {
-        '@type': 'Answer',
+        "@type": "Answer",
         text: faq.answer,
       },
     })),
@@ -259,12 +262,14 @@ export function generateFAQSchema(faqs: Array<{ question: string; answer: string
 /**
  * Generate BreadcrumbList Schema (for navigation)
  */
-export function generateBreadcrumbSchema(items: Array<{ name: string; url: string }>): object {
+export function generateBreadcrumbSchema(
+  items: Array<{ name: string; url: string }>,
+): object {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
     itemListElement: items.map((item, index) => ({
-      '@type': 'ListItem',
+      "@type": "ListItem",
       position: index + 1,
       name: item.name,
       item: item.url,
@@ -291,10 +296,10 @@ export function generateHomepageSchema(): string {
  * (Use this if you want dynamic schema injection)
  */
 export function injectSchemaMarkup(schema: object): void {
-  if (typeof document === 'undefined') return;
+  if (typeof document === "undefined") return;
 
-  const script = document.createElement('script');
-  script.type = 'application/ld+json';
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
   script.text = JSON.stringify(schema, null, 2);
   document.head.appendChild(script);
 }

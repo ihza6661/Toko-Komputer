@@ -1,7 +1,7 @@
 # 🚀 VERCEL DEPLOYMENT GUIDE
-## Deploy R-Tech Computer Website to Production
+## Deploy Toko Computer Website to Production
 
-**Target URL**: https://rtech-pontianak.vercel.app
+**Target URL**: https://toko-pontianak.vercel.app
 
 ---
 
@@ -34,8 +34,8 @@
 
 ### Step 5: Customize Domain (Optional)
 1. In project settings → "Domains"
-2. Add custom domain: `rtech-pontianak.vercel.app`
-3. Or connect your own domain: `rtechpontianak.com`
+2. Add custom domain: `toko-pontianak.vercel.app`
+3. Or connect your own domain: `tokopontianak.com`
 
 **Your website is now LIVE!** 🎉
 
@@ -119,13 +119,13 @@ After successful deployment:
 **Option A: Buy .com Domain**
 1. Purchase from Namecheap, GoDaddy, or Niagahoster (~Rp 150-200k/year)
 2. In Vercel project → Settings → Domains
-3. Add domain: `rtechpontianak.com`
+3. Add domain: `tokopontianak.com`
 4. Follow DNS configuration instructions
 5. Wait 24-48 hours for propagation
 
 **Option B: Use Free Vercel Subdomain**
 1. In Vercel project → Settings → Domains
-2. Add: `rtech-pontianak.vercel.app`
+2. Add: `toko-pontianak.vercel.app`
 3. Instant, no DNS configuration needed!
 
 ### ✅ Setup Analytics
@@ -236,8 +236,8 @@ soldDate: "2024-12-XX",
 Edit `src/lib/constants.ts`:
 ```typescript
 export const COMPANY_INFO = {
-  name: "R-Tech Computer",
-  phone: "082157000466", // Update if changes
+  name: "Toko Computer",
+  phone: "081234567890", // Update if changes
   // ... other fields
 };
 ```
@@ -310,7 +310,7 @@ sharp -i laptop.jpg -o laptop.webp
 ## PRICING: VERCEL HOSTING COSTS
 
 ### Free Tier (Hobby Plan)
-**Perfect for R-Tech website!**
+**Perfect for Toko website!**
 
 **Includes:**
 - 100 GB bandwidth/month (plenty for landing page)
@@ -342,13 +342,13 @@ sharp -i laptop.jpg -o laptop.webp
 ## DOMAIN PRICING (Separate from Hosting)
 
 ### Option 1: Use Free Vercel Subdomain
-**URL:** `rtech-pontianak.vercel.app`
+**URL:** `toko-pontianak.vercel.app`
 **Cost:** FREE
 **Pros:** Instant, professional enough
 **Cons:** "vercel.app" in domain
 
 ### Option 2: Buy .com Domain
-**URL:** `rtechpontianak.com`
+**URL:** `tokopontianak.com`
 **Cost:** Rp 150-200k/year
 **Registrars:**
 - Namecheap: ~$10/year (Rp 150k)
@@ -359,7 +359,7 @@ sharp -i laptop.jpg -o laptop.webp
 **Cons:** Annual renewal cost
 
 ### Option 3: Buy .id Domain (Indonesian)
-**URL:** `rtechpontianak.id` or `rtechpontianak.co.id`
+**URL:** `tokopontianak.id` or `tokopontianak.co.id`
 **Cost:** Rp 200-300k/year
 **Registrar:** Pandi.id, Niagahoster
 
@@ -367,8 +367,8 @@ sharp -i laptop.jpg -o laptop.webp
 **Cons:** Slightly higher cost, registration process
 
 **Recommendation for Client Pitch:**
-- **Trial:** Use free `rtech-pontianak.vercel.app`
-- **Post-Trial:** Upgrade to `rtechpontianak.com` (Rp 150k/year)
+- **Trial:** Use free `toko-pontianak.vercel.app`
+- **Post-Trial:** Upgrade to `tokopontianak.com` (Rp 150k/year)
 
 ---
 
@@ -417,7 +417,7 @@ sharp -i laptop.jpg -o laptop.webp
 4. ✅ Prepare pitch materials (deck, Q&A, contract)
 5. ✅ Schedule meeting with owner next week
 
-**Website URL:** https://rtech-pontianak.vercel.app
+**Website URL:** https://toko-pontianak.vercel.app
 **GitHub Repo:** https://github.com/ihza6661/r-tech-pontianak-landing
 **Vercel Dashboard:** https://vercel.com/dashboard
 

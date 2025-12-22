@@ -6,14 +6,14 @@ const testimonials = [
     name: "Budi Santoso",
     role: "Mahasiswa Untan",
     rating: 5,
-    text: "Beli laptop untuk kuliah di R-Tech, pelayanannya ramah banget dan sabar jelasin spek-speknya. Harga pas di kantong mahasiswa, kondisi laptop juga seperti baru. Garansi 3 bulan bikin tenang. Recommended!",
+    text: "Beli laptop untuk kuliah di Toko, pelayanannya ramah banget dan sabar jelasin spek-speknya. Harga pas di kantong mahasiswa, kondisi laptop juga seperti baru. Garansi 3 bulan bikin tenang. Recommended!",
     date: "2 minggu lalu",
   },
   {
     name: "Siti Rahma",
     role: "Pegawai Swasta",
     rating: 5,
-    text: "Tukar tambah laptop lama ke yang baru disini prosesnya cepat dan harga trade-in nya fair. Ga nyesal upgrade di R-Tech, unitnya berkualitas dan sudah include Windows ori. Worth it banget!",
+    text: "Tukar tambah laptop lama ke yang baru disini prosesnya cepat dan harga trade-in nya fair. Ga nyesal upgrade di Toko, unitnya berkualitas dan sudah include Windows ori. Worth it banget!",
     date: "1 bulan lalu",
   },
   {
@@ -27,7 +27,7 @@ const testimonials = [
     name: "Linda Wijaya",
     role: "Ibu Rumah Tangga",
     rating: 5,
-    text: "Servis laptop anak yang mati total, ternyata kena air. Dikira sudah ga bisa diselamatkan, tapi teknisi R-Tech berhasil benerin! Biaya servisnya juga masuk akal. Terima kasih banyak, sangat membantu!",
+    text: "Servis laptop anak yang mati total, ternyata kena air. Dikira sudah ga bisa diselamatkan, tapi teknisi Toko berhasil benerin! Biaya servisnya juga masuk akal. Terima kasih banyak, sangat membantu!",
     date: "1 minggu lalu",
   },
   {

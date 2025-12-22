@@ -22,7 +22,7 @@ const InventorySection = () => {
         if (product.stock > 0) {
           const schema = generateProductSchema({
             name: product.name,
-            description: product.description || `${product.name} - Laptop bekas berkualitas dari R-Tech Computer`,
+            description: product.description || `${product.name} - Laptop bekas berkualitas dari Toko Komputer`,
             image: product.image_url || placeholderImg,
             price: typeof product.price === 'number' ? product.price : parseFloat(String(product.price).replace(/[^0-9.-]+/g, '')) || 0,
             condition: 'UsedCondition',

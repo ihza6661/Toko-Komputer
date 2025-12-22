@@ -48,7 +48,7 @@ const ProductDetail = () => {
   // Share function
   const handleShare = async () => {
     const shareData = {
-      title: product?.name || "R-Tech Computer",
+      title: product?.name || "Toko Komputer",
       text: `${product?.name} - ${formatPriceWithCurrency(product?.price || 0)}`,
       url: window.location.href,
     };
@@ -87,8 +87,8 @@ const ProductDetail = () => {
     return (
       <>
         <Helmet>
-          <title>Produk Tidak Ditemukan - R-Tech Computer Pontianak</title>
-          <meta name="description" content="Produk yang Anda cari tidak tersedia. Jelajahi koleksi laptop bekas berkualitas kami di R-Tech Computer Pontianak." />
+          <title>Produk Tidak Ditemukan - Toko Komputer Pontianak</title>
+          <meta name="description" content="Produk yang Anda cari tidak tersedia. Jelajahi koleksi laptop bekas berkualitas kami di Toko Komputer Pontianak." />
           <meta name="robots" content="noindex, nofollow" />
         </Helmet>
         <Header />
@@ -128,12 +128,12 @@ const ProductDetail = () => {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>{product.name} - R-Tech Computer Pontianak</title>
-        <meta name="description" content={product.description || `${product.name} - Laptop bekas berkualitas dari R-Tech Computer`} />
+        <title>{product.name} - Toko Komputer Pontianak</title>
+        <meta name="description" content={product.description || `${product.name} - Laptop bekas berkualitas dari Toko Komputer`} />
         <meta name="keywords" content={`${product.name}, laptop bekas, ${product.specifications?.processor || ''}, pontianak, r-tech computer`} />
         
         {/* Open Graph */}
-        <meta property="og:title" content={`${product.name} - R-Tech Computer`} />
+        <meta property="og:title" content={`${product.name} - Toko Komputer`} />
         <meta property="og:description" content={product.description || ''} />
         <meta property="og:image" content={product.image_url || placeholderImg} />
         <meta property="og:url" content={window.location.href} />
@@ -141,7 +141,7 @@ const ProductDetail = () => {
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${product.name} - R-Tech Computer`} />
+        <meta name="twitter:title" content={`${product.name} - Toko Komputer`} />
         <meta name="twitter:description" content={product.description || ''} />
         <meta name="twitter:image" content={product.image_url || placeholderImg} />
         
