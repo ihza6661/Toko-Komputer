@@ -18,7 +18,7 @@ const Header = () => {
 
   const navLinks = [
     { href: "#", label: "Beranda" },
-    { href: "#products", label: "Laptop & Macbook" },
+    { href: "#products", label: "Laptop & Komputer" },
     { href: "#services", label: "Servis" },
     { href: "#testimonials", label: "Testimoni" },
     { href: "#contact", label: "Kontak" },
@@ -39,14 +39,14 @@ const Header = () => {
           <div className="flex items-center gap-3">
             <img
               src={tokoLogo}
-              alt="Toko Komputer Logo"
+              alt="Database Computer Logo"
               width="40"
               height="40"
               loading="lazy"
               className="h-10 w-10 rounded-lg object-cover"
             />
             <span className="font-display text-lg font-bold text-foreground">
-              Toko <span className="text-primary">Komputer</span>
+              Database <span className="text-gray-900">Computer</span>
             </span>
           </div>
 
@@ -57,7 +57,7 @@ const Header = () => {
               <a
                 href={`tel:+${WHATSAPP_NUMBERS.owner}`}
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Telepon Toko Komputer"
+                aria-label="Telepon Database Computer"
               >
                 <Phone className="h-4 w-4" />
                 <span className="font-medium">0812-3456-7890</span>
@@ -98,7 +98,7 @@ const Header = () => {
               <a
                 href={`tel:+${WHATSAPP_NUMBERS.owner}`}
                 className="p-2 text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Telepon Toko Komputer"
+                aria-label="Telepon Database Computer"
               >
                 <Phone className="h-5 w-5" />
               </a>

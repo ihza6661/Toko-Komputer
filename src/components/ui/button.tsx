@@ -9,14 +9,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_20px_hsl(142_76%_46%/0.25)] hover:shadow-[0_0_40px_hsl(142_76%_46%/0.3)]",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm hover:shadow-md",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline: "border border-border bg-transparent text-foreground hover:bg-secondary hover:border-primary/50",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "text-foreground hover:bg-secondary hover:text-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-primary text-primary-foreground font-bold hover:bg-primary/90 shadow-[0_0_40px_hsl(142_76%_46%/0.3)] hover:shadow-[0_0_60px_hsl(142_76%_46%/0.4)] hover:scale-105 active:scale-100",
-        whatsapp: "bg-primary text-primary-foreground font-bold hover:bg-primary/90 shadow-[0_0_20px_hsl(142_76%_46%/0.25)] hover:shadow-[0_0_40px_hsl(142_76%_46%/0.3)]",
+        hero: "bg-primary text-primary-foreground font-bold hover:bg-primary/90 shadow-md hover:shadow-lg hover:scale-105 active:scale-100",
+        whatsapp: "bg-green-600 text-white font-bold hover:bg-green-700 shadow-[0_0_20px_rgba(34,197,94,0.25)] hover:shadow-[0_0_40px_rgba(34,197,94,0.3)]",
       },
       size: {
         default: "h-10 px-4 py-2",

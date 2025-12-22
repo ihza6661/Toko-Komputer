@@ -14,20 +14,19 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-4">
               <img
                 src={tokoLogo}
-                alt="Toko Komputer Logo"
+                alt="Database Computer Logo"
                 width="40"
                 height="40"
                 loading="lazy"
                 className="h-10 w-10 rounded-lg object-cover"
               />
               <span className="font-display text-lg font-bold text-foreground">
-                Toko <span className="text-primary">Komputer</span>
+                Database <span className="text-gray-900">Computer</span>
               </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-              Pusat laptop & Macbook bekas berkualitas di Pontianak. Dipercaya
-              sejak {COMPANY_INFO.foundedYear} dengan layanan jual beli, tukar
-              tambah, dan servis profesional.
+              Pusat Laptop, Printer, Smartphone & Tinta Original di Pontianak. Dipercaya
+              sejak {COMPANY_INFO.foundedYear} dengan penjualan produk berkualitas. Gold Merchant Tokopedia & Shopee Mall Partner.
             </p>
           </div>
 
@@ -101,7 +100,7 @@ const Footer = () => {
                   href="#services"
                   className="hover:text-primary transition-colors"
                 >
-                  Servis Laptop & Macbook
+                  Servis Laptop
                 </a>
               </li>
               <li>
@@ -150,7 +149,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-sm text-muted-foreground">
-              Follow kami untuk update stok laptop & promo terbaru!
+              Follow kami untuk update stok terbaru & promo spesial!
             </p>
           </div>
         </div>

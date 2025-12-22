@@ -10,12 +10,12 @@ import { generateFAQSchema, injectSchemaMarkup } from "@/lib/schema";
 
 const faqs = [
   {
-    question: "Apakah unit laptop bekas aman dibeli?",
-    answer: "Sangat aman! Semua unit sudah melalui pengecekan menyeluruh oleh teknisi berpengalaman. Kami pastikan performa optimal dan berikan garansi resmi untuk setiap pembelian. Fisik dan fungsi sudah diuji dengan standar tinggi.",
+    question: "Apakah produk yang dijual original?",
+    answer: "100% original! Semua laptop dan produk yang kami jual adalah barang baru dengan garansi resmi dari distributor/pabrikan. Kami hanya menjual produk berkualitas tinggi dengan sertifikat resmi dan bisa dicek keasliannya.",
   },
   {
     question: "Berapa lama garansi yang diberikan?",
-    answer: "Untuk unit dengan garansi resmi, kami berikan sesuai sisa garansi dari pabrikan (bisa dilihat di spesifikasi produk). Untuk unit tanpa garansi resmi, kami memberikan garansi toko 3 bulan untuk software dan hardware. Garansi mencakup kerusakan non-fisik.",
+    answer: "Untuk unit baru dengan garansi resmi, kami berikan sesuai dengan garansi dari pabrikan (biasanya 1-3 tahun tergantung brand). Garansi mencakup kerusakan non-fisik dan bisa klaim langsung ke service center resmi.",
   },
   {
     question: "Apakah bisa tukar tambah laptop lama?",
@@ -34,12 +34,12 @@ const faqs = [
     answer: "Tergantung jenis kerusakan. Servis ringan seperti instal ulang/upgrade bisa selesai 1-2 jam. Untuk perbaikan hardware kompleks bisa 3-7 hari kerja. Kami akan berikan estimasi waktu yang jelas setelah pengecekan awal oleh teknisi.",
   },
   {
-    question: "Apakah menerima servis laptop/Macbook dari brand lain?",
-    answer: "Ya, kami melayani servis untuk semua brand laptop (HP, Lenovo, Asus, Acer, Dell, MSI, dll) dan spesialis Macbook. Teknisi kami berpengalaman menangani berbagai kasus dari ringan hingga kompleks seperti motherboard, GPU, dan sistem liquid cooling.",
+    question: "Apakah menerima servis laptop dari berbagai brand?",
+    answer: "Ya, kami melayani servis untuk semua brand laptop (HP, Lenovo, Asus, Acer, Dell, MSI, dll). Teknisi kami berpengalaman menangani berbagai kasus dari ringan hingga kompleks seperti motherboard, GPU, dan sistem cooling.",
   },
   {
     question: "Bagaimana cara cek stok unit terbaru?",
-    answer: "Stok unit update setiap hari di Instagram Stories kami @tokolaptop_pontianak. Anda juga bisa langsung hubungi via WhatsApp untuk info stok real-time. Kami update highlight Instagram dengan kategori lengkap untuk memudahkan Anda browsing.",
+    answer: "Stok unit update setiap hari di Instagram Stories kami @database.id_official. Anda juga bisa langsung hubungi via WhatsApp untuk info stok real-time. Kami update highlight Instagram dengan kategori lengkap untuk memudahkan Anda browsing.",
   },
 ];
 

@@ -22,7 +22,7 @@ const InventorySection = () => {
         if (product.stock > 0) {
           const schema = generateProductSchema({
             name: product.name,
-            description: product.description || `${product.name} - Laptop bekas berkualitas dari Toko Komputer`,
+            description: product.description || `${product.name} - Laptop berkualitas dari Database Computer`,
             image: product.image_url || placeholderImg,
             price: typeof product.price === 'number' ? product.price : parseFloat(String(product.price).replace(/[^0-9.-]+/g, '')) || 0,
             condition: 'UsedCondition',
@@ -259,11 +259,11 @@ const InventorySection = () => {
                <h3 className="font-display text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-2 sm:mb-3">
                  Update Stok Setiap Hari di Instagram
                </h3>
-               <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
-                 Lihat ratusan unit laptop & Macbook ready stock lainnya. Update terbaru ada di{" "}
-                 <span className="text-primary font-semibold">{COMPANY_INFO.instagramHandle}</span>
-                 {" "}dengan highlight terpisah per kategori budget!
-               </p>
+                <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed">
+                  Lihat ratusan unit laptop & komputer ready stock lainnya. Update terbaru ada di{" "}
+                  <span className="text-primary font-semibold">{COMPANY_INFO.instagramHandle}</span>
+                  {" "}dengan highlight terpisah per kategori budget!
+                </p>
                
                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-4 sm:mb-6">
                  <Button size="lg" asChild className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:opacity-90 w-full sm:w-auto">

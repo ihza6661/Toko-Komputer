@@ -1,5 +1,5 @@
 /**
- * Analytics Tracking Utility for Toko Komputer
+ * Analytics Tracking Utility for Database Computer
  * 
  * This utility provides client-side event tracking for conversion optimization.
  * Integrates with Google Analytics 4 and Facebook Pixel for comprehensive tracking.

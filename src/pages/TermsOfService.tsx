@@ -294,14 +294,14 @@ const TermsOfService = () => {
                   Laptop lama Anda harus <strong>masih berfungsi</strong> (bisa booting/menyala)
                 </li>
                 <li>
-                  Kami menerima semua merk laptop: HP, Dell, Asus, Lenovo, Acer, Apple (Macbook), dll
+                  Kami menerima semua merk laptop: HP, Dell, Asus, Lenovo, Acer, Apple, MSI, dll
                 </li>
                 <li>
                   Laptop tidak dalam kondisi <strong>rusak parah</strong> (mati total, layar pecah, 
                   casing hancur)
                 </li>
                 <li>
-                  Untuk Macbook, pastikan <strong>Find My iPhone/iCloud sudah dimatikan</strong> 
+                  Pastikan semua fitur keamanan (Find My Device, akun cloud) sudah dimatikan 
                   sebelum diserahkan
                 </li>
               </ul>
@@ -352,7 +352,7 @@ const TermsOfService = () => {
                     foto, dokumen, atau file apapun
                   </li>
                   <li>
-                    Untuk Macbook, pastikan <strong>Find My dan iCloud sudah logout</strong> dan 
+                    Pastikan semua akun cloud (iCloud, Google, Microsoft) sudah logout dan 
                     lakukan <strong>factory reset</strong> terlebih dahulu
                   </li>
                   <li>
@@ -398,7 +398,7 @@ const TermsOfService = () => {
             <div>
               <h3 className="font-semibold text-foreground mb-3">4.1 Jenis Layanan</h3>
               <p className="text-muted-foreground leading-relaxed mb-3">
-                Kami menyediakan berbagai layanan servis laptop dan Macbook, termasuk:
+                Kami menyediakan berbagai layanan servis laptop, termasuk:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
                 <li>Perbaikan hardware (ganti LCD, keyboard, baterai, hardisk, RAM, dll)</li>

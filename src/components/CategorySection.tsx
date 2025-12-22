@@ -1,4 +1,4 @@
-import { Laptop, Gamepad2, Apple, DollarSign } from "lucide-react";
+import { Laptop, Gamepad2, Monitor, DollarSign, Printer, Droplet, Smartphone } from "lucide-react";
 import { generateWhatsAppLink, WhatsAppMessageType } from "@/lib/whatsapp";
 
 const categories = [
@@ -35,12 +35,36 @@ const categories = [
     waType: "gaming" as WhatsAppMessageType,
   },
   {
-    title: "Macbook Specialist",
-    priceRange: "Air • Pro • M1 • M2",
-    description: "Kualitas premium, desain elegan, harga tetap masuk akal.",
-    icon: Apple,
-    badge: "Apple Expert",
-    waType: "macbook" as WhatsAppMessageType,
+    title: "Desktop PC",
+    priceRange: "Custom • Gaming • Office",
+    description: "PC rakitan berkualitas untuk gaming, kerja, dan multimedia.",
+    icon: Monitor,
+    badge: "Custom Build",
+    waType: "general" as WhatsAppMessageType,
+  },
+  {
+    title: "Printer & Scanner",
+    priceRange: "Epson • Canon • HP",
+    description: "Printer ink tank, laser, dan scanner untuk kantor/rumah.",
+    icon: Printer,
+    badge: "Office Essential",
+    waType: "general" as WhatsAppMessageType,
+  },
+  {
+    title: "Tinta & Toner Original",
+    priceRange: "Semua Merk",
+    description: "Tinta dan toner original berkualitas dengan harga bersaing.",
+    icon: Droplet,
+    badge: "Original",
+    waType: "general" as WhatsAppMessageType,
+  },
+  {
+    title: "Smartphone",
+    priceRange: "Infinix • Samsung",
+    description: "Smartphone baru dan second berkualitas dengan garansi.",
+    icon: Smartphone,
+    badge: "New Arrival",
+    waType: "general" as WhatsAppMessageType,
   },
 ];
 
@@ -62,7 +86,7 @@ const CategorySection = () => {
         </div>
 
         {/* Category grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {categories.map((category, index) => (
             <a
               key={index}

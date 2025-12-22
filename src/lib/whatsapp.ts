@@ -6,7 +6,7 @@ export type WhatsAppMessageType =
   | "budget_4_7"
   | "budget_7_10"
   | "gaming"
-  | "macbook"
+  | "desktop"
   | "service"
   | "product"
   | "sold_out"
@@ -16,13 +16,13 @@ export type WhatsAppMessageType =
 export type WhatsAppContactType = "owner" | "sales" | "service";
 
 const WHATSAPP_MESSAGES: Record<Exclude<WhatsAppMessageType, "product" | "sold_out" | "sales" | "owner">, string> = {
-  general: "Halo Admin Toko Komputer! Saya lihat dari website dan ingin tanya-tanya seputar stok laptop/Macbook yang ready hari ini. Bisa dibantu?",
+  general: "Halo Admin Database Computer! Saya lihat dari website dan ingin tanya-tanya seputar stok laptop/printer/smartphone yang ready hari ini. Bisa dibantu?",
   budget_1_3: "Halo Toko Pontianak! Saya tertarik dengan kategori laptop di budget 1 - 3 Juta. Ada rekomendasi unit yang paling oke untuk kebutuhan sehari-hari?",
   budget_4_7: "Halo Toko Pontianak! Saya tertarik dengan kategori laptop di budget 4 - 7 Juta. Ada rekomendasi unit yang paling oke untuk kebutuhan kuliah/kerja?",
   budget_7_10: "Halo Toko Pontianak! Saya tertarik dengan kategori laptop di budget 7 - 10 Juta. Ada rekomendasi unit untuk desain grafis atau gaming?",
   gaming: "Halo Toko Pontianak! Saya tertarik dengan kategori Gaming Laptop. Ada rekomendasi unit dengan GPU dedicated yang paling oke?",
-  macbook: "Halo Toko Pontianak! Saya tertarik dengan Macbook. Ada unit Air/Pro/M1/M2 yang ready stock?",
-  service: "Halo, saya mau konsultasi servis. Laptop/Macbook saya ada kendala dan butuh bantuan pengecekan. Kira-kira bisa dibantu?",
+  desktop: "Halo Toko Pontianak! Saya tertarik dengan Desktop PC. Ada rekomendasi PC rakitan untuk gaming/office yang ready?",
+  service: "Halo, saya mau konsultasi servis. Laptop saya ada kendala dan butuh bantuan pengecekan. Kira-kira bisa dibantu?",
 };
 
 // Smart routing: determine which WhatsApp number to use based on message type
@@ -40,7 +40,7 @@ function getWhatsAppNumberForType(type: WhatsAppMessageType): string {
     type === "budget_4_7" || 
     type === "budget_7_10" || 
     type === "gaming" || 
-    type === "macbook" ||
+    type === "desktop" ||
     type === "sales"
   ) {
     return WHATSAPP_NUMBERS.sales;
@@ -66,7 +66,7 @@ export function generateWhatsAppLink(type: WhatsAppMessageType, productName?: st
   } else if (type === "sales") {
     message = "Halo Admin Jual-Beli Toko! Saya mau tanya-tanya tentang pembelian laptop. Bisa dibantu?";
   } else if (type === "owner") {
-    message = "Halo Owner Toko Komputer! Saya ingin berkonsultasi langsung.";
+    message = "Halo Owner Database Computer! Saya ingin berkonsultasi langsung.";
   } else {
     message = WHATSAPP_MESSAGES[type as Exclude<WhatsAppMessageType, "product" | "sold_out" | "sales" | "owner">] || WHATSAPP_MESSAGES.general;
   }
@@ -79,9 +79,9 @@ export function generateWhatsAppLink(type: WhatsAppMessageType, productName?: st
 export function generateWhatsAppLinkByContact(contactType: WhatsAppContactType, customMessage?: string): string {
   const whatsappNumber = WHATSAPP_NUMBERS[contactType];
   const defaultMessages = {
-    owner: "Halo Owner Toko Komputer! Saya ingin berkonsultasi langsung.",
+    owner: "Halo Owner Database Computer! Saya ingin berkonsultasi langsung.",
     sales: "Halo Admin Jual-Beli Toko! Saya mau tanya-tanya tentang pembelian laptop. Bisa dibantu?",
-    service: "Halo Admin Service Toko! Saya mau konsultasi tentang servis laptop/Macbook. Bisa dibantu?",
+    service: "Halo Admin Service Toko! Saya mau konsultasi tentang servis laptop. Bisa dibantu?",
   };
   
   const message = customMessage || defaultMessages[contactType];

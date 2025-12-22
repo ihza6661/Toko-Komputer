@@ -1,5 +1,5 @@
 /**
- * Translation utilities for Toko Komputer
+ * Translation utilities for Database Computer
  * 
  * Provides translation functions for product conditions and other UI text
  * from English to Indonesian.

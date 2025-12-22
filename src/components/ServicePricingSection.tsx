@@ -17,45 +17,39 @@ const repairServices = [
   {
     icon: Monitor,
     title: "Ganti LCD / Layar",
-    laptopPrice: "Mulai Rp 800rb",
-    macbookPrice: "Mulai Rp 1.5jt",
+    price: "Mulai Rp 800rb",
     description: "Layar pecah, bergaris, atau mati total",
     popular: true,
   },
   {
     icon: Battery,
     title: "Ganti Baterai",
-    laptopPrice: "Mulai Rp 400rb",
-    macbookPrice: "Mulai Rp 600rb",
+    price: "Mulai Rp 400rb",
     description: "Baterai cepat habis atau tidak mengisi",
   },
   {
     icon: HardDrive,
     title: "Upgrade SSD",
-    laptopPrice: "Mulai Rp 350rb",
-    macbookPrice: "Mulai Rp 500rb",
+    price: "Mulai Rp 350rb",
     description: "Laptop lemot? Upgrade ke SSD untuk speed maksimal",
     popular: true,
   },
   {
     icon: Cpu,
     title: "Upgrade RAM",
-    laptopPrice: "Mulai Rp 300rb",
-    macbookPrice: "Mulai Rp 800rb",
+    price: "Mulai Rp 300rb",
     description: "Tambah RAM untuk multitasking lebih lancar",
   },
   {
     icon: Wrench,
     title: "Service Mati Total",
-    laptopPrice: "Mulai Rp 300rb",
-    macbookPrice: "Mulai Rp 500rb",
+    price: "Mulai Rp 300rb",
     description: "Tidak bisa nyala, kena air, atau kerusakan mesin",
   },
   {
     icon: Zap,
     title: "Cleaning & Maintenance",
-    laptopPrice: "Mulai Rp 150rb",
-    macbookPrice: "Mulai Rp 200rb",
+    price: "Mulai Rp 150rb",
     description: "Pembersihan rutin, ganti thermal paste",
   },
 ];
@@ -81,7 +75,7 @@ const ServicePricingSection = () => {
             Harga Transparan
           </span>
           <h2 id="pricing-heading" className="mt-2 font-display text-3xl md:text-4xl font-bold text-foreground">
-            Daftar Harga Servis Laptop & Macbook
+            Daftar Harga Servis Laptop
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
             Harga bisa bervariasi tergantung tipe dan kondisi unit. <br />
@@ -124,26 +118,10 @@ const ServicePricingSection = () => {
               <div className="space-y-2 mb-4 pb-4 border-b border-border">
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-muted-foreground">
-                    <Laptop className="h-4 w-4 inline mr-1" />
-                    Laptop Reguler
+                    Harga Mulai
                   </span>
-                  <span className="text-sm font-semibold text-primary">
-                    {service.laptopPrice}
-                  </span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">
-                    <svg
-                      className="h-4 w-4 inline mr-1"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path d="M20.8 2.8C20.5 2.4 20.1 2 19.6 2H4.4C3.9 2 3.5 2.4 3.2 2.8L2 5.5V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V5.5L20.8 2.8M20 18H4V6.7L4.8 5H19.2L20 6.7V18M12 9C10.3 9 9 10.3 9 12S10.3 15 12 15 15 13.7 15 12 13.7 9 12 9Z" />
-                    </svg>
-                    Macbook
-                  </span>
-                  <span className="text-sm font-semibold text-primary">
-                    {service.macbookPrice}
+                  <span className="text-lg font-bold text-primary">
+                    {service.price}
                   </span>
                 </div>
               </div>

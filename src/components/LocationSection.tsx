@@ -1,4 +1,4 @@
-import { Eye, Apple, Truck, Clock, MapPin, Phone } from "lucide-react";
+import { Eye, ShieldCheck, Truck, Clock, MapPin, Phone } from "lucide-react";
 import { COMPANY_INFO, WHATSAPP_NUMBERS } from "@/lib/constants";
 import { formatWhatsAppNumber } from "@/lib/whatsapp";
 
@@ -6,12 +6,12 @@ const trustPoints = [
   {
     icon: Clock,
     title: "Pengalaman 10+ Tahun",
-    description: "Kami telah melayani ribuan pelanggan di Pontianak dan seluruh Indonesia sejak tahun 2014.",
+    description: "Kami telah melayani ribuan pelanggan di Pontianak dengan produk berkualitas sejak tahun 2015. Gold Merchant Tokopedia & Shopee Mall Partner.",
   },
   {
-    icon: Apple,
-    title: "Spesialis Macbook",
-    description: "Ahli dalam menangani berbagai kendala Macbook dan menyediakan unit second dengan kondisi prima.",
+    icon: ShieldCheck,
+    title: "Garansi Resmi",
+    description: "Semua unit dilengkapi garansi resmi dari distributor/pabrikan. Ketenangan Anda adalah prioritas kami.",
   },
   {
     icon: Eye,
@@ -75,7 +75,7 @@ const LocationSection = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Toko Komputer Location"
+              title="Database Computer Location"
             />
           </div>
 

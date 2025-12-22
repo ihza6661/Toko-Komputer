@@ -96,7 +96,7 @@ export function generateLocalBusinessSchema(): SchemaOrganization {
     "@context": "https://schema.org",
     "@type": "ComputerStore",
     name: COMPANY_INFO.name,
-    description: `${COMPANY_INFO.name} adalah pusat jual beli laptop dan Macbook bekas berkualitas di Pontianak. Melayani tukar tambah, servis profesional, dan pengiriman seluruh Indonesia sejak ${COMPANY_INFO.foundedYear}.`,
+    description: `${COMPANY_INFO.name} adalah pusat jual beli laptop dan komputer baru berkualitas di Pontianak. Melayani tukar tambah, servis profesional, dan pengiriman seluruh Indonesia sejak ${COMPANY_INFO.foundedYear}.`,
     url: APP_CONFIG.baseUrl,
     logo: tokoLogo,
     image: [tokoLogo, placeholderImg],
@@ -166,7 +166,7 @@ export function generateRepairServiceSchema(): SchemaService {
     },
     areaServed: "Pontianak, Kalimantan Barat",
     description:
-      "Layanan servis dan perbaikan laptop, Macbook, upgrade hardware (SSD, RAM), ganti LCD/layar, ganti baterai, dan maintenance profesional.",
+      "Layanan servis dan perbaikan laptop, upgrade hardware (SSD, RAM), ganti LCD/layar, ganti baterai, dan maintenance profesional.",
     offers: {
       "@type": "Offer",
       priceCurrency: "IDR",
@@ -182,14 +182,14 @@ export function generateSalesServiceSchema(): SchemaService {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
-    serviceType: "Used Computer Sales",
+    serviceType: "Computer Sales",
     provider: {
       "@type": "LocalBusiness",
       name: COMPANY_INFO.name,
     },
     areaServed: "Indonesia",
     description:
-      "Jual beli laptop dan Macbook bekas berkualitas dengan garansi. Melayani tukar tambah dan pengiriman seluruh Indonesia.",
+      "Jual beli laptop dan komputer baru berkualitas dengan garansi resmi. Melayani tukar tambah dan pengiriman seluruh Indonesia.",
     offers: {
       "@type": "Offer",
       priceCurrency: "IDR",

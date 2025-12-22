@@ -1,5 +1,8 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import SecurityBanner from "@/components/SecurityBanner";
+import VerificationGuide from "@/components/VerificationGuide";
+import TrustBadges from "@/components/TrustBadges";
 import CategorySection from "@/components/CategorySection";
 import InventorySection from "@/components/InventorySection";
 import ServicesSection from "@/components/ServicesSection";
@@ -82,12 +85,15 @@ const Index = () => {
       <Header />
       <main className="min-h-screen bg-background">
         <HeroSection />
+        <SecurityBanner />
+        <TrustBadges />
         <CategorySection />
         <InventorySection />
         <ServicesSection />
         <ServicePricingSection />
         <TestimonialsSection />
         <PaymentMethodsSection />
+        <VerificationGuide />
         <FAQSection />
         <ContactFormSection />
         <ContactSelector />

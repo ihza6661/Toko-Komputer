@@ -608,7 +608,7 @@ const RefundPolicy = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  @tokolaptop_pontianak
+                  @database.id_official
                 </a>
               </div>
             </div>

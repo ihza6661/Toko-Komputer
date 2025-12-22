@@ -6,7 +6,7 @@ const testimonials = [
     name: "Budi Santoso",
     role: "Mahasiswa Untan",
     rating: 5,
-    text: "Beli laptop untuk kuliah di Toko, pelayanannya ramah banget dan sabar jelasin spek-speknya. Harga pas di kantong mahasiswa, kondisi laptop juga seperti baru. Garansi 3 bulan bikin tenang. Recommended!",
+    text: "Beli laptop baru untuk kuliah di Toko, pelayanannya ramah banget dan sabar jelasin spek-speknya. Harga pas di kantong mahasiswa, kondisi laptop juga mulus banget. Garansi resmi bikin tenang. Recommended!",
     date: "2 minggu lalu",
   },
   {
@@ -20,7 +20,7 @@ const testimonials = [
     name: "Andi Pratama",
     role: "Content Creator",
     rating: 5,
-    text: "Beli Macbook M1 disini kondisi mulus banget, batre health masih 95%. Harganya lebih murah dari toko lain tapi kualitas terjamin. Owner nya expert banget soal Macbook, bisa konsultasi panjang lebar. Top!",
+    text: "Beli laptop untuk editing disini kondisi mulus banget, spek tinggi dan harga bersaing. Harganya lebih murah dari toko lain tapi kualitas terjamin. Ownernya expert banget soal laptop, bisa konsultasi panjang lebar. Top!",
     date: "3 minggu lalu",
   },
   {
@@ -41,7 +41,7 @@ const testimonials = [
     name: "Devi Kusuma",
     role: "Guru",
     rating: 5,
-    text: "Pertama kali beli laptop second, awalnya ragu. Tapi setelah liat unit langsung dan dijelasin detail, jadi yakin. Unit yang dibeli awet dan lancar untuk ngajar online. Pelayanan after sales nya juga oke, fast respon!",
+    text: "Beli laptop baru untuk ngajar online. Dijelasin detail sama ownernya, jadi yakin pilih yang tepat sesuai kebutuhan. Unit yang dibeli awet dan lancar untuk ngajar. Pelayanan after sales nya juga oke, fast respon!",
     date: "3 minggu lalu",
   },
 ];

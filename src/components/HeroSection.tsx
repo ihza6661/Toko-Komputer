@@ -1,6 +1,6 @@
 import {
   MessageCircle,
-  Apple,
+  CheckCircle,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
@@ -12,60 +12,42 @@ const HeroSection = () => {
 
   return (
     <section id="hero" className="relative min-h-screen hero-gradient overflow-hidden" aria-labelledby="hero-heading">
-      {/* Background effects */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-32 md:w-72 h-32 md:h-72 bg-primary/10 rounded-full blur-[100px]" />
-        <div className="absolute bottom-40 right-10 w-48 md:w-96 h-48 md:h-96 bg-primary/5 rounded-full blur-[120px]" />
-      </div>
-
-      {/* Grid overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
-                            linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
-          backgroundSize: "60px 60px",
-        }}
-      />
+      {/* Clean minimal background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white"></div>
 
       <div className="container relative z-10 mx-auto px-4">
         {/* Hero content */}
         <div className="flex flex-col items-center justify-center text-center pt-24 sm:pt-32 pb-20 sm:pb-32 lg:pt-40 lg:pb-40">
-          {/* Badges */}
-          <div className="mb-8 animate-fade-in flex flex-wrap justify-center gap-2 md:gap-3">
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-              <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-              Dipercaya Sejak {COMPANY_INFO.foundedYear}
+          {/* Professional Badges - Marketplace Credentials */}
+          <div className="mb-8 flex flex-wrap justify-center gap-2 md:gap-3">
+            <span className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm">
+              <CheckCircle className="h-4 w-4 text-green-600" />
+              Gold Merchant Tokopedia
             </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-              <Apple className="h-4 w-4" />
-              Spesialis Macbook
+            <span className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm">
+              <CheckCircle className="h-4 w-4 text-orange-500" />
+              Shopee Mall Partner
             </span>
           </div>
 
-          {/* Main headline */}
-          <h1 id="hero-heading" className="max-w-4xl font-display text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl animate-slide-up">
-            Solusi Laptop & Macbook{" "}
-            <span className="text-gradient">Terpercaya</span> di Pontianak
+          {/* Main headline - Database Computer Branding */}
+          <h1 id="hero-heading" className="max-w-4xl font-display text-4xl font-bold leading-tight tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl">
+            Database Computer
+            <span className="block text-3xl md:text-5xl lg:text-6xl text-gray-600 mt-2">
+              Official Store Pontianak
+            </span>
           </h1>
 
-          {/* Sub-headline */}
-          <p
-            className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl animate-slide-up"
-            style={{ animationDelay: "0.1s" }}
-          >
-            Cari unit berkualitas dengan harga terjangkau? Kami menyediakan{" "}
-            <span className="text-foreground font-medium">
-              laptop bekas rasa baru
+          {/* Sub-headline - Product Diversity Focus */}
+          <p className="mt-6 max-w-2xl text-lg text-gray-600 md:text-xl">
+            Laptop, Printer, Smartphone & Tinta Original
+            <span className="block mt-2 text-gray-900 font-semibold">
+              Authorized Dealer Epson • Canon • Acer • Samsung
             </span>
-            , layanan tukar tambah, dan servis profesional untuk semua brand.
           </p>
 
           {/* CTA buttons */}
-          <div
-            className="mt-10 flex flex-col sm:flex-row gap-4 animate-slide-up"
-            style={{ animationDelay: "0.2s" }}
-          >
+          <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <Button variant="hero" size="xl" asChild>
               <a
                 href={whatsappLink}
@@ -75,12 +57,12 @@ const HeroSection = () => {
                   trackWhatsAppClick({
                     type: "general",
                     location: "hero-section",
-                    buttonText: "Chat Sekarang - Respon 5 Menit",
+                    buttonText: "Chat Sekarang - Respon Cepat",
                   })
                 }
               >
                 <MessageCircle className="h-5 w-5" />
-                Chat Sekarang - Respon 5 Menit
+                Chat Sekarang - Respon Cepat
               </a>
             </Button>
             <Button variant="outline" size="xl" asChild>
@@ -94,30 +76,27 @@ const HeroSection = () => {
                   })
                 }
               >
-                Lihat Stok Unit
+                Lihat Produk
               </a>
             </Button>
           </div>
 
-          {/* Trust indicators */}
-          <div
-            className="mt-12 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-8 animate-fade-in"
-            style={{ animationDelay: "0.4s" }}
-          >
+          {/* Trust indicators - Conservative Corporate Stats */}
+          <div className="mt-12 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-8">
             {[
               {
-                value: `${COMPANY_INFO.yearsInBusiness}+`,
-                label: "Tahun Pengalaman",
+                value: "Est. 2015",
+                label: "Established",
               },
-              { value: "5000+", label: "Unit Terjual" },
-              { value: "4.9★", label: "Rating Google" },
-              { value: "100%", label: "Garansi Resmi" },
+              { value: "10,000+", label: "Units Sold" },
+              { value: "4.8★", label: "Marketplace Rating" },
+              { value: "100%", label: "Original Products" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-2xl md:text-3xl font-display font-bold text-primary">
+                <div className="text-2xl md:text-3xl font-display font-bold text-gray-900">
                   {stat.value}
                 </div>
-                <div className="text-sm text-muted-foreground">
+                <div className="text-sm text-gray-600">
                   {stat.label}
                 </div>
               </div>
@@ -127,7 +106,7 @@ const HeroSection = () => {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
     </section>
   );
 };

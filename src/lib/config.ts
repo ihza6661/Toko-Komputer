@@ -14,7 +14,7 @@ export const APP_CONFIG = {
    * Application name
    * Used in SEO metadata and schema.org markup
    */
-  name: import.meta.env.VITE_APP_NAME || 'Toko Komputer',
+  name: import.meta.env.VITE_APP_NAME || 'Database Computer',
 
   /**
    * Frontend base URL (without trailing slash)
