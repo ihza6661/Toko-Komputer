@@ -153,7 +153,7 @@ const ProductDetail = () => {
       
       <main className="min-h-screen bg-background">
         {/* Breadcrumb & Back Button */}
-        <div className="container mx-auto px-4 pb-6 pt-2 sm:32">
+        <div className="container mx-auto px-4 pb-6 pt-8 sm:pt-20">
           <div className="flex items-center justify-between mb-4">
             <Breadcrumb 
               items={[
