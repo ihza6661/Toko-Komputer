@@ -70,7 +70,7 @@ const InventorySection = () => {
                  {/* Clickable Link to Product Detail */}
                  <Link to={`/products/${product.id}`} className="block">
                   {/* Image */}
-                  <div className="relative aspect-square bg-secondary/50 overflow-hidden">
+                  <div className="relative aspect-auto bg-secondary/50 overflow-hidden">
                     {product.image_url ? (
                       <img
                         src={product.image_url}

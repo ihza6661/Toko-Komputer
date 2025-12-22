@@ -153,7 +153,7 @@ const ProductDetail = () => {
       
       <main className="min-h-screen bg-background">
         {/* Breadcrumb & Back Button */}
-        <div className="container mx-auto px-4 pb-6 pt-20 sm:32">
+        <div className="container mx-auto px-4 pb-6 pt-2 sm:32">
           <div className="flex items-center justify-between mb-4">
             <Breadcrumb 
               items={[
@@ -176,11 +176,11 @@ const ProductDetail = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
             {/* Left Column - Image */}
             <div className="space-y-4">
-              <div className="relative aspect-square bg-secondary/50 rounded-2xl overflow-hidden">
+              <div className="relative bg-secondary/50 rounded-2xl overflow-hidden">
                 <img
                   src={product.image_url || placeholderImg}
                   alt={product.name}
-                  className={`w-full h-full object-cover ${product.stock === 0 ? 'grayscale' : ''}`}
+                  className={`w-full h-full object-cover aspect-auto ${product.stock === 0 ? 'grayscale' : ''}`}
                   onError={(e) => {
                     const target = e.currentTarget;
                     target.onerror = null;
