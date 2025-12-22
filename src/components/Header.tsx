@@ -21,8 +21,8 @@ const Header = () => {
     { href: "#products", label: "Laptop & Macbook" },
     { href: "#services", label: "Servis" },
     { href: "#testimonials", label: "Testimoni" },
-    { href: "#location", label: "Lokasi" },
     { href: "#contact", label: "Kontak" },
+    { href: "#location", label: "Lokasi" },
   ];
 
   return (
