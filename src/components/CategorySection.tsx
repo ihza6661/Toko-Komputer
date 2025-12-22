@@ -60,10 +60,10 @@ const categories = [
   },
   {
     title: "Smartphone",
-    priceRange: "Infinix • Samsung",
-    description: "Smartphone baru dan second berkualitas dengan garansi.",
+    priceRange: "Vivo • Redmi • iPhone",
+    description: "Smartphone baru garansi resmi dengan harga terbaik.",
     icon: Smartphone,
-    badge: "New Arrival",
+    badge: "Garansi Resmi",
     waType: "general" as WhatsAppMessageType,
   },
 ];
