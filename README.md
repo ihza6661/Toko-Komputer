@@ -5,7 +5,7 @@
 [![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://toko-komputer-landing-site.vercel.app/)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![Vite](https://img.shields.io/badge/Vite-7.3-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
 **A modern, conversion-optimized landing page for Toko Komputer** - a trusted laptop and Macbook store in Pontianak Barat, West Kalimantan, Indonesia.
@@ -139,7 +139,7 @@ Toko Komputer Landing Page is a production-ready, mobile-first web application d
 ### Core Technologies
 - **Framework**: [React 18.3](https://reactjs.org/) - Modern React with Hooks and Suspense
 - **Language**: [TypeScript 5.8](https://www.typescriptlang.org/) - Type-safe development
-- **Build Tool**: [Vite 5.4](https://vitejs.dev/) - Lightning-fast HMR and optimized builds
+- **Build Tool**: [Vite 7.3](https://vitejs.dev/) - Lightning-fast HMR and optimized builds
 - **Styling**: [Tailwind CSS 3.4](https://tailwindcss.com/) - Utility-first CSS framework
 
 ### UI & Components
