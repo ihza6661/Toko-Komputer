@@ -44,7 +44,7 @@ const Footer = () => {
                   <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
                   <div>
                     <div className="font-medium">Telepon/WhatsApp</div>
-                    <div>0812-3456-7890</div>
+                    <div>{WHATSAPP_NUMBERS.owner.replace(/^62/, '0').replace(/(\d{4})(\d{4})(\d{4})/, '$1-$2-$3')}</div>
                   </div>
                 </a>
               </li>

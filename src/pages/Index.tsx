@@ -85,18 +85,18 @@ const Index = () => {
       <Header />
       <main className="min-h-screen bg-background">
         <HeroSection />
-        <SecurityBanner />
+        {/* <SecurityBanner /> */}
+        {/* <VerificationGuide /> */}
         <TrustBadges />
-        <CategorySection />
         <InventorySection />
+        <CategorySection />
         <ServicesSection />
         <ServicePricingSection />
         <TestimonialsSection />
         <PaymentMethodsSection />
-        <VerificationGuide />
         <FAQSection />
-        <ContactFormSection />
         <ContactSelector />
+        <ContactFormSection />
         <LocationSection />
       </main>
       <Footer />

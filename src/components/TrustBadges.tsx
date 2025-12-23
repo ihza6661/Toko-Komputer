@@ -1,119 +1,98 @@
-import { Shield, Lock, Award, CheckCircle } from "lucide-react";
+import { Shield, Lock, CheckCircle, ShieldCheck, Truck, Clock } from "lucide-react";
+
+const trustPoints = [
+  {
+    icon: ShieldCheck,
+    title: "100% Original & Garansi",
+    description: "iPhone garansi TAM, laptop garansi distributor resmi. Produk dijamin original.",
+    gradient: "from-blue-50 to-blue-100",
+    border: "border-blue-200",
+    iconBg: "bg-blue-600",
+  },
+  {
+    icon: CheckCircle,
+    title: "Cicilan 0%",
+    description: "12+ bank • Tenor s/d 24 bulan",
+    gradient: "from-green-50 to-green-100",
+    border: "border-green-200",
+    iconBg: "bg-green-600",
+  },
+  {
+    icon: Lock,
+    title: "Secure Payment",
+    description: "Transaksi aman & terlindungi",
+    gradient: "from-purple-50 to-purple-100",
+    border: "border-purple-200",
+    iconBg: "bg-purple-600",
+  },
+  {
+    icon: Clock,
+    title: "10+ Tahun Pengalaman",
+    description: "Melayani ribuan pelanggan di Pontianak sejak 2015",
+    gradient: "from-orange-50 to-orange-100",
+    border: "border-orange-200",
+    iconBg: "bg-orange-600",
+  },
+  {
+    icon: Shield,
+    title: "Fast Response",
+    description: "Respon cepat via WhatsApp untuk konsultasi dan after sales",
+    gradient: "from-teal-50 to-teal-100",
+    border: "border-teal-200",
+    iconBg: "bg-teal-600",
+  },
+  {
+    icon: Truck,
+    title: "Siap Kirim Se-Indonesia",
+    description: "Pengiriman aman ke seluruh pelosok negeri dengan asuransi",
+    gradient: "from-indigo-50 to-indigo-100",
+    border: "border-indigo-200",
+    iconBg: "bg-indigo-600",
+  },
+];
 
 export default function TrustBadges() {
   return (
-    <section className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">
-            Mengapa Berbelanja di Database Computer?
-          </h3>
-          <p className="text-gray-600">
+    <section className="py-14 md:py-20 bg-secondary/30">
+      <div className="container mx-auto px-4">
+        {/* Section header */}
+        <div className="text-center mb-10 md:mb-12">
+          <span className="text-xs sm:text-sm font-medium text-primary uppercase tracking-wider">
+            Mengapa Database Computer?
+          </span>
+          <h2 className="mt-2 font-display text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+            Toko Laptop Terpercaya di Pontianak
+          </h2>
+          <p className="mt-3 text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
             Kepercayaan dan keamanan Anda adalah prioritas utama kami
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-          {/* Badge 1: Apple Authorized Reseller */}
-          <div className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl border-2 border-gray-300 hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mb-3 shadow-lg">
-              <Award className="w-8 h-8 text-white" />
+        {/* Trust badges grid - 2 rows × 3 cols */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {trustPoints.map((point, index) => (
+            <div
+              key={index}
+              className={`flex flex-col items-center text-center p-6 bg-gradient-to-br ${point.gradient} rounded-xl border-2 ${point.border} hover:shadow-lg transition-shadow`}
+            >
+              <div className={`w-16 h-16 ${point.iconBg} rounded-full flex items-center justify-center mb-4 shadow-lg`}>
+                <point.icon className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="font-display text-base sm:text-lg font-bold text-foreground mb-2">
+                {point.title}
+              </h3>
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                {point.description}
+              </p>
             </div>
-            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-1">
-              Apple Authorized
-            </h4>
-            <p className="text-xs text-gray-600">
-              Reseller resmi produk Apple
-            </p>
-          </div>
-
-          {/* Badge 2: 0% Installment */}
-          <div className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border-2 border-blue-200 hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-3 shadow-lg">
-              <CheckCircle className="w-8 h-8 text-white" />
-            </div>
-            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-1">
-              Cicilan 0%
-            </h4>
-            <p className="text-xs text-gray-600">
-              12+ bank • Tenor s/d 24 bulan
-            </p>
-          </div>
-
-          {/* Badge 3: Secure Payment */}
-          <div className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-green-50 to-green-100 rounded-xl border-2 border-green-200 hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-3 shadow-lg">
-              <Lock className="w-8 h-8 text-white" />
-            </div>
-            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-1">
-              Secure Payment
-            </h4>
-            <p className="text-xs text-gray-600">
-              Transaksi aman & terlindungi
-            </p>
-          </div>
-
-          {/* Badge 4: Anti-Fraud System */}
-          <div className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl border-2 border-orange-200 hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-3 shadow-lg">
-              <Shield className="w-8 h-8 text-white" />
-            </div>
-            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-1">
-              Anti-Fraud System
-            </h4>
-            <p className="text-xs text-gray-600">
-              Sistem verifikasi kontak resmi
-            </p>
-          </div>
+          ))}
         </div>
 
-        {/* Additional Trust Indicators */}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-          {/* Indicator 1 */}
-          <div className="flex items-center gap-3 bg-gray-50 rounded-lg p-4 border border-gray-200">
-            <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-              <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-            </div>
-            <div>
-              <p className="text-sm font-bold text-gray-900">100% Original</p>
-              <p className="text-xs text-gray-600">Produk asli bergaransi resmi</p>
-            </div>
-          </div>
-
-          {/* Indicator 2 */}
-          <div className="flex items-center gap-3 bg-gray-50 rounded-lg p-4 border border-gray-200">
-            <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-              <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-            </div>
-            <div>
-              <p className="text-sm font-bold text-gray-900">Fast Response</p>
-              <p className="text-xs text-gray-600">Respon cepat via WhatsApp</p>
-            </div>
-          </div>
-
-          {/* Indicator 3 */}
-          <div className="flex items-center gap-3 bg-gray-50 rounded-lg p-4 border border-gray-200">
-            <div className="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-              <svg className="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-            </div>
-            <div>
-              <p className="text-sm font-bold text-gray-900">After Sales</p>
-              <p className="text-xs text-gray-600">Layanan purna jual terbaik</p>
-            </div>
-          </div>
-        </div>
-
-        {/* SSL Badge (Optional - shows HTTPS security) */}
-        <div className="mt-8 flex justify-center">
-          <div className="inline-flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full border border-gray-300">
+        {/* SSL Badge */}
+        <div className="mt-10 flex justify-center">
+          <div className="inline-flex items-center gap-2 bg-background/80 backdrop-blur-sm px-4 py-2 rounded-full border border-border shadow-sm">
             <Lock className="w-4 h-4 text-green-600" />
-            <span className="text-xs font-semibold text-gray-700">
+            <span className="text-xs font-semibold text-foreground">
               Website ini dilindungi dengan enkripsi SSL
             </span>
           </div>

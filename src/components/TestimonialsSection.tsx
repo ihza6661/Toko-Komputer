@@ -47,7 +47,7 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
-  const averageRating = 4.9;
+  const averageRating = 4.5;
   const totalReviews = 500;
 
   return (
@@ -134,21 +134,21 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        {/* CTA to Google Reviews */}
-        <div className="text-center">
-          <p className="text-xs sm:text-sm text-muted-foreground mb-4">
-            Lihat lebih banyak review dari pelanggan kami
-          </p>
-          <a
-            href="https://www.google.com/search?q=r-tech+computer+pontianak"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-primary hover:underline font-medium text-sm sm:text-base"
-          >
-            <Star className="h-4 w-4 fill-primary" />
-            Baca Semua Review di Google
-          </a>
-        </div>
+         {/* CTA to Google Reviews */}
+         <div className="text-center">
+           <p className="text-xs sm:text-sm text-muted-foreground mb-4">
+             Lihat lebih banyak review dari pelanggan kami
+           </p>
+           <a
+             href="https://www.google.com/search?q=Database+Computer+Pontianak"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="inline-flex items-center gap-2 text-primary hover:underline font-medium text-sm sm:text-base"
+           >
+             <Star className="h-4 w-4 fill-primary" />
+             Baca Semua Review di Google
+           </a>
+         </div>
       </div>
     </section>
   );

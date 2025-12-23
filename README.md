@@ -43,7 +43,7 @@
 
 ## 📖 Overview
 
-Toko Komputer Landing Page is a production-ready, mobile-first web application designed to showcase products, services, and drive conversions for Toko Komputer, a trusted laptop and Macbook retailer established in 2014.
+Toko Komputer Landing Page is a production-ready, mobile-first web application designed to showcase products, services, and drive conversions for Toko Komputer.
 
 ### Business Impact
 
@@ -69,9 +69,9 @@ Toko Komputer Landing Page is a production-ready, mobile-first web application d
 
 ## ✨ Key Features
 
-- 🎨 **Modern Hero Section** - Trust badges ("Sejak 2014", "Spesialis Macbook") with compelling CTAs
+- 🎨 **Modern Hero Section** - Trust badges ("", "100% Garansi Resmi") with compelling CTAs
 - 🛒 **Product Inventory Management** - Dynamic product catalog with sold-out feature
-- 💬 **Smart WhatsApp Routing** - Context-aware routing (Sales, Service, Owner)
+- 💬 **Smart WhatsApp Routing** - Context-aware routing (Sales, Service)
 - ❓ **FAQ Section** - 8 common questions with expandable answers
 - ⭐ **Social Proof** - 6 customer testimonials with Google rating display
 - 💳 **Payment Methods** - Bank Transfer, QRIS, Credit Card, Financing options

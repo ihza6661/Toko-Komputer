@@ -1,63 +1,112 @@
-import {
-  MessageCircle,
-  CheckCircle,
-} from "lucide-react";
+import { MessageCircle, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
-import { COMPANY_INFO } from "@/lib/constants";
 import { trackWhatsAppClick, trackNavigation } from "@/lib/analytics";
+import { useState, useEffect } from "react";
+import { getShiftInfo, isStoreOpen } from "@/lib/timeBasedRouting";
 
 const HeroSection = () => {
-  const whatsappLink = generateWhatsAppLink("general");
+  // Dynamic WhatsApp link that adapts to current shift (morning/afternoon admin)
+  const [whatsappLink, setWhatsappLink] = useState(() => 
+    generateWhatsAppLink("general")
+  );
+  
+  // Shift information for display
+  const [shiftInfo, setShiftInfo] = useState(() => getShiftInfo());
+  const [storeOpen, setStoreOpen] = useState(() => isStoreOpen());
+
+  useEffect(() => {
+    // Update WhatsApp link and shift info based on current time/shift
+    const updateData = () => {
+      setWhatsappLink(generateWhatsAppLink("general"));
+      setShiftInfo(getShiftInfo());
+      setStoreOpen(isStoreOpen());
+    };
+
+    // Initial update
+    updateData();
+
+    // Update every 5 minutes to handle shift changes
+    // (e.g., if user keeps page open from 13:55 to 14:05)
+    const interval = setInterval(updateData, 5 * 60 * 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <section id="hero" className="relative min-h-screen hero-gradient overflow-hidden" aria-labelledby="hero-heading">
-      {/* Clean minimal background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white"></div>
+    <section
+      id="hero"
+      aria-labelledby="hero-heading"
+      className="relative overflow-hidden"
+    >
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-white" />
 
-      <div className="container relative z-10 mx-auto px-4">
-        {/* Hero content */}
-        <div className="flex flex-col items-center justify-center text-center pt-24 sm:pt-32 pb-20 sm:pb-32 lg:pt-40 lg:pb-40">
-          {/* Professional Badges - Marketplace Credentials */}
-          <div className="mb-8 flex flex-wrap justify-center gap-2 md:gap-3">
-            <span className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm">
-              <CheckCircle className="h-4 w-4 text-blue-600" />
-              Apple Authorized Reseller
-            </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm">
-              <CheckCircle className="h-4 w-4 text-green-600" />
-              Gold Merchant Tokopedia
-            </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm">
-              <CheckCircle className="h-4 w-4 text-orange-500" />
-              Shopee Mall Partner
-            </span>
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="flex min-h-[90svh] flex-col items-center justify-center text-center pt-24 pb-20 sm:pt-28 sm:pb-28 lg:pt-36 lg:pb-36">
+
+          {/* Badges */}
+          <div className="mb-6 flex flex-wrap justify-center gap-2 sm:gap-3">
+            {[
+              { text: "100% Garansi Resmi", color: "text-blue-600" },
+              { text: "Gold Merchant Tokopedia", color: "text-green-600" },
+              { text: "Shopee Mall Partner", color: "text-orange-500" },
+            ].map((badge, i) => (
+              <span
+                key={i}
+                className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs sm:text-sm font-medium text-gray-700 shadow-sm"
+              >
+                <CheckCircle className={`h-4 w-4 ${badge.color}`} />
+                {badge.text}
+              </span>
+            ))}
           </div>
 
-          {/* Main headline - Database Computer Branding */}
-          <h1 id="hero-heading" className="max-w-4xl font-display text-4xl font-bold leading-tight tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl">
+          {/* Heading */}
+          <h1
+            id="hero-heading"
+            className="max-w-4xl font-display font-bold tracking-tight text-gray-900
+              text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+          >
             Database Computer
-            <span className="block text-3xl md:text-5xl lg:text-6xl text-gray-600 mt-2">
-              Official Store Pontianak
+            <span className="block mt-2 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-600">
+              Official Website
             </span>
+            <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-600">
+              Pontianak, Indonesia</span>
           </h1>
 
-          {/* Sub-headline - Product Diversity Focus */}
-          <p className="mt-6 max-w-2xl text-lg text-gray-600 md:text-xl">
-            <span className="block text-gray-900 font-semibold text-xl md:text-2xl">
+          {/* Description */}
+          <p className="mt-6 max-w-2xl text-base sm:text-lg md:text-xl text-gray-600">
+            <span className="block font-semibold text-gray-900">
               Terlengkap • Termurah • Terpercaya
             </span>
-            <span className="block mt-3">
+            <span className="block mt-2">
               PC, Laptop, Smartphone, iPhone Garansi Resmi
-            </span>
-            <span className="block mt-2 text-base md:text-lg text-blue-600 font-semibold">
-              💳 Cicilan 0% dengan 12+ Bank
             </span>
           </p>
 
-          {/* CTA buttons */}
-          <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <Button variant="hero" size="xl" asChild>
+          {/* Shift Status Badge */}
+          <div className="mt-6 flex justify-center">
+            <div className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium shadow-sm transition-all
+              ${storeOpen 
+                ? 'bg-green-50 border-green-200 text-green-700' 
+                : 'bg-gray-50 border-gray-200 text-gray-600'
+              }`}
+            >
+              <div className={`h-2.5 w-2.5 rounded-full ${storeOpen ? 'bg-green-500 animate-pulse' : 'bg-gray-400'}`} />
+              <span className="font-semibold">
+                {storeOpen ? `${shiftInfo.adminName} Aktif` : 'Toko Tutup'}
+              </span>
+              <span className="text-xs opacity-75">
+                {storeOpen ? `(${shiftInfo.timeRange})` : ''}
+              </span>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-8 flex w-full max-w-md flex-col gap-3 sm:mt-10 sm:flex-row sm:max-w-none sm:justify-center">
+            <Button variant="hero" size="xl" className="w-full sm:w-auto" asChild>
               <a
                 href={whatsappLink}
                 target="_blank"
@@ -66,15 +115,24 @@ const HeroSection = () => {
                   trackWhatsAppClick({
                     type: "general",
                     location: "hero-section",
-                    buttonText: "Chat Sekarang - Respon Cepat",
+                    buttonText: "Chat Sekarang",
                   })
                 }
               >
                 <MessageCircle className="h-5 w-5" />
-                Chat Sekarang - Respon Cepat
+                Chat Sekarang
+                <span className="ml-2 text-xs opacity-70">
+                  ({shiftInfo.adminName.replace('Admin ', '')})
+                </span>
               </a>
             </Button>
-            <Button variant="outline" size="xl" asChild>
+
+            <Button
+              variant="outline"
+              size="xl"
+              className="w-full sm:w-auto"
+              asChild
+            >
               <a
                 href="#products"
                 onClick={() =>
@@ -90,32 +148,33 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          {/* Trust indicators - Conservative Corporate Stats */}
-          <div className="mt-12 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-8">
+          {/* Stats */}
+          <div className="mt-12 grid w-full max-w-4xl grid-cols-2 gap-4 sm:mt-16 md:grid-cols-4">
             {[
-              {
-                value: "Est. 2015",
-                label: "Established",
-              },
+              { value: "Est. 2015", label: "Established" },
               { value: "10,000+", label: "Units Sold" },
-              { value: "4.8★", label: "Marketplace Rating" },
-              { value: "100%", label: "Original Products" },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-2xl md:text-3xl font-display font-bold text-gray-900">
+              { value: "4.5★", label: "Google Rating" },
+              { value: "100%", label: "Original" },
+            ].map((stat, i) => (
+              <div
+                key={i}
+                className="rounded-xl border border-gray-200 bg-white p-4 text-center shadow-sm"
+              >
+                <div className="text-xl sm:text-2xl font-bold text-gray-900">
                   {stat.value}
                 </div>
-                <div className="text-sm text-gray-600">
+                <div className="mt-1 text-xs sm:text-sm text-gray-600">
                   {stat.label}
                 </div>
               </div>
             ))}
           </div>
+
         </div>
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
     </section>
   );
 };

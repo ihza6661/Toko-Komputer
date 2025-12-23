@@ -1,4 +1,5 @@
 import { WHATSAPP_NUMBERS } from "./constants";
+import { getActiveAdminNumber, getShiftInfo, getCurrentDayName, isStoreOpen } from "./timeBasedRouting";
 
 export type WhatsAppMessageType = 
   | "general"
@@ -27,6 +28,25 @@ const WHATSAPP_MESSAGES: Record<Exclude<WhatsAppMessageType, "product" | "sold_o
   service: "Halo, saya mau konsultasi servis. Laptop saya ada kendala dan butuh bantuan pengecekan. Kira-kira bisa dibantu?",
 };
 
+// Shift-aware messages for general inquiries
+function getShiftAwareMessage(): string {
+  const shiftInfo = getShiftInfo();
+  const dayName = getCurrentDayName();
+  const storeOpen = isStoreOpen();
+  
+  if (!storeOpen) {
+    // Outside operating hours - provide context
+    return `Halo Admin Database Computer! Saya menghubungi di luar jam operasional (hari ${dayName}). Saya ingin tanya-tanya seputar produk. Mohon dibalas saat toko buka. Terima kasih!`;
+  }
+  
+  // During operating hours - shift-aware
+  if (shiftInfo.dayType === "sunday") {
+    return `Halo ${shiftInfo.adminName} Database Computer! Saya lihat dari website (hari Minggu) dan ingin tanya-tanya seputar stok laptop/smartphone yang ready. Bisa dibantu?`;
+  }
+  
+  return `Halo ${shiftInfo.adminName} Database Computer! Saya lihat dari website dan ingin tanya-tanya seputar stok laptop/printer/smartphone yang ready hari ini. Bisa dibantu?`;
+}
+
 // Smart routing: determine which WhatsApp number to use based on message type
 function getWhatsAppNumberForType(type: WhatsAppMessageType): string {
   // Service-related inquiries go to service admin
@@ -54,8 +74,13 @@ function getWhatsAppNumberForType(type: WhatsAppMessageType): string {
     return WHATSAPP_NUMBERS.owner;
   }
   
-  // General inquiries default to owner
-  return WHATSAPP_NUMBERS.general;
+  // General inquiries use time-based routing (shift-aware)
+  if (type === "general") {
+    return getActiveAdminNumber();
+  }
+  
+  // Fallback to time-based routing
+  return getActiveAdminNumber();
 }
 
 export function generateWhatsAppLink(type: WhatsAppMessageType, productName?: string): string {
@@ -70,8 +95,11 @@ export function generateWhatsAppLink(type: WhatsAppMessageType, productName?: st
     message = "Halo Admin Jual-Beli Toko! Saya mau tanya-tanya tentang pembelian laptop. Bisa dibantu?";
   } else if (type === "owner") {
     message = "Halo Owner Database Computer! Saya ingin berkonsultasi langsung.";
+  } else if (type === "general") {
+    // Use shift-aware message for general inquiries
+    message = getShiftAwareMessage();
   } else {
-    message = WHATSAPP_MESSAGES[type as Exclude<WhatsAppMessageType, "product" | "sold_out" | "sales" | "owner">] || WHATSAPP_MESSAGES.general;
+    message = WHATSAPP_MESSAGES[type as Exclude<WhatsAppMessageType, "product" | "sold_out" | "sales" | "owner" | "general">] || getShiftAwareMessage();
   }
   
   const encodedMessage = encodeURIComponent(message);
