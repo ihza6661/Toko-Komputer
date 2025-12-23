@@ -7,6 +7,7 @@ export type WhatsAppMessageType =
   | "budget_7_10"
   | "gaming"
   | "desktop"
+  | "smartphone"
   | "service"
   | "product"
   | "sold_out"
@@ -22,6 +23,7 @@ const WHATSAPP_MESSAGES: Record<Exclude<WhatsAppMessageType, "product" | "sold_o
   budget_7_10: "Halo Toko Pontianak! Saya tertarik dengan kategori laptop di budget 7 - 10 Juta. Ada rekomendasi unit untuk desain grafis atau gaming?",
   gaming: "Halo Toko Pontianak! Saya tertarik dengan kategori Gaming Laptop. Ada rekomendasi unit dengan GPU dedicated yang paling oke?",
   desktop: "Halo Toko Pontianak! Saya tertarik dengan Desktop PC. Ada rekomendasi PC rakitan untuk gaming/office yang ready?",
+  smartphone: "Halo Admin Database Computer! Saya tertarik dengan koleksi Smartphone (iPhone/Android). Apakah ada stok ready hari ini? Bisa dibantu?",
   service: "Halo, saya mau konsultasi servis. Laptop saya ada kendala dan butuh bantuan pengecekan. Kira-kira bisa dibantu?",
 };
 
@@ -41,6 +43,7 @@ function getWhatsAppNumberForType(type: WhatsAppMessageType): string {
     type === "budget_7_10" || 
     type === "gaming" || 
     type === "desktop" ||
+    type === "smartphone" ||
     type === "sales"
   ) {
     return WHATSAPP_NUMBERS.sales;

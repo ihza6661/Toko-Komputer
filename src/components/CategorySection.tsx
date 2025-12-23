@@ -3,6 +3,14 @@ import { generateWhatsAppLink, WhatsAppMessageType } from "@/lib/whatsapp";
 
 const categories = [
   {
+    title: "Smartphone",
+    priceRange: "iPhone • Vivo • Redmi",
+    description: "iPhone, Vivo, Redmi dengan garansi resmi TAM. Cicilan 0% tersedia.",
+    icon: Smartphone,
+    badge: "Official TAM",
+    waType: "smartphone" as WhatsAppMessageType,
+  },
+  {
     title: "Budget Friendly",
     priceRange: "1 - 3 Jutaan",
     description: "Pilihan terbaik untuk tugas sekolah dan administrasi.",
@@ -56,14 +64,6 @@ const categories = [
     description: "Tinta dan toner original berkualitas dengan harga bersaing.",
     icon: Droplet,
     badge: "Original",
-    waType: "general" as WhatsAppMessageType,
-  },
-  {
-    title: "Smartphone",
-    priceRange: "Vivo • Redmi • iPhone",
-    description: "Smartphone baru garansi resmi dengan harga terbaik.",
-    icon: Smartphone,
-    badge: "Garansi Resmi",
     waType: "general" as WhatsAppMessageType,
   },
 ];

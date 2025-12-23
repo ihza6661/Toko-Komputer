@@ -10,9 +10,69 @@ import placeholderImg from "@/assets/placeholder.svg";
 import { translateCondition, getConditionBadgeColor } from "@/lib/translations";
 import { Link } from "react-router-dom";
 
+// Mock iPhone Data for Database Computer (Apple Authorized Reseller)
+// Official TAM pricing as of December 2024
+const mockiPhoneProducts = [
+  {
+    id: "iphone-15-pro-max-256gb",
+    name: "iPhone 15 Pro Max 256GB (Garansi Resmi TAM)",
+    stock: 2,
+    price: 24999000,
+    image_url: "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&q=80&w=800",
+    specifications: {
+      processor: "A17 Pro Chip",
+      gpu: "6-core GPU",
+      storage: "256GB",
+      display: "6.7\" Super Retina XDR with ProMotion (120Hz)",
+      warranty: "Garansi Resmi TAM 1 Tahun",
+      condition: "New",
+      extras: "Cicilan 0% tersedia dari 12+ bank",
+    }
+  },
+  {
+    id: "iphone-15-128gb",
+    name: "iPhone 15 128GB (Garansi Resmi TAM)",
+    stock: 3,
+    price: 11249000,
+    image_url: "https://images.unsplash.com/photo-1696446701796-da61225697cc?auto=format&fit=crop&q=80&w=800",
+    specifications: {
+      processor: "A16 Bionic Chip",
+      gpu: "5-core GPU",
+      storage: "128GB",
+      display: "6.1\" Super Retina XDR",
+      warranty: "Garansi Resmi TAM 1 Tahun",
+      condition: "New",
+      extras: "Cicilan 0% tersedia dari 12+ bank",
+    }
+  },
+  {
+    id: "iphone-13-128gb",
+    name: "iPhone 13 128GB (Garansi Resmi TAM)",
+    stock: 2,
+    price: 8249000,
+    image_url: "https://images.unsplash.com/photo-1632661674596-df8be070a5c5?auto=format&fit=crop&q=80&w=800",
+    specifications: {
+      processor: "A15 Bionic Chip",
+      gpu: "4-core GPU",
+      storage: "128GB",
+      display: "6.1\" Super Retina XDR",
+      warranty: "Garansi Resmi TAM 1 Tahun",
+      condition: "New",
+      extras: "Best seller untuk pelajar & mahasiswa",
+    }
+  }
+];
+
 const InventorySection = () => {
-  // Fetch products using React Query hook
-  const { data: products = [], isLoading: loading } = useProducts({ perPage: 8 });
+  // Fetch products from API using React Query hook
+  const { data: apiProducts = [], isLoading: loadingApi } = useProducts({ perPage: 8 });
+
+  // Merge mock iPhone products with API products
+  // iPhones appear FIRST for Apple Authorized Reseller positioning
+  const products = [...mockiPhoneProducts, ...(Array.isArray(apiProducts) ? apiProducts : [])];
+  
+  // We consider it loading only if API is loading AND we have no mock products
+  const loading = loadingApi && mockiPhoneProducts.length === 0;
 
   // Inject Product Schema for first 4 products (above the fold)
   useEffect(() => {
@@ -22,11 +82,11 @@ const InventorySection = () => {
         if (product.stock > 0) {
           const schema = generateProductSchema({
             name: product.name,
-            description: product.description || `${product.name} - Laptop berkualitas dari Database Computer`,
+            description: product.description || `${product.name} - ${product.specifications?.condition === 'New' ? 'Brand New' : 'Laptop berkualitas'} dari Database Computer`,
             image: product.image_url || placeholderImg,
             price: typeof product.price === 'number' ? product.price : parseFloat(String(product.price).replace(/[^0-9.-]+/g, '')) || 0,
-            condition: 'UsedCondition',
-            sku: `RTECH-${product.id}`
+            condition: product.specifications?.condition === 'New' ? 'NewCondition' : 'UsedCondition',
+            sku: `DB-${product.id}`
           });
           injectSchemaMarkup(schema);
         }
@@ -45,7 +105,7 @@ const InventorySection = () => {
               Stok Tersedia Hari Ini
             </h2>
             <p className="mt-3 sm:mt-4 text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
-              Unit siap pakai dengan garansi. Hubungi kami untuk cek ketersediaan terbaru!
+              iPhone Garansi TAM & Laptop Bergaransi. Hubungi kami untuk cek ketersediaan terbaru!
             </p>
           </div>
 
