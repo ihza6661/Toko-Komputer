@@ -21,6 +21,10 @@ const HeroSection = () => {
           {/* Professional Badges - Marketplace Credentials */}
           <div className="mb-8 flex flex-wrap justify-center gap-2 md:gap-3">
             <span className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm">
+              <CheckCircle className="h-4 w-4 text-blue-600" />
+              Apple Authorized Reseller
+            </span>
+            <span className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm">
               <CheckCircle className="h-4 w-4 text-green-600" />
               Gold Merchant Tokopedia
             </span>
@@ -40,9 +44,14 @@ const HeroSection = () => {
 
           {/* Sub-headline - Product Diversity Focus */}
           <p className="mt-6 max-w-2xl text-lg text-gray-600 md:text-xl">
-            Laptop, Printer, Smartphone & Tinta Original
-            <span className="block mt-2 text-gray-900 font-semibold">
-              Authorized Dealer Epson • Canon • Acer • Samsung
+            <span className="block text-gray-900 font-semibold text-xl md:text-2xl">
+              Terlengkap • Termurah • Terpercaya
+            </span>
+            <span className="block mt-3">
+              PC, Laptop, Smartphone, iPhone Garansi Resmi
+            </span>
+            <span className="block mt-2 text-base md:text-lg text-blue-600 font-semibold">
+              💳 Cicilan 0% dengan 12+ Bank
             </span>
           </p>
 

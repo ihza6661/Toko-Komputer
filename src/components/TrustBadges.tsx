@@ -14,20 +14,33 @@ export default function TrustBadges() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-          {/* Badge 1: Verified Business */}
+          {/* Badge 1: Apple Authorized Reseller */}
+          <div className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl border-2 border-gray-300 hover:shadow-lg transition-shadow">
+            <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mb-3 shadow-lg">
+              <Award className="w-8 h-8 text-white" />
+            </div>
+            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-1">
+              Apple Authorized
+            </h4>
+            <p className="text-xs text-gray-600">
+              Reseller resmi produk Apple
+            </p>
+          </div>
+
+          {/* Badge 2: 0% Installment */}
           <div className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border-2 border-blue-200 hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-3 shadow-lg">
               <CheckCircle className="w-8 h-8 text-white" />
             </div>
             <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-1">
-              Verified Business
+              Cicilan 0%
             </h4>
             <p className="text-xs text-gray-600">
-              Toko terpercaya & terverifikasi
+              12+ bank • Tenor s/d 24 bulan
             </p>
           </div>
 
-          {/* Badge 2: Secure Payment */}
+          {/* Badge 3: Secure Payment */}
           <div className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-green-50 to-green-100 rounded-xl border-2 border-green-200 hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-3 shadow-lg">
               <Lock className="w-8 h-8 text-white" />
@@ -40,20 +53,7 @@ export default function TrustBadges() {
             </p>
           </div>
 
-          {/* Badge 3: Trusted Since [Year] */}
-          <div className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl border-2 border-purple-200 hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-3 shadow-lg">
-              <Award className="w-8 h-8 text-white" />
-            </div>
-            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-1">
-              Terpercaya
-            </h4>
-            <p className="text-xs text-gray-600">
-              Melayani ribuan pelanggan
-            </p>
-          </div>
-
-          {/* Badge 4: Fraud Protection */}
+          {/* Badge 4: Anti-Fraud System */}
           <div className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl border-2 border-orange-200 hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-3 shadow-lg">
               <Shield className="w-8 h-8 text-white" />
