@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🖥️ Toko Komputer - Modern Landing Page
+# 🖥️ Database Computer - Modern Landing Page
 
 [![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://toko-komputer-landing-site.vercel.app/)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
@@ -43,7 +43,7 @@
 
 ## 📖 Overview
 
-Toko Komputer Landing Page is a production-ready, mobile-first web application designed to showcase products, services, and drive conversions for Toko Komputer.
+Database Computer Landing Page is a production-ready, mobile-first web application designed to showcase products, services, and drive conversions for Database Computer.
 
 ### Business Impact
 
@@ -104,16 +104,21 @@ Toko Komputer Landing Page is a production-ready, mobile-first web application d
 > Screenshot: Product inventory with sold-out feature, responsive card layout, and smooth hover effects. Shows real product images with pricing and specifications.
 
 #### Smart WhatsApp Integration
-<!-- TODO: Add screenshot or GIF of WhatsApp routing selector -->
-> **Coming Soon:** Context-aware WhatsApp routing with 2-way contact selection (Sales, Service). Demonstrates how inquiries are automatically routed based on customer intent.
+![Product Section](./src/assets/smart-routing.webp)
+
+> Context-aware WhatsApp routing with 2-way contact selection (Sales, Service). Demonstrates how inquiries are automatically routed based on customer intent.
 
 #### Services & Pricing
-<!-- TODO: Add screenshot of services section -->
-> **Coming Soon:** Services showcase section displaying Buy, Trade-in, and Repair options with transparent pricing and detailed descriptions.
+![Product Section](./src/assets/service.webp)
+![Product Section](./src/assets/pricing.webp)
+
+> Services showcase section displaying Buy, Trade-in, and Repair options with transparent pricing and detailed descriptions.
 
 #### Analytics Dashboard (Development Mode)
 <!-- TODO: Add screenshot of built-in analytics dashboard -->
-> **Coming Soon:** Built-in analytics dashboard showing WhatsApp conversion tracking, scroll depth metrics, and event logs. Available only in development mode for privacy.
+![Product Section](./src/assets/analytics-dashboard.webp)
+
+> Built-in analytics dashboard showing WhatsApp conversion tracking, scroll depth metrics, and event logs. Available only in development mode for privacy.
 
 ### Adding Screenshots
 
@@ -1082,7 +1087,7 @@ Feel free to open an issue for:
 
 This is a **commercial project** developed for Toko Komputer, Pontianak Barat.
 
-**Copyright © 2024 Toko Komputer. All rights reserved.**
+**Copyright © 2025 Cangkir Co. All rights reserved.**
 
 **Important Notice:**
 - This codebase is proprietary and confidential
@@ -1105,7 +1110,7 @@ This project uses open-source dependencies. See individual package licenses:
 
 <div align="center">
 
-**Created with ❤️ by Ihza Mahendra**
+**Engineered with lots of Coffee ☕ by Ihza Mahendra**
 
 [![GitHub](https://img.shields.io/badge/GitHub-@ihza6661-181717?style=for-the-badge&logo=github)](https://github.com/ihza6661)
 [![Portfolio](https://img.shields.io/badge/Portfolio-ihza.me-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://portfolio.ihza.me)
@@ -1136,14 +1141,14 @@ More projects available on [GitHub](https://github.com/ihza6661)
 
 ### About Toko Komputer
 
-**Toko Komputer** is a trusted laptop and Macbook retailer based in Pontianak Barat, West Kalimantan, Indonesia.
+**Database Computer** is a trusted Computer Store retailer based in Pontianak Barat, West Kalimantan, Indonesia.
 
 - 📍 **Location**: Pontianak Barat, West Kalimantan, Indonesia
 - 📅 **Established**: 2014
-- 💻 **Specialty**: Laptops, Macbooks, and Computer Services
+- 💻 **Specialty**: Laptops, Smartphone, and Computer Services
 - 🔧 **Services**: Sales, Trade-ins, Repairs, and Maintenance
 
-**Contact Toko Komputer:**
+**Contact Database Computer:**
 - 📱 WhatsApp: [081234567890](https://wa.me/6281234567890)
 - 🌐 Website: [toko-komputer-landing-site.vercel.app](https://toko-komputer-landing-site.vercel.app/)
 
@@ -1153,7 +1158,7 @@ More projects available on [GitHub](https://github.com/ihza6661)
 
 ### ⭐ Star this repository if you find it helpful!
 
-**Built with ❤️ for Toko Komputer, Pontianak Barat**
+**Built with ❤️ for Database Computer, Pontianak Barat**
 
 [🔝 Back to Top](#-toko-komputer---modern-landing-page)
 
