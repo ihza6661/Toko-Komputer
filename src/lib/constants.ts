@@ -1,7 +1,7 @@
 // Database Computer Contact Configuration
 // Multiple WhatsApp numbers for smart routing
 export const WHATSAPP_NUMBERS = {
-  owner: "628115757717",           // Admin 1 (Shift Pagi) - 0811-5757-717
+  // owner: "12345678910",           // Owner - Primary contact (unknown)
   sales: "628115757717",           // Jual-Beli (Sales inquiries) - Admin 1
   service: "628115757710",         // Service & Garansi - 0811-5757-710
   general: "628115757716",         // Admin 2 (Shift Siang) - 0811-5757-716
