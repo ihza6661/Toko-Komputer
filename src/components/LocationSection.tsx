@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 import OperatingHoursWidget from "./OperatingHoursWidget";
 
 const LocationSection = () => {
-  const formattedPhoneOwner = formatWhatsAppNumber(WHATSAPP_NUMBERS.owner);
   const formattedPhoneSales = formatWhatsAppNumber(WHATSAPP_NUMBERS.sales);
   const formattedPhoneService = formatWhatsAppNumber(WHATSAPP_NUMBERS.service);
   const formattedPhoneGeneral = formatWhatsAppNumber(WHATSAPP_NUMBERS.general);
@@ -95,7 +94,6 @@ const LocationSection = () => {
                     <div className="flex items-center justify-between py-2 px-3 rounded-lg bg-gray-50">
                       <div className="flex-1">
                         <p className="text-xs font-medium text-gray-700">Admin Pagi (Shift 08:00-14:00)</p>
-                        <p className="text-sm font-mono text-gray-900 mt-0.5">{formattedPhoneOwner}</p>
                       </div>
                       {shiftInfo.type === "morning" && shiftInfo.isOperating && (
                         <span className="ml-2 flex items-center gap-1 text-xs font-semibold text-green-600">

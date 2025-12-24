@@ -595,9 +595,9 @@ const RefundPolicy = () => {
               <div>
                 <strong className="text-foreground">Jam Operasional:</strong>
                 <br />
-                {COMPANY_INFO.operatingHours.weekdays}
+                {COMPANY_INFO.operatingHours.display.weekdays}
                 <br />
-                {COMPANY_INFO.operatingHours.weekend}
+                {COMPANY_INFO.operatingHours.display.weekend}
               </div>
               <div>
                 <strong className="text-foreground">Instagram:</strong>

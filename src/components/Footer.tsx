@@ -38,18 +38,6 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li>
                 <a
-                  href={`tel:+${WHATSAPP_NUMBERS.owner}`}
-                  className="flex items-start gap-2 text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                  <div>
-                    <div className="font-medium">Telepon/WhatsApp</div>
-                    <div>{WHATSAPP_NUMBERS.owner.replace(/^62/, '0').replace(/(\d{4})(\d{4})(\d{4})/, '$1-$2-$3')}</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a
                   href={COMPANY_INFO.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -66,8 +54,8 @@ const Footer = () => {
                 <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
                 <div>
                   <div className="font-medium">Jam Operasional</div>
-                  <div>{COMPANY_INFO.operatingHours.weekdays}</div>
-                  <div>{COMPANY_INFO.operatingHours.weekend}</div>
+                  <div>{COMPANY_INFO.operatingHours.display.weekdays}</div>
+                  <div>{COMPANY_INFO.operatingHours.display.weekend}</div>
                 </div>
               </li>
             </ul>

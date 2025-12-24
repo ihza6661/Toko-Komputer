@@ -39,6 +39,7 @@ export const COMPANY_INFO = {
     // Display strings (for UI)
     display: {
       weekdays: "Senin - Jumat: 08:00 - 20:00",
+      weekend: "Sabtu: 08:00 - 18:00 | Minggu: 09:00 - 18:00",
       saturday: "Sabtu: 08:00 - 18:00",
       sunday: "Minggu: 09:00 - 18:00",
     },

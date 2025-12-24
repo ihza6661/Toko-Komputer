@@ -69,11 +69,6 @@ function getWhatsAppNumberForType(type: WhatsAppMessageType): string {
     return WHATSAPP_NUMBERS.sales;
   }
   
-  // Owner direct contact
-  if (type === "owner") {
-    return WHATSAPP_NUMBERS.owner;
-  }
-  
   // General inquiries use time-based routing (shift-aware)
   if (type === "general") {
     return getActiveAdminNumber();
