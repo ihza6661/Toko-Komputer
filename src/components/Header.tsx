@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import tokoLogo from "@/assets/toko-logo.png";
 import { COMPANY_INFO, WHATSAPP_NUMBERS } from "@/lib/constants";
 import { trackNavigation } from "@/lib/analytics";
+import { formatWhatsAppNumber } from "@/lib/whatsapp";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,12 +56,12 @@ const Header = () => {
             {/* Desktop NAP Info */}
             <div className="hidden lg:flex items-center gap-4 text-xs">
               <a
-                href={`tel:+${WHATSAPP_NUMBERS.owner}`}
+                href={`tel:+${WHATSAPP_NUMBERS.general}`}
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Telepon Database Computer"
               >
                 <Phone className="h-4 w-4" />
-                <span className="font-medium">0812-3456-7890</span>
+                <span className="font-medium">{formatWhatsAppNumber(WHATSAPP_NUMBERS.general)}</span>
               </a>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4" />
@@ -68,7 +69,7 @@ const Header = () => {
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Clock className="h-4 w-4" />
-                <span>Sen-Sab: 09:00-21:00</span>
+                <span>Sen-Jum: 08:00-20:00</span>
               </div>
             </div>
             {/* Divider */}
@@ -96,7 +97,7 @@ const Header = () => {
             {/* Mobile - Phone + Menu Toggle */}
             <div className="flex md:hidden items-center gap-2">
               <a
-                href={`tel:+${WHATSAPP_NUMBERS.owner}`}
+                href={`tel:+${WHATSAPP_NUMBERS.general}`}
                 className="p-2 text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Telepon Database Computer"
               >
