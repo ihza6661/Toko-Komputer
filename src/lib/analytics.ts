@@ -50,6 +50,8 @@ declare global {
     fbq?: (...args: any[]) => void;
     tokoAnalytics?: {
       openDashboard?: () => void;
+      closeDashboard?: () => void;
+      toggleDashboard?: () => void;
       getEvents: () => EventData[];
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       getSummary: () => any;
