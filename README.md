@@ -1158,7 +1158,7 @@ More projects available on [GitHub](https://github.com/ihza6661)
 
 ### ⭐ Star this repository if you find it helpful!
 
-**Built with ❤️ for Database Computer, Pontianak Barat**
+**Forged with purpose for Database Computer, Pontianak Barat**
 
 [🔝 Back to Top](#-toko-komputer---modern-landing-page)
 
