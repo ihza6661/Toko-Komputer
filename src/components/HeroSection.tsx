@@ -4,8 +4,12 @@ import { generateWhatsAppLink } from "@/lib/whatsapp";
 import { trackWhatsAppClick, trackNavigation } from "@/lib/analytics";
 import { useState, useEffect } from "react";
 import { getShiftInfo, isStoreOpen } from "@/lib/timeBasedRouting";
+import { getActiveHeroVariant } from "@/lib/heroVariants";
 
 const HeroSection = () => {
+  // Get A/B test variant content
+  const heroContent = getActiveHeroVariant();
+  
   // Dynamic WhatsApp link that adapts to current shift (morning/afternoon admin)
   const [whatsappLink, setWhatsappLink] = useState(() => 
     generateWhatsAppLink("general")
@@ -43,7 +47,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-white" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="flex min-h-[90svh] flex-col items-center justify-center text-center pt-24 pb-20 sm:pt-28 sm:pb-28 lg:pt-36 lg:pb-36">
+        <div className="flex min-h-[70svh] lg:min-h-[80svh] flex-col items-center justify-center text-center pt-24 pb-20 sm:pt-28 sm:pb-28 lg:pt-36 lg:pb-36">
 
           {/* Badges */}
           <div className="mb-6 flex flex-wrap justify-center gap-2 sm:gap-3">
@@ -62,27 +66,30 @@ const HeroSection = () => {
             ))}
           </div>
 
+          {/* Brand Line */}
+          <div className="mb-3 text-sm sm:text-base font-medium text-gray-600">
+            Database Computer — Official Website
+          </div>
+
           {/* Heading */}
           <h1
             id="hero-heading"
             className="max-w-4xl font-display font-bold tracking-tight text-gray-900
               text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
           >
-            Database Computer
-            <span className="block mt-2 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-600">
-              Official Website
+            {heroContent.mainHeadline}
+            <span className="block mt-2">
+              {heroContent.subHeadline}
             </span>
-            <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-600">
-              Pontianak, Indonesia</span>
           </h1>
 
           {/* Description */}
           <p className="mt-6 max-w-2xl text-base sm:text-lg md:text-xl text-gray-600">
-            <span className="block font-semibold text-gray-900">
-              Terlengkap • Termurah • Terpercaya
+            <span className="block text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+              {heroContent.description.primary}
             </span>
-            <span className="block mt-2">
-              PC, Laptop, Smartphone, iPhone Garansi Resmi
+            <span className="block">
+              {heroContent.description.secondary}
             </span>
           </p>
 
@@ -96,7 +103,7 @@ const HeroSection = () => {
             >
               <div className={`h-2.5 w-2.5 rounded-full ${storeOpen ? 'bg-green-500 animate-pulse' : 'bg-gray-400'}`} />
               <span className="font-semibold">
-                {storeOpen ? `${shiftInfo.adminName} Aktif` : 'Toko Tutup'}
+                {storeOpen ? `${shiftInfo.adminName} Online` : 'Toko Tutup'}
               </span>
               <span className="text-xs opacity-75">
                 {storeOpen ? `(${shiftInfo.timeRange})` : ''}
@@ -106,7 +113,7 @@ const HeroSection = () => {
 
           {/* CTA */}
           <div className="mt-8 flex w-full max-w-md flex-col gap-3 sm:mt-10 sm:flex-row sm:max-w-none sm:justify-center">
-            <Button variant="hero" size="xl" className="w-full sm:w-auto" asChild>
+            <Button variant="hero" size="xl" className="w-full sm:w-auto group" asChild>
               <a
                 href={whatsappLink}
                 target="_blank"
@@ -119,10 +126,12 @@ const HeroSection = () => {
                   })
                 }
               >
-                <MessageCircle className="h-5 w-5" />
-                Chat Sekarang
-                <span className="ml-2 text-xs opacity-70">
-                  ({shiftInfo.adminName.replace('Admin ', '')})
+                <MessageCircle className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                <span className="flex flex-col items-start sm:block">
+                  <span className="font-bold">Chat Sekarang</span>
+                  <span className="text-xs opacity-75 sm:ml-2 sm:inline">
+                    (Respon Cepat)
+                  </span>
                 </span>
               </a>
             </Button>
@@ -148,13 +157,31 @@ const HeroSection = () => {
             </Button>
           </div>
 
+          {/* Micro-Guarantee */}
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-sm text-gray-600">
+            <span className="inline-flex items-center gap-1.5">
+              <CheckCircle className="h-4 w-4 text-green-600" />
+              Fast Response
+            </span>
+            <span className="text-gray-300">•</span>
+            <span className="inline-flex items-center gap-1.5">
+              <CheckCircle className="h-4 w-4 text-green-600" />
+              Admin Online
+            </span>
+            <span className="text-gray-300">•</span>
+            <span className="inline-flex items-center gap-1.5">
+              <CheckCircle className="h-4 w-4 text-green-600" />
+              Garansi Jelas
+            </span>
+          </div>
+
           {/* Stats */}
           <div className="mt-12 grid w-full max-w-4xl grid-cols-2 gap-4 sm:mt-16 md:grid-cols-4">
             {[
-              { value: "Est. 2015", label: "Established" },
-              { value: "10,000+", label: "Units Sold" },
-              { value: "4.5★", label: "Google Rating" },
-              { value: "100%", label: "Original" },
+              { value: "2015", label: "Berdiri Sejak" },
+              { value: "10.000+", label: "Unit Terjual" },
+              { value: "4.5★", label: "Rating Google" },
+              { value: "100%", label: "Produk Original" },
             ].map((stat, i) => (
               <div
                 key={i}
