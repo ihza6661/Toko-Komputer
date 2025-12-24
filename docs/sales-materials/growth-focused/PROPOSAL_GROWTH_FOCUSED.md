@@ -8,7 +8,7 @@
 Bisnis retail modern yang sukses membutuhkan lebih dari sekadar kehadiran di media sosial. Untuk mencapai pertumbuhan berkelanjutan dan membangun brand equity jangka panjang, bisnis memerlukan **aset digital yang 100% dimiliki dan dikontrol**.
 
 **Realitas Bisnis Saat Ini:**
-- Instagram adalah platform yang powerful untuk marketing
+- Instagram adalah platform yang kuat untuk marketing
 - Namun Instagram bukan aset yang Anda miliki
 - Algoritma berubah, reach organik menurun
 - Tidak muncul di Google Search
@@ -16,10 +16,10 @@ Bisnis retail modern yang sukses membutuhkan lebih dari sekadar kehadiran di med
 
 **Solusi:** Website profesional sebagai **"Digital Headquarters"** untuk:
 - [+] Aset digital yang 100% Anda miliki dan kontrol
-- [+] Professional image yang mencerminkan kualitas bisnis Anda
+- [+] Citra profesional yang mencerminkan kualitas bisnis Anda
 - [+] Katalog produk terstruktur dengan search & filter
 - [+] Visibilitas di Google Search untuk jangkauan organik
-- [+] Independence dari perubahan algoritma platform
+- [+] Kemandirian dari perubahan algoritma platform
 
 ---
 
@@ -27,7 +27,7 @@ Bisnis retail modern yang sukses membutuhkan lebih dari sekadar kehadiran di med
 
 ### 1. Ketergantungan pada Platform Pihak Ketiga
 
-**Risiko Business:**
+**Risiko Bisnis:**
 - 100% bisnis online bergantung pada Instagram (yang bukan milik Anda)
 - Algoritma Instagram terus berubah, reach organik menurun
 - Tidak ada kontrol atas perubahan kebijakan platform
@@ -37,7 +37,7 @@ Bisnis retail modern yang sukses membutuhkan lebih dari sekadar kehadiran di med
 **Dampak:**
 - Tidak ada aset digital yang benar-benar Anda kontrol
 - Brand equity terbangun di platform orang lain
-- Vulnerable terhadap perubahan platform
+- Rentan terhadap perubahan platform
 
 ### 2. Kehilangan Traffic dari Google Search
 
@@ -56,23 +56,23 @@ Bisnis retail modern yang sukses membutuhkan lebih dari sekadar kehadiran di med
 
 **Perbandingan:**
 
-| Aspek | Instagram Only | With Professional Website |
+| Aspek | Hanya Instagram | Dengan Website Profesional |
 |-------|----------------|---------------------------|
-| **Brand Image** | Casual, social | Professional, trustworthy |
-| **Credibility** | "Toko Instagram" | "Established Business" |
-| **Product Display** | Stories (24 jam) | Permanent catalog |
-| **Search & Filter** | Scroll feed | Advanced search |
-| **Business Info** | Bio singkat | Complete information |
-| **Analytics** | Basic insights | Comprehensive tracking |
+| **Brand Image** | Casual, sosial | Profesional, terpercaya |
+| **Credibility** | "Toko Instagram" | "Bisnis Terpercaya" |
+| **Product Display** | Stories (24 jam) | Katalog permanen |
+| **Search & Filter** | Scroll feed | Pencarian lanjutan |
+| **Business Info** | Bio singkat | Informasi lengkap |
+| **Analytics** | Insight dasar | Pelacakan menyeluruh |
 
 **Dampak:**
-- Professional image tidak matching dengan kualitas bisnis
+- Citra profesional tidak matching dengan kualitas bisnis
 - Sulit untuk B2B partnership (vendor, supplier, bank)
-- Customer perception: "Toko kecil" vs "Business established"
+- Customer perception: "Toko kecil" vs "Bisnis Terpercaya"
 
 ### 4. Keterbatasan Fungsional
 
-**Limitasi Instagram:**
+**Keterbatasan Instagram:**
 - Tidak cocok untuk katalog produk lengkap (50+ items)
 - Pelanggan harus scroll feed untuk mencari produk
 - Tidak ada search/filter by brand, harga, category
@@ -81,10 +81,10 @@ Bisnis retail modern yang sukses membutuhkan lebih dari sekadar kehadiran di med
 - Sulit untuk display informasi detail (specs, warranty, dll)
 
 **Dampak:**
-- Poor user experience untuk product browsing
+- Pengalaman pengguna buruk untuk browsing produk
 - Customer kesulitan menemukan produk yang dicari
 - Banyak inquiry berulang (tanya stok, harga, specs)
-- Time-consuming untuk customer service
+- Memakan waktu untuk customer service
 
 ---
 
@@ -109,38 +109,38 @@ WEBSITE PERUSAHAAN (Digital Headquarters)
     +-- 100% Owned & Controlled by You
 ```
 
-**Strategi "Hub & Spoke":**
-- Website = Hub (pusat, yang Anda kontrol)
-- Social Media = Spoke (untuk reach & engagement, mengarahkan ke hub)
-- Email, WhatsApp = Spoke (direct communication channels)
+**Strategi "Pusat & Cabang":**
+- Website = Pusat (yang Anda kontrol sepenuhnya)
+- Social Media = Cabang (untuk jangkauan & engagement, mengarahkan ke pusat)
+- Email, WhatsApp = Cabang (saluran komunikasi langsung)
 
-### Value Proposition
+### Nilai yang Ditawarkan
 
-Website memberikan value dalam 4 dimensi:
+Website memberikan nilai dalam 4 dimensi:
 
-#### 1. [BUILDING] Ownership & Control
+#### 1. [BUILDING] Kepemilikan & Kontrol
 - **100% milik Anda** - Domain, hosting, data, semuanya atas nama Anda
-- **No platform risk** - Tidak terpengaruh kebijakan/perubahan platform lain
-- **Long-term asset** - Brand equity terbangun di aset yang Anda miliki
-- **Data ownership** - Customer data, analytics, behavior insights
+- **Tidak ada risiko platform** - Tidak terpengaruh kebijakan/perubahan platform lain
+- **Aset jangka panjang** - Brand equity terbangun di aset yang Anda miliki
+- **Kepemilikan data** - Data customer, analytics, behavior insights
 
-#### 2. [SEARCH] Organic Visibility
-- **Google Search presence** - Muncul untuk keyword "toko laptop [kota]", dll
-- **SEO optimization** - Schema.org markup untuk rich snippets
-- **24/7 discovery** - Customer bisa menemukan Anda kapan saja
-- **Content marketing** - Blog posts untuk long-tail keywords
+#### 2. [SEARCH] Visibilitas Organik
+- **Kehadiran di Google Search** - Muncul untuk keyword "toko laptop [kota]", dll
+- **Optimasi SEO** - Schema.org markup untuk rich snippets
+- **Ditemukan 24/7** - Customer bisa menemukan Anda kapan saja
+- **Content marketing** - Artikel blog untuk long-tail keywords
 
-#### 3. [CHART] Professional Credibility
-- **Established business image** - Website = marker of professionalism
-- **Trust signals** - SSL, verified business info, professional design
-- **B2B ready** - Easier to pitch to partners, suppliers, banks
-- **Competitive advantage** - Stand out dari competitor yang Instagram-only
+#### 3. [SHIELD] Kredibilitas Profesional
+- **Citra bisnis terpercaya** - Website = penanda profesionalisme
+- **Sinyal kepercayaan** - SSL, info bisnis terverifikasi, desain profesional
+- **Siap untuk B2B** - Lebih mudah untuk pitch ke partner, supplier, bank
+- **Keunggulan kompetitif** - Menonjol dari competitor yang hanya pakai Instagram
 
-#### 4. [TOOLS] Business Efficiency
-- **Self-service catalog** - Customer bisa browse sendiri (reduce inquiry)
-- **Automated routing** - Smart WhatsApp contact based on inquiry type
-- **Analytics insights** - Understand customer behavior & optimize
-- **Scalable** - Ready untuk growth (add products, categories, features)
+#### 4. [TOOLS] Efisiensi Bisnis
+- **Katalog mandiri** - Customer bisa browse sendiri (kurangi inquiry)
+- **Routing otomatis** - Kontak WhatsApp pintar berdasarkan tipe inquiry
+- **Insight analytics** - Memahami perilaku customer & optimasi
+- **Skalabel** - Siap untuk growth (tambah produk, kategori, fitur)
 
 ---
 
@@ -163,96 +163,98 @@ Website memberikan value dalam 4 dimensi:
 - Touch-optimized untuk mobile
 - Progressive Web App ready
 
-#### 3. Professional UI/UX
-- Modern, clean design
-- Intuitive navigation
-- High-quality product images
-- Clear call-to-actions
-- Easy-to-read typography
+#### 3. Desain UI/UX Profesional
+- Desain modern & bersih
+- Navigasi intuitif
+- Gambar produk berkualitas tinggi
+- Call-to-action yang jelas
+- Tipografi mudah dibaca
 
-### B. Fitur Business & Marketing
+### B. Fitur Bisnis & Marketing
 
 #### 1. SEO Optimization
 - Schema.org structured data (LocalBusiness, Product, Service)
 - Meta tags untuk social media sharing
 - Sitemap & robots.txt
 - Fast page speed (Core Web Vitals optimized)
-- Mobile-friendly (Google ranking factor)
-- Rich snippets ready
+- Responsif mobile (faktor ranking Google)
+- Siap untuk rich snippets
 
-#### 2. Contact & Conversion
+#### 2. Kontak & Konversi
 - Multiple contact channels (WhatsApp, Email, Phone)
-- Smart contact routing (Sales, Service, General)
+- Routing kontak pintar (Sales, Service, General)
 - Contact form untuk inquiry
 - Alamat toko dengan Google Maps integration
-- Business hours & directions
+- Jam operasional & petunjuk arah
 - Social media links integration
 
-#### 3. Content Sections
-- Services showcase (Buy, Trade-in, Repair)
-- Customer testimonials & reviews
-- FAQ section (reduce repetitive inquiries)
-- About Us / Company profile
-- Payment methods display
-- Warranty & return policy
+#### 3. Bagian Konten
+- Showcase layanan (Buy, Trade-in, Repair)
+- Testimoni & review pelanggan
+- Bagian FAQ (kurangi pertanyaan berulang)
+- Tentang Kami / Profil perusahaan
+- Tampilan metode pembayaran
+- Kebijakan garansi & pengembalian
 
-#### 4. Trust & Credibility
-- SSL Certificate (HTTPS) - security indicator
-- Verified business information
-- Customer testimonials with photos
-- Partnership badges (banks, brands)
-- Payment method logos
+#### 4. Kepercayaan & Kredibilitas
+- Sertifikat SSL (HTTPS) - indikator keamanan
+- Informasi bisnis terverifikasi
+- Testimoni pelanggan dengan foto
+- Badge kemitraan (bank, brand)
+- Logo metode pembayaran
 - Google Business Profile integration
 
-### C. Fitur Analytics & Management
+### C. Fitur Analytics & Manajemen
 
 #### 1. Admin Dashboard
-- Easy content management (no coding required)
-- Add/edit/delete products dengan simple form
+- **Powered by Laravel Filament** - Admin panel modern & profesional
+- Manajemen konten mudah (tidak perlu coding)
+- Tambah/edit/hapus produk dengan form sederhana
 - Drag & drop untuk upload foto
 - Update harga & deskripsi dengan mudah
-- Manage categories & filters
-- Bulk operations (import/export)
+- Kelola kategori & filter
+- Operasi bulk (import/export)
+- Interface intuitif & user-friendly
 
-#### 2. Analytics & Insights
+#### 2. Analytics & Insight
 - Google Analytics 4 integration
-- Visitor statistics (pageviews, sessions, users)
-- Traffic sources (organic, social, direct, referral)
-- Product popularity tracking
-- Conversion tracking (WhatsApp clicks, form submissions)
-- User behavior insights (scroll depth, time on page)
+- Statistik pengunjung (pageviews, sessions, users)
+- Sumber traffic (organic, social, direct, referral)
+- Pelacakan popularitas produk
+- Pelacakan konversi (klik WhatsApp, form submissions)
+- Insight perilaku pengguna (scroll depth, time on page)
 
-#### 3. Performance Monitoring
-- Page load speed tracking
-- Mobile vs desktop usage
-- Browser & device statistics
-- Bounce rate & engagement metrics
-- Search terms (what users search on site)
+#### 3. Monitoring Performa
+- Pelacakan kecepatan loading halaman
+- Penggunaan mobile vs desktop
+- Statistik browser & device
+- Metrik bounce rate & engagement
+- Kata kunci pencarian (apa yang dicari user di site)
 
 ---
 
-## [$] INVESTASI & PAYMENT OPTIONS
+## [$] INVESTASI & OPSI PEMBAYARAN
 
-### Paket: PROFESSIONAL COMPLETE
+### Paket: LENGKAP PROFESIONAL
 
 **Termasuk:**
-- [+] Full website development (modern & responsive)
-- [+] Product catalog system dengan admin dashboard
+- [+] Pengembangan website lengkap (modern & responsif)
+- [+] Sistem katalog produk dengan admin dashboard
 - [+] SSL Certificate (HTTPS) - 1 tahun
 - [+] Domain .id/.com profesional - 1 tahun
 - [+] Hosting premium (uptime 99.9%) - 1 tahun
-- [+] Responsive design (mobile, tablet, desktop)
-- [+] SEO basic setup (Schema.org, meta tags, sitemap)
-- [+] Google Analytics 4 integration
-- [+] Smart WhatsApp routing system
-- [+] Free maintenance 6 bulan pertama
-- [+] Training team (2 sesi @2 jam)
+- [+] Desain responsif (mobile, tablet, desktop)
+- [+] Setup SEO dasar (Schema.org, meta tags, sitemap)
+- [+] Integrasi Google Analytics 4
+- [+] Sistem routing WhatsApp pintar
+- [+] Maintenance gratis 6 bulan pertama
+- [+] Training team (2 sesi @2 jam via Google Meet/Zoom atau Offline di Pontianak)
 - [+] Technical support via WhatsApp
 
 ### Harga
 
-| Item | Harga Normal | Early Adopter |
-|------|--------------|---------------|
+| Item | Harga Normal | Promo Pelanggan Awal |
+|------|--------------|----------------------|
 | Development | Rp 5.000.000 | Rp 4.000.000 |
 | Domain .id (1 thn) | Rp 250.000 | Included |
 | Hosting Premium (1 thn) | Rp 1.500.000 | Included |
@@ -265,34 +267,34 @@ Website memberikan value dalam 4 dimensi:
 
 ---
 
-### [$] PAYMENT OPTIONS
+### [$] OPSI PEMBAYARAN
 
-#### OPSI 1: Full Payment (RECOMMENDED)
+#### OPSI 1: Pembayaran Penuh (DIREKOMENDASIKAN)
 ```
-[$] Rp 5.500.000 (one-time)
+[$] Rp 5.500.000 (sekali bayar)
     Diskon 5%: Rp 5.225.000
 
 [GIFT] BONUS:
-    * Google Business Profile Optimization (Nilai: Rp 500.000)
+    * Optimasi Google Business Profile (Nilai: Rp 500.000)
     * Priority support 1 tahun (Nilai: Rp 1.000.000)
 
     Total bonus: Rp 1.500.000
 ```
 
-#### OPSI 2: 2x Installment
+#### OPSI 2: 2x Cicilan
 ```
 [$] DP: Rp 2.850.000
     Pelunasan (30 hari): Rp 2.850.000
     Total: Rp 5.700.000
 
 [GIFT] BONUS:
-    * Google Business Profile Optimization (Nilai: Rp 500.000)
+    * Optimasi Google Business Profile (Nilai: Rp 500.000)
     * Priority support 6 bulan (Nilai: Rp 500.000)
 
     Total bonus: Rp 1.000.000
 ```
 
-#### OPSI 3: 3x Installment (Paling Fleksibel)
+#### OPSI 3: 3x Cicilan (Paling Fleksibel)
 ```
 [$] 3x Rp 2.000.000
     Bulan ke-0: Rp 2.000.000
@@ -303,7 +305,7 @@ Website memberikan value dalam 4 dimensi:
     Tanpa bunga
 
 [GIFT] BONUS:
-    * Google Business Profile Optimization (Nilai: Rp 500.000)
+    * Optimasi Google Business Profile (Nilai: Rp 500.000)
 ```
 
 ---
@@ -322,34 +324,34 @@ Website memberikan value dalam 4 dimensi:
 
 ---
 
-## [CHART] VALUE & ROI PERSPECTIVE
+## [CHART] ANALISIS NILAI & RETURN INVESTASI
 
-### Investment Breakdown (3 Tahun)
+### Rincian Investasi (3 Tahun)
 
-| Year | Cost | What You Get |
-|------|------|--------------|
-| Year 1 | Rp 5.500.000 | Full development + hosting + maintenance + training |
+| Year | Cost | Apa yang Anda Dapatkan |
+|------|------|------------------------|
+| Year 1 | Rp 5.500.000 | Pengembangan lengkap + hosting + maintenance + training |
 | Year 2 | Rp 3.350.000 | Domain + hosting + SSL + maintenance |
 | Year 3 | Rp 3.350.000 | Domain + hosting + SSL + maintenance |
-| **Total** | **Rp 12.200.000** | **Full ownership of digital asset** |
+| **Total** | **Rp 12.200.000** | **Kepemilikan penuh aset digital** |
 
-### Value Delivered
+### Nilai yang Diperoleh
 
-**Tangible Benefits:**
-- [+] **Organic Traffic from Google** - Free traffic dari search engine
-- [+] **Reduced Customer Service Load** - Self-service catalog = fewer inquiries
-- [+] **Professional Image** - Easier to pitch B2B partnerships
-- [+] **24/7 Availability** - Customer bisa browse produk kapan saja
-- [+] **Data Ownership** - Analytics & customer insights
+**Manfaat Terukur:**
+- [+] **Traffic Organik dari Google** - Traffic gratis dari search engine
+- [+] **Beban Customer Service Berkurang** - Katalog mandiri = inquiry lebih sedikit
+- [+] **Citra Profesional** - Lebih mudah untuk pitch kemitraan B2B
+- [+] **Tersedia 24/7** - Customer bisa browse produk kapan saja
+- [+] **Kepemilikan Data** - Analytics & customer insights
 
-**Intangible Benefits:**
-- [+] **Brand Equity** - Building long-term asset value
-- [+] **Independence** - Not vulnerable to platform changes
-- [+] **Credibility** - Professional image attracts quality customers
-- [+] **Scalability** - Foundation untuk business growth
-- [+] **Competitive Advantage** - Stand out in market
+**Manfaat Jangka Panjang:**
+- [+] **Brand Equity** - Membangun nilai aset jangka panjang
+- [+] **Kemandirian** - Tidak rentan terhadap perubahan platform
+- [+] **Kredibilitas** - Citra profesional menarik customer berkualitas
+- [+] **Skalabilitas** - Fondasi untuk pertumbuhan bisnis
+- [+] **Keunggulan Kompetitif** - Menonjol di pasar
 
-### Simple Value Statement
+### Kesimpulan Nilai Investasi
 
 ```
 +----------------------------------------------+
@@ -386,64 +388,65 @@ Apakah Rp 340.000/bulan layak untuk memiliki aset digital profesional yang mendu
 **Keahlian Teknis:**
 
 *Frontend Development:*
-- [+] Modern web technologies (React, TypeScript, Vite, Tailwind CSS)
-- [+] Responsive design untuk semua device (mobile, tablet, desktop)
-- [+] Performance optimization (rata-rata 60% peningkatan kecepatan loading)
-- [+] Professional UI/UX design
+- [+] Teknologi web modern (React, TypeScript, Vite, Tailwind CSS)
+- [+] Desain responsif untuk semua device (mobile, tablet, desktop)
+- [+] Optimasi performa (rata-rata 60% peningkatan kecepatan loading)
+- [+] Desain UI/UX profesional
 
 *Backend Development:*
-- [+] Node.js & REST API development
-- [+] Database design & management (PostgreSQL, MySQL, MongoDB)
-- [+] Server configuration & deployment
-- [+] API integration (Payment gateways, WhatsApp Business API, etc.)
+- [+] Laravel & pengembangan REST API
+- [+] Laravel Filament untuk admin panel yang powerful & modern
+- [+] Desain & manajemen database (PostgreSQL, MySQL)
+- [+] Konfigurasi & deployment server
+- [+] Integrasi API (Payment gateway, WhatsApp Business API, dll.)
 
 *Security & SEO:*
-- [+] SSL/HTTPS implementation & security best practices
-- [+] Anti-fraud measures & data protection
-- [+] SEO optimization & Schema.org markup
-- [+] Analytics integration (Google Analytics 4, Facebook Pixel)
+- [+] Implementasi SSL/HTTPS & praktik keamanan terbaik
+- [+] Langkah anti-fraud & perlindungan data
+- [+] Optimasi SEO & Schema.org markup
+- [+] Integrasi analytics (Google Analytics 4, Facebook Pixel)
 
 **Bukti Kemampuan:**
 - [WEB] Demo Website: https://toko-komputer-landing-site.vercel.app/
-  * Loading speed < 2 detik
-  * 100% responsive di semua device
-  * SEO-optimized dengan Schema.org markup
+  * Kecepatan loading < 2 detik
+  * 100% responsif di semua device
+  * Dioptimalkan SEO dengan Schema.org markup
   * Built-in analytics & conversion tracking
-  * Modern, professional design
-  * Full-stack implementation (frontend + backend ready)
+  * Desain modern & profesional
+  * Implementasi full-stack (frontend + backend ready)
 
-**Track Record:**
-- [CHART] 60% rata-rata peningkatan kecepatan website
-- [PHONE] 100% responsive design (mobile-first approach)
-- [SEARCH] SEO optimization untuk Google ranking
-- [SHIELD] Security-first development approach
+**Rekam Jejak:**
+- [SPEED] 60% rata-rata peningkatan kecepatan website
+- [MOBILE] 100% desain responsif (pendekatan mobile-first)
+- [SEARCH] Optimasi SEO untuk ranking Google
+- [SHIELD] Pendekatan pengembangan yang mengutamakan keamanan
 
-### Mengapa Memilih Freelance Developer?
+### Mengapa Memilih Developer Freelance?
 
-**Keuntungan Working dengan Solo Developer:**
+**Keuntungan Bekerja dengan Developer Independen:**
 
 1. **[PHONE] Komunikasi Langsung**
-   - WhatsApp langsung dengan developer (no middleman)
-   - Response time lebih cepat
+   - WhatsApp langsung dengan developer (tanpa perantara)
+   - Waktu respons lebih cepat
    - Feedback & revisi lebih efisien
 
 2. **[$] Harga Lebih Kompetitif**
-   - No overhead cost agensi besar
+   - Tidak ada overhead cost agensi besar
    - Hemat 40-60% vs agensi
    - Lebih fleksibel dalam payment terms
 
-3. **[PERSON] Personal Attention**
+3. **[PERSON] Perhatian Personal**
    - 100% fokus pada project Anda
    - Tidak di-handle oleh junior developer
    - Konsisten dari awal sampai selesai
 
-4. **[TOOLS] Technical Expertise**
+4. **[TOOLS] Keahlian Teknis**
    - 5 tahun hands-on experience
-   - Full-stack capabilities (frontend + backend)
+   - Kemampuan full-stack (frontend + backend)
    - Up-to-date dengan teknologi terkini
-   - Proven track record (lihat demo website)
+   - Rekam jejak terbukti (lihat demo website)
 
-5. **[>>] Long-term Partnership**
+5. **[>>] Kemitraan Jangka Panjang**
    - Hubungan langsung untuk maintenance
    - Mudah kontak untuk update/troubleshooting
    - Support berkelanjutan
@@ -451,19 +454,19 @@ Apakah Rp 340.000/bulan layak untuk memiliki aset digital profesional yang mendu
 ### Komitmen Kualitas
 
 **Yang Saya Jamin:**
-- [+] Code berkualitas tinggi (modern best practices)
-- [+] Website cepat & responsive
-- [+] Design profesional & user-friendly
-- [+] Security implementation yang proper
-- [+] Documentation lengkap
+- [+] Kode berkualitas tinggi (praktik terbaik modern)
+- [+] Website cepat & responsif
+- [+] Desain profesional & user-friendly
+- [+] Implementasi keamanan yang proper
+- [+] Dokumentasi lengkap
 - [+] Training untuk team Anda
 - [+] Support setelah launch
 
 **Prinsip Kerja:**
-- [*] Quality First - Tidak kompromi dengan kualitas
-- [*] Transparent - Update progress berkala
-- [*] On-Time - Sesuai timeline yang disepakati
-- [*] Client-Focused - Prioritas kepuasan klien
+- [*] Kualitas Pertama - Tidak kompromi dengan kualitas
+- [*] Transparan - Update progress berkala
+- [*] Tepat Waktu - Sesuai timeline yang disepakati
+- [*] Fokus Klien - Prioritas kepuasan klien
 
 ---
 
@@ -480,23 +483,23 @@ Apakah Rp 340.000/bulan layak untuk memiliki aset digital profesional yang mendu
   - Kontak resmi (WA, rekening, email)
 - [+] Finalisasi struktur website & design
 
-### Week 2-3: Development
-- [+] Build website lengkap
-- [+] Implementasi product catalog system
-- [+] Integrasi smart WhatsApp routing
+### Week 2-3: Pengembangan
+- [+] Bangun website lengkap
+- [+] Implementasi sistem katalog produk
+- [+] Integrasi routing WhatsApp pintar
 - [+] Setup admin dashboard
 - [+] Testing (desktop, mobile, tablet)
-- [+] SEO optimization
-- [+] Performance optimization
+- [+] Optimasi SEO
+- [+] Optimasi performa
 
 ### Week 4: Launch & Training
-- [+] Soft launch (internal testing)
-- [+] Client review & revisi minor
-- [+] Training team (2 sesi):
+- [+] Soft launch (testing internal)
+- [+] Review klien & revisi minor
+- [+] Training team (2 sesi @2 jam via Google Meet/Zoom atau Offline di Pontianak):
   - Sesi 1: Cara update produk & konten
   - Sesi 2: Cara monitor analytics & handle inquiry
-- [+] Hard launch (promote ke pelanggan)
-- [+] Submit to Google Search Console
+- [+] Hard launch (promosi ke pelanggan)
+- [+] Submit ke Google Search Console
 
 **TOTAL: 1 BULAN**
 *(Bisa dipercepat menjadi 2-3 minggu jika urgent)*
@@ -507,41 +510,41 @@ Apakah Rp 340.000/bulan layak untuk memiliki aset digital profesional yang mendu
 
 ### Jika Deal Sebelum 31 Januari 2026
 
-#### Google Business Profile Optimization (Nilai: Rp 500.000)
+#### Optimasi Google Business Profile (Nilai: Rp 500.000)
 
 **Termasuk:**
-- Optimize existing Google Business listing
-- Upload 10-15 professional photos (produk, toko, team)
-- Write SEO-optimized business description
-- Setup weekly Google Posts (1 bulan pertama)
-- Add business attributes & Q&A section
-- Review response templates & management
+- Optimasi listing Google Business yang sudah ada
+- Upload 10-15 foto profesional (produk, toko, team)
+- Tulis deskripsi bisnis yang dioptimalkan SEO
+- Setup Google Posts mingguan (1 bulan pertama)
+- Tambahkan atribut bisnis & bagian Q&A
+- Template & manajemen respons review
 
 #### Priority Support (Nilai: Rp 500.000 - Rp 1.000.000)
-- Response time maksimal 4 jam (normal: 24 jam)
-- Direct WhatsApp support
-- Berlaku selama 6-12 bulan (tergantung payment option)
+- Waktu respons maksimal 4 jam (normal: 24 jam)
+- Dukungan WhatsApp langsung
+- Berlaku selama 6-12 bulan (tergantung opsi pembayaran)
 
-**Total Bonus: Rp 1.000.000 - Rp 1.500.000** (tergantung payment option)
+**Total Bonus: Rp 1.000.000 - Rp 1.500.000** (tergantung opsi pembayaran)
 
 ---
 
-## [LOCK] GARANTIR & AFTER-SALES
+## [LOCK] GARANSI & AFTER-SALES
 
 ### Apa yang Dijamin?
 
 [+] **Website 100% sesuai prototype** (atau lebih baik)
 [+] **Website live dalam 1 bulan** (atau uang kembali)
-[+] **Mobile responsive** (tampil bagus di semua device)
-[+] **Page load speed < 3 detik**
-[+] **Free revisi minor** selama masa maintenance
+[+] **Responsif mobile** (tampil bagus di semua device)
+[+] **Kecepatan loading halaman < 3 detik**
+[+] **Revisi minor gratis** selama masa maintenance
 [+] **Technical support** via WhatsApp
 
 ### Apa yang TIDAK Dijamin?
 
 [X] **Ranking #1 di Google** (SEO butuh waktu 3-6 bulan)
 [X] **Penjualan langsung meningkat X%** (website adalah tools, execution tetap dari tim Anda)
-[X] **Zero downtime 100%** (99.9% uptime = maksimal 8 jam downtime per tahun)
+[X] **Zero downtime 100%** (Tidak ada server di dunia yang 100% sempurna. Namun, kami menjamin 99.9% uptime, standar industri global)
 
 ---
 
@@ -554,7 +557,7 @@ Apakah Rp 340.000/bulan layak untuk memiliki aset digital profesional yang mendu
 **A:** Anda bisa! Kami sediakan admin dashboard yang mudah digunakan. Kami juga akan training team Anda (2 sesi).
 
 ### Q3: Apakah website ini bisa untuk terima order online?
-**A:** Ya, website ini terintegrasi dengan WhatsApp. Pelanggan bisa langsung klik "Order" dan otomatis terhubung ke WA Anda dengan pesan pre-filled.
+**A:** Ya, website ini terintegrasi dengan WhatsApp. Pelanggan bisa langsung klik "Order" dan otomatis terhubung ke WA Anda dengan pesan yang sudah disiapkan.
 
 ### Q4: Berapa lama untuk website muncul di Google?
 **A:** Website akan langsung terindeks dalam 1-2 minggu. Namun untuk ranking tinggi (halaman 1), butuh waktu 3-6 bulan dengan konten yang konsisten dan SEO optimization.
@@ -570,9 +573,9 @@ Apakah Rp 340.000/bulan layak untuk memiliki aset digital profesional yang mendu
 
 ### Q8: Bagaimana dengan maintenance setelah 6 bulan pertama?
 **A:** Setelah 6 bulan, Anda bisa:
-- Continue maintenance package (Rp 1.5 juta/tahun)
+- Lanjut paket maintenance (Rp 1.5 juta/tahun)
 - Handle maintenance sendiri (kami sudah training)
-- Pay-per-request basis (Rp 200.000/request)
+- Bayar per permintaan (Rp 200.000/request)
 
 ---
 
@@ -580,7 +583,7 @@ Apakah Rp 340.000/bulan layak untuk memiliki aset digital profesional yang mendu
 
 ### Jika Anda Tertarik:
 
-1. **Pilih payment option** yang paling sesuai (Opsi 1/2/3)
+1. **Pilih opsi pembayaran** yang paling sesuai (Opsi 1/2/3)
 2. **Konfirmasi via WhatsApp** ke 089692070270
 3. **Transfer DP** (sesuai opsi yang dipilih)
 4. **Isi form order** (kami kirim via email)
@@ -597,7 +600,7 @@ Apakah Rp 340.000/bulan layak untuk memiliki aset digital profesional yang mendu
 
 ## [PIN] CATATAN PENTING
 
-### Harga Early Adopter Berlaku Hingga:
+### Harga Promo Pelanggan Awal Berlaku Hingga:
 **31 Januari 2026 atau sampai 3 klien pertama**
 
 Setelah itu, harga naik menjadi **Rp 7.500.000** (normal price).
@@ -614,7 +617,7 @@ Setelah itu, bonus tidak berlaku lagi.
 Bisnis yang berkembang membutuhkan fondasi digital yang kuat. Website bukan hanya "nice to have"—ini adalah **aset strategis** untuk:
 
 - [BUILDING] Memiliki aset digital yang 100% Anda kontrol
-- [SEARCH] Memperluas jangkauan lewat Google Search (organic traffic)
+- [SEARCH] Memperluas jangkauan lewat Google Search (traffic organik)
 - [CHART] Meningkatkan profesionalitas & kredibilitas bisnis
 - [TOOLS] Efisiensi operasional & customer self-service
 - [>>] Foundation untuk pertumbuhan jangka panjang
