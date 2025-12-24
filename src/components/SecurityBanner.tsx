@@ -4,33 +4,33 @@ import { CONTACT_INFO } from "@/lib/constants";
 
 export default function SecurityBanner() {
   return (
-    <section className="py-10 sm:py-14 bg-gradient-to-br from-blue-50 via-white to-green-50">
+    <section className="py-10 sm:py-14 bg-gradient-to-br from-info/10 via-background to-success/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <Card className="border-2 border-blue-600 shadow-xl bg-white rounded-2xl">
+        <Card className="border-2 border-info shadow-xl bg-card rounded-2xl">
           <div className="p-5 sm:p-8">
             
             {/* Header */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-6">
               <div className="flex justify-center sm:justify-start">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blue-600 rounded-full flex items-center justify-center">
-                  <Shield className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-info rounded-full flex items-center justify-center">
+                  <Shield className="w-7 h-7 sm:w-8 sm:h-8 text-info-foreground" />
                 </div>
               </div>
 
               <div className="text-center sm:text-left">
-                <h2 className="text-xl sm:text-3xl font-bold text-gray-900">
+                <h2 className="text-xl sm:text-3xl font-bold text-foreground">
                   ✅ Website Resmi<br />Database Computer
                 </h2>
-                <p className="text-xs sm:text-base text-gray-600 mt-1">
+                <p className="text-xs sm:text-base text-muted-foreground mt-1">
                   Verifikasi kontak resmi hanya melalui website ini
                 </p>
               </div>
             </div>
 
             {/* Contacts */}
-            <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-5 sm:p-6 mb-6">
-              <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-green-600" />
+            <div className="bg-info/10 border-2 border-info/30 rounded-xl p-5 sm:p-6 mb-6">
+              <h3 className="text-base sm:text-lg font-bold text-foreground mb-4 flex items-center gap-2">
+                <CheckCircle2 className="w-5 h-5 text-success" />
                 Kontak Resmi
               </h3>
 
@@ -40,8 +40,8 @@ export default function SecurityBanner() {
                 <ContactItem
                   label="WhatsApp Resmi"
                   value={CONTACT_INFO.whatsapp}
-                  bg="bg-green-100"
-                  iconColor="text-green-600"
+                  bg="bg-success/20"
+                  iconColor="text-success"
                 >
                   <WhatsAppIcon />
                 </ContactItem>
@@ -50,8 +50,8 @@ export default function SecurityBanner() {
                 <ContactItem
                   label="Email Resmi"
                   value={CONTACT_INFO.email}
-                  bg="bg-blue-100"
-                  iconColor="text-blue-600"
+                  bg="bg-info/20"
+                  iconColor="text-info"
                 >
                   <MailIcon />
                 </ContactItem>
@@ -60,8 +60,8 @@ export default function SecurityBanner() {
                 <ContactItem
                   label="Telepon Resmi"
                   value={CONTACT_INFO.phone}
-                  bg="bg-purple-100"
-                  iconColor="text-purple-600"
+                  bg="bg-accent/20"
+                  iconColor="text-accent"
                 >
                   <PhoneIcon />
                 </ContactItem>
@@ -70,13 +70,13 @@ export default function SecurityBanner() {
             </div>
 
             {/* Warning */}
-            <div className="bg-yellow-50 border border-yellow-300 rounded-xl p-4">
+            <div className="bg-warning/10 border border-warning/40 rounded-xl p-4">
               <div className="flex gap-3">
-                <AlertTriangle className="w-6 h-6 text-yellow-600 mt-0.5" />
+                <AlertTriangle className="w-6 h-6 text-warning mt-0.5" />
                 <p className="text-sm text-gray-800 leading-relaxed">
                   <strong>Hati-hati penipuan.</strong> Kami <strong>TIDAK PERNAH</strong> meminta transfer ke rekening di luar
                   informasi resmi website ini. Jika menemukan kontak mencurigakan,
-                  <strong className="text-red-600"> segera hubungi kami.</strong>
+                  <strong className="text-destructive"> segera hubungi kami.</strong>
                 </p>
               </div>
             </div>
@@ -98,7 +98,7 @@ function ContactItem({ label, value, bg, iconColor, children }) {
       </div>
       <div className="min-w-0">
         <p className="text-xs text-gray-500 font-medium">{label}</p>
-        <p className="text-sm font-bold text-gray-900 truncate">{value}</p>
+        <p className="text-sm font-bold text-foreground truncate">{value}</p>
       </div>
     </div>
   );

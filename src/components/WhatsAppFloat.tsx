@@ -11,21 +11,21 @@ const WhatsAppFloat = () => {
       icon: ShoppingBag,
       label: "Jual-Beli",
       description: "Beli atau Trade-In",
-      color: "bg-blue-500 hover:bg-blue-600",
+      color: "bg-contact-sales hover:bg-contact-sales/90",
     },
     {
       type: "service" as const,
       icon: Wrench,
       label: "Service",
       description: "Servis & Konsultasi",
-      color: "bg-orange-500 hover:bg-orange-600",
+      color: "bg-contact-service hover:bg-contact-service/90",
     },
     {
       type: "owner" as const,
       icon: User,
       label: "Owner",
       description: "Langsung ke Owner",
-      color: "bg-purple-500 hover:bg-purple-600",
+      color: "bg-contact-owner hover:bg-contact-owner/90",
     },
   ];
 
@@ -80,7 +80,7 @@ const WhatsAppFloat = () => {
           <div
             className={`relative flex items-center justify-center w-14 h-14 rounded-full shadow-lg transition-all duration-300 ${
               isOpen
-                ? "bg-red-500 hover:bg-red-600 rotate-90"
+                ? "bg-destructive hover:bg-destructive/90 rotate-90"
                 : "bg-primary hover:scale-110 glow-primary-sm hover:glow-primary"
             } text-white`}
           >

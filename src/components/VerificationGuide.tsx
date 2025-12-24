@@ -3,17 +3,17 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 export default function VerificationGuide() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full mb-4">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-info rounded-full mb-4">
             <ShieldCheck className="w-8 h-8 text-white" />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             Cara Memverifikasi Admin Asli
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Lindungi diri Anda dari penipuan dengan mengikuti panduan verifikasi di bawah ini
           </p>
         </div>
@@ -21,13 +21,13 @@ export default function VerificationGuide() {
         {/* Verification Steps */}
         <div className="grid md:grid-cols-2 gap-6 mb-12">
           {/* Step 1 */}
-          <Card className="border-2 border-green-200 bg-white shadow-lg hover:shadow-xl transition-shadow">
-            <CardHeader className="bg-green-50">
+          <Card className="border-2 border-success/30 bg-white shadow-lg hover:shadow-xl transition-shadow">
+            <CardHeader className="bg-success/10">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">
+                <div className="w-10 h-10 bg-success rounded-full flex items-center justify-center text-white font-bold">
                   1
                 </div>
-                <CardTitle className="text-xl text-gray-900">
+                <CardTitle className="text-xl text-foreground">
                   Cek Nomor WhatsApp
                 </CardTitle>
               </div>
@@ -35,19 +35,19 @@ export default function VerificationGuide() {
             <CardContent className="pt-6">
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-success flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">
                     Pastikan nomor yang menghubungi Anda <strong>sama persis</strong> dengan nomor yang tertera di banner biru di atas
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-success flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">
                     Cek profil WhatsApp—admin resmi menggunakan nama bisnis <strong>"Database Computer"</strong>
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-success flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">
                     Jika ragu, <strong>screenshot</strong> chat tersebut dan tanyakan langsung ke nomor resmi kami
                   </p>
@@ -57,13 +57,13 @@ export default function VerificationGuide() {
           </Card>
 
           {/* Step 2 */}
-          <Card className="border-2 border-blue-200 bg-white shadow-lg hover:shadow-xl transition-shadow">
-            <CardHeader className="bg-blue-50">
+          <Card className="border-2 border-info/30 bg-white shadow-lg hover:shadow-xl transition-shadow">
+            <CardHeader className="bg-info/10">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                <div className="w-10 h-10 bg-info rounded-full flex items-center justify-center text-white font-bold">
                   2
                 </div>
-                <CardTitle className="text-xl text-gray-900">
+                <CardTitle className="text-xl text-foreground">
                   Verifikasi Informasi Rekening
                 </CardTitle>
               </div>
@@ -71,19 +71,19 @@ export default function VerificationGuide() {
             <CardContent className="pt-6">
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-info flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">
                     <strong>JANGAN PERNAH</strong> transfer ke rekening yang tidak tertera di website ini
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-info flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">
                     Jika admin meminta transfer ke rekening lain dengan alasan apapun, <strong>tolak dan laporkan</strong>
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-info flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">
                     Kami hanya menggunakan <strong>satu rekening resmi</strong> yang selalu update di website ini
                   </p>
@@ -93,13 +93,13 @@ export default function VerificationGuide() {
           </Card>
 
           {/* Step 3 */}
-          <Card className="border-2 border-purple-200 bg-white shadow-lg hover:shadow-xl transition-shadow">
-            <CardHeader className="bg-purple-50">
+          <Card className="border-2 border-accent/30 bg-white shadow-lg hover:shadow-xl transition-shadow">
+            <CardHeader className="bg-accent/10">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white font-bold">
                   3
                 </div>
-                <CardTitle className="text-xl text-gray-900">
+                <CardTitle className="text-xl text-foreground">
                   Hindari Link Mencurigakan
                 </CardTitle>
               </div>
@@ -107,19 +107,19 @@ export default function VerificationGuide() {
             <CardContent className="pt-6">
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">
                     <strong>Jangan klik</strong> link dari akun Instagram/WhatsApp yang tidak terverifikasi
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">
                     Website resmi kami hanya <strong>domain ini</strong>—cek URL di address bar browser
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">
                     Jika ada website dengan nama mirip tapi domain berbeda, itu <strong>bukan kami</strong>
                   </p>
@@ -129,13 +129,13 @@ export default function VerificationGuide() {
           </Card>
 
           {/* Step 4 */}
-          <Card className="border-2 border-orange-200 bg-white shadow-lg hover:shadow-xl transition-shadow">
-            <CardHeader className="bg-orange-50">
+          <Card className="border-2 border-warning/30 bg-white shadow-lg hover:shadow-xl transition-shadow">
+            <CardHeader className="bg-warning/10">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold">
+                <div className="w-10 h-10 bg-warning rounded-full flex items-center justify-center text-white font-bold">
                   4
                 </div>
-                <CardTitle className="text-xl text-gray-900">
+                <CardTitle className="text-xl text-foreground">
                   Jika Ragu, Tanya Langsung
                 </CardTitle>
               </div>
@@ -143,19 +143,19 @@ export default function VerificationGuide() {
             <CardContent className="pt-6">
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-warning flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">
                     <strong>Jangan malu</strong> untuk bertanya—lebih baik ragu daripada tertipu
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-warning flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">
                     Hubungi nomor resmi di banner atas untuk konfirmasi <strong>sebelum transfer</strong>
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-warning flex-shrink-0 mt-0.5" />
                   <p className="text-gray-700">
                     Kami siap melayani pertanyaan verifikasi Anda <strong>24/7</strong>
                   </p>
@@ -166,19 +166,19 @@ export default function VerificationGuide() {
         </div>
 
         {/* Warning Signs */}
-        <Card className="border-2 border-red-300 bg-red-50 shadow-lg">
+        <Card className="border-2 border-destructive/40 bg-destructive/10 shadow-lg">
           <CardHeader>
-            <CardTitle className="text-2xl text-gray-900 flex items-center gap-3">
-              <AlertCircle className="w-7 h-7 text-red-600" />
+            <CardTitle className="text-2xl text-foreground flex items-center gap-3">
+              <AlertCircle className="w-7 h-7 text-destructive" />
               Tanda-tanda Penipuan (RED FLAGS)
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="flex items-start gap-3 bg-white rounded-lg p-4">
-                <XCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+                <XCircle className="w-6 h-6 text-destructive flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Nomor Berbeda</h4>
+                  <h4 className="font-bold text-foreground mb-1">Nomor Berbeda</h4>
                   <p className="text-sm text-gray-700">
                     Admin menggunakan nomor WhatsApp yang tidak tertera di website ini
                   </p>
@@ -186,9 +186,9 @@ export default function VerificationGuide() {
               </div>
 
               <div className="flex items-start gap-3 bg-white rounded-lg p-4">
-                <XCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+                <XCircle className="w-6 h-6 text-destructive flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Rekening Atas Nama Pribadi</h4>
+                  <h4 className="font-bold text-foreground mb-1">Rekening Atas Nama Pribadi</h4>
                   <p className="text-sm text-gray-700">
                     Meminta transfer ke rekening atas nama perorangan (bukan nama toko)
                   </p>
@@ -196,9 +196,9 @@ export default function VerificationGuide() {
               </div>
 
               <div className="flex items-start gap-3 bg-white rounded-lg p-4">
-                <XCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+                <XCircle className="w-6 h-6 text-destructive flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Terburu-buru</h4>
+                  <h4 className="font-bold text-foreground mb-1">Terburu-buru</h4>
                   <p className="text-sm text-gray-700">
                     Memaksa Anda untuk transfer segera dengan alasan stok terbatas/promo habis
                   </p>
@@ -206,9 +206,9 @@ export default function VerificationGuide() {
               </div>
 
               <div className="flex items-start gap-3 bg-white rounded-lg p-4">
-                <XCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+                <XCircle className="w-6 h-6 text-destructive flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Harga Terlalu Murah</h4>
+                  <h4 className="font-bold text-foreground mb-1">Harga Terlalu Murah</h4>
                   <p className="text-sm text-gray-700">
                     Menawarkan harga jauh di bawah pasaran (too good to be true)
                   </p>
@@ -216,9 +216,9 @@ export default function VerificationGuide() {
               </div>
 
               <div className="flex items-start gap-3 bg-white rounded-lg p-4">
-                <XCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+                <XCircle className="w-6 h-6 text-destructive flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Tidak Profesional</h4>
+                  <h4 className="font-bold text-foreground mb-1">Tidak Profesional</h4>
                   <p className="text-sm text-gray-700">
                     Bahasa tidak profesional, typo banyak, atau tata bahasa buruk
                   </p>
@@ -226,9 +226,9 @@ export default function VerificationGuide() {
               </div>
 
               <div className="flex items-start gap-3 bg-white rounded-lg p-4">
-                <XCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+                <XCircle className="w-6 h-6 text-destructive flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">Link Aneh</h4>
+                  <h4 className="font-bold text-foreground mb-1">Link Aneh</h4>
                   <p className="text-sm text-gray-700">
                     Mengirim link ke website dengan domain mencurigakan (bukan domain resmi kami)
                   </p>
@@ -237,11 +237,11 @@ export default function VerificationGuide() {
             </div>
 
             {/* Action */}
-            <div className="mt-6 bg-white border-2 border-red-400 rounded-lg p-4">
+            <div className="mt-6 bg-white border-2 border-destructive/50 rounded-lg p-4">
               <div className="flex items-start gap-3">
-                <UserCheck className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
+                <UserCheck className="w-6 h-6 text-destructive flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-2">
+                  <h4 className="font-bold text-foreground mb-2">
                     Jika Anda Menemukan Salah Satu Tanda di Atas:
                   </h4>
                   <ol className="list-decimal list-inside space-y-1 text-sm text-gray-700">
@@ -258,7 +258,7 @@ export default function VerificationGuide() {
 
         {/* Trust Message */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-6 py-3 rounded-full font-semibold">
+          <div className="inline-flex items-center gap-2 bg-success/20 text-success px-6 py-3 rounded-full font-semibold">
             <ShieldCheck className="w-5 h-5" />
             <span>Keamanan Anda adalah Prioritas Kami</span>
           </div>

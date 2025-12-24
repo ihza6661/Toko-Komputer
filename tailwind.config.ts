@@ -36,6 +36,22 @@ export default {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        info: {
+          DEFAULT: "hsl(var(--info))",
+          foreground: "hsl(var(--info-foreground))",
+        },
+        whatsapp: {
+          DEFAULT: "hsl(var(--whatsapp))",
+          foreground: "hsl(var(--whatsapp-foreground))",
+        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -63,6 +79,14 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         glow: "hsl(var(--glow-primary))",
+        contact: {
+          sales: "hsl(var(--contact-sales))",
+          "sales-foreground": "hsl(var(--contact-sales-foreground))",
+          service: "hsl(var(--contact-service))",
+          "service-foreground": "hsl(var(--contact-service-foreground))",
+          owner: "hsl(var(--contact-owner))",
+          "owner-foreground": "hsl(var(--contact-owner-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

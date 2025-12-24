@@ -20,7 +20,7 @@ const ContactSelector = () => {
             {/* Sales Contact */}
             <div className="glass-card rounded-xl p-4 sm:p-6 hover:border-primary/50 transition-all duration-300 group">
              <div className="flex items-start gap-3 md:gap-4">
-                 <div className="flex-shrink-0 w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                 <div className="flex-shrink-0 w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-xl bg-info/100/10 flex items-center justify-center text-info group-hover:bg-info/100 group-hover:text-white transition-colors">
                    <ShoppingBag className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -33,7 +33,7 @@ const ContactSelector = () => {
                   <Button 
                     variant="outline" 
                     size="sm" 
-                    className="w-full border-blue-500/30 hover:bg-blue-500 hover:text-white hover:border-blue-500 text-xs sm:text-sm"
+                    className="w-full border-info/30 hover:bg-info hover:text-white hover:border-info text-xs sm:text-sm"
                     asChild
                   >
                     <a
@@ -52,7 +52,7 @@ const ContactSelector = () => {
             {/* Service Contact */}
             <div className="glass-card rounded-xl p-4 sm:p-6 hover:border-primary/50 transition-all duration-300 group">
              <div className="flex items-start gap-3 md:gap-4">
-                 <div className="flex-shrink-0 w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition-colors">
+                 <div className="flex-shrink-0 w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-xl bg-warning/100/10 flex items-center justify-center text-warning group-hover:bg-warning/100 group-hover:text-white transition-colors">
                    <Wrench className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -65,7 +65,7 @@ const ContactSelector = () => {
                   <Button 
                     variant="outline" 
                     size="sm" 
-                    className="w-full border-orange-500/30 hover:bg-orange-500 hover:text-white hover:border-orange-500 text-xs sm:text-sm"
+                    className="w-full border-warning/30 hover:bg-warning hover:text-white hover:border-warning text-xs sm:text-sm"
                     asChild
                   >
                     <a

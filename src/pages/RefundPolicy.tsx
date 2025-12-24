@@ -71,7 +71,7 @@ const RefundPolicy = () => {
           <div className="space-y-6">
             <div className="bg-secondary/30 border border-border rounded-lg p-6">
               <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                <CheckCircle2 className="h-5 w-5 text-green-500" />
+                <CheckCircle2 className="h-5 w-5 text-success" />
                 Laptop & Komputer
               </h3>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
@@ -84,7 +84,7 @@ const RefundPolicy = () => {
 
             <div className="bg-secondary/30 border border-border rounded-lg p-6">
               <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                <CheckCircle2 className="h-5 w-5 text-green-500" />
+                <CheckCircle2 className="h-5 w-5 text-success" />
                 Komponen & Aksesoris
               </h3>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
@@ -95,9 +95,9 @@ const RefundPolicy = () => {
               </ul>
             </div>
 
-            <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-5">
+            <div className="bg-warning/10 border border-warning/20 rounded-lg p-5">
               <p className="text-sm text-foreground flex items-start gap-2">
-                <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-warning flex-shrink-0 mt-0.5" />
                 <span>
                   <strong>Penting:</strong> Periode pengembalian dihitung berdasarkan tanggal pembelian 
                   yang tertera pada nota/invoice, bukan tanggal pengiriman untuk pembelian online. 
@@ -123,7 +123,7 @@ const RefundPolicy = () => {
 
           <div className="space-y-3">
             <div className="flex items-start gap-3">
-              <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+              <CheckCircle2 className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 <strong className="text-foreground">Kondisi Fisik:</strong> Produk tidak boleh 
                 memiliki kerusakan fisik akibat benturan, jatuh, tergores, atau penyalahgunaan lainnya
@@ -131,7 +131,7 @@ const RefundPolicy = () => {
             </div>
 
             <div className="flex items-start gap-3">
-              <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+              <CheckCircle2 className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 <strong className="text-foreground">Kelengkapan:</strong> Semua aksesoris, kabel, 
                 charger, dus, manual, dan kartu garansi harus dikembalikan bersama produk
@@ -139,7 +139,7 @@ const RefundPolicy = () => {
             </div>
 
             <div className="flex items-start gap-3">
-              <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+              <CheckCircle2 className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 <strong className="text-foreground">Bukti Pembelian:</strong> Nota/invoice asli atau 
                 digital harus disertakan sebagai bukti transaksi
@@ -147,7 +147,7 @@ const RefundPolicy = () => {
             </div>
 
             <div className="flex items-start gap-3">
-              <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+              <CheckCircle2 className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 <strong className="text-foreground">Data Pribadi:</strong> Semua data pribadi, akun, 
                 dan software yang diinstal oleh pembeli harus dihapus sebelum pengembalian
@@ -155,7 +155,7 @@ const RefundPolicy = () => {
             </div>
 
             <div className="flex items-start gap-3">
-              <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+              <CheckCircle2 className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 <strong className="text-foreground">Kerusakan Valid:</strong> Untuk klaim kerusakan, 
                 produk akan diperiksa oleh teknisi kami untuk memverifikasi bahwa kerusakan bukan 
@@ -164,7 +164,7 @@ const RefundPolicy = () => {
             </div>
 
             <div className="flex items-start gap-3">
-              <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+              <CheckCircle2 className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 <strong className="text-foreground">Stiker Garansi:</strong> Stiker garansi 
                 (jika ada) tidak boleh rusak, terkelupas, atau dirusak
@@ -189,7 +189,7 @@ const RefundPolicy = () => {
 
           <div className="space-y-3">
             <div className="flex items-start gap-3">
-              <XCircle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
+              <XCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 Produk dengan kerusakan fisik akibat kelalaian atau penyalahgunaan pengguna 
                 (jatuh, terkena air, dimodifikasi, dll.)
@@ -197,42 +197,42 @@ const RefundPolicy = () => {
             </div>
 
             <div className="flex items-start gap-3">
-              <XCircle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
+              <XCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 Produk yang telah dibongkar atau dimodifikasi oleh pihak ketiga tanpa izin dari kami
               </p>
             </div>
 
             <div className="flex items-start gap-3">
-              <XCircle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
+              <XCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 Software, lisensi digital, atau produk yang telah diaktivasi/digunakan
               </p>
             </div>
 
             <div className="flex items-start gap-3">
-              <XCircle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
+              <XCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 Aksesoris yang segelnya telah dibuka atau rusak (earphone, mouse, keyboard, dll.)
               </p>
             </div>
 
             <div className="flex items-start gap-3">
-              <XCircle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
+              <XCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 Produk yang dikembalikan setelah periode pengembalian berakhir
               </p>
             </div>
 
             <div className="flex items-start gap-3">
-              <XCircle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
+              <XCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 Produk dengan stiker garansi yang rusak atau hilang
               </p>
             </div>
 
             <div className="flex items-start gap-3">
-              <XCircle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
+              <XCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 Layanan servis, instalasi software, atau jasa konsultasi yang telah dilaksanakan
               </p>
@@ -408,9 +408,9 @@ const RefundPolicy = () => {
               </ul>
             </div>
 
-            <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-5">
+            <div className="bg-warning/10 border border-warning/20 rounded-lg p-5">
               <p className="text-sm text-foreground">
-                <AlertTriangle className="h-5 w-5 text-amber-500 inline mr-2" />
+                <AlertTriangle className="h-5 w-5 text-warning inline mr-2" />
                 <strong>Catatan:</strong> Jika produk yang dikembalikan tidak memenuhi syarat 
                 atau ditemukan kerusakan akibat penyalahgunaan, produk akan dikembalikan kepada 
                 pembeli dan pengembalian dana tidak dapat diproses. Biaya pengiriman kembali 
@@ -435,21 +435,21 @@ const RefundPolicy = () => {
 
           <div className="space-y-3 mb-6">
             <div className="flex items-start gap-3">
-              <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+              <CheckCircle2 className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 Produk yang Anda terima tidak sesuai dengan pesanan (salah tipe, warna, atau spesifikasi)
               </p>
             </div>
 
             <div className="flex items-start gap-3">
-              <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+              <CheckCircle2 className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 Produk mengalami cacat produksi atau kerusakan hardware dalam periode pengembalian
               </p>
             </div>
 
             <div className="flex items-start gap-3">
-              <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+              <CheckCircle2 className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
               <p className="text-muted-foreground">
                 Anda ingin menukar dengan produk lain dengan nilai yang sama atau lebih tinggi 
                 (selisih harga harus dilunasi)
@@ -483,9 +483,9 @@ const RefundPolicy = () => {
           </p>
 
           <div className="space-y-4">
-            <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-5">
+            <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-5">
               <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <AlertTriangle className="h-5 w-5 text-red-500" />
+                <AlertTriangle className="h-5 w-5 text-destructive" />
                 Dead on Arrival (DOA)
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-3">
@@ -499,9 +499,9 @@ const RefundPolicy = () => {
               </ul>
             </div>
 
-            <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-5">
+            <div className="bg-warning/10 border border-warning/20 rounded-lg p-5">
               <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <AlertTriangle className="h-5 w-5 text-amber-500" />
+                <AlertTriangle className="h-5 w-5 text-warning" />
                 Cacat Produksi
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-3">

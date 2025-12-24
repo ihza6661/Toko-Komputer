@@ -5,49 +5,49 @@ const trustPoints = [
     icon: ShieldCheck,
     title: "100% Original & Garansi",
     description: "iPhone garansi TAM, laptop garansi distributor resmi. Produk dijamin original.",
-    gradient: "from-blue-50 to-blue-100",
-    border: "border-blue-200",
-    iconBg: "bg-blue-600",
+    gradient: "from-info/10 to-info/20",
+    border: "border-info/30",
+    iconBg: "bg-info",
   },
   {
     icon: CheckCircle,
     title: "Cicilan 0%",
     description: "12+ bank • Tenor s/d 24 bulan",
-    gradient: "from-green-50 to-green-100",
-    border: "border-green-200",
-    iconBg: "bg-green-600",
+    gradient: "from-success/10 to-success/20",
+    border: "border-success/30",
+    iconBg: "bg-success",
   },
   {
     icon: Lock,
     title: "Secure Payment",
     description: "Transaksi aman & terlindungi",
-    gradient: "from-purple-50 to-purple-100",
-    border: "border-purple-200",
-    iconBg: "bg-purple-600",
+    gradient: "from-accent/10 to-accent/20",
+    border: "border-accent/30",
+    iconBg: "bg-accent",
   },
   {
     icon: Clock,
     title: "10+ Tahun Pengalaman",
     description: "Melayani ribuan pelanggan di Pontianak sejak 2015",
-    gradient: "from-orange-50 to-orange-100",
-    border: "border-orange-200",
-    iconBg: "bg-orange-600",
+    gradient: "from-warning/10 to-warning/20",
+    border: "border-warning/30",
+    iconBg: "bg-warning",
   },
   {
     icon: Shield,
     title: "Fast Response",
     description: "Respon cepat via WhatsApp untuk konsultasi dan after sales",
-    gradient: "from-teal-50 to-teal-100",
-    border: "border-teal-200",
-    iconBg: "bg-teal-600",
+    gradient: "from-success/10 to-success/20",
+    border: "border-success/30",
+    iconBg: "bg-success",
   },
   {
     icon: Truck,
     title: "Siap Kirim Se-Indonesia",
     description: "Pengiriman aman ke seluruh pelosok negeri dengan asuransi",
-    gradient: "from-indigo-50 to-indigo-100",
-    border: "border-indigo-200",
-    iconBg: "bg-indigo-600",
+    gradient: "from-primary/10 to-primary/20",
+    border: "border-primary/30",
+    iconBg: "bg-primary",
   },
 ];
 
@@ -91,7 +91,7 @@ export default function TrustBadges() {
         {/* SSL Badge */}
         <div className="mt-10 flex justify-center">
           <div className="inline-flex items-center gap-2 bg-background/80 backdrop-blur-sm px-4 py-2 rounded-full border border-border shadow-sm">
-            <Lock className="w-4 h-4 text-green-600" />
+            <Lock className="w-4 h-4 text-success" />
             <span className="text-xs font-semibold text-foreground">
               Website ini dilindungi dengan enkripsi SSL
             </span>

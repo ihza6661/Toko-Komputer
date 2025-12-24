@@ -94,7 +94,7 @@ const ProductDetail = () => {
         <Header />
         <div className="min-h-screen flex items-center justify-center bg-background px-4">
           <div className="text-center max-w-md">
-            <AlertCircle className="h-16 w-16 text-red-500 mx-auto mb-4" />
+            <AlertCircle className="h-16 w-16 text-destructive mx-auto mb-4" />
             <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Produk Tidak Ditemukan</h1>
             <p className="text-muted-foreground mb-6">
               Produk yang Anda cari tidak tersedia atau sudah terjual.
@@ -191,7 +191,7 @@ const ProductDetail = () => {
                 {/* Sold Out Overlay */}
                 {product.stock === 0 && (
                   <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center">
-                    <span className="bg-red-500 text-white text-2xl font-bold px-8 py-4 rounded-lg rotate-[-12deg] shadow-lg">
+                    <span className="bg-destructive text-destructive-foreground text-2xl font-bold px-8 py-4 rounded-lg rotate-[-12deg] shadow-lg">
                       TERJUAL
                     </span>
                   </div>
@@ -199,7 +199,7 @@ const ProductDetail = () => {
 
                 {/* Discount Badge */}
                 {discountInfo && product.stock > 0 && (
-                  <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-lg font-bold text-lg shadow-lg">
+                  <div className="absolute top-4 right-4 bg-destructive text-destructive-foreground px-4 py-2 rounded-lg font-bold text-lg shadow-lg">
                     {discountInfo.discount}% OFF
                   </div>
                 )}
@@ -233,12 +233,12 @@ const ProductDetail = () => {
 
                 {/* Stock Status */}
                 {product.stock > 0 ? (
-                  <p className="text-green-600 dark:text-green-500 font-medium flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+                  <p className="text-success font-medium flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-success animate-pulse" />
                     Stok Tersedia ({product.stock} unit)
                   </p>
                 ) : (
-                  <p className="text-red-600 dark:text-red-500 font-medium">
+                  <p className="text-destructive font-medium">
                     Stok Habis
                   </p>
                 )}
@@ -293,7 +293,7 @@ const ProductDetail = () => {
 
                     {product.specifications.gpu && (
                       <div className="flex items-start gap-3 p-3 rounded-lg bg-secondary/30">
-                        <Sparkles className="h-5 w-5 text-purple-500 flex-shrink-0 mt-0.5" />
+                        <Sparkles className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
                         <div>
                           <p className="text-xs text-muted-foreground mb-1">GPU</p>
                           <p className="font-medium">{product.specifications.gpu}</p>
@@ -358,11 +358,11 @@ const ProductDetail = () => {
               {(product.specifications?.warranty || product.specifications?.extras) && (
                 <div className="space-y-4">
                   {product.specifications.warranty && (
-                    <div className="p-4 rounded-lg bg-green-500/10 border border-green-500/20">
+                    <div className="p-4 rounded-lg bg-success/10 border border-success/20">
                       <div className="flex items-start gap-3">
-                        <Shield className="h-5 w-5 text-green-600 dark:text-green-500 flex-shrink-0 mt-0.5" />
+                        <Shield className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
                         <div>
-                          <p className="font-semibold text-green-600 dark:text-green-500 mb-1">
+                          <p className="font-semibold text-success mb-1">
                             Garansi
                           </p>
                           <p className="text-sm">{product.specifications.warranty}</p>
@@ -372,11 +372,11 @@ const ProductDetail = () => {
                   )}
 
                   {product.specifications.extras && (
-                    <div className="p-4 rounded-lg bg-orange-500/10 border border-orange-500/20">
+                    <div className="p-4 rounded-lg bg-warning/10 border border-warning/20">
                       <div className="flex items-start gap-3">
-                        <Gift className="h-5 w-5 text-orange-600 dark:text-orange-500 flex-shrink-0 mt-0.5" />
+                        <Gift className="h-5 w-5 text-warning flex-shrink-0 mt-0.5" />
                         <div>
-                          <p className="font-semibold text-orange-600 dark:text-orange-500 mb-1">
+                          <p className="font-semibold text-warning mb-1">
                             Bonus & Kelengkapan
                           </p>
                           <p className="text-sm">{product.specifications.extras}</p>
@@ -436,7 +436,7 @@ const ProductDetail = () => {
                       )}
                       {relatedProduct.stock === 0 && (
                         <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
-                          <span className="bg-red-500 text-white text-sm font-bold px-3 py-1 rounded">
+                          <span className="bg-destructive text-destructive-foreground text-sm font-bold px-3 py-1 rounded">
                             TERJUAL
                           </span>
                         </div>

@@ -167,9 +167,9 @@ const FAQLegal = () => {
                 <span className="font-semibold">Apa yang terjadi jika data saya hilang selama servis?</span>
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground leading-relaxed">
-                <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4 mb-4">
+                <div className="bg-warning/10 border border-warning/20 rounded-lg p-4 mb-4">
                   <p className="text-foreground font-semibold flex items-start gap-2">
-                    <AlertCircle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                    <AlertCircle className="h-5 w-5 text-warning flex-shrink-0 mt-0.5" />
                     Penting: Backup Data Sebelum Servis
                   </p>
                 </div>
@@ -274,39 +274,39 @@ const FAQLegal = () => {
                 </p>
                 <div className="space-y-2 mb-4">
                   <div className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">✕</span>
+                    <span className="text-destructive font-bold">✕</span>
                     <p>Kerusakan fisik akibat benturan, jatuh, tumpahan cairan, atau force majeure</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">✕</span>
+                    <span className="text-destructive font-bold">✕</span>
                     <p>Kerusakan akibat penyalahgunaan, modifikasi, atau overclocking</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">✕</span>
+                    <span className="text-destructive font-bold">✕</span>
                     <p>Kerusakan akibat virus, malware, atau instalasi software tidak resmi</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">✕</span>
+                    <span className="text-destructive font-bold">✕</span>
                     <p>Kerusakan akibat pembongkaran atau perbaikan oleh pihak ketiga tanpa izin</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">✕</span>
+                    <span className="text-destructive font-bold">✕</span>
                     <p>Stiker garansi rusak, terkelupas, atau hilang</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">✕</span>
+                    <span className="text-destructive font-bold">✕</span>
                     <p>Item consumable: baterai, charger, kabel (kecuali disebutkan lain)</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">✕</span>
+                    <span className="text-destructive font-bold">✕</span>
                     <p>Kerusakan kosmetik: goresan, penyok, diskolorasi casing (tidak memengaruhi fungsi)</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">✕</span>
+                    <span className="text-destructive font-bold">✕</span>
                     <p>Kehilangan data atau software (selalu backup data Anda)</p>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-red-500 font-bold">✕</span>
+                    <span className="text-destructive font-bold">✕</span>
                     <p>Garansi yang telah berakhir atau nota/invoice tidak dapat ditunjukkan</p>
                   </div>
                 </div>
@@ -328,7 +328,7 @@ const FAQLegal = () => {
                 <p className="mb-3">Kebijakan pembatalan tergantung pada status pesanan:</p>
                 
                 <div className="space-y-4 mb-4">
-                  <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
+                  <div className="bg-success/10 border border-success/20 rounded-lg p-4">
                     <h4 className="font-semibold text-foreground mb-2">✓ Pembatalan GRATIS (Tanpa Biaya)</h4>
                     <ul className="list-disc list-inside space-y-1 text-sm ml-4">
                       <li>Pesanan belum dibayar atau baru DP (dapat dibatalkan dengan pengembalian DP penuh)</li>
@@ -337,7 +337,7 @@ const FAQLegal = () => {
                     </ul>
                   </div>
 
-                  <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
+                  <div className="bg-warning/10 border border-warning/20 rounded-lg p-4">
                     <h4 className="font-semibold text-foreground mb-2">⚠ Pembatalan dengan Potongan</h4>
                     <ul className="list-disc list-inside space-y-1 text-sm ml-4">
                       <li>Produk sudah dibayar penuh dan sudah dikemas/siap kirim: potongan biaya admin 5%</li>
@@ -346,7 +346,7 @@ const FAQLegal = () => {
                     </ul>
                   </div>
 
-                  <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
+                  <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4">
                     <h4 className="font-semibold text-foreground mb-2">✕ Tidak Dapat Dibatalkan</h4>
                     <ul className="list-disc list-inside space-y-1 text-sm ml-4">
                       <li>Produk sudah dikirim atau dalam perjalanan (gunakan Kebijakan Pengembalian)</li>
@@ -440,7 +440,7 @@ const FAQLegal = () => {
 
                 <div className="space-y-3 mb-4">
                   <div className="flex items-start gap-2">
-                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-success font-bold">✓</span>
                     <div>
                       <strong className="text-foreground">Enkripsi Data:</strong>
                       <p className="text-sm">
@@ -449,7 +449,7 @@ const FAQLegal = () => {
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-success font-bold">✓</span>
                     <div>
                       <strong className="text-foreground">Akses Terbatas:</strong>
                       <p className="text-sm">
@@ -458,7 +458,7 @@ const FAQLegal = () => {
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-success font-bold">✓</span>
                     <div>
                       <strong className="text-foreground">Tidak Dijual:</strong>
                       <p className="text-sm">
@@ -467,7 +467,7 @@ const FAQLegal = () => {
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-success font-bold">✓</span>
                     <div>
                       <strong className="text-foreground">Hak Privasi Anda:</strong>
                       <p className="text-sm">
@@ -476,7 +476,7 @@ const FAQLegal = () => {
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-success font-bold">✓</span>
                     <div>
                       <strong className="text-foreground">Penggunaan Terbatas:</strong>
                       <p className="text-sm">
@@ -518,9 +518,9 @@ const FAQLegal = () => {
                   <li>Invoice mencantumkan: nomor invoice, tanggal, detail produk, harga, garansi, dan stempel toko</li>
                 </ul>
 
-                <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
+                <div className="bg-warning/10 border border-warning/20 rounded-lg p-4">
                   <p className="text-sm text-foreground">
-                    <AlertCircle className="h-5 w-5 text-amber-500 inline mr-2" />
+                    <AlertCircle className="h-5 w-5 text-warning inline mr-2" />
                     <strong>Penting:</strong> Simpan invoice/nota Anda dengan baik! Invoice diperlukan untuk 
                     klaim garansi, pengembalian produk, atau layanan purna jual lainnya.
                   </p>

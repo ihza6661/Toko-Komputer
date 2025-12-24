@@ -44,7 +44,7 @@ const HeroSection = () => {
       className="relative overflow-hidden"
     >
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-white" />
+      <div className="absolute inset-0 hero-gradient" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex min-h-[70svh] lg:min-h-[80svh] flex-col items-center justify-center text-center pt-24 pb-20 sm:pt-28 sm:pb-28 lg:pt-36 lg:pb-36">
@@ -52,13 +52,13 @@ const HeroSection = () => {
           {/* Badges */}
           <div className="mb-6 flex flex-wrap justify-center gap-2 sm:gap-3">
             {[
-              { text: "100% Garansi Resmi", color: "text-blue-600" },
-              { text: "Gold Merchant Tokopedia", color: "text-green-600" },
-              { text: "Shopee Mall Partner", color: "text-orange-500" },
+              { text: "100% Garansi Resmi", color: "text-info" },
+              { text: "Gold Merchant Tokopedia", color: "text-success" },
+              { text: "Shopee Mall Partner", color: "text-warning" },
             ].map((badge, i) => (
               <span
                 key={i}
-                className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs sm:text-sm font-medium text-gray-700 shadow-sm"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-xs sm:text-sm font-medium text-muted-foreground shadow-sm"
               >
                 <CheckCircle className={`h-4 w-4 ${badge.color}`} />
                 {badge.text}
@@ -67,14 +67,14 @@ const HeroSection = () => {
           </div>
 
           {/* Brand Line */}
-          <div className="mb-3 text-sm sm:text-base font-medium text-gray-600">
+          <div className="mb-3 text-sm sm:text-base font-medium text-muted-foreground">
             Database Computer — Official Website
           </div>
 
           {/* Heading */}
           <h1
             id="hero-heading"
-            className="max-w-4xl font-display font-bold tracking-tight text-gray-900
+            className="max-w-4xl font-display font-bold tracking-tight text-foreground
               text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
           >
             {heroContent.mainHeadline}
@@ -84,8 +84,8 @@ const HeroSection = () => {
           </h1>
 
           {/* Description */}
-          <p className="mt-6 max-w-2xl text-base sm:text-lg md:text-xl text-gray-600">
-            <span className="block text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+          <p className="mt-6 max-w-2xl text-base sm:text-lg md:text-xl text-muted-foreground">
+            <span className="block text-xl sm:text-2xl font-bold text-foreground mb-2">
               {heroContent.description.primary}
             </span>
             <span className="block">
@@ -97,11 +97,11 @@ const HeroSection = () => {
           <div className="mt-6 flex justify-center">
             <div className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium shadow-sm transition-all
               ${storeOpen 
-                ? 'bg-green-50 border-green-200 text-green-700' 
-                : 'bg-gray-50 border-gray-200 text-gray-600'
+                ? 'bg-success/10 border-success/20 text-success' 
+                : 'bg-muted border-border text-muted-foreground'
               }`}
             >
-              <div className={`h-2.5 w-2.5 rounded-full ${storeOpen ? 'bg-green-500 animate-pulse' : 'bg-gray-400'}`} />
+              <div className={`h-2.5 w-2.5 rounded-full ${storeOpen ? 'bg-success animate-pulse' : 'bg-muted-foreground'}`} />
               <span className="font-semibold">
                 {storeOpen ? `${shiftInfo.adminName} Online` : 'Toko Tutup'}
               </span>
@@ -158,19 +158,19 @@ const HeroSection = () => {
           </div>
 
           {/* Micro-Guarantee */}
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-sm text-gray-600">
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-1.5">
-              <CheckCircle className="h-4 w-4 text-green-600" />
+              <CheckCircle className="h-4 w-4 text-success" />
               Fast Response
             </span>
-            <span className="text-gray-300">•</span>
+            <span className="text-border">•</span>
             <span className="inline-flex items-center gap-1.5">
-              <CheckCircle className="h-4 w-4 text-green-600" />
+              <CheckCircle className="h-4 w-4 text-success" />
               Admin Online
             </span>
-            <span className="text-gray-300">•</span>
+            <span className="text-border">•</span>
             <span className="inline-flex items-center gap-1.5">
-              <CheckCircle className="h-4 w-4 text-green-600" />
+              <CheckCircle className="h-4 w-4 text-success" />
               Garansi Jelas
             </span>
           </div>
@@ -185,12 +185,12 @@ const HeroSection = () => {
             ].map((stat, i) => (
               <div
                 key={i}
-                className="rounded-xl border border-gray-200 bg-white p-4 text-center shadow-sm"
+                className="rounded-xl border border-border bg-card p-4 text-center shadow-sm"
               >
-                <div className="text-xl sm:text-2xl font-bold text-gray-900">
+                <div className="text-xl sm:text-2xl font-bold text-foreground">
                   {stat.value}
                 </div>
-                <div className="mt-1 text-xs sm:text-sm text-gray-600">
+                <div className="mt-1 text-xs sm:text-sm text-muted-foreground">
                   {stat.label}
                 </div>
               </div>
@@ -201,7 +201,7 @@ const HeroSection = () => {
       </div>
 
       {/* Bottom fade */}
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
 };

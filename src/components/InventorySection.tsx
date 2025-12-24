@@ -149,7 +149,7 @@ const InventorySection = () => {
                     {/* Sold Out Overlay */}
                     {product.stock === 0 && (
                       <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px] flex items-center justify-center">
-                        <span className="bg-red-500 text-white text-base sm:text-lg font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-lg rotate-[-12deg] shadow-lg">
+                        <span className="bg-destructive/100 text-white text-base sm:text-lg font-bold px-4 sm:px-6 py-2 sm:py-3 rounded-lg rotate-[-12deg] shadow-lg">
                           TERJUAL
                         </span>
                       </div>
@@ -172,7 +172,7 @@ const InventorySection = () => {
                       const currentPrice = typeof product.price === 'number' ? product.price : parseFloat(String(product.price));
                       const discount = Math.round(((originalPrice - currentPrice) / originalPrice) * 100);
                       return discount > 0 ? (
-                        <span className="absolute bottom-2 sm:bottom-3 right-2 sm:right-3 bg-red-500/90 text-white text-[11px] sm:text-xs font-bold px-2 sm:px-3 py-1 rounded-full flex items-center gap-1">
+                        <span className="absolute bottom-2 sm:bottom-3 right-2 sm:right-3 bg-destructive/100/90 text-white text-[11px] sm:text-xs font-bold px-2 sm:px-3 py-1 rounded-full flex items-center gap-1">
                           <BadgePercent className="h-3 w-3" />
                           {discount}% OFF
                         </span>
@@ -201,7 +201,7 @@ const InventorySection = () => {
                        )}
                        {product.specifications.gpu && (
                          <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
-                           <Sparkles className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-purple-500/70 flex-shrink-0" />
+                           <Sparkles className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-accent/70 flex-shrink-0" />
                            <span className="truncate">{product.specifications.gpu}</span>
                          </div>
                        )}
@@ -224,13 +224,13 @@ const InventorySection = () => {
                          </div>
                        )}
                        {product.specifications.warranty && (
-                         <div className="flex items-center gap-2 text-xs sm:text-sm text-green-600 dark:text-green-500">
+                         <div className="flex items-center gap-2 text-xs sm:text-sm text-success dark:text-success">
                            <Shield className="h-3.5 w-3.5 sm:h-4 sm:w-4 flex-shrink-0" />
                            <span className="truncate font-medium">{product.specifications.warranty}</span>
                          </div>
                        )}
                        {product.specifications.extras && (
-                         <div className="flex items-start gap-2 text-xs sm:text-sm text-orange-600 dark:text-orange-500">
+                         <div className="flex items-start gap-2 text-xs sm:text-sm text-warning dark:text-warning">
                            <Gift className="h-3.5 w-3.5 sm:h-4 sm:w-4 flex-shrink-0 mt-0.5" />
                            <span className="line-clamp-2 font-medium">{product.specifications.extras}</span>
                          </div>
@@ -254,7 +254,7 @@ const InventorySection = () => {
                            <span className="text-xs sm:text-sm text-muted-foreground line-through">
                              {formatPriceWithCurrency(originalPrice)}
                            </span>
-                           <span className="text-xs sm:text-sm text-green-600 dark:text-green-500 font-semibold">
+                           <span className="text-xs sm:text-sm text-success dark:text-success font-semibold">
                              Hemat {formatPriceWithCurrency(originalPrice - (typeof product.price === 'number' ? product.price : parseFloat(String(product.price))))}
                            </span>
                          </div>
@@ -299,7 +299,7 @@ const InventorySection = () => {
          <div className="mt-12 sm:mt-16">
            <div className="glass-card rounded-2xl p-6 sm:p-8 md:p-12 text-center">
              <div className="max-w-2xl mx-auto">
-               <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 mb-4 sm:mb-6">
+                <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full instagram-gradient mb-4 sm:mb-6">
                  <svg
                    className="w-7 h-7 sm:w-8 sm:h-8 text-white"
                    fill="currentColor"
@@ -320,7 +320,7 @@ const InventorySection = () => {
                 </p>
                
                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-4 sm:mb-6">
-                 <Button size="lg" asChild className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:opacity-90 w-full sm:w-auto">
+                 <Button size="lg" asChild className="instagram-gradient hover:opacity-90 w-full sm:w-auto">
                    <a href={COMPANY_INFO.instagram} target="_blank" rel="noopener noreferrer">
                      <svg
                        className="w-4 h-4 sm:w-5 sm:h-5 mr-2"
@@ -347,7 +347,7 @@ const InventorySection = () => {
                
                <div className="flex flex-wrap justify-center gap-2 sm:gap-3 text-xs sm:text-sm text-muted-foreground">
                  <span className="inline-flex items-center gap-1">
-                   <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+                   <span className="h-2 w-2 rounded-full bg-success/100 animate-pulse" />
                    Stories Update Harian
                  </span>
                  <span>•</span>

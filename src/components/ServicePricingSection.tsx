@@ -193,7 +193,7 @@ const ServicePricingSection = () => {
               </Button>
               <p className="text-xs text-muted-foreground mt-4">
                 <span className="inline-flex items-center gap-1">
-                  <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+                  <span className="h-2 w-2 rounded-full bg-success/100 animate-pulse" />
                   Biasanya respon dalam 5 menit
                 </span>
               </p>

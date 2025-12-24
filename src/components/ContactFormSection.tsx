@@ -135,13 +135,13 @@ const ContactFormSection = () => {
           {/* Contact Form */}
           <div className="glass-card rounded-2xl p-8">
             {submitted && (
-              <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+              <div className="mb-6 p-4 bg-success/20 border border-success/50 text-success rounded-lg">
                 ✓ Pesan Anda telah terkirim! Kami akan menghubungi Anda segera.
               </div>
             )}
 
             {errors.general && (
-              <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+              <div className="mb-6 p-4 bg-destructive/20 border border-destructive/50 text-destructive rounded-lg">
                 {errors.general}
               </div>
             )}
@@ -166,7 +166,7 @@ const ContactFormSection = () => {
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                   />
                   {errors.name && (
-                    <p id="name-error" role="alert" className="mt-1 text-sm text-red-500">{errors.name}</p>
+                    <p id="name-error" role="alert" className="mt-1 text-sm text-destructive">{errors.name}</p>
                   )}
                 </div>
 
@@ -188,7 +188,7 @@ const ContactFormSection = () => {
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                   />
                   {errors.email && (
-                    <p id="email-error" role="alert" className="mt-1 text-sm text-red-500">{errors.email}</p>
+                    <p id="email-error" role="alert" className="mt-1 text-sm text-destructive">{errors.email}</p>
                   )}
                 </div>
               </div>
@@ -210,7 +210,7 @@ const ContactFormSection = () => {
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                   />
                   {errors.phone && (
-                    <p id="phone-error" role="alert" className="mt-1 text-sm text-red-500">{errors.phone}</p>
+                    <p id="phone-error" role="alert" className="mt-1 text-sm text-destructive">{errors.phone}</p>
                   )}
                 </div>
 
@@ -234,7 +234,7 @@ const ContactFormSection = () => {
                     <option value="tech_support">Dukungan Teknis</option>
                   </select>
                   {errors.category && (
-                    <p id="category-error" role="alert" className="mt-1 text-sm text-red-500">{errors.category}</p>
+                    <p id="category-error" role="alert" className="mt-1 text-sm text-destructive">{errors.category}</p>
                   )}
                 </div>
               </div>
@@ -257,7 +257,7 @@ const ContactFormSection = () => {
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
                 />
                 {errors.message && (
-                  <p id="message-error" role="alert" className="mt-1 text-sm text-red-500">{errors.message}</p>
+                  <p id="message-error" role="alert" className="mt-1 text-sm text-destructive">{errors.message}</p>
                 )}
               </div>
 

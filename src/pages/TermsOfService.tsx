@@ -55,9 +55,9 @@ const TermsOfService = () => {
             kami (baik secara online maupun offline), Anda menyetujui untuk terikat oleh Ketentuan ini. 
             Jika Anda tidak setuju dengan Ketentuan ini, mohon untuk tidak menggunakan layanan kami.
           </p>
-          <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-5 mt-6">
+          <div className="bg-warning/10 border border-warning/20 rounded-lg p-5 mt-6">
             <p className="text-sm text-foreground flex items-start gap-2">
-              <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warning flex-shrink-0 mt-0.5" />
               <span>
                 <strong>Penting:</strong> Harap baca Ketentuan ini dengan saksama sebelum melakukan 
                 transaksi. Dengan menghubungi kami via WhatsApp atau melakukan pembelian, Anda 
@@ -335,9 +335,9 @@ const TermsOfService = () => {
 
             <div>
               <h3 className="font-semibold text-foreground mb-3">3.3 Data Pribadi</h3>
-              <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-5">
-                <p className="text-foreground font-semibold mb-2 flex items-center gap-2">
-                  <AlertTriangle className="h-5 w-5 text-amber-500" />
+              <div className="bg-warning/10 border border-warning/20 rounded-lg p-5">
+                <p className="text-sm text-foreground flex items-start gap-2">
+                  <AlertTriangle className="h-5 w-5 text-warning" />
                   Penting - Backup Data Anda!
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">

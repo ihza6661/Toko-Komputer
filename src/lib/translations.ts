@@ -73,23 +73,23 @@ export function getConditionBadgeColor(condition: string): string {
   
   if (lowerCondition.includes('excellent') || lowerCondition.includes('like new') || 
       lowerCondition.includes('sangat baik') || lowerCondition.includes('seperti baru')) {
-    return 'bg-green-500/90 text-white';
+    return 'bg-success/100/90 text-white';
   }
   
   if (lowerCondition.includes('good') || lowerCondition.includes('baik')) {
-    return 'bg-blue-500/90 text-white';
+    return 'bg-info/100/90 text-white';
   }
   
   if (lowerCondition.includes('fair') || lowerCondition.includes('cukup')) {
-    return 'bg-yellow-500/90 text-white';
+    return 'bg-warning/100/90 text-white';
   }
   
   if (lowerCondition.includes('used') || lowerCondition.includes('bekas')) {
-    return 'bg-blue-500/90 text-white';
+    return 'bg-info/100/90 text-white';
   }
   
   if (lowerCondition.includes('new') || lowerCondition.includes('baru')) {
-    return 'bg-green-600/90 text-white';
+    return 'bg-success/90 text-white';
   }
   
   // Default

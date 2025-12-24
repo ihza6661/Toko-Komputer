@@ -91,37 +91,37 @@ const LocationSection = () => {
                   <h4 className="font-semibold text-foreground text-base mb-3">Kontak Admin</h4>
                   <div className="space-y-2.5">
                     {/* Admin Pagi */}
-                    <div className="flex items-center justify-between py-2 px-3 rounded-lg bg-gray-50">
+                    <div className="flex items-center justify-between py-2 px-3 rounded-lg bg-secondary">
                       <div className="flex-1">
                         <p className="text-xs font-medium text-gray-700">Admin Pagi (Shift 08:00-14:00)</p>
                       </div>
                       {shiftInfo.type === "morning" && shiftInfo.isOperating && (
-                        <span className="ml-2 flex items-center gap-1 text-xs font-semibold text-green-600">
-                          <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+                        <span className="ml-2 flex items-center gap-1 text-xs font-semibold text-success">
+                          <div className="h-2 w-2 rounded-full bg-success/100 animate-pulse" />
                           Aktif
                         </span>
                       )}
                     </div>
 
                     {/* Admin Siang */}
-                    <div className="flex items-center justify-between py-2 px-3 rounded-lg bg-gray-50">
+                    <div className="flex items-center justify-between py-2 px-3 rounded-lg bg-secondary">
                       <div className="flex-1">
                         <p className="text-xs font-medium text-gray-700">Admin Siang (Shift 14:00-20:00)</p>
-                        <p className="text-sm font-mono text-gray-900 mt-0.5">{formattedPhoneGeneral}</p>
+                        <p className="text-sm font-mono text-foreground mt-0.5">{formattedPhoneGeneral}</p>
                       </div>
                       {shiftInfo.type === "afternoon" && shiftInfo.isOperating && (
-                        <span className="ml-2 flex items-center gap-1 text-xs font-semibold text-green-600">
-                          <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+                        <span className="ml-2 flex items-center gap-1 text-xs font-semibold text-success">
+                          <div className="h-2 w-2 rounded-full bg-success/100 animate-pulse" />
                           Aktif
                         </span>
                       )}
                     </div>
 
                     {/* Service */}
-                    <div className="flex items-center justify-between py-2 px-3 rounded-lg bg-gray-50">
+                    <div className="flex items-center justify-between py-2 px-3 rounded-lg bg-secondary">
                       <div className="flex-1">
                         <p className="text-xs font-medium text-gray-700">Service & Garansi</p>
-                        <p className="text-sm font-mono text-gray-900 mt-0.5">{formattedPhoneService}</p>
+                        <p className="text-sm font-mono text-foreground mt-0.5">{formattedPhoneService}</p>
                       </div>
                     </div>
                   </div>

@@ -54,24 +54,24 @@ const AnalyticsDashboard = ({ onClose }: AnalyticsDashboardProps) => {
 
           <Card className="p-6 glass-card">
             <div className="flex items-center justify-between mb-2">
-              <ShoppingCart className="h-8 w-8 text-green-500" />
-              <span className="text-2xl font-bold text-green-500">{summary.whatsappClicks}</span>
+              <ShoppingCart className="h-8 w-8 text-success" />
+              <span className="text-2xl font-bold text-success">{summary.whatsappClicks}</span>
             </div>
             <h3 className="text-sm font-medium text-muted-foreground">WhatsApp Conversions</h3>
           </Card>
 
           <Card className="p-6 glass-card">
             <div className="flex items-center justify-between mb-2">
-              <MousePointer className="h-8 w-8 text-blue-500" />
-              <span className="text-2xl font-bold text-blue-500">{summary.navigationClicks}</span>
+              <MousePointer className="h-8 w-8 text-info" />
+              <span className="text-2xl font-bold text-info">{summary.navigationClicks}</span>
             </div>
             <h3 className="text-sm font-medium text-muted-foreground">Navigation Clicks</h3>
           </Card>
 
           <Card className="p-6 glass-card">
             <div className="flex items-center justify-between mb-2">
-              <Scroll className="h-8 w-8 text-purple-500" />
-              <span className="text-2xl font-bold text-purple-500">{summary.topScrollDepth}%</span>
+              <Scroll className="h-8 w-8 text-accent" />
+              <span className="text-2xl font-bold text-accent">{summary.topScrollDepth}%</span>
             </div>
             <h3 className="text-sm font-medium text-muted-foreground">Max Scroll Depth</h3>
           </Card>
@@ -119,13 +119,13 @@ const AnalyticsDashboard = ({ onClose }: AnalyticsDashboardProps) => {
                     <div className="flex items-center gap-2">
                       <div className="w-32 h-2 bg-secondary rounded-full overflow-hidden">
                         <div
-                          className="h-full bg-green-500 transition-all"
+                          className="h-full bg-success/100 transition-all"
                           style={{
                             width: `${(count / summary.whatsappClicks) * 100}%`,
                           }}
                         />
                       </div>
-                      <span className="text-sm font-semibold text-green-500 w-8">{count}</span>
+                      <span className="text-sm font-semibold text-success w-8">{count}</span>
                     </div>
                   </div>
                 ))

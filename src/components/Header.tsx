@@ -47,7 +47,7 @@ const Header = () => {
               className="h-10 w-10 rounded-lg object-cover"
             />
             <span className="font-display text-lg font-bold text-foreground">
-              Database <span className="text-gray-900">Computer</span>
+              Database <span className="text-foreground">Computer</span>
             </span>
           </div>
 
