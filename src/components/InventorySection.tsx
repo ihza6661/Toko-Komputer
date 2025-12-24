@@ -2,17 +2,40 @@ import { Cpu, HardDrive, MemoryStick, Monitor, MessageCircle, Sparkles, Shield, 
 import { Button } from "@/components/ui/button";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
 import { COMPANY_INFO } from "@/lib/constants";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { formatPriceWithCurrency } from "@/lib/utils";
 import { generateProductSchema, injectSchemaMarkup } from "@/lib/schema";
 import { useProducts } from "@/hooks/useProducts";
 import placeholderImg from "@/assets/placeholder.svg";
 import { translateCondition, getConditionBadgeColor } from "@/lib/translations";
 import { Link } from "react-router-dom";
+import ProductFilters, { ProductFilterValues } from "@/components/ProductFilters";
 
 const InventorySection = () => {
-  // Fetch products using React Query hook
-  const { data: products = [], isLoading: loading } = useProducts({ perPage: 8 });
+  // Filter state
+  const [filters, setFilters] = useState<ProductFilterValues>({
+    search: "",
+    categoryId: undefined,
+    minPrice: undefined,
+    maxPrice: undefined,
+    condition: undefined,
+    inStock: undefined,
+    sortBy: "created_at",
+    order: "desc",
+  });
+
+  // Fetch products using React Query hook with filters
+  const { data: products = [], isLoading: loading } = useProducts({ 
+    perPage: 12,
+    search: filters.search || undefined,
+    categoryId: filters.categoryId,
+    minPrice: filters.minPrice,
+    maxPrice: filters.maxPrice,
+    condition: filters.condition,
+    inStock: filters.inStock,
+    sortBy: filters.sortBy,
+    order: filters.order,
+  });
 
   // Inject Product Schema for first 4 products (above the fold)
   useEffect(() => {
@@ -49,15 +72,46 @@ const InventorySection = () => {
             </p>
           </div>
 
+          {/* Product Filters */}
+          <div className="mb-8">
+            <ProductFilters 
+              filters={filters} 
+              onFilterChange={setFilters}
+              resultCount={products.length}
+            />
+          </div>
+
           {/* Product grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 md:mb-16">
            {loading ? (
              <div className="col-span-full text-center py-12">
-               <p className="text-muted-foreground">Loading products...</p>
+               <div className="inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-primary border-r-transparent"></div>
+               <p className="mt-4 text-muted-foreground">Memuat produk...</p>
              </div>
            ) : products.length === 0 ? (
              <div className="col-span-full text-center py-12">
-               <p className="text-muted-foreground">No products available at the moment.</p>
+               <p className="text-muted-foreground text-lg mb-4">
+                 {filters.search || filters.categoryId || filters.minPrice || filters.maxPrice || filters.condition || filters.inStock
+                   ? "Tidak ada produk yang sesuai dengan filter Anda."
+                   : "Belum ada produk tersedia saat ini."}
+               </p>
+               {(filters.search || filters.categoryId || filters.minPrice || filters.maxPrice || filters.condition || filters.inStock) && (
+                 <Button 
+                   variant="outline" 
+                   onClick={() => setFilters({
+                     search: "",
+                     categoryId: undefined,
+                     minPrice: undefined,
+                     maxPrice: undefined,
+                     condition: undefined,
+                     inStock: undefined,
+                     sortBy: "created_at",
+                     order: "desc",
+                   })}
+                 >
+                   Reset Filter
+                 </Button>
+               )}
              </div>
              ) : (
               products.map((product) => (

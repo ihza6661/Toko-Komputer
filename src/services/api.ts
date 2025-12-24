@@ -134,14 +134,23 @@ class ApiClient {
     category_id?: number
     sort_by?: string
     order?: string
+    min_price?: number
+    max_price?: number
+    condition?: string
+    in_stock?: boolean
+    per_page?: number
   } = {}) {
     const params = new URLSearchParams({
       page: page.toString(),
-      per_page: '12',
+      per_page: (filters.per_page || 12).toString(),
       ...(filters.search && { search: filters.search }),
       ...(filters.category_id && { category_id: filters.category_id.toString() }),
       ...(filters.sort_by && { sort_by: filters.sort_by }),
       ...(filters.order && { order: filters.order }),
+      ...(filters.min_price && { min_price: filters.min_price.toString() }),
+      ...(filters.max_price && { max_price: filters.max_price.toString() }),
+      ...(filters.condition && { condition: filters.condition }),
+      ...(filters.in_stock !== undefined && { in_stock: filters.in_stock.toString() }),
     })
 
     return this.fetch(`/products?${params.toString()}`) as Promise<PaginatedResponse<Product>>

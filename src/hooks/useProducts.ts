@@ -17,6 +17,46 @@ interface UseProductsOptions {
    * @default true
    */
   enabled?: boolean;
+
+  /**
+   * Search query string
+   */
+  search?: string;
+
+  /**
+   * Filter by category ID
+   */
+  categoryId?: number;
+
+  /**
+   * Minimum price filter
+   */
+  minPrice?: number;
+
+  /**
+   * Maximum price filter
+   */
+  maxPrice?: number;
+
+  /**
+   * Filter by condition (New, Used, Refurbished)
+   */
+  condition?: string;
+
+  /**
+   * Show only in-stock items
+   */
+  inStock?: boolean;
+
+  /**
+   * Sort field (name, price, created_at)
+   */
+  sortBy?: string;
+
+  /**
+   * Sort order (asc, desc)
+   */
+  order?: string;
 }
 
 /**
@@ -28,10 +68,17 @@ interface UseProductsOptions {
  * - Handles paginated API responses
  * - Request deduplication
  * - Background refetching
+ * - Comprehensive filtering support
  * 
  * @example
  * ```tsx
- * const { data: products = [], isLoading, error } = useProducts({ perPage: 8 });
+ * const { data: products = [], isLoading, error } = useProducts({ 
+ *   perPage: 8,
+ *   search: 'laptop',
+ *   categoryId: 1,
+ *   minPrice: 1000000,
+ *   maxPrice: 5000000
+ * });
  * 
  * if (isLoading) return <div>Loading...</div>
  * if (error) return <div>Error occurred</div>
@@ -40,13 +87,44 @@ interface UseProductsOptions {
  * ```
  */
 export function useProducts(options: UseProductsOptions = {}) {
-  const { perPage = 8, enabled = true } = options;
+  const { 
+    perPage = 8, 
+    enabled = true,
+    search,
+    categoryId,
+    minPrice,
+    maxPrice,
+    condition,
+    inStock,
+    sortBy,
+    order
+  } = options;
 
   const query = useQuery({
-    queryKey: queryKeys.products.list({ per_page: perPage }),
+    queryKey: queryKeys.products.list({ 
+      per_page: perPage,
+      search,
+      category_id: categoryId,
+      min_price: minPrice,
+      max_price: maxPrice,
+      condition,
+      in_stock: inStock,
+      sort_by: sortBy,
+      order
+    }),
     queryFn: async () => {
       try {
-        const response = await api.getProducts(1, {});
+        const response = await api.getProducts(1, {
+          per_page: perPage,
+          search,
+          category_id: categoryId,
+          min_price: minPrice,
+          max_price: maxPrice,
+          condition,
+          in_stock: inStock,
+          sort_by: sortBy,
+          order
+        });
         
         // Handle paginated response structure
         // Backend returns either { data: [...] } or [...]
