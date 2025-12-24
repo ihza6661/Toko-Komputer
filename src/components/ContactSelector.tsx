@@ -81,23 +81,6 @@ const ContactSelector = () => {
               </div>
             </div>
           </div>
-
-          {/* Owner contact - small button below */}
-          <div className="mt-6 text-center">
-            <p className="text-xs sm:text-sm text-muted-foreground mb-2">
-              Ingin konsultasi langsung dengan owner?
-            </p>
-            <Button variant="ghost" size="sm" asChild className="text-xs sm:text-sm">
-              <a
-                href={generateWhatsAppLinkByContact("owner")}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:text-primary/80"
-              >
-                Chat dengan Owner
-              </a>
-            </Button>
-          </div>
         </div>
       </div>
     </section>

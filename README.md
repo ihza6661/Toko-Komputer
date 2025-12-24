@@ -8,7 +8,7 @@
 [![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-**A modern, conversion-optimized landing page for Toko Komputer** - a trusted laptop and Macbook store in Pontianak Barat, West Kalimantan, Indonesia.
+**A modern, conversion-optimized landing page for Computer Store** - a trusted Database Computer in Pontianak Barat, West Kalimantan, Indonesia.
 
 [Live Demo](https://toko-komputer-landing-site.vercel.app/) · [Report Bug](https://github.com/ihza6661/Toko-Komputer/issues) · [Request Feature](https://github.com/ihza6661/Toko-Komputer/issues)
 
@@ -87,19 +87,25 @@ Toko Komputer Landing Page is a production-ready, mobile-first web application d
 
 ## 📸 Screenshots
 
+
+
 ### Homepage Sections
 
 #### Hero Section
-<!-- TODO: Add screenshot of hero section with trust badges and CTAs -->
-> **Coming Soon:** Hero section showcasing trust badges ("Sejak 2014", "Spesialis Macbook"), primary CTA buttons, and modern gradient design with animated elements.
+
+![Product Section](./src/assets/hero-section.webp)
+
+> Screenshot: Hero section with trust badges, primary CTAs.
 
 #### Product Catalog
-<!-- TODO: Add screenshot of product inventory section -->
-> **Coming Soon:** Product inventory with sold-out feature, responsive card layout, and smooth hover effects. Shows real product images with pricing and specifications.
+
+![Product Section](./src/assets/sold-out-feature.webp)
+
+> Screenshot: Product inventory with sold-out feature, responsive card layout, and smooth hover effects. Shows real product images with pricing and specifications.
 
 #### Smart WhatsApp Integration
 <!-- TODO: Add screenshot or GIF of WhatsApp routing selector -->
-> **Coming Soon:** Context-aware WhatsApp routing with 3-way contact selection (Sales, Service, Owner). Demonstrates how inquiries are automatically routed based on customer intent.
+> **Coming Soon:** Context-aware WhatsApp routing with 2-way contact selection (Sales, Service). Demonstrates how inquiries are automatically routed based on customer intent.
 
 #### Services & Pricing
 <!-- TODO: Add screenshot of services section -->
@@ -409,9 +415,6 @@ The application includes smart WhatsApp routing based on inquiry context:
 
 // Service inquiries (repair, maintenance)
 // Routes to service team with issue description
-
-// General inquiries (contact owner directly)
-// Routes to owner with general message template
 ```
 
 ---
@@ -473,7 +476,6 @@ Update contact numbers in `src/lib/constants.ts`:
 
 ```typescript
 export const WHATSAPP_NUMBERS = {
-  owner: "6281234567890",      // Owner's WhatsApp (include country code)
   sales: "6281234567891",      // Sales team WhatsApp
   service: "6281234567892",    // Service team WhatsApp
 };

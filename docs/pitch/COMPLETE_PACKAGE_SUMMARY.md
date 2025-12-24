@@ -14,7 +14,7 @@
 - All sections implemented (Hero, Products, Services, FAQ, Testimonials, etc.)
 - Mobile-responsive design
 - Fast loading (< 2 seconds)
-- Smart WhatsApp routing (Sales, Service, Owner)
+- Smart WhatsApp routing (Sales, Service)
 - Sold-out feature for inventory management
 - Professional UI with Toko branding (#22c55e green)
 

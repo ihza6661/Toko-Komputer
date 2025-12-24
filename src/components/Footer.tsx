@@ -159,7 +159,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground text-center sm:text-left">
               © {new Date().getFullYear()} {COMPANY_INFO.name}. All rights
-              reserved. Build by Ihza Mahendra.
+              reserved. <br /> Build by @Ihza_baker.
             </p>
             <div className="flex items-center gap-4 flex-wrap justify-center sm:justify-end">
               <Link

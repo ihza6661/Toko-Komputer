@@ -18,7 +18,7 @@ const FAQLegal = () => {
           <Link to="/" className="flex items-center gap-2">
             <ArrowLeft className="h-5 w-5" />
             <span className="font-display font-semibold text-lg">
-              Toko <span className="text-primary">Komputer</span>
+              Database <span className="text-primary">Computer</span>
             </span>
           </Link>
           <Link to="/">
