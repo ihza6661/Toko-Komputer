@@ -83,7 +83,7 @@ Bisnis retail modern yang sukses membutuhkan lebih dari sekadar kehadiran di med
 **Dampak:**
 - Pengalaman pengguna buruk untuk browsing produk
 - Customer kesulitan menemukan produk yang dicari
-- Banyak inquiry berulang (tanya stok, harga, specs)
+- Banyak pertanyaan berulang (tanya stok, harga, specs)
 - Memakan waktu untuk customer service
 
 ---
@@ -339,7 +339,7 @@ Website memberikan nilai dalam 4 dimensi:
 
 **Manfaat Terukur:**
 - [+] **Traffic Organik dari Google** - Traffic gratis dari search engine
-- [+] **Beban Customer Service Berkurang** - Katalog mandiri = inquiry lebih sedikit
+- [+] **Beban Customer Service Berkurang** - Katalog mandiri = Pertanyaan berulang lebih sedikit
 - [+] **Citra Profesional** - Lebih mudah untuk pitch kemitraan B2B
 - [+] **Tersedia 24/7** - Customer bisa browse produk kapan saja
 - [+] **Kepemilikan Data** - Analytics & customer insights
