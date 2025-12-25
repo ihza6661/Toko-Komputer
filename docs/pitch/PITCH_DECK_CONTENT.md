@@ -10,21 +10,21 @@
 ```
 [Top Center - Large]
 WEBSITE MODERN UNTUK
-R-TECH COMPUTER
+TOKO COMPUTER
 
 [Subtitle]
 Tingkatkan Penjualan & Efisiensi
 dengan Solusi Digital 24/7
 
 [Bottom Right]
-Presentasi oleh: [Your Name]
+Presentasi oleh: Ihza Mahendra
 Web Developer | Pontianak
-[Your Phone/WhatsApp]
-[Date: e.g., Desember 2024]
+[089692070270]
+[tgl]
 ```
 
 **Design Tips:**
-- Use Toko brand color (#22c55e green) as accent
+- Use Toko brand color as accent
 - Professional font: Poppins/Inter/Montserrat
 - Include subtle laptop/tech icons
 
@@ -70,7 +70,7 @@ TANTANGAN BISNIS R-TECH HARI INI
 
 ### Title:
 ```
-KOMPETITOR BELUM READY 🎯
+KOMPETITOR SUDAH BERGERAK! 🚨
 ```
 
 ### Content:
@@ -80,34 +80,40 @@ KOMPETITOR BELUM READY 🎯
 TOKO LAPTOP DI PONTIANAK:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📍 Aero Computer           Instagram ✅  Website ❌
-📍 Menara Komputer         Facebook  ✅  Website ❌  
-📍 Laptop Second Pontianak WhatsApp  ✅  Website ❌
-📍 Database Komputer       Instagram ✅  Website ❌
+📍 Aero Computer           Instagram  ✅  Website ❌
+📍 Menara Komputer         Instagram  ✅  Website ✅
+📍 Laptop Second Pontianak WhatsApp   ✅  Website ❌
+📍 Database Komputer       Instagram  ✅  Website ❌
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MENARA COMPUTER SUDAH PUNYA WEBSITE SENDIRI!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-💡 R-TECH BISA JADI PIONEER!
-   Toko laptop PERTAMA di Pontianak
-   dengan website profesional
+✅ Professional web presence
+✅ Google search visibility
+✅ Brand differentiation
+✅ Direct customer contact
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DATABASE COMPUTER = Market Leader di Pontianak
+❓ Kenapa kompetitor lebih dulu punya "rumah digital"?
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Large Banner - Green Background]
+💡 SAATNYA DATABASE.ID PUNYA PLATFORM SENDIRI
+   Lebih profesional, lebih prestige dari kompetitor!
+
 ```
 
-**Bottom Section:**
-```
-[Screenshot: Google Search "laptop bekas pontianak"]
-→ Tidak ada kompetitor website yang muncul
-
-🚀 TIMING SEMPURNA UNTUK UNGGUL!
-```
-
----
 
 ## SLIDE 4: SOLUSI KAMI
 **Design**: Hero screenshot with annotations
 
 ### Title:
 ```
-WEBSITE R-TECH COMPUTER
+WEBSITE DATABASE COMPUTER
 ```
 
 ### Content:
@@ -118,7 +124,7 @@ FITUR UTAMA:
 ✅ Katalog Produk Real-Time
 ✅ WhatsApp Auto-Routing (Sales/Service/Owner)
 ✅ FAQ - Jawab 8 Pertanyaan Tersering
-✅ Testimoni Google Reviews (4.9★)
+✅ Testimoni Google Reviews (4.5★)
 ✅ Mobile-Friendly (80% customer via HP)
 ✅ Loading Cepat (< 2 detik)
 ✅ Akses 24/7 Tanpa Henti
