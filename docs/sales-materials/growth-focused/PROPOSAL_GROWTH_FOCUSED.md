@@ -106,7 +106,7 @@ WEBSITE PERUSAHAAN (Digital Headquarters)
     +-- Contact & Location
     +-- Blog & Content (SEO)
     +-- Analytics & Data
-    +-- 100% Owned & Controlled by You
+    +-- 100% Dimiliki & Dikontrol oleh anda
 ```
 
 **Strategi "Pusat & Cabang":**
@@ -137,7 +137,7 @@ Website memberikan nilai dalam 4 dimensi:
 - **Keunggulan kompetitif** - Menonjol dari competitor yang hanya pakai Instagram
 
 #### 4. [TOOLS] Efisiensi Bisnis
-- **Katalog mandiri** - Customer bisa browse sendiri (kurangi inquiry)
+- **Katalog mandiri** - Customer bisa browse sendiri (kurangi pertanyaan berulang)
 - **Routing otomatis** - Kontak WhatsApp pintar berdasarkan tipe inquiry
 - **Insight analytics** - Memahami perilaku customer & optimasi
 - **Skalabel** - Siap untuk growth (tambah produk, kategori, fitur)
@@ -381,8 +381,8 @@ Apakah Rp 340.000/bulan layak untuk memiliki aset digital profesional yang mendu
 ### Ihza Mahendra - Full-Stack Web Developer
 
 **Latar Belakang:**
-- 5 tahun pengalaman web development
-- 6 website telah berhasil di-deploy & berjalan
+- 6 tahun pengalaman web development
+- 4 website telah berhasil di-deploy & berjalan
 - Spesialisasi: Full-Stack Development & Performance Optimization
 
 **Keahlian Teknis:**
@@ -601,7 +601,7 @@ Apakah Rp 340.000/bulan layak untuk memiliki aset digital profesional yang mendu
 ## [PIN] CATATAN PENTING
 
 ### Harga Promo Pelanggan Awal Berlaku Hingga:
-**31 Januari 2026 atau sampai 3 klien pertama**
+**31 Januari 2026 **
 
 Setelah itu, harga naik menjadi **Rp 7.500.000** (normal price).
 
