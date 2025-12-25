@@ -8,21 +8,21 @@
 Sebagai bisnis retail yang berkembang, Anda sudah punya Instagram yang aktif. Tapi ada 3 masalah fundamental:
 
 **1. Instagram Bukan Aset Anda**
-- Algoritma berubah sewaktu-waktu, reach organik terus menurun
-- Jika akun suspended/banned, bisnis terhenti total
-- Brand equity terbangun di platform orang lain
+- Sistem Instagram berubah sewaktu-waktu, jangkauan gratis terus menurun
+- Jika akun di-suspend/banned, bisnis terhenti total
+- Reputasi bisnis Anda dibangun di tempat yang bukan milik Anda
 
-**2. Kehilangan Traffic dari Google**
+**2. Kehilangan Calon Pelanggan dari Google**
 - 68% customer mulai cari produk dari Google
 - "Toko laptop [Kota]", "Service laptop [Kota]" → jutaan pencarian/bulan
 - Instagram tidak muncul di Google Search
-- Competitor dengan website akan muncul lebih dulu
+- Pesaing yang punya website akan muncul lebih dulu
 
 **3. Keterbatasan Fungsional**
 - Tidak cocok untuk katalog 50+ produk
-- Customer harus scroll feed untuk cari produk
-- Tidak ada search/filter by brand, harga, category
-- Banyak pertanyaan berulang → makan waktu CS
+- Customer harus scroll terus untuk cari produk
+- Tidak ada fitur pencarian berdasarkan merk, harga, atau kategori
+- Banyak pertanyaan berulang → habis waktu untuk melayani
 
 **Solusinya:** Website profesional sebagai **"Digital Headquarters"** yang 100% Anda miliki dan kontrol.
 
@@ -33,32 +33,32 @@ Sebagai bisnis retail yang berkembang, Anda sudah punya Instagram yang aktif. Ta
 ### Website dengan Fitur Lengkap:
 
 **Katalog & Display:**
-• Product catalog dengan foto, harga, spesifikasi
-• Search & filter by brand, harga, category
-• Sort by: terbaru, termurah, termahal
-• Quick WhatsApp contact per produk
-• Responsive design (mobile, tablet, desktop)
-• Fast loading (< 2 detik)
+• Katalog produk dengan foto, harga, dan spesifikasi
+• Pencarian dan filter berdasarkan merk, harga, kategori
+• Urutkan berdasarkan: terbaru, termurah, termahal
+• Tombol WhatsApp langsung di setiap produk
+• Tampilan otomatis menyesuaikan (handphone, tablet, komputer)
+• Loading cepat (kurang dari 2 detik)
 
-**SEO & Marketing:**
-• Muncul di Google Search untuk keyword lokal
-• Schema.org structured data untuk rich snippets
-• Meta tags untuk social media sharing
-• Google Analytics 4 integration
-• Siap untuk organic traffic
+**Optimasi Google & Marketing:**
+• Muncul di Google Search untuk kata kunci lokal (contoh: "toko laptop Pontianak")
+• Format khusus agar tampilan menarik di Google (dengan foto dan harga)
+• Informasi lengkap saat dibagikan di media sosial
+• Sistem pelacak pengunjung Google Analytics
+• Siap mendapat pengunjung gratis dari Google
 
-**Admin Dashboard:**
-• Powered by Laravel Filament (modern & mudah)
-• Tambah/edit/hapus produk tanpa coding
-• Drag & drop untuk upload foto
-• Update harga & deskripsi dengan mudah
-• Bulk import/export
+**Panel Admin (Mudah Dipakai):**
+• Sistem modern dan mudah digunakan (tidak perlu coding)
+• Tambah/edit/hapus produk dengan form sederhana
+• Upload foto dengan cara tarik & lepas (drag & drop)
+• Update harga dan deskripsi dengan mudah
+• Upload banyak produk sekaligus (import file Excel)
 
-**Kontak & Konversi:**
-• Routing WhatsApp pintar (Sales, Service, General)
-• Contact form untuk inquiry
-• Google Maps integration
-• Jam operasional & petunjuk arah
+**Kontak & Komunikasi:**
+• Sistem pemilah pesan WhatsApp otomatis (Penjualan, Service, Umum)
+• Form kontak untuk pertanyaan
+• Integrasi Google Maps (lokasi toko)
+• Jam operasional dan petunjuk arah
 
 ---
 
@@ -69,12 +69,13 @@ Sebagai bisnis retail yang berkembang, Anda sudah punya Instagram yang aktif. Ta
 **Termasuk:**
 • Pengembangan website lengkap (modern & responsif)
 • Sistem katalog produk dengan admin dashboard
-• SSL Certificate (HTTPS) - 1 tahun
-• Domain .id/.com profesional - 1 tahun
-• Hosting premium (uptime 99.9%) - 1 tahun
-• Setup SEO dasar (Schema.org, meta tags, sitemap)
-• Integrasi Google Analytics 4
-• Sistem routing WhatsApp pintar
+• Sertifikat keamanan SSL (gembok hijau di browser) - 1 tahun
+• Nama domain .id/.com profesional - 1 tahun
+• Hosting premium (website nyala 99.9% sepanjang waktu) - 1 tahun
+• Desain otomatis menyesuaikan (handphone, tablet, komputer)
+• Setup optimasi Google dasar (agar mudah ditemukan di Google)
+• Sistem pelacak pengunjung Google Analytics
+• Sistem pemilah pesan WhatsApp otomatis
 • Maintenance gratis 6 bulan pertama
 • Training team (2 sesi @2 jam via Google Meet/Zoom atau Offline di Pontianak)
 • Technical support via WhatsApp
@@ -139,10 +140,10 @@ Total: Rp 6.000.000
 
 **Untuk mendapatkan:**
 • Aset digital yang 100% Anda miliki selamanya
-• Traffic organik dari Google (gratis)
-• Citra profesional & kredibilitas bisnis
-• Customer service lebih efisien (katalog mandiri)
-• Foundation untuk business growth
+• Pengunjung gratis dari Google
+• Citra profesional dan kredibilitas bisnis
+• Pelayanan pelanggan lebih efisien (customer bisa cek sendiri)
+• Fondasi untuk pertumbuhan bisnis jangka panjang
 
 **Pertanyaan:** Apakah Rp 340.000/bulan layak untuk memiliki aset digital profesional yang mendukung pertumbuhan bisnis Anda?
 
@@ -152,32 +153,32 @@ Total: Rp 6.000.000
 
 ### Timeline Pengerjaan: 1 BULAN
 
-**Week 1:** Setup & Content Collection
-• Domain, hosting, SSL setup
+**Minggu 1:** Persiapan & Kumpulkan Konten
+• Setup domain, hosting, dan sertifikat keamanan
 • Kumpulkan konten (foto produk, harga, logo, kontak)
-• Finalisasi struktur & design
+• Finalisasi struktur dan desain website
 
-**Week 2-3:** Pengembangan
+**Minggu 2-3:** Pembuatan Website
 • Bangun website lengkap
-• Implementasi katalog produk & admin dashboard
-• Testing & optimasi
+• Buat sistem katalog produk dan panel admin
+• Testing dan optimasi kecepatan
 
-**Week 4:** Launch & Training
-• Soft launch & review
-• Training team (2 sesi @2 jam)
-• Hard launch & submit ke Google
+**Minggu 4:** Peluncuran & Pelatihan
+• Peluncuran sementara untuk review
+• Pelatihan tim Anda (2 sesi @2 jam)
+• Peluncuran resmi dan daftarkan ke Google
 
 *(Bisa dipercepat menjadi 2-3 minggu jika urgent)*
 
 ### Garansi:
 
 **Yang Dijamin:**
-• Website 100% sesuai prototype (atau lebih baik)
-• Website live dalam 1 bulan (atau uang kembali)
-• Responsif mobile (tampil bagus di semua device)
-• Kecepatan loading < 3 detik
-• Revisi minor gratis selama masa maintenance
-• Technical support via WhatsApp
+• Website 100% sesuai contoh (atau lebih baik)
+• Website online dalam 1 bulan (atau uang kembali)
+• Tampil bagus di semua perangkat (handphone, tablet, komputer)
+• Kecepatan loading kurang dari 3 detik
+• Perbaikan kecil gratis selama masa maintenance
+• Dukungan teknis via WhatsApp
 
 **Yang TIDAK Dijamin:**
 • Ranking #1 di Google (SEO butuh waktu 3-6 bulan)
@@ -194,11 +195,12 @@ Total: Rp 6.000.000
 • 4 website telah di-deploy & berjalan
 • Spesialisasi: Full-Stack Development & Performance Optimization
 
-**Tech Stack:**
-• Frontend: React, TypeScript, Vite, Tailwind CSS
-• Backend: Laravel, Laravel Filament, PostgreSQL, MySQL
-• Security: SSL/HTTPS, anti-fraud, data protection
-• SEO: Schema.org markup, Google Analytics 4
+**Teknologi yang Digunakan:**
+• Tampilan: Teknologi web modern (React, TypeScript, Tailwind CSS)
+• Sistem Backend: Laravel dengan panel admin profesional
+• Database: PostgreSQL / MySQL (sistem penyimpanan data profesional)
+• Keamanan: SSL/HTTPS, perlindungan data, anti-penipuan
+• Optimasi Google: Format khusus Google + sistem pelacak pengunjung
 
 **Demo Website:**
 https://toko-komputer-landing-site.vercel.app/
@@ -209,8 +211,8 @@ https://toko-komputer-landing-site.vercel.app/
 
 **Track Record:**
 • 60% rata-rata peningkatan kecepatan website
-• 100% desain responsif (mobile-first approach)
-• Optimasi SEO untuk ranking Google
+• 100% desain menyesuaikan semua perangkat (didesain untuk handphone dulu)
+• Optimasi agar muncul di halaman pertama Google
 
 ---
 
@@ -219,16 +221,16 @@ https://toko-komputer-landing-site.vercel.app/
 ### Jika Deal Sebelum 31 Januari 2026:
 
 **1. Optimasi Google Business Profile** (Nilai: Rp 500.000)
-• Optimasi listing Google Business
+• Optimasi profil bisnis di Google
 • Upload 10-15 foto profesional
-• Deskripsi bisnis dioptimalkan SEO
-• Setup Google Posts mingguan (1 bulan)
-• Template respons review
+• Tulis deskripsi bisnis yang mudah ditemukan di Google
+• Posting rutin di Google (1 bulan pertama)
+• Template untuk balas review pelanggan
 
-**2. Priority Support** (Nilai: Rp 500.000 - Rp 1.000.000)
-• Response time maksimal 4 jam (normal: 24 jam)
+**2. Dukungan Prioritas** (Nilai: Rp 500.000 - Rp 1.000.000)
+• Waktu balas maksimal 4 jam (normal: 24 jam)
 • WhatsApp langsung
-• Berlaku 6-12 bulan (tergantung opsi pembayaran)
+• Berlaku 6-12 bulan (tergantung cara bayar)
 
 ---
 

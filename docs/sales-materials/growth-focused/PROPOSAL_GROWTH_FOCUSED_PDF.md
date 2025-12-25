@@ -5,21 +5,21 @@
 
 ## RINGKASAN EKSEKUTIF
 
-Bisnis retail modern yang sukses membutuhkan lebih dari sekadar kehadiran di media sosial. Untuk mencapai pertumbuhan berkelanjutan dan membangun brand equity jangka panjang, bisnis memerlukan **aset digital yang 100% dimiliki dan dikontrol**.
+Bisnis retail modern yang sukses membutuhkan lebih dari sekadar kehadiran di media sosial. Untuk mencapai pertumbuhan berkelanjutan dan membangun reputasi bisnis jangka panjang, bisnis memerlukan **aset digital yang 100% dimiliki dan dikontrol**.
 
 **Realitas Bisnis Saat Ini:**
 - Instagram adalah platform yang kuat untuk marketing
 - Namun Instagram bukan aset yang Anda miliki
-- Algoritma berubah, reach organik menurun
+- Sistem Instagram berubah, jangkauan gratis menurun
 - Tidak muncul di Google Search
 - Keterbatasan untuk katalog produk yang terstruktur
 
 **Solusi:** Website profesional sebagai **"Digital Headquarters"** untuk:
 - Aset digital yang 100% Anda miliki dan kontrol
 - Citra profesional yang mencerminkan kualitas bisnis Anda
-- Katalog produk terstruktur dengan search & filter
-- Visibilitas di Google Search untuk jangkauan organik
-- Kemandirian dari perubahan algoritma platform
+- Katalog produk terstruktur dengan pencarian & filter
+- Muncul di Google Search untuk jangkauan yang lebih luas
+- Kemandirian dari perubahan sistem platform
 
 ---
 
@@ -29,28 +29,28 @@ Bisnis retail modern yang sukses membutuhkan lebih dari sekadar kehadiran di med
 
 **Risiko Bisnis:**
 - 100% bisnis online bergantung pada Instagram (yang bukan milik Anda)
-- Algoritma Instagram terus berubah, reach organik menurun
+- Sistem Instagram terus berubah, jangkauan gratis menurun
 - Tidak ada kontrol atas perubahan kebijakan platform
 - Tidak memiliki data pelanggan secara langsung
-- Jika akun bermasalah (suspended/banned), bisnis terhenti total
+- Jika akun bermasalah (di-suspend/banned), bisnis terhenti total
 
 **Dampak:**
 - Tidak ada aset digital yang benar-benar Anda kontrol
-- Brand equity terbangun di platform orang lain
+- Reputasi bisnis terbangun di platform orang lain
 - Rentan terhadap perubahan platform
 
-### 2. Kehilangan Traffic dari Google Search
+### 2. Kehilangan Calon Pelanggan dari Google Search
 
 **Fakta:**
-- 68% pengalaman online dimulai dari search engine (Google)
+- 68% pengalaman online dimulai dari Google
 - "Toko laptop [Kota]", "Laptop bekas [Kota]", "Service laptop [Kota]" → jutaan pencarian/bulan
 - Instagram tidak terindeks di Google Search
-- Competitor yang punya website akan muncul lebih dulu
+- Pesaing yang punya website akan muncul lebih dulu
 
 **Dampak:**
 - Kehilangan potensial customer yang mencari via Google
-- SEO = 0 (tidak ada organic traffic dari search engine)
-- Ketergantungan pada paid ads untuk visibility
+- Tidak ada pengunjung gratis dari mesin pencari Google
+- Harus selalu bayar iklan untuk kelihatan
 
 ### 3. Professional Image Belum Maksimal
 
@@ -74,17 +74,17 @@ Bisnis retail modern yang sukses membutuhkan lebih dari sekadar kehadiran di med
 
 **Keterbatasan Instagram:**
 - Tidak cocok untuk katalog produk lengkap (50+ items)
-- Pelanggan harus scroll feed untuk mencari produk
-- Tidak ada search/filter by brand, harga, category
-- Stories expire dalam 24 jam
-- Link hanya di bio (tidak bisa multiple CTA)
-- Sulit untuk display informasi detail (specs, warranty, dll)
+- Pelanggan harus scroll terus untuk mencari produk
+- Tidak ada pencarian/filter berdasarkan merk, harga, kategori
+- Stories hilang dalam 24 jam
+- Link hanya di bio (tidak bisa banyak tombol ajakan)
+- Sulit untuk tampilkan informasi detail (spesifikasi, garansi, dll)
 
 **Dampak:**
 - Pengalaman pengguna buruk untuk browsing produk
 - Customer kesulitan menemukan produk yang dicari
-- Banyak pertanyaan berulang (tanya stok, harga, specs)
-- Memakan waktu untuk customer service
+- Banyak pertanyaan berulang (tanya stok, harga, spesifikasi)
+- Habis waktu untuk melayani pelanggan
 
 ---
 
@@ -121,26 +121,26 @@ Website memberikan nilai dalam 4 dimensi:
 #### 1. Kepemilikan & Kontrol
 - **100% milik Anda** - Domain, hosting, data, semuanya atas nama Anda
 - **Tidak ada risiko platform** - Tidak terpengaruh kebijakan/perubahan platform lain
-- **Aset jangka panjang** - Brand equity terbangun di aset yang Anda miliki
-- **Kepemilikan data** - Data customer, analytics, behavior insights
+- **Aset jangka panjang** - Reputasi bisnis terbangun di aset yang Anda miliki
+- **Kepemilikan data** - Data customer, statistik, kebiasaan pengunjung
 
-#### 2. Visibilitas Organik
-- **Kehadiran di Google Search** - Muncul untuk keyword "toko laptop [kota]", dll
-- **Optimasi SEO** - Schema.org markup untuk rich snippets
+#### 2. Muncul di Google
+- **Kehadiran di Google Search** - Muncul untuk kata kunci "toko laptop [kota]", dll
+- **Optimasi Google** - Format khusus untuk tampil menarik di hasil pencarian Google
 - **Ditemukan 24/7** - Customer bisa menemukan Anda kapan saja
-- **Content marketing** - Artikel blog untuk long-tail keywords
+- **Content marketing** - Artikel blog untuk kata kunci spesifik
 
 #### 3. Kredibilitas Profesional
 - **Citra bisnis terpercaya** - Website = penanda profesionalisme
-- **Sinyal kepercayaan** - SSL, info bisnis terverifikasi, desain profesional
-- **Siap untuk B2B** - Lebih mudah untuk pitch ke partner, supplier, bank
-- **Keunggulan kompetitif** - Menonjol dari competitor yang hanya pakai Instagram
+- **Sinyal kepercayaan** - Gembok hijau (SSL), info bisnis terverifikasi, desain profesional
+- **Siap untuk kerjasama bisnis** - Lebih mudah untuk pitch ke partner, supplier, bank
+- **Keunggulan kompetitif** - Menonjol dari pesaing yang hanya pakai Instagram
 
 #### 4. Efisiensi Bisnis
-- **Katalog mandiri** - Customer bisa browse sendiri (kurangi pertanyaan berulang)
-- **Routing otomatis** - Kontak WhatsApp pintar berdasarkan tipe inquiry
-- **Insight analytics** - Memahami perilaku customer & optimasi
-- **Skalabel** - Siap untuk growth (tambah produk, kategori, fitur)
+- **Katalog mandiri** - Customer bisa lihat-lihat sendiri (kurangi pertanyaan berulang)
+- **Pemilah otomatis** - Kontak WhatsApp pintar berdasarkan tipe pertanyaan
+- **Statistik pengunjung** - Memahami kebiasaan customer & optimasi
+- **Mudah dikembangkan** - Siap untuk bertumbuh (tambah produk, kategori, fitur)
 
 ---
 
@@ -151,17 +151,17 @@ Website memberikan nilai dalam 4 dimensi:
 #### 1. Product Catalog
 - Display produk dengan foto, harga, spesifikasi lengkap
 - Kategori terstruktur (Laptop, PC, Aksesoris, dll.)
-- Search & filter by brand, harga range, category
-- Sort by: terbaru, termurah, termahal
-- Quick WhatsApp contact per produk
-- Sold-out indicator & stock status
+- Pencarian & filter berdasarkan merk, harga, kategori
+- Urutkan berdasarkan: terbaru, termurah, termahal
+- Tombol WhatsApp langsung di setiap produk
+- Indikator stok habis & status ketersediaan
 
 #### 2. Responsive Design
-- Mobile-first design (80% user dari mobile)
-- Otomatis menyesuaikan dengan device (HP, tablet, laptop)
-- Fast loading (< 2 detik)
-- Touch-optimized untuk mobile
-- Progressive Web App ready
+- Desain untuk handphone dulu (80% user dari mobile)
+- Otomatis menyesuaikan dengan perangkat (HP, tablet, laptop)
+- Loading cepat (kurang dari 2 detik)
+- Dioptimalkan untuk sentuhan jari di handphone
+- Bisa disimpan seperti aplikasi di HP
 
 #### 3. Desain UI/UX Profesional
 - Desain modern & bersih
@@ -173,20 +173,20 @@ Website memberikan nilai dalam 4 dimensi:
 ### B. Fitur Bisnis & Marketing
 
 #### 1. SEO Optimization
-- Schema.org structured data (LocalBusiness, Product, Service)
-- Meta tags untuk social media sharing
-- Sitemap & robots.txt
-- Fast page speed (Core Web Vitals optimized)
-- Responsif mobile (faktor ranking Google)
-- Siap untuk rich snippets
+- Format data khusus untuk Google (Bisnis Lokal, Produk, Layanan)
+- Informasi lengkap saat dibagikan di media sosial
+- Peta website & file petunjuk untuk Google
+- Kecepatan halaman cepat (sesuai standar Google)
+- Tampilan otomatis menyesuaikan di handphone (faktor ranking Google)
+- Siap untuk tampil menarik di hasil pencarian Google
 
 #### 2. Kontak & Konversi
-- Multiple contact channels (WhatsApp, Email, Phone)
-- Routing kontak pintar (Sales, Service, General)
-- Contact form untuk inquiry
-- Alamat toko dengan Google Maps integration
+- Berbagai cara kontak (WhatsApp, Email, Telepon)
+- Sistem pemilah kontak pintar (Penjualan, Service, Umum)
+- Form kontak untuk pertanyaan
+- Alamat toko dengan integrasi Google Maps
 - Jam operasional & petunjuk arah
-- Social media links integration
+- Link ke media sosial
 
 #### 3. Bagian Konten
 - Showcase layanan (Buy, Trade-in, Repair)
@@ -207,29 +207,29 @@ Website memberikan nilai dalam 4 dimensi:
 ### C. Fitur Analytics & Manajemen
 
 #### 1. Admin Dashboard
-- **Powered by Laravel Filament** - Admin panel modern & profesional
-- Manajemen konten mudah (tidak perlu coding)
+- **Sistem modern & mudah dipakai** - Panel admin profesional
+- Kelola konten dengan mudah (tidak perlu coding)
 - Tambah/edit/hapus produk dengan form sederhana
-- Drag & drop untuk upload foto
+- Upload foto dengan cara tarik & lepas
 - Update harga & deskripsi dengan mudah
 - Kelola kategori & filter
-- Operasi bulk (import/export)
-- Interface intuitif & user-friendly
+- Upload banyak produk sekaligus (import/export)
+- Tampilan yang mudah dipahami & user-friendly
 
 #### 2. Analytics & Insight
-- Google Analytics 4 integration
-- Statistik pengunjung (pageviews, sessions, users)
-- Sumber traffic (organic, social, direct, referral)
-- Pelacakan popularitas produk
-- Pelacakan konversi (klik WhatsApp, form submissions)
-- Insight perilaku pengguna (scroll depth, time on page)
+- Integrasi dengan sistem pelacak Google Analytics
+- Statistik pengunjung (halaman dilihat, kunjungan, pengunjung unik)
+- Sumber pengunjung (dari Google, media sosial, langsung, referral)
+- Pelacakan produk populer
+- Pelacakan konversi (klik WhatsApp, kirim form)
+- Memahami kebiasaan pengguna (berapa lama di halaman, scroll seberapa jauh)
 
 #### 3. Monitoring Performa
 - Pelacakan kecepatan loading halaman
-- Penggunaan mobile vs desktop
-- Statistik browser & device
-- Metrik bounce rate & engagement
-- Kata kunci pencarian (apa yang dicari user di site)
+- Penggunaan handphone vs komputer
+- Statistik browser & perangkat
+- Metrik tingkat pengunjung yang langsung pergi & engagement
+- Kata kunci pencarian (apa yang dicari user di website)
 
 ---
 
@@ -239,14 +239,14 @@ Website memberikan nilai dalam 4 dimensi:
 
 **Termasuk:**
 • Pengembangan website lengkap (modern & responsif)
-• Sistem katalog produk dengan admin dashboard
-• SSL Certificate (HTTPS) - 1 tahun
+• Sistem katalog produk dengan panel admin
+• Sertifikat keamanan SSL/HTTPS - 1 tahun
 • Domain .id/.com profesional - 1 tahun
-• Hosting premium (uptime 99.9%) - 1 tahun
-• Desain responsif (mobile, tablet, desktop)
-• Setup SEO dasar (Schema.org, meta tags, sitemap)
-• Integrasi Google Analytics 4
-• Sistem routing WhatsApp pintar
+• Hosting premium (website nyala 99.9% waktu) - 1 tahun
+• Desain otomatis menyesuaikan (handphone, tablet, komputer)
+• Setup optimasi Google dasar (format khusus, info lengkap, peta website)
+• Integrasi sistem pelacak pengunjung Google Analytics
+• Sistem pemilah pesan WhatsApp otomatis
 • Maintenance gratis 6 bulan pertama
 • Training team (2 sesi @2 jam via Google Meet/Zoom atau Offline di Pontianak)
 • Technical support via WhatsApp
@@ -335,17 +335,17 @@ Tanpa bunga
 ### Nilai yang Diperoleh
 
 **Manfaat Terukur:**
-• **Traffic Organik dari Google** - Traffic gratis dari search engine
-• **Beban Customer Service Berkurang** - Katalog mandiri = Pertanyaan berulang lebih sedikit
-• **Citra Profesional** - Lebih mudah untuk pitch kemitraan B2B
-• **Tersedia 24/7** - Customer bisa browse produk kapan saja
-• **Kepemilikan Data** - Analytics & customer insights
+• **Pengunjung Gratis dari Google** - Traffic gratis dari mesin pencari
+• **Beban Layanan Pelanggan Berkurang** - Katalog mandiri = Pertanyaan berulang lebih sedikit
+• **Citra Profesional** - Lebih mudah untuk pitch kemitraan bisnis
+• **Tersedia 24/7** - Customer bisa lihat produk kapan saja
+• **Kepemilikan Data** - Statistik & informasi pelanggan
 
 **Manfaat Jangka Panjang:**
-• **Brand Equity** - Membangun nilai aset jangka panjang
+• **Nilai Merek** - Membangun nilai aset jangka panjang
 • **Kemandirian** - Tidak rentan terhadap perubahan platform
 • **Kredibilitas** - Citra profesional menarik customer berkualitas
-• **Skalabilitas** - Fondasi untuk pertumbuhan bisnis
+• **Mudah Dikembangkan** - Fondasi untuk pertumbuhan bisnis
 • **Keunggulan Kompetitif** - Menonjol di pasar
 
 ### Kesimpulan Nilai Investasi
@@ -384,38 +384,38 @@ Apakah Rp 340.000/bulan layak untuk memiliki aset digital profesional yang mendu
 
 **Keahlian Teknis:**
 
-*Frontend Development:*
+*Pengembangan Tampilan Website:*
 • Teknologi web modern (React, TypeScript, Vite, Tailwind CSS)
-• Desain responsif untuk semua device (mobile, tablet, desktop)
-• Optimasi performa (rata-rata 60% peningkatan kecepatan loading)
-• Desain UI/UX profesional
+• Desain otomatis menyesuaikan semua perangkat (handphone, tablet, komputer)
+• Optimasi kecepatan (rata-rata 60% peningkatan kecepatan loading)
+• Desain tampilan yang profesional dan mudah dipakai
 
-*Backend Development:*
-• Laravel & pengembangan REST API
-• Laravel Filament untuk admin panel yang powerful & modern
+*Pengembangan Sistem Backend:*
+• Laravel & pengembangan REST API (sistem komunikasi antar aplikasi)
+• Laravel Filament untuk panel admin yang powerful & modern
 • Desain & manajemen database (PostgreSQL, MySQL)
 • Konfigurasi & deployment server
-• Integrasi API (Payment gateway, WhatsApp Business API, dll.)
+• Integrasi dengan sistem lain (Payment gateway, WhatsApp Business API, dll.)
 
-*Security & SEO:*
+*Keamanan & Optimasi Google:*
 • Implementasi SSL/HTTPS & praktik keamanan terbaik
-• Langkah anti-fraud & perlindungan data
-• Optimasi SEO & Schema.org markup
-• Integrasi analytics (Google Analytics 4, Facebook Pixel)
+• Langkah anti-penipuan & perlindungan data
+• Optimasi agar muncul di Google & format khusus Google
+• Integrasi sistem pelacak (Google Analytics 4, Facebook Pixel)
 
 **Bukti Kemampuan:**
 Demo Website: https://toko-komputer-landing-site.vercel.app/
-- Kecepatan loading < 2 detik
-- 100% responsif di semua device
-- Dioptimalkan SEO dengan Schema.org markup
-- Built-in analytics & conversion tracking
+- Kecepatan loading kurang dari 2 detik
+- 100% tampilan menyesuaikan di semua perangkat
+- Dioptimalkan untuk Google dengan format khusus
+- Sistem pelacak pengunjung & konversi built-in
 - Desain modern & profesional
-- Implementasi full-stack (frontend + backend ready)
+- Implementasi lengkap (tampilan + sistem backend siap)
 
 **Rekam Jejak:**
 • 60% rata-rata peningkatan kecepatan website
-• 100% desain responsif (pendekatan mobile-first)
-• Optimasi SEO untuk ranking Google
+• 100% desain menyesuaikan semua perangkat (didesain untuk handphone dulu)
+• Optimasi untuk muncul di halaman pertama Google
 • Pendekatan pengembangan yang mengutamakan keamanan
 
 ### Mengapa Memilih Developer Freelance?
@@ -428,9 +428,9 @@ Demo Website: https://toko-komputer-landing-site.vercel.app/
    - Feedback & revisi lebih efisien
 
 2. **Harga Lebih Kompetitif**
-   - Tidak ada overhead cost agensi besar
+   - Tidak ada biaya overhead agensi besar
    - Hemat 40-60% vs agensi
-   - Lebih fleksibel dalam payment terms
+   - Lebih fleksibel dalam cara pembayaran
 
 3. **Perhatian Personal**
    - 100% fokus pada project Anda
@@ -438,8 +438,8 @@ Demo Website: https://toko-komputer-landing-site.vercel.app/
    - Konsisten dari awal sampai selesai
 
 4. **Keahlian Teknis**
-   - 5 tahun hands-on experience
-   - Kemampuan full-stack (frontend + backend)
+   - 5 tahun pengalaman langsung
+   - Kemampuan lengkap (tampilan website + sistem backend)
    - Up-to-date dengan teknologi terkini
    - Rekam jejak terbukti (lihat demo website)
 
@@ -470,9 +470,9 @@ Demo Website: https://toko-komputer-landing-site.vercel.app/
 ## TIMELINE PENGERJAAN
 
 ### Week 1: Setup & Content Collection
-• Domain registration & DNS setup
-• Hosting setup & configuration
-• SSL certificate installation
+• Pendaftaran domain & setup DNS
+• Setup hosting & konfigurasi
+• Instalasi sertifikat keamanan SSL
 • Kumpulkan konten dari klien:
   - Foto produk (minimal 20 produk)
   - Harga & spesifikasi
@@ -482,20 +482,20 @@ Demo Website: https://toko-komputer-landing-site.vercel.app/
 
 ### Week 2-3: Pengembangan
 • Bangun website lengkap
-• Implementasi sistem katalog produk
-• Integrasi routing WhatsApp pintar
-• Setup admin dashboard
-• Testing (desktop, mobile, tablet)
-• Optimasi SEO
-• Optimasi performa
+• Buat sistem katalog produk
+• Integrasi sistem pemilah WhatsApp pintar
+• Setup panel admin
+• Testing (komputer, handphone, tablet)
+• Optimasi untuk Google
+• Optimasi kecepatan
 
 ### Week 4: Launch & Training
-• Soft launch (testing internal)
-• Review klien & revisi minor
+• Peluncuran sementara (testing internal)
+• Review klien & perbaikan kecil
 • Training team (2 sesi @2 jam via Google Meet/Zoom atau Offline di Pontianak):
   - Sesi 1: Cara update produk & konten
-  - Sesi 2: Cara monitor analytics & handle inquiry
-• Hard launch (promosi ke pelanggan)
+  - Sesi 2: Cara monitor statistik & handle pertanyaan
+• Peluncuran resmi (promosi ke pelanggan)
 • Submit ke Google Search Console
 
 **TOTAL: 1 BULAN**
@@ -510,15 +510,15 @@ Demo Website: https://toko-komputer-landing-site.vercel.app/
 #### Optimasi Google Business Profile (Nilai: Rp 500.000)
 
 **Termasuk:**
-• Optimasi listing Google Business yang sudah ada
+• Optimasi profil bisnis Google yang sudah ada
 • Upload 10-15 foto profesional (produk, toko, team)
-• Tulis deskripsi bisnis yang dioptimalkan SEO
-• Setup Google Posts mingguan (1 bulan pertama)
-• Tambahkan atribut bisnis & bagian Q&A
-• Template & manajemen respons review
+• Tulis deskripsi bisnis yang mudah ditemukan di Google
+• Setup postingan Google mingguan (1 bulan pertama)
+• Tambahkan informasi bisnis & bagian Tanya Jawab
+• Template untuk membalas review pelanggan
 
 #### Priority Support (Nilai: Rp 500.000 - Rp 1.000.000)
-• Waktu respons maksimal 4 jam (normal: 24 jam)
+• Waktu balas maksimal 4 jam (normal: 24 jam)
 • Dukungan WhatsApp langsung
 • Berlaku selama 6-12 bulan (tergantung opsi pembayaran)
 
@@ -530,17 +530,17 @@ Demo Website: https://toko-komputer-landing-site.vercel.app/
 
 ### Apa yang Dijamin?
 
-• **Website 100% sesuai prototype** (atau lebih baik)
-• **Website live dalam 1 bulan** (atau uang kembali)
-• **Responsif mobile** (tampil bagus di semua device)
-• **Kecepatan loading halaman < 3 detik**
-• **Revisi minor gratis** selama masa maintenance
-• **Technical support** via WhatsApp
+• **Website 100% sesuai contoh** (atau lebih baik)
+• **Website online dalam 1 bulan** (atau uang kembali)
+• **Tampil bagus di handphone** (tampil bagus di semua perangkat)
+• **Kecepatan loading halaman kurang dari 3 detik**
+• **Perbaikan kecil gratis** selama masa maintenance
+• **Dukungan teknis** via WhatsApp
 
 ### Apa yang TIDAK Dijamin?
 
-• **Ranking #1 di Google** (SEO butuh waktu 3-6 bulan)
-• **Penjualan langsung meningkat X%** (website adalah tools, execution tetap dari tim Anda)
+• **Ranking #1 di Google** (Optimasi Google butuh waktu 3-6 bulan)
+• **Penjualan langsung meningkat X%** (website adalah alat bantu, eksekusi tetap dari tim Anda)
 • **Zero downtime 100%** (Tidak ada server di dunia yang 100% sempurna. Namun, kami menjamin 99.9% uptime, standar industri global)
 
 ---
@@ -557,7 +557,7 @@ Demo Website: https://toko-komputer-landing-site.vercel.app/
 **A:** Ya, website ini terintegrasi dengan WhatsApp. Pelanggan bisa langsung klik "Order" dan otomatis terhubung ke WA Anda dengan pesan yang sudah disiapkan.
 
 ### Q4: Berapa lama untuk website muncul di Google?
-**A:** Website akan langsung terindeks dalam 1-2 minggu. Namun untuk ranking tinggi (halaman 1), butuh waktu 3-6 bulan dengan konten yang konsisten dan SEO optimization.
+**A:** Website akan langsung terindeks dalam 1-2 minggu. Namun untuk ranking tinggi (halaman 1), butuh waktu 3-6 bulan dengan konten yang konsisten dan optimasi Google berkelanjutan.
 
 ### Q5: Apakah domain & hosting selamanya milik saya?
 **A:** Ya, domain & hosting 100% atas nama Anda. Kami cuma bantu setup & maintenance. Anda bisa kapan saja ambil alih kontrol penuh.
@@ -566,7 +566,7 @@ Demo Website: https://toko-komputer-landing-site.vercel.app/
 **A:** Di akhir development (week 3), kami akan tunjukkan hasilnya. Jika ada yang perlu direvisi, kami akan perbaiki. Kami tidak akan launch sebelum Anda 100% puas.
 
 ### Q7: Apakah website bisa diintegrasikan dengan marketplace (Tokopedia/Shopee)?
-**A:** Website bisa menampilkan link ke toko marketplace Anda. Untuk integrasi API penuh (sync stock, order), itu fitur advanced yang bisa ditambahkan dengan biaya terpisah.
+**A:** Website bisa menampilkan link ke toko marketplace Anda. Untuk integrasi penuh via API (sinkronisasi stok, pesanan), itu fitur lanjutan yang bisa ditambahkan dengan biaya terpisah.
 
 ### Q8: Bagaimana dengan maintenance setelah 6 bulan pertama?
 **A:** Setelah 6 bulan, Anda bisa:
@@ -614,10 +614,10 @@ Setelah itu, bonus tidak berlaku lagi.
 Bisnis yang berkembang membutuhkan fondasi digital yang kuat. Website bukan hanya "nice to have"—ini adalah **aset strategis** untuk:
 
 • Memiliki aset digital yang 100% Anda kontrol
-• Memperluas jangkauan lewat Google Search (traffic organik)
+• Memperluas jangkauan lewat Google Search (pengunjung gratis)
 • Meningkatkan profesionalitas & kredibilitas bisnis
-• Efisiensi operasional & customer self-service
-• Foundation untuk pertumbuhan jangka panjang
+• Efisiensi operasional & customer bisa cek sendiri
+• Fondasi untuk pertumbuhan jangka panjang
 
 **Pertanyaan terakhir:**
 
