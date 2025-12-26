@@ -159,6 +159,105 @@ describe('PCBuilder', () => {
     });
   });
 
+  describe('Disabled Use Case Buttons (Template Availability)', () => {
+    it('should disable Content Creation for 3-5 Juta budget', () => {
+      renderWithProviders(<PCBuilder />);
+      
+      // Select 3-5 Juta budget
+      fireEvent.click(screen.getByText('3 - 5 Juta'));
+      
+      // Find Content Creation button
+      const contentButton = screen.getByText('Content Creation').closest('button');
+      
+      // Should be disabled
+      expect(contentButton).toBeDisabled();
+      expect(contentButton).toHaveAttribute('aria-disabled', 'true');
+      expect(contentButton).toHaveClass('cursor-not-allowed');
+      
+      // Should show "Tidak tersedia" text
+      expect(screen.getByText('Tidak tersedia')).toBeInTheDocument();
+    });
+
+    it('should enable all use cases for 5-8 Juta budget', () => {
+      renderWithProviders(<PCBuilder />);
+      
+      // Select 5-8 Juta budget
+      fireEvent.click(screen.getByText('5 - 8 Juta'));
+      
+      // All buttons should be enabled
+      const officeButton = screen.getByText('Office & Productivity').closest('button');
+      const gamingButton = screen.getByText('Gaming').closest('button');
+      const contentButton = screen.getByText('Content Creation').closest('button');
+      
+      expect(officeButton).not.toBeDisabled();
+      expect(gamingButton).not.toBeDisabled();
+      expect(contentButton).not.toBeDisabled();
+    });
+
+    it('should disable Office for 8-12 Juta budget', () => {
+      renderWithProviders(<PCBuilder />);
+      
+      // Select 8-12 Juta budget
+      fireEvent.click(screen.getByText('8 - 12 Juta'));
+      
+      // Find Office button
+      const officeButton = screen.getByText('Office & Productivity').closest('button');
+      
+      // Should be disabled
+      expect(officeButton).toBeDisabled();
+      expect(officeButton).toHaveAttribute('aria-disabled', 'true');
+    });
+
+    it('should disable Office for >12 Juta budget', () => {
+      renderWithProviders(<PCBuilder />);
+      
+      // Select >12 Juta budget
+      fireEvent.click(screen.getByText('> 12 Juta'));
+      
+      // Find Office button
+      const officeButton = screen.getByText('Office & Productivity').closest('button');
+      
+      // Should be disabled
+      expect(officeButton).toBeDisabled();
+    });
+
+    it('should not trigger onClick when disabled button is clicked', () => {
+      renderWithProviders(<PCBuilder />);
+      
+      // Select 3-5 Juta budget
+      fireEvent.click(screen.getByText('3 - 5 Juta'));
+      
+      // Try to click disabled Content Creation button
+      const contentButton = screen.getByText('Content Creation').closest('button');
+      fireEvent.click(contentButton!);
+      
+      // Should not show recommendations (Step 3)
+      expect(screen.queryByText('Rekomendasi PC Anda')).not.toBeInTheDocument();
+      
+      // Analytics should not be called for disabled button
+      expect(analytics.trackEvent).not.toHaveBeenCalledWith(
+        'button_click',
+        'select_use_case',
+        'content',
+        expect.anything(),
+        expect.anything()
+      );
+    });
+
+    it('should show helpful tooltip for unavailable combinations', () => {
+      renderWithProviders(<PCBuilder />);
+      
+      // Select 3-5 Juta budget
+      fireEvent.click(screen.getByText('3 - 5 Juta'));
+      
+      // Find Content Creation button
+      const contentButton = screen.getByText('Content Creation').closest('button');
+      
+      // Should have title attribute with helpful message
+      expect(contentButton).toHaveAttribute('title', expect.stringContaining('Budget belum mencukupi'));
+    });
+  });
+
   describe('PC Recommendations', () => {
     beforeEach(() => {
       renderWithProviders(<PCBuilder />);

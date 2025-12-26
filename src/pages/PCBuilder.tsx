@@ -398,21 +398,56 @@ Apakah bisa dibantu untuk rakit PC ini? Mohon info ketersediaan part dan harga f
                     { value: "content" as UseCase, label: "Content Creation", icon: HardDrive, desc: "Editing video, design grafis" },
                   ].map((useCase) => {
                     const Icon = useCase.icon;
+                    
+                    // Check if template exists for selected budget + use case combination
+                    const templateKey = `${selectedBudget}_${useCase.value}` as keyof typeof PC_TEMPLATES;
+                    const isAvailable = !!PC_TEMPLATES[templateKey];
+                    
+                    // Generate contextual tooltip for unavailable combinations
+                    let tooltipMessage = "";
+                    if (!isAvailable) {
+                      if (useCase.value === "content" && selectedBudget === "3-5") {
+                        tooltipMessage = "Budget belum mencukupi untuk performa optimal kategori ini. Minimal 5-8 Juta untuk Content Creation.";
+                      } else if (useCase.value === "office" && (selectedBudget === "8-12" || selectedBudget === "12+")) {
+                        tooltipMessage = "Spesifikasi Office tersedia di kategori 5-8 Juta. Untuk workstation custom, hubungi admin kami.";
+                      } else {
+                        tooltipMessage = "Kombinasi ini tidak tersedia. Silakan pilih opsi lain atau hubungi admin.";
+                      }
+                    }
+                    
                     return (
                       <button
                         key={useCase.value}
-                        onClick={() => handleUseCaseSelect(useCase.value)}
+                        onClick={() => isAvailable && handleUseCaseSelect(useCase.value)}
+                        disabled={!isAvailable}
                         aria-pressed={selectedUseCase === useCase.value}
                         aria-label={`Pilih use case ${useCase.label}: ${useCase.desc}`}
+                        aria-disabled={!isAvailable}
+                        title={!isAvailable ? tooltipMessage : `Pilih ${useCase.label}`}
                         className={`p-6 rounded-lg border-2 transition-all ${
-                          selectedUseCase === useCase.value
+                          !isAvailable
+                            ? "opacity-50 cursor-not-allowed border-border bg-muted/30"
+                            : selectedUseCase === useCase.value
                             ? "border-primary bg-primary/5"
-                            : "border-border hover:border-primary/50"
+                            : "border-border hover:border-primary/50 hover:bg-secondary/30"
                         }`}
                       >
-                        <Icon className={`h-8 w-8 mb-3 ${selectedUseCase === useCase.value ? 'text-primary' : 'text-muted-foreground'}`} />
-                        <div className="font-bold text-lg mb-1">{useCase.label}</div>
+                        <Icon className={`h-8 w-8 mb-3 ${
+                          !isAvailable 
+                            ? 'text-muted-foreground/50' 
+                            : selectedUseCase === useCase.value 
+                            ? 'text-primary' 
+                            : 'text-muted-foreground'
+                        }`} />
+                        <div className={`font-bold text-lg mb-1 ${!isAvailable ? 'text-muted-foreground/70' : ''}`}>
+                          {useCase.label}
+                        </div>
                         <div className="text-sm text-muted-foreground">{useCase.desc}</div>
+                        {!isAvailable && (
+                          <div className="mt-2 text-xs text-destructive font-medium">
+                            Tidak tersedia
+                          </div>
+                        )}
                       </button>
                     );
                   })}
