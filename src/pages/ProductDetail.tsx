@@ -14,6 +14,9 @@ import { useProducts } from "@/hooks/useProducts";
 import { formatPriceWithCurrency } from "@/lib/utils";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
 import { translateCondition, getConditionBadgeColor } from "@/lib/translations";
+import { generateProductSchema, generateBreadcrumbSchema, injectSchemaMarkup } from "@/lib/schema";
+import { APP_CONFIG } from "@/lib/config";
+import { useEffect } from "react";
 import placeholderImg from "@/assets/placeholder.svg";
 
 const ProductDetail = () => {
@@ -44,6 +47,33 @@ const ProductDetail = () => {
   };
 
   const discountInfo = product ? getDiscount() : null;
+
+  // Inject Schema.org Product markup for SEO
+  useEffect(() => {
+    if (!product) return;
+
+    // Product Schema
+    const productSchema = generateProductSchema({
+      name: product.name,
+      description: product.description || `${product.name} - Laptop berkualitas dari Database Computer Pontianak`,
+      image: product.image_url || placeholderImg,
+      price: typeof product.price === 'number' ? product.price : parseFloat(String(product.price).replace(/[^0-9.-]+/g, '')) || 0,
+      condition: product.specifications?.condition === 'New' ? 'NewCondition' : product.specifications?.condition === 'Refurbished' ? 'RefurbishedCondition' : 'UsedCondition',
+      brand: product.specifications?.processor?.split(' ')[0] || 'Various', // Extract brand from processor (e.g., "Intel Core i5" -> "Intel")
+      sku: `DB-${product.id}`,
+    });
+
+    // Breadcrumb Schema
+    const breadcrumbSchema = generateBreadcrumbSchema([
+      { name: 'Home', url: APP_CONFIG.baseUrl },
+      { name: 'Produk', url: `${APP_CONFIG.baseUrl}/#products` },
+      { name: product.name, url: `${APP_CONFIG.baseUrl}/products/${product.id}` },
+    ]);
+
+    // Inject schemas
+    injectSchemaMarkup(productSchema);
+    injectSchemaMarkup(breadcrumbSchema);
+  }, [product]);
 
   // Share function
   const handleShare = async () => {
@@ -126,13 +156,17 @@ const ProductDetail = () => {
 
   return (
     <>
-      {/* SEO Meta Tags */}
+      {/* SEO Meta Tags - Enhanced with Product-specific Keywords */}
       <SEOHead 
-        title={`${product.name} - Database Computer Pontianak`}
-        description={product.description || `${product.name} - Laptop berkualitas dari Database Computer`}
+        title={`${product.name} - ${formatPriceWithCurrency(product.price)} | Database Computer Pontianak`}
+        description={
+          product.description || 
+          `Beli ${product.name} di Database Computer Pontianak. ${product.specifications?.processor ? `Processor ${product.specifications.processor}, ` : ''}${product.specifications?.ram ? `RAM ${product.specifications.ram}, ` : ''}${product.specifications?.storage ? `Storage ${product.specifications.storage}. ` : ''}Harga: ${formatPriceWithCurrency(product.price)}. ${product.stock > 0 ? 'Stok Ready!' : 'Hubungi kami untuk produk serupa.'} Garansi resmi. Gold Merchant Tokopedia & Shopee Mall Partner.`
+        }
         image={product.image_url || placeholderImg}
         type="product"
-        keywords={`${product.name}, laptop bekas, ${product.specifications?.processor || ''}, pontianak, database computer`}
+        keywords={`${product.name}, ${product.name.toLowerCase()}, ${product.specifications?.processor || 'laptop'}, laptop ${product.specifications?.processor?.split(' ')[0]?.toLowerCase() || 'bekas'} pontianak, ${product.specifications?.condition === 'New' ? 'laptop baru' : 'laptop bekas'} pontianak, database computer, toko laptop pontianak, harga laptop pontianak, ${product.specifications?.ram ? `laptop ram ${product.specifications.ram}` : ''}, ${product.specifications?.storage ? `laptop ${product.specifications.storage}` : ''}`}
+        canonical={`${APP_CONFIG.baseUrl}/products/${product.id}`}
       />
 
       <Header />
