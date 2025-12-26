@@ -9,15 +9,15 @@
 ```
 ┌─────────────────────────────────────────┐
 │   🏪 DATABASE COMPUTER                  │
-│   Toko Komputer Terpercaya Sejak [XXX] │
+│   Toko Komputer Terpercaya Sejak [XXX]  │
 │                                         │
 │   Proposal Website Profesional          │
-│   by Ihza Baker                         │
+│   by [nama anda]                        │
 └─────────────────────────────────────────┘
 ```
 
 ### Speaker Notes
-*"Selamat pagi/siang Pak. Terima kasih sudah meluangkan waktu. Saya Ihza, dan saya sangat menghargai kredibilitas yang Bapak bangun—sebagai Gold Merchant Tokopedia & Shopee Mall dengan partnership 12+ bank untuk cicilan 0%, Database Computer punya level profesionalitas yang tinggi. Hari ini saya ingin membahas bagaimana kita bisa melindungi kredibilitas itu dengan lebih baik."*
+*"Selamat pagi/siang Pak. Terima kasih sudah meluangkan waktu. Saya [nama anda], dan saya sangat menghargai kredibilitas yang Bapak bangun—sebagai Gold Merchant Tokopedia & Shopee Mall dengan partnership 12+ bank untuk cicilan 0%, Database Computer punya level profesionalitas yang tinggi. Hari ini saya ingin membahas bagaimana kita bisa melindungi kredibilitas itu dengan lebih baik."*
 
 ---
 
@@ -35,14 +35,14 @@
 │                                          │
 │  🚨 RISIKO YANG PERNAH TERJADI:          │
 │                                          │
-│  • Akun di-hack (20 bulan lalu)         │
-│  • Hacker posting konten palsu          │
+│  • Akun di-hack (20 bulan lalu)          │
+│  • Hacker posting konten palsu           │
 │  • Pelanggan tertipu transfer ke rekening│
 │    penipu                                │
 │  • Akun lama hilang permanen             │
 │  • Harus rebuild follower dari 0         │
 │                                          │
-│  💔 Kerugian: Uang + Reputasi + Waktu   │
+│  💔 Kerugian: Uang + Reputasi + Waktu    │
 └──────────────────────────────────────────┘
 ```
 
@@ -463,4 +463,4 @@
 
 ---
 
-**Good luck, Ihza! You got this. 💪**
+**Good luck, You got this. 💪**
