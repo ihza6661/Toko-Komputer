@@ -359,5 +359,4 @@ Expected Lighthouse Scores:
 ---
 
 **Reviewed by**: Senior Front-End Developer  
-**Implemented by**: OpenCode AI Assistant  
 **Date**: December 21, 2025

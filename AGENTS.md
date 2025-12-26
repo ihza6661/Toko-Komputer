@@ -1,4 +1,4 @@
-# Agent Guidelines for r-tech-landing
+# Agent Guidelines for Toko Komputer
 
 ## Build Commands
 - **Dev**: `npm run dev` (Vite dev server on port 8080)
