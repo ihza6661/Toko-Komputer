@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft, Shield, Eye, Lock, Database, UserCheck, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
 import { COMPANY_INFO } from "@/lib/constants";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SEOHead 
+        title="Kebijakan Privasi - Database Computer Pontianak"
+        description="Kebijakan Privasi Database Computer - Perlindungan data pribadi pelanggan, penggunaan informasi, dan komitmen keamanan data."
+        type="article"
+      />
+      <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4">
@@ -430,6 +437,7 @@ const PrivacyPolicy = () => {
         </div>
       </footer>
     </div>
+    </>
   );
 };
 

@@ -1,7 +1,5 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import SecurityBanner from "@/components/SecurityBanner";
-import VerificationGuide from "@/components/VerificationGuide";
 import TrustBadges from "@/components/TrustBadges";
 import CategorySection from "@/components/CategorySection";
 import InventorySection from "@/components/InventorySection";
@@ -18,6 +16,7 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 import BackToTop from "@/components/BackToTop";
 import AnalyticsDashboard from "@/components/AnalyticsDashboard";
 import AnalyticsFloatButton from "@/components/AnalyticsFloatButton";
+import SEOHead from "@/components/SEOHead";
 import { useScrollTracking } from "@/hooks/useAnalytics";
 import { useState, useEffect } from "react";
 import { initGA4 } from "@/lib/gtag";
@@ -82,11 +81,18 @@ const Index = () => {
 
   return (
     <>
+      {/* SEO Meta Tags */}
+      <SEOHead 
+        title="Database Computer | Official Store Laptop, Printer, Smartphone Pontianak"
+        description="Database Computer - Gold Merchant Tokopedia & Shopee Mall Partner. Jual Laptop, Printer Epson/Canon/HP, Tinta Original, Smartphone. Authorized Dealer Pontianak sejak 2015."
+        image="/og-image.jpg"
+        url="https://database.id"
+        type="website"
+      />
+      
       <Header />
       <main className="min-h-screen bg-background">
         <HeroSection />
-        {/* <SecurityBanner /> */}
-        {/* <VerificationGuide /> */}
         <TrustBadges />
         <InventorySection />
         <CategorySection />

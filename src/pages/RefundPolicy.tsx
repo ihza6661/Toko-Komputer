@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft, RefreshCcw, Package, Clock, CheckCircle2, XCircle, AlertTriangle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
 import { COMPANY_INFO } from "@/lib/constants";
 
 const RefundPolicy = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SEOHead 
+        title="Kebijakan Pengembalian & Refund - Database Computer Pontianak"
+        description="Kebijakan Pengembalian dan Refund Database Computer - Prosedur retur, garansi, dan pengembalian dana untuk produk yang dibeli."
+        type="article"
+      />
+      <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4">
@@ -644,6 +651,7 @@ const RefundPolicy = () => {
         </div>
       </footer>
     </div>
+    </>
   );
 };
 

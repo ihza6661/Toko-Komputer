@@ -1,6 +1,6 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { ArrowLeft, MessageCircle, Cpu, HardDrive, MemoryStick, Monitor, Sparkles, Shield, Gift, BadgePercent, Share2, AlertCircle } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
@@ -86,11 +86,11 @@ const ProductDetail = () => {
   if (error || !product) {
     return (
       <>
-        <Helmet>
-          <title>Produk Tidak Ditemukan - Database Computer Pontianak</title>
-          <meta name="description" content="Produk yang Anda cari tidak tersedia. Jelajahi koleksi laptop berkualitas kami di Database Computer Pontianak." />
-          <meta name="robots" content="noindex, nofollow" />
-        </Helmet>
+        <SEOHead 
+          title="Produk Tidak Ditemukan - Database Computer Pontianak"
+          description="Produk yang Anda cari tidak tersedia. Jelajahi koleksi laptop berkualitas kami di Database Computer Pontianak."
+          noindex={true}
+        />
         <Header />
         <div className="min-h-screen flex items-center justify-center bg-background px-4">
           <div className="text-center max-w-md">
@@ -127,27 +127,13 @@ const ProductDetail = () => {
   return (
     <>
       {/* SEO Meta Tags */}
-      <Helmet>
-        <title>{product.name} - Database Computer Pontianak</title>
-        <meta name="description" content={product.description || `${product.name} - Laptop berkualitas dari Database Computer`} />
-        <meta name="keywords" content={`${product.name}, laptop bekas, ${product.specifications?.processor || ''}, pontianak, r-tech computer`} />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content={`${product.name} - Database Computer`} />
-        <meta property="og:description" content={product.description || ''} />
-        <meta property="og:image" content={product.image_url || placeholderImg} />
-        <meta property="og:url" content={window.location.href} />
-        <meta property="og:type" content="product" />
-        
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${product.name} - Database Computer`} />
-        <meta name="twitter:description" content={product.description || ''} />
-        <meta name="twitter:image" content={product.image_url || placeholderImg} />
-        
-        {/* Canonical */}
-        <link rel="canonical" href={window.location.href} />
-      </Helmet>
+      <SEOHead 
+        title={`${product.name} - Database Computer Pontianak`}
+        description={product.description || `${product.name} - Laptop berkualitas dari Database Computer`}
+        image={product.image_url || placeholderImg}
+        type="product"
+        keywords={`${product.name}, laptop bekas, ${product.specifications?.processor || ''}, pontianak, database computer`}
+      />
 
       <Header />
       

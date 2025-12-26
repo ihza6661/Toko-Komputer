@@ -7,11 +7,18 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import SEOHead from "@/components/SEOHead";
 import { COMPANY_INFO } from "@/lib/constants";
 
 const FAQLegal = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SEOHead 
+        title="FAQ Legal - Database Computer Pontianak"
+        description="Pertanyaan yang Sering Diajukan tentang kebijakan legal Database Computer - Privasi, refund, garansi, dan ketentuan layanan."
+        type="article"
+      />
+      <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4">
@@ -652,6 +659,7 @@ const FAQLegal = () => {
         </div>
       </footer>
     </div>
+    </>
   );
 };
 

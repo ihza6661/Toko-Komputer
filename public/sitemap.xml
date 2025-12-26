@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage (Highest Priority) -->
+  <url>
+    <loc>https://database.id/</loc>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://database.id/privacy-policy</loc>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://database.id/terms-of-service</loc>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://database.id/refund-policy</loc>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://database.id/faq-legal</loc>
+    <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Dynamic Product Pages -->
+  <!-- Note: Product pages should be dynamically generated or updated regularly -->
+  <!-- Add product URLs here manually or via automated script -->
+  <!-- Example: -->
+  <!-- <url> -->
+  <!--   <loc>https://database.id/products/1</loc> -->
+  <!--   <lastmod>2025-12-26</lastmod> -->
+  <!--   <changefreq>weekly</changefreq> -->
+  <!--   <priority>0.8</priority> -->
+  <!-- </url> -->
+
+</urlset>
