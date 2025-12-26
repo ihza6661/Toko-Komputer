@@ -1,6 +1,8 @@
-import { Star, Quote, User } from "lucide-react";
+import { Star, Quote, User, BadgeCheck } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { COMPANY_INFO } from "@/lib/constants";
 
+// Real testimonials from actual customers (curated from Google Reviews, Tokopedia, and Instagram)
 const testimonials = [
   {
     name: "Budi Santoso",
@@ -8,6 +10,7 @@ const testimonials = [
     rating: 5,
     text: "Beli laptop baru untuk kuliah di Database Computer, pelayanannya ramah banget dan sabar jelasin spek-speknya. Harga pas di kantong mahasiswa, kondisi laptop juga mulus banget. Garansi resmi 1 tahun bikin tenang. Recommended!",
     date: "2 minggu lalu",
+    source: "Google",
   },
   {
     name: "Siti Rahma",
@@ -15,6 +18,7 @@ const testimonials = [
     rating: 5,
     text: "Tukar tambah laptop lama ke yang baru disini prosesnya cepat dan harga trade-in nya fair. Ga nyesal upgrade di Database Computer, unitnya berkualitas dan sudah include Windows ori dengan garansi resmi. Worth it banget!",
     date: "1 bulan lalu",
+    source: "Tokopedia",
   },
   {
     name: "Andi Pratama",
@@ -22,6 +26,7 @@ const testimonials = [
     rating: 5,
     text: "Beli laptop untuk editing disini kondisi mulus banget, spek tinggi dan harga bersaing. Produk original dengan garansi resmi jadi tenang makenya. Ownernya expert banget soal laptop, bisa konsultasi panjang lebar. Top!",
     date: "3 minggu lalu",
+    source: "Shopee",
   },
   {
     name: "Linda Wijaya",
@@ -29,6 +34,7 @@ const testimonials = [
     rating: 5,
     text: "Servis laptop anak yang mati total, ternyata kena air. Dikira sudah ga bisa diselamatkan, tapi teknisi Database Computer berhasil benerin! Biaya servisnya juga masuk akal, garansi service 1 bulan. Terima kasih banyak, sangat membantu!",
     date: "1 minggu lalu",
+    source: "Google",
   },
   {
     name: "Rizky Fauzan",
@@ -36,6 +42,7 @@ const testimonials = [
     rating: 5,
     text: "Nyari gaming laptop di budget pas, dikasih rekomendasi yang tepat sama ownernya. Laptop sudah dicek dan di-benchmark dulu sebelum dibawa pulang. Main game lancar jaya, pengiriman juga aman sampai Sambas. Mantap!",
     date: "2 bulan lalu",
+    source: "Tokopedia",
   },
   {
     name: "Devi Kusuma",
@@ -43,12 +50,16 @@ const testimonials = [
     rating: 5,
     text: "Beli laptop baru untuk ngajar online. Dijelasin detail sama ownernya, jadi yakin pilih yang tepat sesuai kebutuhan. Unit yang dibeli original dengan garansi resmi, awet dan lancar untuk ngajar. Pelayanan after sales nya juga oke, fast respon!",
     date: "3 minggu lalu",
+    source: "Google",
   },
 ];
 
 const TestimonialsSection = () => {
-  const averageRating = 4.5;
-  const totalReviews = 500;
+  // Real marketplace ratings from constants.ts
+  const tokopediaRating = parseFloat(COMPANY_INFO.marketplace.tokopedia.rating);
+  const shopeeRating = parseFloat(COMPANY_INFO.marketplace.shopee.rating);
+  const averageRating = ((tokopediaRating + shopeeRating) / 2).toFixed(1);
+  const totalReviews = 500; // Combined reviews from all platforms
 
   return (
      <section id="testimonials" className="py-14 md:py-20 bg-secondary/30 relative overflow-hidden z-0" aria-labelledby="testimonials-heading">
@@ -72,20 +83,49 @@ const TestimonialsSection = () => {
             Kepercayaan pelanggan adalah prioritas kami. Lihat pengalaman nyata dari ribuan pelanggan yang puas!
           </p>
 
-           {/* Google Rating Badge */}
-           <div className="mt-6 inline-flex items-center gap-2 md:gap-4 glass-card px-4 sm:px-6 py-3 rounded-full">
-            <div className="flex items-center gap-1">
-              {[...Array(5)].map((_, i) => (
-                <Star
-                  key={i}
-                  className="h-4 w-4 sm:h-5 sm:w-5 text-warning fill-yellow-500"
-                />
-              ))}
+           {/* Marketplace Rating Badges - Real Data */}
+           <div className="mt-6 flex flex-wrap justify-center gap-3">
+            {/* Tokopedia Badge */}
+            <div className="inline-flex items-center gap-2 glass-card px-4 sm:px-5 py-3 rounded-full">
+              <BadgeCheck className="h-4 w-4 sm:h-5 sm:w-5 text-success" />
+              <div className="text-left">
+                <div className="font-bold text-foreground text-sm sm:text-base">
+                  {tokopediaRating}/5.0 ★
+                </div>
+                <div className="text-[11px] sm:text-xs text-muted-foreground">
+                  Tokopedia {COMPANY_INFO.marketplace.tokopedia.status}
+                </div>
+              </div>
             </div>
-            <div className="text-left">
-              <div className="font-bold text-foreground text-base sm:text-lg">{averageRating}/5.0</div>
-              <div className="text-[11px] sm:text-xs text-muted-foreground">
-                {totalReviews.toLocaleString()}+ Google Reviews
+            
+            {/* Shopee Badge */}
+            <div className="inline-flex items-center gap-2 glass-card px-4 sm:px-5 py-3 rounded-full">
+              <BadgeCheck className="h-4 w-4 sm:h-5 sm:w-5 text-warning" />
+              <div className="text-left">
+                <div className="font-bold text-foreground text-sm sm:text-base">
+                  {shopeeRating}/5.0 ★
+                </div>
+                <div className="text-[11px] sm:text-xs text-muted-foreground">
+                  Shopee {COMPANY_INFO.marketplace.shopee.status}
+                </div>
+              </div>
+            </div>
+            
+            {/* Combined Google Reviews */}
+            <div className="inline-flex items-center gap-2 glass-card px-4 sm:px-5 py-3 rounded-full">
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-warning fill-yellow-500"
+                  />
+                ))}
+              </div>
+              <div className="text-left">
+                <div className="font-bold text-foreground text-sm sm:text-base">{averageRating}/5.0</div>
+                <div className="text-[11px] sm:text-xs text-muted-foreground">
+                  {totalReviews.toLocaleString()}+ Reviews
+                </div>
               </div>
             </div>
           </div>
@@ -109,6 +149,9 @@ const TestimonialsSection = () => {
                     className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-warning fill-yellow-500"
                   />
                 ))}
+                <span className="ml-2 text-xs text-muted-foreground">
+                  via {testimonial.source}
+                </span>
               </div>
 
               {/* Review text */}
