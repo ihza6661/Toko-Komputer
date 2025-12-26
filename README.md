@@ -8,7 +8,10 @@
 [![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-**A modern, conversion-optimized landing page for Computer Store** - a trusted Database Computer in Pontianak Barat, West Kalimantan, Indonesia.
+**A modern, conversion-optimized landing page for Computer Store** - a trusted Database Computer in Pontianak Selatan, West Kalimantan, Indonesia.
+
+> **📍 Demo**: Current staging deployment at [toko-komputer-landing-site.vercel.app](https://toko-komputer-landing-site.vercel.app/)  
+> **🌐 Production**: `database.id` (pending client domain purchase)
 
 [Live Demo](https://toko-komputer-landing-site.vercel.app/) · [Report Bug](https://github.com/ihza6661/Toko-Komputer/issues) · [Request Feature](https://github.com/ihza6661/Toko-Komputer/issues)
 
@@ -44,6 +47,9 @@
 ## 📖 Overview
 
 Database Computer Landing Page is a production-ready, mobile-first web application designed to showcase products, services, and drive conversions for Database Computer.
+
+> **✅ Documentation Verified**: December 26, 2025  
+> All company information verified against `src/lib/constants.ts` - Location, contact numbers, founding year, and business details are accurate and up-to-date.
 
 ### Business Impact
 
@@ -227,8 +233,11 @@ Configure your `.env` file with the following variables:
 VITE_API_URL=http://localhost:8000/api
 
 # App Configuration
+# Production: https://database.id (pending client purchase)
+# Staging: https://toko-komputer-landing-site.vercel.app
+# Development: http://localhost:8080
 VITE_APP_BASE_URL=http://localhost:8080
-VITE_APP_NAME=Toko Komputer
+VITE_APP_NAME=Database Computer
 
 # Analytics (Optional - leave empty to disable)
 VITE_GA4_MEASUREMENT_ID=         # Your Google Analytics 4 ID (G-XXXXXXXXXX)
@@ -488,9 +497,12 @@ export const WHATSAPP_NUMBERS = {
 
 > ⚠️ **Important**: Always use international format without `+` (e.g., `6281234567890`)
 > 
-> 📝 **Note**: The phone numbers shown in this README are dummy examples for demonstration purposes. 
-> The actual numbers are configured in `src/lib/constants.ts`. Always update constants.ts with your 
-> real contact numbers before deploying to production.
+> 📝 **Note**: The phone numbers shown above are examples. Actual contact numbers configured in `src/lib/constants.ts`:
+> - **Sales**: 0811-5757-717 (`628115757717`)
+> - **Service**: 0811-5757-710 (`628115757710`)
+> - **General**: 0811-5757-716 (`628115757716`)
+> 
+> Always update `constants.ts` with your real contact numbers before deploying to production.
 
 ### Customizing Theme Colors
 
@@ -1145,7 +1157,7 @@ Feel free to open an issue for:
 
 ## 📄 License
 
-This is a **commercial project** developed for Toko Komputer, Pontianak Barat.
+This is a **commercial project** developed for Database Computer, Pontianak Selatan.
 
 **Copyright © 2025 Cangkir Co. All rights reserved.**
 
@@ -1194,23 +1206,34 @@ More projects available on [GitHub](https://github.com/ihza6661)
 | 🐛 Bug Reports | [Open an Issue](https://github.com/ihza6661/Toko-Komputer/issues) |
 | ✨ Feature Requests | [Open an Issue](https://github.com/ihza6661/Toko-Komputer/issues) |
 | 💼 Business Inquiries | [ihzahmahendra6661@gmail.com](mailto:ihzahmahendra6661@gmail.com) |
-| 💬 Quick Questions | [WhatsApp](https://wa.me/6281234567890) |
+| 💬 Quick Questions | [WhatsApp](https://wa.me/628115757717) |
 | 🌐 Web Development Services | [ihzahmahendra6661@gmail.com](mailto:ihzahmahendra6661@gmail.com) |
 
 </div>
 
-### About Toko Komputer
+### About Database Computer
 
-**Database Computer** is a trusted Computer Store retailer based in Pontianak Barat, West Kalimantan, Indonesia.
+**Database Computer** is a trusted Computer Store retailer based in Pontianak Selatan, West Kalimantan, Indonesia.
 
-- 📍 **Location**: Pontianak Barat, West Kalimantan, Indonesia
-- 📅 **Established**: 2014
+- 📍 **Location**: Pontianak Selatan, West Kalimantan, Indonesia
+- 🏢 **Address**: Jl. Hijas No.5-7, Benua Melayu Darat, Kec. Pontianak Sel., Kota Pontianak, Kalimantan Barat 78122
+- 📅 **Established**: 2015
 - 💻 **Specialty**: Laptops, Smartphone, and Computer Services
 - 🔧 **Services**: Sales, Trade-ins, Repairs, and Maintenance
+- 🏆 **Credentials**: 
+  - 🥇 Tokopedia Gold Merchant (Rating: 4.8/5)
+  - 🛍️ Shopee Mall Partner (Rating: 4.9/5)
+  - 📱 Instagram: [@database.id_official](https://instagram.com/database.id_official)
 
 **Contact Database Computer:**
-- 📱 WhatsApp: [081234567890](https://wa.me/6281234567890)
-- 🌐 Website: [toko-komputer-landing-site.vercel.app](https://toko-komputer-landing-site.vercel.app/)
+- 📱 WhatsApp (Sales): [0811-5757-717](https://wa.me/628115757717)
+- 📱 WhatsApp (Service): [0811-5757-710](https://wa.me/628115757710)
+- 📱 WhatsApp (General): [0811-5757-716](https://wa.me/628115757716)
+- 🌐 Staging: [toko-komputer-landing-site.vercel.app](https://toko-komputer-landing-site.vercel.app/)
+- 🌐 Production: [database.id](https://database.id) *(pending client confirmation)*
+- 📱 Instagram: [@database.id_official](https://instagram.com/database.id_official)
+- 🛒 Tokopedia: [tokopedia.com/databaseid](https://www.tokopedia.com/databaseid)
+- 🛍️ Shopee: [shopee.co.id/databaseid](https://shopee.co.id/databaseid)
 
 ---
 
@@ -1218,8 +1241,8 @@ More projects available on [GitHub](https://github.com/ihza6661)
 
 ### ⭐ Star this repository if you find it helpful!
 
-**Forged with purpose for Database Computer, Pontianak Barat**
+**Forged with purpose for Database Computer, Pontianak Selatan**
 
-[🔝 Back to Top](#-toko-komputer---modern-landing-page)
+[🔝 Back to Top](#-database-computer---modern-landing-page)
 
 </div>
