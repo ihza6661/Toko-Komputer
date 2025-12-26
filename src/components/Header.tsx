@@ -13,7 +13,8 @@ const Header = () => {
   // Smart navigation hook with analytics tracking
   const { handleNavigation } = useSmartNavigation((href) => {
     // Track navigation in analytics
-    const linkLabel = navLinks.find((link) => link.href === href)?.label || href;
+    const linkLabel =
+      navLinks.find((link) => link.href === href)?.label || href;
     trackNavigation({
       from: "header-nav",
       to: linkLabel,
@@ -74,7 +75,9 @@ const Header = () => {
                 aria-label="Telepon Database Computer"
               >
                 <Phone className="h-4 w-4" />
-                <span className="font-medium">{formatWhatsAppNumber(WHATSAPP_NUMBERS.general)}</span>
+                <span className="font-medium">
+                  {formatWhatsAppNumber(WHATSAPP_NUMBERS.general)}
+                </span>
               </a>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4" />
@@ -94,7 +97,7 @@ const Header = () => {
                   key={link.href}
                   href={link.href}
                   onClick={(e) => handleNavigation(e, link.href)}
-                  className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-lg hover:bg-secondary/50"
+                  className="px-3 py-2 text-xs font-medium text-muted-foreground hover:text-primary transition-colors rounded-lg hover:bg-secondary/50"
                 >
                   {link.label}
                 </a>
