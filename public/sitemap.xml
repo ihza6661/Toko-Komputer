@@ -12,6 +12,14 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- PC Builder Tool (High Priority Feature) -->
+  <url>
+    <loc>https://database.id/pc-builder</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Legal Pages -->
   <url>
     <loc>https://database.id/privacy-policy</loc>

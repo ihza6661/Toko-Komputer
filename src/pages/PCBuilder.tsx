@@ -1,14 +1,17 @@
 import { useState } from "react";
-import { MessageCircle, Cpu, Monitor, HardDrive, Zap, ArrowLeft } from "lucide-react";
+import { MessageCircle, Cpu, Monitor, HardDrive, Zap, ArrowLeft, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-// WhatsApp link generated manually for custom PC builder message
 import { formatPriceWithCurrency } from "@/lib/utils";
 import { Link } from "react-router-dom";
+import { trackEvent, trackWhatsAppClick } from "@/lib/analytics";
+import { WHATSAPP_NUMBERS } from "@/lib/constants";
+import { Helmet } from "react-helmet-async";
 
 // PC Build Templates berdasarkan Budget & Use Case
 const PC_TEMPLATES = {
@@ -171,6 +174,7 @@ type UseCase = "office" | "gaming" | "content";
 const PCBuilder = () => {
   const [selectedBudget, setSelectedBudget] = useState<BudgetRange | null>(null);
   const [selectedUseCase, setSelectedUseCase] = useState<UseCase | null>(null);
+  const { toast } = useToast();
 
   // Get recommendation berdasarkan pilihan
   const getRecommendation = () => {
@@ -182,7 +186,38 @@ const PCBuilder = () => {
 
   const recommendation = getRecommendation();
 
-  // Generate WhatsApp message
+  // Handle budget selection with analytics
+  const handleBudgetSelect = (budget: BudgetRange) => {
+    setSelectedBudget(budget);
+    trackEvent('button_click', 'select_budget', budget, undefined, {
+      location: 'pc-builder',
+      budgetRange: budget
+    });
+  };
+
+  // Handle use case selection with analytics
+  const handleUseCaseSelect = (useCase: UseCase) => {
+    setSelectedUseCase(useCase);
+    trackEvent('button_click', 'select_use_case', useCase, undefined, {
+      location: 'pc-builder',
+      budget: selectedBudget,
+      useCase
+    });
+  };
+
+  // Reset selections
+  const handleReset = () => {
+    setSelectedBudget(null);
+    setSelectedUseCase(null);
+    trackEvent('button_click', 'reset_pc_builder', 'reset', undefined, {
+      location: 'pc-builder'
+    });
+    
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // Generate WhatsApp message with analytics and error handling
   const handleWhatsAppClick = () => {
     if (!recommendation) return;
     
@@ -206,9 +241,34 @@ Estimasi Budget: ${formatPriceWithCurrency(recommendation.estimatedPrice)}
 
 Apakah bisa dibantu untuk rakit PC ini? Mohon info ketersediaan part dan harga finalnya. Terima kasih!`;
 
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappLink = `https://wa.me/628115757717?text=${encodedMessage}`;
-    window.open(whatsappLink, '_blank');
+    try {
+      // Track WhatsApp click for conversion analytics
+      trackWhatsAppClick({
+        type: 'pc_builder',
+        location: 'pc-builder-page',
+        productName: `PC ${recommendation.budget} - ${recommendation.useCase}`,
+        buttonText: 'Konsultasi & Rakit via WhatsApp'
+      });
+
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappLink = `https://wa.me/${WHATSAPP_NUMBERS.sales}?text=${encodedMessage}`;
+      const opened = window.open(whatsappLink, '_blank');
+      
+      if (!opened) {
+        toast({
+          title: "Pop-up diblokir",
+          description: "Silakan izinkan pop-up untuk membuka WhatsApp",
+          variant: "destructive"
+        });
+      }
+    } catch (error) {
+      console.error('Error opening WhatsApp:', error);
+      toast({
+        title: "Terjadi kesalahan",
+        description: "Silakan coba lagi atau hubungi kami langsung",
+        variant: "destructive"
+      });
+    }
   };
 
   return (
@@ -219,6 +279,43 @@ Apakah bisa dibantu untuk rakit PC ini? Mohon info ketersediaan part dan harga f
         keywords="rakit pc pontianak, pc gaming pontianak, pc custom pontianak, pc builder indonesia, toko komputer pontianak, gaming pc murah, workstation pontianak"
         type="website"
       />
+      
+      {/* Schema.org Structured Data for PC Builder Tool */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "PC Builder Tool",
+            "applicationCategory": "UtilityApplication",
+            "description": "Rakit PC custom sesuai kebutuhan dan budget. Gaming, Office, atau Content Creation dengan estimasi harga real-time.",
+            "offers": {
+              "@type": "AggregateOffer",
+              "lowPrice": "4500000",
+              "highPrice": "25000000",
+              "priceCurrency": "IDR"
+            },
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Database Computer",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Jl. Hijas No.5-7",
+                "addressLocality": "Pontianak",
+                "addressRegion": "Kalimantan Barat",
+                "postalCode": "78122",
+                "addressCountry": "ID"
+              }
+            },
+            "featureList": [
+              "Budget-based PC configuration",
+              "Use case optimization (Gaming, Office, Content Creation)",
+              "Real-time price estimation",
+              "WhatsApp consultation"
+            ]
+          })}
+        </script>
+      </Helmet>
       
       <Header />
       
@@ -268,7 +365,9 @@ Apakah bisa dibantu untuk rakit PC ini? Mohon info ketersediaan part dan harga f
                 ].map((budget) => (
                   <button
                     key={budget.value}
-                    onClick={() => setSelectedBudget(budget.value)}
+                    onClick={() => handleBudgetSelect(budget.value)}
+                    aria-pressed={selectedBudget === budget.value}
+                    aria-label={`Pilih budget range ${budget.label} untuk ${budget.desc} PC builds`}
                     className={`p-4 rounded-lg border-2 transition-all text-left ${
                       selectedBudget === budget.value
                         ? "border-primary bg-primary/5"
@@ -302,7 +401,9 @@ Apakah bisa dibantu untuk rakit PC ini? Mohon info ketersediaan part dan harga f
                     return (
                       <button
                         key={useCase.value}
-                        onClick={() => setSelectedUseCase(useCase.value)}
+                        onClick={() => handleUseCaseSelect(useCase.value)}
+                        aria-pressed={selectedUseCase === useCase.value}
+                        aria-label={`Pilih use case ${useCase.label}: ${useCase.desc}`}
                         className={`p-6 rounded-lg border-2 transition-all ${
                           selectedUseCase === useCase.value
                             ? "border-primary bg-primary/5"
@@ -378,14 +479,26 @@ Apakah bisa dibantu untuk rakit PC ini? Mohon info ketersediaan part dan harga f
                       </p>
                     </div>
 
-                    <Button 
-                      size="lg" 
-                      className="w-full"
-                      onClick={handleWhatsAppClick}
-                    >
-                      <MessageCircle className="h-5 w-5 mr-2" />
-                      Konsultasi & Rakit via WhatsApp
-                    </Button>
+                    <div className="space-y-3">
+                      <Button 
+                        size="lg" 
+                        className="w-full"
+                        onClick={handleWhatsAppClick}
+                      >
+                        <MessageCircle className="h-5 w-5 mr-2" />
+                        Konsultasi & Rakit via WhatsApp
+                      </Button>
+                      
+                      <Button 
+                        size="lg" 
+                        variant="outline"
+                        className="w-full"
+                        onClick={handleReset}
+                      >
+                        <RotateCcw className="h-4 w-4 mr-2" />
+                        Coba Konfigurasi Lain
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </Card>
