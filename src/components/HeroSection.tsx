@@ -5,6 +5,7 @@ import { trackWhatsAppClick, trackNavigation } from "@/lib/analytics";
 import { useState, useEffect } from "react";
 import { getShiftInfo, isStoreOpen } from "@/lib/timeBasedRouting";
 import { getActiveHeroVariant } from "@/lib/heroVariants";
+import { COMPANY_INFO } from "@/lib/constants";
 
 const HeroSection = () => {
   // Get A/B test variant content
@@ -49,12 +50,12 @@ const HeroSection = () => {
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex min-h-[70svh] lg:min-h-[80svh] flex-col items-center justify-center text-center pt-24 pb-20 sm:pt-28 sm:pb-28 lg:pt-36 lg:pb-36">
 
-          {/* Badges */}
+          {/* Trust Badges with Real Marketplace Data */}
           <div className="mb-6 flex flex-wrap justify-center gap-2 sm:gap-3">
             {[
               { text: "100% Garansi Resmi", color: "text-info" },
-              { text: "Gold Merchant Tokopedia", color: "text-success" },
-              { text: "Shopee Mall Partner", color: "text-warning" },
+              { text: `${COMPANY_INFO.marketplace.tokopedia.rating}★ Tokopedia Gold Merchant`, color: "text-success" },
+              { text: `${COMPANY_INFO.marketplace.shopee.rating}★ Shopee Mall Partner`, color: "text-warning" },
             ].map((badge, i) => (
               <span
                 key={i}
@@ -175,12 +176,12 @@ const HeroSection = () => {
             </span>
           </div>
 
-          {/* Stats */}
+          {/* Stats - Real Data from Marketplace */}
           <div className="mt-12 grid w-full max-w-4xl grid-cols-2 gap-4 sm:mt-16 md:grid-cols-4">
             {[
               { value: "2015", label: "Berdiri Sejak" },
               { value: "10.000+", label: "Unit Terjual" },
-              { value: "4.5★", label: "Rating Google" },
+              { value: `${((parseFloat(COMPANY_INFO.marketplace.tokopedia.rating) + parseFloat(COMPANY_INFO.marketplace.shopee.rating)) / 2).toFixed(1)}★`, label: "Rating Marketplace" },
               { value: "100%", label: "Produk Original" },
             ].map((stat, i) => (
               <div
