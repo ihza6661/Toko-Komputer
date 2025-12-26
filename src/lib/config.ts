@@ -24,11 +24,11 @@ export const APP_CONFIG = {
    * - Asset URLs (images, logos)
    * 
    * Examples:
-   * - Production: https://tokocomputer.com
+   * - Production: https://database.id
    * - Staging: https://r-tech-pontianak-landing.vercel.app
    * - Development: http://localhost:5173
    */
-  baseUrl: (import.meta.env.VITE_APP_BASE_URL || 'https://tokocomputer.com').replace(/\/$/, ''),
+  baseUrl: (import.meta.env.VITE_APP_BASE_URL || 'https://database.id').replace(/\/$/, ''),
 
   /**
    * Backend API URL (without trailing slash)

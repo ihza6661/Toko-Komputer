@@ -19,6 +19,37 @@ import { APP_CONFIG } from "./config";
 import tokoLogo from "@/assets/toko-logo.png";
 import placeholderImg from "@/assets/placeholder.svg";
 
+/**
+ * Convert relative or absolute URLs to fully qualified absolute URLs
+ * 
+ * @param url - URL to convert (can be relative, absolute path, or full URL)
+ * @returns Fully qualified absolute URL using APP_CONFIG.baseUrl
+ * 
+ * @example
+ * toAbsoluteUrl('/products/laptop-asus') 
+ * // => 'https://database.id/products/laptop-asus'
+ * 
+ * toAbsoluteUrl('https://database.id/about') 
+ * // => 'https://database.id/about'
+ * 
+ * toAbsoluteUrl('/assets/logo.png') 
+ * // => 'https://database.id/assets/logo.png'
+ */
+export function toAbsoluteUrl(url: string): string {
+  // If already a full URL (http:// or https://), return as-is
+  if (url.startsWith('http://') || url.startsWith('https://')) {
+    return url;
+  }
+  
+  // If relative path (starts with /), prepend base URL
+  if (url.startsWith('/')) {
+    return `${APP_CONFIG.baseUrl}${url}`;
+  }
+  
+  // If no leading slash, add one before prepending
+  return `${APP_CONFIG.baseUrl}/${url}`;
+}
+
 export interface SchemaOrganization {
   "@context": string;
   "@type": string;
@@ -100,7 +131,7 @@ export function generateLocalBusinessSchema(): SchemaOrganization {
     url: APP_CONFIG.baseUrl,
     logo: tokoLogo,
     image: [tokoLogo, placeholderImg],
-    telephone: `+${WHATSAPP_NUMBERS.owner}`,
+    telephone: `+${WHATSAPP_NUMBERS.general}`,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Jl. Gajah Mada No. 88",
