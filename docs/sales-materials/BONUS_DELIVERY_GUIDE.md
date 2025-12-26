@@ -1,7 +1,7 @@
 # 🎁 BONUS DELIVERY GUIDE
 ## How to Deliver Option A & B Bonuses
 
-**Created:** 23 Desember 2024
+**Created:** 23 Desember 2025
 **For Project:** Database Computer Website Development
 
 ---
@@ -58,7 +58,7 @@ Yang mana yang Bapak prefer?"
 1. Ask owner to go to: https://business.google.com/
 2. Select Database Computer location
 3. Go to Users → Add User
-4. Add your email: ihzahmahendra6661@gmail.com
+4. Add your email: email.anda@gmail.com
 5. Role: Manager
 6. You'll receive email invitation
 
@@ -966,6 +966,6 @@ You got this! 💪
 
 ---
 
-*Created: 23 December 2024*
+*Created: 23 December 2025*
 *For: Database Computer Project*
-*Developer: Ihza Baker*
+*Developer: @ihza_baker*

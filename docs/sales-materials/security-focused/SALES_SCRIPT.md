@@ -9,7 +9,7 @@
 ```
 Halo [Nama Owner],
 
-Saya Ihza, web developer dari [Kota]. 
+Saya [nama anda], web developer dari [Kota]. 
 
 Saya perhatikan Database Computer punya engagement yang bagus di Instagram. Tapi saya juga lihat di Highlight ada info penting soal verifikasi kontak resmi.
 
@@ -43,7 +43,7 @@ Terima kasih 🙏
 ### Setting: Bertemu Langsung/Video Call
 
 **YOU:**
-Selamat [pagi/siang] Pak [Nama]. Terima kasih sudah meluangkan waktu ya Pak. Saya Ihza.
+Selamat [pagi/siang] Pak [Nama]. Terima kasih sudah meluangkan waktu ya Pak. Saya [nama anda].
 
 **[Jangan langsung ke laptop. Bicaralah dulu.]**
 
@@ -524,4 +524,4 @@ Terima kasih atas waktunya 🙏
 
 Jual feeling aman, bukan jual fitur.
 
-**Good luck, Ihza! 💪**
+**Good luck! 💪**

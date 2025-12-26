@@ -128,7 +128,7 @@
 **Script opening saat sampai toko:**
 
 ```
-"Selamat pagi/siang Pak/Bu, saya Ihza. 
+"Selamat pagi/siang Pak/Bu, saya [nama anda]. 
 Saya developer web dari Pontianak. 
 Saya tertarik membantu Database Computer 
 dengan solusi keamanan digital.
@@ -157,7 +157,7 @@ Sekitar 10-15 menit saja."
 ```
 Selamat pagi Pak/Bu,
 
-Saya Ihza, web developer dari Pontianak.
+Saya [nama anda], web developer dari Pontianak.
 
 Saya notice Database Computer pernah mengalami 
 insiden hack Instagram 20 bulan lalu, dan saya 
@@ -198,7 +198,7 @@ Terima kasih 🙏
 
 ```
 "Pak, selamat [pagi/siang]. 
-Saya Ihza, web developer dari Pontianak.
+Saya [nama anda], web developer dari Pontianak.
 
 Saya sangat respect dengan Database Computer.
 
@@ -1272,7 +1272,7 @@ See you [Day]! 🚀
 
 ---
 
-**Good luck, Ihza! 🚀**
+**Good luck 🚀**
 
 **You got this! 💪**
 

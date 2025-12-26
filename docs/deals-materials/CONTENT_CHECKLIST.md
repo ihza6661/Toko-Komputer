@@ -540,7 +540,7 @@ Jika semua item sudah ✅ selesai, lakukan langkah berikut:
 
 **Format WhatsApp message:**
 ```
-Halo Pak Ihzah,
+Halo Pak,
 
 Data website sudah lengkap semua! 🎉
 Berikut link Google Drive-nya:

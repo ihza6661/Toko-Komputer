@@ -375,7 +375,7 @@ Apakah Rp 340.000/bulan layak untuk memiliki aset digital profesional yang mendu
 
 ## TENTANG DEVELOPER & JAMINAN KUALITAS
 
-### Ihza Mahendra - Full-Stack Web Developer
+### [nama anda] - Full-Stack Web Developer
 
 **Latar Belakang:**
 - 6 tahun pengalaman web development
@@ -629,7 +629,7 @@ Jika jawabannya **YA**, saya siap mulai minggu depan.
 
 **Hormat saya,**
 
-**Ihza Mahendra**
+**[nama anda]**
 Full-Stack Web Developer & Digital Security Consultant
 
 📞 089692070270

@@ -270,7 +270,7 @@ Apakah Rp 12.2 juta layak untuk melindungi bisnis dari kerugian Rp 65-180 juta?
 
 ## [PERSON] TENTANG DEVELOPER & JAMINAN KUALITAS
 
-### Ihza Mahendra - Full-Stack Web Developer
+### [nama anda] - Full-Stack Web Developer
 
 **Latar Belakang:**
 - 5 tahun pengalaman web development
@@ -514,7 +514,7 @@ Jika jawabannya **YA**, saya siap mulai minggu depan.
 
 **Hormat saya,**
 
-**Ihza Mahendra**
+**[nama anda]**
 Full-Stack Web Developer & Digital Security Consultant
 [PHONE] 089692070270
 [EMAIL] ihzahmahendra6661@gmail.com

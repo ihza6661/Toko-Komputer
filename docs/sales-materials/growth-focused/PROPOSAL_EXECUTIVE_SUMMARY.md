@@ -188,7 +188,7 @@ Total: Rp 6.000.000
 
 ## TENTANG DEVELOPER
 
-### Ihza Mahendra - Full-Stack Web Developer
+### [nama anda] - Full-Stack Web Developer
 
 **Pengalaman:**
 • 6 tahun web development
@@ -249,8 +249,8 @@ Jika Anda tertarik:
 
 ## KONTAK
 
-📞 **WhatsApp:** 089692070270
-📧 **Email:** ihzahmahendra6661@gmail.com
+📞 **WhatsApp:** 0812345678910
+📧 **Email:** email.anda@gmail.com
 🌐 **Demo:** https://toko-komputer-landing-site.vercel.app/
 
 ---
@@ -275,11 +275,11 @@ Jika jawabannya **YA**, saya siap mulai minggu depan.
 
 **Hormat saya,**
 
-**Ihza Mahendra**
+**[nama anda]**
 Full-Stack Web Developer & Digital Security Consultant
 
-📞 089692070270
-📧 ihzahmahendra6661@gmail.com
+📞 0812345678910
+📧 email.anda@gmail.com
 🌐 https://toko-komputer-landing-site.vercel.app/
 
 ---
