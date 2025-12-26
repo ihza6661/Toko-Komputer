@@ -20,6 +20,7 @@ const Header = () => {
   const navLinks = [
     { href: "#", label: "Beranda" },
     { href: "#products", label: "Laptop & Komputer" },
+    { href: "/pc-builder", label: "Rakit PC" },
     { href: "#services", label: "Servis" },
     { href: "#testimonials", label: "Testimoni" },
     { href: "#contact", label: "Kontak" },

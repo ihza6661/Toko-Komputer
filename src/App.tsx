@@ -13,6 +13,7 @@ const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 const RefundPolicy = lazy(() => import("./pages/RefundPolicy"));
 const FAQLegal = lazy(() => import("./pages/FAQLegal"));
 const ProductDetail = lazy(() => import("./pages/ProductDetail"));
+const PCBuilder = lazy(() => import("./pages/PCBuilder"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Loading fallback component
@@ -37,6 +38,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/products/:id" element={<ProductDetail />} />
+              <Route path="/pc-builder" element={<PCBuilder />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="/refund-policy" element={<RefundPolicy />} />
