@@ -5,45 +5,15 @@
 
 ---
 
-## HOUR 1: Deploy Website (CRITICAL)
-
-### Step 1: Go to Vercel (10 minutes)
-1. Open: https://vercel.com
-2. Click "Sign Up" → "Continue with GitHub"
-3. Authorize Vercel
-
-### Step 2: Import Project (5 minutes)
-1. Click "Add New" → "Project"
-2. Find "r-tech-pontianak-landing"
-3. Click "Import"
-4. Settings:
-   - Framework Preset: **Vite**
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-5. Click "Deploy"
-
-### Step 3: Test Website (15 minutes)
-1. Open deployed URL (Vercel gives you URL after deploy)
-2. Test on your phone (critical!)
-3. Click all WhatsApp buttons (verify correct numbers)
-4. Scroll through all sections
-5. Note URL: ________________________
-
-### Step 4: Take Screenshots (10 minutes)
-Use for pitch deck:
-- Hero section with badges
-- Product inventory grid
-- FAQ section
-- Contact section
-- Footer
+## HOUR 1: Pending Task (CRITICAL)
 
 ### Step 5: Generate QR Code (5 minutes)
-1. Go to: https://qr.io
+1. Go to: https://bit.ly
 2. Paste your Vercel URL
 3. Download QR code image
 4. You'll add this to pitch deck
 
-**✅ Hour 1 Complete! Website is LIVE!**
+**✅ Complete! Website is LIVE! missing QR Code**
 
 ---
 
@@ -182,9 +152,7 @@ Thanks!
 ## IF TIME IS EXTREMELY LIMITED (1 Hour Only)
 
 **PRIORITY:**
-1. Deploy website (30 min) - MUST DO
-2. Practice 5 key points (20 min) - MUST DO
-3. Test website on phone (10 min) - MUST DO
+1. Practice 5 key points (20 min) - MUST DO
 
 **SKIP:**
 - Formal pitch deck (show website directly on phone)
@@ -261,4 +229,4 @@ Show > Tell. Let website speak for itself.
 
 ---
 
-**Good luck! I'am more prepared than 95% of people pitching their first client!**
+**Good luck!**

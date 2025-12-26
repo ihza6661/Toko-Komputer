@@ -37,7 +37,6 @@ Web Developer | Pontianak
 
 **Design Tips:**
 - Professional color scheme (Database Computer uses white branding - keep clean minimal look)
-- Use their marketplace screenshots as background (blurred)
 - Include Tokopedia Gold Merchant badge if visible
 
 ---
@@ -845,13 +844,6 @@ ROI: [(Total - 2.9M) / 2.9M] × 100% = [%]
 
 ## DESIGN GUIDELINES
 
-### Color Palette:
-- **Primary**: Keep existing green #22c55e (professional, trustworthy)
-- **Accent**: #10b981 (consistent with marketplace green themes)
-- **Database Computer Accent**: Use white/minimal for clean professional look
-- **Text**: #1f2937 (Dark gray)
-- **Background**: #ffffff (White) or #f9fafb (Light gray)
-
 ### Branding Considerations:
 - Database Computer uses "plain white" branding → Keep design clean, minimal, professional
 - Avoid overly colorful/playful design → Corporate/B2B feel
@@ -886,8 +878,8 @@ ROI: [(Total - 2.9M) / 2.9M] × 100% = [%]
 - [x] Competitive intelligence gathered (Menara Computer)
 - [x] Pitch deck tailored to Database Computer
 - [x] DM script ready (under character limit)
-- [ ] Customize website with Database Computer branding (pending materials)
-- [ ] Deploy to Vercel with custom subdomain
+- [x] Customize website with Database Computer branding (pending materials)
+- [x] Deploy to Vercel with custom subdomain
 - [ ] Generate QR codes for pitch deck
 - [ ] Print pitch deck (leave-behind copy)
 
