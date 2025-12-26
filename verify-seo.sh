@@ -93,6 +93,60 @@ else
     echo "   ✅ No Lovable placeholders found"
 fi
 
+# Check 9: Schema.ts has toAbsoluteUrl helper
+echo "🔧 Checking Schema Helper Functions..."
+if grep -q "export function toAbsoluteUrl" src/lib/schema.ts; then
+    echo "   ✅ toAbsoluteUrl() helper exists in schema.ts"
+else
+    echo "   ⚠️  WARNING: toAbsoluteUrl() helper not found in schema.ts"
+    WARNINGS=$((WARNINGS + 1))
+fi
+
+# Check 10: Base URL configuration in config.ts
+echo "⚙️  Checking Base URL Configuration..."
+if [ -f "src/lib/config.ts" ]; then
+    if grep -q "baseUrl.*import.meta.env.VITE_APP_BASE_URL" src/lib/config.ts; then
+        echo "   ✅ baseUrl configured in config.ts"
+    else
+        echo "   ⚠️  WARNING: baseUrl may not be properly configured"
+        WARNINGS=$((WARNINGS + 1))
+    fi
+else
+    echo "   ❌ ERROR: config.ts NOT FOUND"
+    ERRORS=$((ERRORS + 1))
+fi
+
+# Check 11: Schema.org JSON-LD in index.html
+echo "📋 Checking Schema.org Markup..."
+if grep -q "application/ld+json" index.html; then
+    # Count schema types
+    SCHEMA_COUNT=$(grep -o "@type" index.html | wc -l)
+    echo "   ✅ JSON-LD schema found ($SCHEMA_COUNT @type declarations)"
+    
+    # Check for LocalBusiness
+    if grep -q "ComputerStore\|LocalBusiness" index.html; then
+        echo "   ✅ LocalBusiness/ComputerStore schema present"
+    else
+        echo "   ⚠️  WARNING: LocalBusiness schema may be missing"
+        WARNINGS=$((WARNINGS + 1))
+    fi
+else
+    echo "   ❌ ERROR: No JSON-LD schema markup found in index.html"
+    ERRORS=$((ERRORS + 1))
+fi
+
+# Check 12: Schema URLs are absolute (not relative)
+echo "🔗 Checking Schema URLs..."
+if grep -q "application/ld+json" index.html; then
+    # Extract JSON-LD and check for relative URLs in schema
+    if sed -n '/<script type="application\/ld+json">/,/<\/script>/p' index.html | grep -q '"url".*":.*"http'; then
+        echo "   ✅ Schema URLs appear to be absolute"
+    else
+        echo "   ⚠️  WARNING: Some schema URLs may be relative (should use https://)"
+        WARNINGS=$((WARNINGS + 1))
+    fi
+fi
+
 # Summary
 echo ""
 echo "╔═══════════════════════════════════════════════════════════╗"

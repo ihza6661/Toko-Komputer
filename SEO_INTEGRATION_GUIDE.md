@@ -215,6 +215,40 @@ trackFBPixelFormInteraction(formName: string, action: 'start' | 'submit' | 'erro
 
 **Purpose:** Improve local SEO and rich snippet display in search results
 
+**Configuration:**
+- Base URL configured in `src/lib/config.ts` via `VITE_APP_BASE_URL`
+- Default production URL: `https://database.id`
+- Automatically used in all schema markup for proper URL canonicalization
+
+**URL Helper Function:**
+
+```typescript
+toAbsoluteUrl(url: string): string
+```
+
+Converts relative or absolute URLs to fully qualified absolute URLs using `APP_CONFIG.baseUrl`.
+
+**Usage:**
+```typescript
+// Relative paths
+toAbsoluteUrl('/products/laptop-asus') 
+// => 'https://database.id/products/laptop-asus'
+
+// Already absolute URLs (returned as-is)
+toAbsoluteUrl('https://database.id/about') 
+// => 'https://database.id/about'
+
+// Assets
+toAbsoluteUrl('/assets/logo.png') 
+// => 'https://database.id/assets/logo.png'
+```
+
+**Use cases:**
+- Breadcrumb URLs in `generateBreadcrumbSchema()`
+- Product URLs in `generateProductSchema()`
+- Canonical URLs in meta tags
+- Open Graph image URLs
+
 **Implemented Schemas:**
 
 #### A. LocalBusiness (ComputerStore)
@@ -231,6 +265,38 @@ generateLocalBusinessSchema(): SchemaOrganization
 - Service areas
 - Social media links (Instagram, Google Maps)
 - Price range indicator (`$$`)
+
+**Opening Hours Schema (Gap Values Explained):**
+
+The schema currently shows:
+```typescript
+opens: "09:00", closes: "21:00"  // Monday-Saturday
+opens: "10:00", closes: "18:00"  // Sunday
+```
+
+While `COMPANY_INFO.operatingHours` shows:
+```typescript
+weekdays: "08:00 - 20:00"
+saturday: "08:00 - 18:00"
+sunday: "09:00 - 18:00"
+```
+
+**Why the difference?**
+
+The schema uses **conservative values** (9am-9pm instead of 8am-8pm) because:
+
+1. **SEO Best Practice:** Google penalizes businesses with incorrect hours
+2. **Buffer for Delays:** Accounts for late openings or early closings
+3. **Holiday Flexibility:** Provides margin for special operating days
+4. **Customer Expectations:** Under-promise, over-deliver approach
+
+**Recommendation:** 
+- Keep schema conservative for SEO safety
+- Use actual hours in UI for customer information
+- Update schema only after verifying consistent operating hours for 30+ days
+
+**To update schema hours:**
+Edit `src/lib/schema.ts` → `generateLocalBusinessSchema()` → `openingHoursSpecification`
 
 **Injected in:** `index.html` as JSON-LD
 

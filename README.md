@@ -558,6 +558,65 @@ Edit meta tags in `index.html`:
 
 Or configure programmatically in `src/lib/seo-config.ts`.
 
+### Configuring Schema.org Structured Data
+
+The application uses `src/lib/schema.ts` for generating Schema.org markup. All schema URLs automatically use the configured base URL from `src/lib/config.ts`.
+
+**Base URL Configuration:**
+
+Edit `src/lib/config.ts`:
+```typescript
+baseUrl: (import.meta.env.VITE_APP_BASE_URL || 'https://database.id').replace(/\/$/, ''),
+```
+
+**Helper Function for Absolute URLs:**
+
+The `toAbsoluteUrl()` helper ensures all URLs in schema markup are fully qualified:
+
+```typescript
+import { toAbsoluteUrl } from '@/lib/schema';
+
+// Convert relative URLs to absolute
+toAbsoluteUrl('/products/laptop-asus')
+// => 'https://database.id/products/laptop-asus'
+
+// Use in breadcrumb schema
+generateBreadcrumbSchema([
+  { name: 'Home', url: toAbsoluteUrl('/') },
+  { name: 'Products', url: toAbsoluteUrl('/products') },
+]);
+
+// Use in product schema
+generateProductSchema({
+  name: 'Laptop HP',
+  image: toAbsoluteUrl('/assets/laptop-hp.webp'),
+  // ... other fields
+});
+```
+
+**Updating Opening Hours in Schema:**
+
+Note: Schema hours may differ from UI display hours intentionally.
+
+Edit `src/lib/schema.ts` → `generateLocalBusinessSchema()`:
+```typescript
+openingHoursSpecification: [
+  {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    opens: "09:00",   // Update as needed
+    closes: "21:00",  // Update as needed
+  },
+  // ... Sunday hours
+]
+```
+
+**Why schema hours differ from UI:**
+- Schema uses conservative values for SEO reliability
+- Google penalizes incorrect business hours
+- Provides buffer for holidays and special circumstances
+- See [SEO_INTEGRATION_GUIDE.md](./SEO_INTEGRATION_GUIDE.md) for detailed explanation
+
 ---
 
 ## 📊 SEO & Analytics
@@ -583,6 +642,7 @@ The application includes comprehensive tracking and SEO optimization:
 - Service schemas for repair & sales
 - Product schemas for inventory
 - Rich snippets in Google search results
+- URL helper utilities for proper canonicalization
 
 ✅ **Built-in Analytics Dashboard** (Development Mode)
 - Local event tracking without external dependencies
