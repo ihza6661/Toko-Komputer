@@ -18,7 +18,7 @@
 - Sold-out feature for inventory management
 - Professional UI with Toko branding (#22c55e green)
 
-**Status:** Ready to deploy!
+**Status:** Deployed!
 
 ---
 
@@ -26,9 +26,9 @@
 - All code version controlled
 - Clean commit history
 - Professional README
-- Ready for Vercel deployment
+- Deployed on Vercel
 
-**URL:** https://r-tech-pontianak-landing.vercel.app
+**URL:** https://toko-komputer-landing-site.vercel.app/
 
 ---
 
