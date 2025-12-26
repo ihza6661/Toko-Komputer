@@ -1,10 +1,13 @@
-import { MessageCircle, Phone, MapPin, Clock } from "lucide-react";
+import { MessageCircle, MapPin, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import tokoLogo from "@/assets/toko-logo.png";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
-import { COMPANY_INFO, WHATSAPP_NUMBERS } from "@/lib/constants";
+import { COMPANY_INFO } from "@/lib/constants";
+import { useSmartNavigation } from "@/lib/navigation";
 
 const Footer = () => {
+  // Smart navigation hook for hash links
+  const { handleNavigation } = useSmartNavigation();
   return (
     <footer className="py-12 bg-background border-t border-border">
       <div className="container mx-auto px-4">
@@ -70,6 +73,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#products"
+                  onClick={(e) => handleNavigation(e, '#products')}
                   className="hover:text-primary transition-colors"
                 >
                   Laptop Ready Stock
@@ -78,6 +82,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
+                  onClick={(e) => handleNavigation(e, '#services')}
                   className="hover:text-primary transition-colors"
                 >
                   Jual Beli & Tukar Tambah
@@ -86,6 +91,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
+                  onClick={(e) => handleNavigation(e, '#services')}
                   className="hover:text-primary transition-colors"
                 >
                   Servis Laptop
@@ -94,6 +100,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#location"
+                  onClick={(e) => handleNavigation(e, '#location')}
                   className="hover:text-primary transition-colors"
                 >
                   Lokasi & Pengiriman

@@ -319,7 +319,7 @@ Apakah bisa dibantu untuk rakit PC ini? Mohon info ketersediaan part dan harga f
       
       <Header />
       
-      <main className="min-h-screen bg-background">
+      <main className="min-h-screen bg-background pt-16 sm:pt-20">
         {/* Hero Section */}
         <section className="py-12 md:py-20 bg-gradient-to-b from-primary/5 to-background">
           <div className="container mx-auto px-4">
