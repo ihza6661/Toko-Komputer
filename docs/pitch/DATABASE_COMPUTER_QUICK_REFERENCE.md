@@ -79,12 +79,12 @@ Update these files:
 - [x] Test website on mobile (responsive check)
 - [x] Verify all WhatsApp links work (they use placeholder numbers currently)
 - [ ] Take screenshots for pitch deck:
-  - [ ] Homepage hero section
-  - [ ] Category grid (showing 8 categories)
-  - [ ] Product showcase (if you added sample products)
-  - [ ] WhatsApp routing section
-  - [ ] FAQ section
-  - [ ] Footer with contact info
+  - [x] Homepage hero section
+  - [x] Category grid (showing 8 categories)
+  - [x] Product showcase (if you added sample products)
+  - [x] WhatsApp routing section
+  - [x] FAQ section
+  - [x] Footer with contact info
 - [ ] Generate QR code for website URL (use qr.io or similar)
 - [x] Deploy to Vercel (if not already done)
 
@@ -368,7 +368,7 @@ You've done the hard work:
 - [x] Website tested on desktop
 - [x] Website tested on mobile
 - [x] Sample products added (or ready to add)
-- [x ] Screenshots taken for pitch deck
+- [x] Screenshots taken for pitch deck
 - [ ] QR code generated
 - [ ] Pitch deck created in Canva
 - [ ] DM script ready in clipboard
@@ -394,7 +394,6 @@ You've done the hard work:
 **Documentation**:
 - [Complete Pitch Deck](./PITCH_DECK_DATABASE_COMPUTER.md)
 - [Outreach Strategy](./DATABASE_COMPUTER_OUTREACH.md)
-- [Original Database Computer Pitch](./PITCH_DECK_CONTENT.md) (for reference)
 
 **Competitor Intel**:
 - Menara Computer: https://menaracomputer.com
