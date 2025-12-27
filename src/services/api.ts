@@ -63,6 +63,14 @@ export interface ProductSpecifications {
   features?: string
 }
 
+export interface ProductImage {
+  id: number
+  url: string
+  thumbnail_url?: string
+  is_primary: boolean
+  sort_order: number
+}
+
 export interface Product {
   id: number
   name: string
@@ -75,6 +83,7 @@ export interface Product {
   stock: number
   specifications?: ProductSpecifications
   category_id: number
+  images?: ProductImage[]
   created_at: string
   updated_at: string
 }

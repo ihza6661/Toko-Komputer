@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
+import ProductImageGallery from "@/components/ProductImageGallery";
 import { useProduct } from "@/hooks/useProduct";
 import { useProducts } from "@/hooks/useProducts";
 import { formatPriceWithCurrency } from "@/lib/utils";
@@ -194,37 +195,14 @@ const ProductDetail = () => {
 
           {/* Product Detail Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
-            {/* Left Column - Image */}
+            {/* Left Column - Image Gallery */}
             <div className="space-y-4">
-              <div className="relative bg-secondary/50 rounded-2xl overflow-hidden">
-                <img
-                  src={product.image_url || placeholderImg}
-                  alt={product.name}
-                  className={`w-full h-full object-cover aspect-auto ${product.stock === 0 ? 'grayscale' : ''}`}
-                  onError={(e) => {
-                    const target = e.currentTarget;
-                    target.onerror = null;
-                    target.src = placeholderImg;
-                  }}
-                />
-                
-                {/* Sold Out Overlay */}
-                {product.stock === 0 && (
-                  <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center">
-                    <span className="bg-destructive text-destructive-foreground text-2xl font-bold px-8 py-4 rounded-lg rotate-[-12deg] shadow-lg">
-                      TERJUAL
-                    </span>
-                  </div>
-                )}
-
-                {/* Discount Badge */}
-                {discountInfo && product.stock > 0 && (
-                  <div className="absolute top-4 right-4 bg-destructive text-destructive-foreground px-4 py-2 rounded-lg font-bold text-lg shadow-lg">
-                    {discountInfo.discount}% OFF
-                  </div>
-                )}
-              </div>
-
+              <ProductImageGallery 
+                images={product.images || []}
+                productName={product.name}
+                isSoldOut={product.stock === 0}
+              />
+              
               {/* Share Button */}
               <Button 
                 variant="outline" 

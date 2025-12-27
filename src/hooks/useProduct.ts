@@ -45,8 +45,8 @@ export function useProduct(productId: number, options: UseProductOptions = {}) {
         const response = await api.getProduct(productId);
         
         // Handle API response structure
-        // Backend returns { data: {...} } for single resource
-        const product = response.data || response;
+        // Backend returns { data: {...} } for single resource or just the product object
+        const product = (response as any).data || response;
         
         return product;
       } catch (error) {

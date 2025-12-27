@@ -149,21 +149,43 @@ const InventorySection = () => {
                   {/* Image */}
                   <div className="relative aspect-auto bg-secondary/50 overflow-hidden">
                     {product.image_url ? (
-                      <img
-                        src={product.image_url}
-                        alt={product.name}
-                        width="500"
-                        height="500"
-                        loading="lazy"
-                        onError={(e) => {
-                          const target = e.currentTarget;
-                          target.onerror = null; // Prevent infinite loop
-                          target.src = `https://via.placeholder.com/500x500/e5e7eb/6b7280?text=${encodeURIComponent(product.name.substring(0, 20))}`;
-                        }}
-                        className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${
-                          product.stock === 0 ? 'grayscale' : ''
-                        }`}
-                      />
+                      <>
+                        {/* Primary Image */}
+                        <img
+                          src={product.image_url}
+                          alt={product.name}
+                          width="500"
+                          height="500"
+                          loading="lazy"
+                          onError={(e) => {
+                            const target = e.currentTarget;
+                            target.onerror = null; // Prevent infinite loop
+                            target.src = `https://via.placeholder.com/500x500/e5e7eb/6b7280?text=${encodeURIComponent(product.name.substring(0, 20))}`;
+                          }}
+                          className={`w-full h-full object-cover transition-opacity duration-300 ${
+                            product.stock === 0 ? 'grayscale' : ''
+                          } ${product.images && product.images.length > 1 ? 'group-hover:opacity-0' : 'group-hover:scale-105'}`}
+                        />
+                        
+                        {/* Secondary Image on Hover (if available) */}
+                        {product.images && product.images.length > 1 && (
+                          <img
+                            src={product.images[1].url}
+                            alt={`${product.name} - Image 2`}
+                            width="500"
+                            height="500"
+                            loading="lazy"
+                            onError={(e) => {
+                              const target = e.currentTarget;
+                              target.onerror = null;
+                              target.src = product.image_url;
+                            }}
+                            className={`absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105 ${
+                              product.stock === 0 ? 'grayscale' : ''
+                            }`}
+                          />
+                        )}
+                      </>
                     ) : (
                       <div className="w-full h-full flex items-center justify-center bg-secondary text-muted-foreground">
                         No Image
