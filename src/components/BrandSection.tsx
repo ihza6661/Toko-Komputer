@@ -81,15 +81,31 @@ const BrandSection = () => {
               aria-label={`Lihat produk ${brand.name}`}
               className="group relative glass-card rounded-xl p-4 sm:p-6 hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2"
             >
-              {/* Brand Logo/Icon Container */}
+              {/* Brand Logo Container */}
               <div className="aspect-square w-full flex items-center justify-center mb-3 relative">
-                {/* Fallback Icon (Lucide) - Will be replaced by actual logo later */}
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground group-hover:text-primary transition-colors duration-300">
+                {/* Real Brand Logo Image */}
+                <img
+                  src={brand.logo}
+                  alt={`${brand.name} logo`}
+                  className="h-8 sm:h-10 md:h-12 w-auto object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"
+                  onError={(e) => {
+                    // Fallback to icon if image fails to load
+                    e.currentTarget.style.display = "none";
+                    const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (fallback) {
+                      fallback.classList.remove("hidden");
+                      fallback.classList.add("flex");
+                    }
+                  }}
+                />
+                
+                {/* Fallback Icon (hidden by default, shown on error) */}
+                <div className="hidden w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-lg bg-muted/50 items-center justify-center text-muted-foreground group-hover:text-primary transition-colors duration-300">
                   <Laptop className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
                 </div>
 
                 {/* Hover Glow Effect */}
-                <div className="absolute inset-0 rounded-lg bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 rounded-lg bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               </div>
 
               {/* Brand Name - Text-based (Bold Typography) */}
