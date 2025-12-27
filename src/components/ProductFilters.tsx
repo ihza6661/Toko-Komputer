@@ -3,6 +3,7 @@ import { Search, SlidersHorizontal, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   Select,
   SelectContent,
@@ -21,10 +22,12 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { useCategories } from "@/hooks/useCategories";
 import { formatPriceWithCurrency } from "@/lib/utils";
+import { BRANDS } from "@/lib/constants";
 
 export interface ProductFilterValues {
   search: string;
   categoryId: number | undefined;
+  brands: string[];
   minPrice: number | undefined;
   maxPrice: number | undefined;
   condition: string | undefined;
@@ -84,6 +87,7 @@ const ProductFilters = ({ filters, onFilterChange, resultCount }: ProductFilters
     const resetFilters: ProductFilterValues = {
       search: "",
       categoryId: undefined,
+      brands: [],
       minPrice: undefined,
       maxPrice: undefined,
       condition: undefined,
@@ -119,6 +123,7 @@ const ProductFilters = ({ filters, onFilterChange, resultCount }: ProductFilters
     let count = 0;
     if (filters.search) count++;
     if (filters.categoryId) count++;
+    if (filters.brands && filters.brands.length > 0) count++;
     if (filters.minPrice || filters.maxPrice) count++;
     if (filters.condition) count++;
     if (filters.inStock) count++;
@@ -159,6 +164,36 @@ const ProductFilters = ({ filters, onFilterChange, resultCount }: ProductFilters
             )}
           </SelectContent>
         </Select>
+      </div>
+
+      {/* Brand Filter - Multi-select with Checkboxes */}
+      <div className="space-y-2">
+        <Label>Brand</Label>
+        <div className="space-y-2 max-h-48 overflow-y-auto">
+          {BRANDS.map((brand) => {
+            const isChecked = filters.brands.includes(brand.name);
+            return (
+              <div key={brand.name} className="flex items-center space-x-2">
+                <Checkbox
+                  id={`brand-${brand.name}`}
+                  checked={isChecked}
+                  onCheckedChange={(checked) => {
+                    const newBrands = checked
+                      ? [...filters.brands, brand.name]
+                      : filters.brands.filter((b) => b !== brand.name);
+                    onFilterChange({ ...filters, brands: newBrands });
+                  }}
+                />
+                <label
+                  htmlFor={`brand-${brand.name}`}
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+                >
+                  {brand.name}
+                </label>
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       {/* Price Range Filter */}
@@ -353,6 +388,15 @@ const ProductFilters = ({ filters, onFilterChange, resultCount }: ProductFilters
               <X
                 className="h-3 w-3 cursor-pointer"
                 onClick={() => onFilterChange({ ...filters, categoryId: undefined })}
+              />
+            </Badge>
+          )}
+          {filters.brands && filters.brands.length > 0 && (
+            <Badge variant="secondary" className="gap-1">
+              Brand: {filters.brands.join(", ")}
+              <X
+                className="h-3 w-3 cursor-pointer"
+                onClick={() => onFilterChange({ ...filters, brands: [] })}
               />
             </Badge>
           )}

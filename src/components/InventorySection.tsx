@@ -16,6 +16,7 @@ const InventorySection = () => {
   const [filters, setFilters] = useState<ProductFilterValues>({
     search: "",
     categoryId: undefined,
+    brands: [],
     minPrice: undefined,
     maxPrice: undefined,
     condition: undefined,
@@ -29,6 +30,7 @@ const InventorySection = () => {
     perPage: 12,
     search: filters.search || undefined,
     categoryId: filters.categoryId,
+    brands: filters.brands.length > 0 ? filters.brands : undefined,
     minPrice: filters.minPrice,
     maxPrice: filters.maxPrice,
     condition: filters.condition,
@@ -56,6 +58,26 @@ const InventorySection = () => {
       });
     }
   }, [products]);
+
+  // Listen for brand filter events from BrandSection
+  useEffect(() => {
+    const handleBrandFilterChange = (event: Event) => {
+      const customEvent = event as CustomEvent<{ brand: string }>;
+      const brandName = customEvent.detail.brand;
+      
+      // Apply brand filter by adding it to the brands array
+      setFilters(prev => ({
+        ...prev,
+        brands: [brandName], // Replace with single brand selection
+      }));
+    };
+
+    window.addEventListener("brandFilterChange", handleBrandFilterChange);
+
+    return () => {
+      window.removeEventListener("brandFilterChange", handleBrandFilterChange);
+    };
+  }, []);
   return (
     <section id="products" className="py-20 bg-background relative" aria-labelledby="products-heading">
        <div className="container mx-auto px-4">
@@ -91,26 +113,27 @@ const InventorySection = () => {
            ) : products.length === 0 ? (
              <div className="col-span-full text-center py-12">
                <p className="text-muted-foreground text-lg mb-4">
-                 {filters.search || filters.categoryId || filters.minPrice || filters.maxPrice || filters.condition || filters.inStock
+                 {filters.search || filters.categoryId || filters.brands.length > 0 || filters.minPrice || filters.maxPrice || filters.condition || filters.inStock
                    ? "Tidak ada produk yang sesuai dengan filter Anda."
                    : "Belum ada produk tersedia saat ini."}
                </p>
-               {(filters.search || filters.categoryId || filters.minPrice || filters.maxPrice || filters.condition || filters.inStock) && (
-                 <Button 
-                   variant="outline" 
-                   onClick={() => setFilters({
-                     search: "",
-                     categoryId: undefined,
-                     minPrice: undefined,
-                     maxPrice: undefined,
-                     condition: undefined,
-                     inStock: undefined,
-                     sortBy: "created_at",
-                     order: "desc",
-                   })}
-                 >
-                   Reset Filter
-                 </Button>
+               {(filters.search || filters.categoryId || filters.brands.length > 0 || filters.minPrice || filters.maxPrice || filters.condition || filters.inStock) && (
+                  <Button 
+                    variant="outline" 
+                    onClick={() => setFilters({
+                      search: "",
+                      categoryId: undefined,
+                      brands: [],
+                      minPrice: undefined,
+                      maxPrice: undefined,
+                      condition: undefined,
+                      inStock: undefined,
+                      sortBy: "created_at",
+                      order: "desc",
+                    })}
+                  >
+                    Reset Filter
+                  </Button>
                )}
              </div>
              ) : (

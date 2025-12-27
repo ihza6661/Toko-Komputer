@@ -66,6 +66,7 @@ export interface ProductSpecifications {
 export interface Product {
   id: number
   name: string
+  brand?: string
   description: string
   price: number
   sku: string
@@ -132,6 +133,7 @@ class ApiClient {
   async getProducts(page = 1, filters: {
     search?: string
     category_id?: number
+    brands?: string[]
     sort_by?: string
     order?: string
     min_price?: number
@@ -152,6 +154,13 @@ class ApiClient {
       ...(filters.condition && { condition: filters.condition }),
       ...(filters.in_stock !== undefined && { in_stock: filters.in_stock.toString() }),
     })
+
+    // Add brand filters as array parameters (brand[]=ASUS&brand[]=Lenovo)
+    if (filters.brands && filters.brands.length > 0) {
+      filters.brands.forEach(brand => {
+        params.append('brand[]', brand);
+      });
+    }
 
     return this.fetch(`/products?${params.toString()}`) as Promise<PaginatedResponse<Product>>
   }

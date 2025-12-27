@@ -22,10 +22,15 @@ const BrandSection = () => {
 
     // Show toast notification
     toast({
-      title: `Menampilkan koleksi ${brandName}`,
-      description: "Scroll ke bawah untuk lihat produk kami",
+      title: `Menampilkan produk ${brandName}`,
+      description: "Filter brand otomatis diterapkan",
       duration: 3000,
     });
+
+    // Dispatch custom event to notify InventorySection about brand selection
+    window.dispatchEvent(
+      new CustomEvent("brandFilterChange", { detail: { brand: brandName } })
+    );
 
     // Smooth scroll to products section
     setTimeout(() => {

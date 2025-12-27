@@ -29,6 +29,11 @@ interface UseProductsOptions {
   categoryId?: number;
 
   /**
+   * Filter by brands (multiple selection)
+   */
+  brands?: string[];
+
+  /**
    * Minimum price filter
    */
   minPrice?: number;
@@ -92,6 +97,7 @@ export function useProducts(options: UseProductsOptions = {}) {
     enabled = true,
     search,
     categoryId,
+    brands,
     minPrice,
     maxPrice,
     condition,
@@ -105,6 +111,7 @@ export function useProducts(options: UseProductsOptions = {}) {
       per_page: perPage,
       search,
       category_id: categoryId,
+      brands,
       min_price: minPrice,
       max_price: maxPrice,
       condition,
@@ -118,6 +125,7 @@ export function useProducts(options: UseProductsOptions = {}) {
           per_page: perPage,
           search,
           category_id: categoryId,
+          brands,
           min_price: minPrice,
           max_price: maxPrice,
           condition,
