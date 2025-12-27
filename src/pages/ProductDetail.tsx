@@ -174,9 +174,10 @@ const ProductDetail = () => {
       
       <main className="min-h-screen bg-background">
         {/* Breadcrumb & Back Button */}
-        <div className="container mx-auto px-4 pb-6 pt-8 sm:pt-20">
+        <div className="container mx-auto px-4 pb-6 pt-20">
           <div className="flex items-center justify-between mb-4">
-            <Breadcrumb 
+            <Breadcrumb
+              className="text-xs" 
               items={[
                 { label: 'Produk', href: '/#products' },
                 { label: product.name }
@@ -219,7 +220,7 @@ const ProductDetail = () => {
               {/* Product Name & Condition */}
               <div>
                 <div className="flex items-start justify-between gap-4 mb-3">
-                  <h1 className="text-3xl sm:text-4xl font-bold text-foreground">
+                  <h1 className="text-2xl sm:text-3xl font-bold text-foreground">
                     {product.name}
                   </h1>
                   {product.specifications?.condition && (
@@ -257,7 +258,7 @@ const ProductDetail = () => {
                     </Badge>
                   </div>
                 )}
-                <p className="text-4xl font-bold text-primary">
+                <p className="text-3xl font-bold text-primary">
                   {formatPriceWithCurrency(product.price)}
                 </p>
               </div>
