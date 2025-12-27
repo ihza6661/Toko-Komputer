@@ -85,3 +85,49 @@ export const CONTACT_INFO = {
     note: "Tidak pakai Virtual Account", // Important: No VA
   },
 };
+
+// Official Brand Partners - Laptop & PC Brands We Carry
+export const BRANDS = [
+  {
+    name: "ASUS",
+    logo: "/brands/asus.png",
+    description: "Innovation First",
+    category: "laptop",
+  },
+  {
+    name: "Acer",
+    logo: "/brands/acer.png",
+    description: "Explore Beyond Limits",
+    category: "laptop",
+  },
+  {
+    name: "HP",
+    logo: "/brands/hp.png",
+    description: "Keep Reinventing",
+    category: "laptop",
+  },
+  {
+    name: "Lenovo",
+    logo: "/brands/lenovo.png",
+    description: "Smarter Technology",
+    category: "laptop",
+  },
+  {
+    name: "MSI",
+    logo: "/brands/msi.png",
+    description: "True Gaming",
+    category: "gaming",
+  },
+  {
+    name: "Dell",
+    logo: "/brands/dell.png",
+    description: "Trusted Performance",
+    category: "laptop",
+  },
+  {
+    name: "Apple",
+    logo: "/brands/apple.png",
+    description: "Think Different",
+    category: "premium",
+  },
+] as const;

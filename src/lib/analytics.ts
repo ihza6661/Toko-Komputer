@@ -70,7 +70,8 @@ type EventCategory =
   | 'form_interaction'
   | 'product_view'
   | 'button_click'
-  | 'link_click';
+  | 'link_click'
+  | 'brand_click';
 
 type EventData = {
   category: EventCategory;
@@ -348,14 +349,14 @@ export function getAnalyticsSummary(): {
   // Group WhatsApp clicks by type
   const clicksByType: Record<string, number> = {};
   whatsappEvents.forEach(e => {
-    const type = e.metadata?.type || 'unknown';
+    const type = String(e.metadata?.type || 'unknown');
     clicksByType[type] = (clicksByType[type] || 0) + 1;
   });
   
   // Group WhatsApp clicks by location
   const clicksByLocation: Record<string, number> = {};
   whatsappEvents.forEach(e => {
-    const location = e.metadata?.location || 'unknown';
+    const location = String(e.metadata?.location || 'unknown');
     clicksByLocation[location] = (clicksByLocation[location] || 0) + 1;
   });
   
